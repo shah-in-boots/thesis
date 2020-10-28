@@ -1,0 +1,123 @@
+---
+title: Disturbances of the Neurocardiac Axis
+subtitle: MSCR Thesis Overview
+author:
+  - Anish Shah, MD\textsuperscript{1}
+institute:
+  - \textsuperscript{1}Department of Epidemiology, Rollins School of Public Health,  Emory University, Atlanta, Georgia
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+ xaringan::moon_reader:
+   css: [default, metropolis, metropolis-fonts]
+   nature:
+     titleSlideClass: ["center", "middle"]
+bibliography: "../../bibliography/Neurocardiology.bib"
+link-citations: yes
+---
+
+# Introduction
+
+
+### Thesis Overview
+
+- Temporal relationship of ANS dysfunction with psychological and cardiac disease
+   - __Acute__: the active stressor, such as mental stress or acute coronary reperfusion
+   - __Daily__: both daily and circadian parameters and cross-sectional relationships
+   - __Longitudinal__: effect of ANS function on clinical outcomes
+   
+- Neurocardiology assumes ANS is bidirectional bridge between heart and brain
+   - Limitations in ability to non-invasively measure ANS function
+   - Prevalent in many disease states (e.g. depression increases risk of CV disease)
+   - ECG and signal-processing methods can help assess these changes in short-term and long-term recordings
+
+---
+# Background I
+
+.center[
+_Heart rate variability (HRV) can represent the current state of the ANS as a potential "biomarker" of neurocardiac health._
+]
+
+.pull-left[
+### Heart rate fluctuations
+
+- Fluctuations in the HR are mediated by sympathetic (SNS) and parasympathetic (PNS) inputs to the sinoatrial node
+- Rapid fluctuations in HR reflect vagal/PNS control
+- Slower fluctuations in HR reflect SNS and PNS integartion, along with other influences
+]
+
+.pull-right[
+### Relevant factors
+
+- External influences such as activity, mental stress, etc
+- Internal period rhythms also exist: RSA, baroreceptor reflexes, circadian rhythm, RAAS/neuroendocrine secretions, etc
+]
+
+---
+# Background II
+
+.pull-left[
+## Psychological distress
+
+- Acute stressors, such as a mental stress challenge, can lead to increased sympathetic activity and vagal withdrawal
+- Psychological distress, such as psychiatric illness including depression and anxiety, can lead to changes in ANS function
+- Psychosocial stress, such as chronic vital exhaustion and social isolation, can lead to chronic changes in ANS function
+- However, ANS function may be protective by providing resilience to psychosocial stress
+]
+
+.pull-right[
+## Cardiovascular disease
+
+- Afferent pathways from cardiovascular disease can lead to both acute and chronic changes in ANS function
+- Coronary occlusion, from perhaps myocardial infarction, leads to strong ANS response through afferent systems
+- Chronic cardiovascular disease, can lead to a persistently elevated ANS response, e.g. resting tachycardia
+- ANS dysfunction likely effects not only SA/AV nodal function, but myocardial inotropy, systemic vascular tone, and coronary resistance vessels 
+]
+
+---
+# Aims 
+
+Using available clinical data, will review the relationship of autonomic dysfunction with neurocardiac changes acutely, over the course of a day, and over the course of months to years.
+
+1. __Examine the relationship of acute HRV changes with coronary perfusion/reperfusion and psychological distress__ (Biobank)
+	
+2. __Examine the relationship of daily HRV with changes in psychological distress and myocardial perfusion, including acute mental stress and chronic__ (MIMS/MIPS, Twins)
+	
+3. __Examine the relationship of circadian HRV at predicting long-term events based on mental stress and autononomic function__ (MIMS/MIPS, Twins)
+
+4. __Explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis__ (Biobank, MIMS/MIPS, Twins)
+
+---
+# Hypotheses
+
+Based off the aims, the following hypotheses are expected:
+
+- Coronary disease will show an acute and chronic relationship with HRV, including a difference between epicardial and resistance vessel disease
+
+- Psychological stress will show an acute and chronic relationship with HRV, including differences in circadian rhythm
+
+- Changes in autonomic function coupled with abnormal neurocardiac pathology will show an additive effect of increased mortality
+
+---
+# Study Design
+
+_Due to COVID-19, the datasets are reduced in size, and alternative data sources were used_.
+
+### Data collection
+
+- Emory Cardiovascular Biobank - continually enrolling, however limited by COVID
+- Emory Twins Study - enrollment and follow-up data is completed and available
+- MIMS/MIPS - enrollment and follow-up data is completed and available
+
+### Study Overview
+
+Emory Biobank: Psychological factors and HRV collected on patients undergoing coronary angiography.
+
+Emory Twins Study: Veteran twins present for clinical profiling, Holter monitoring, and quantitative myocardial perfusion imaging. Follow-up for outcomes.
+
+MIMS/MIPS: Mental stress study looking at inducible myocardial ischemia and clinical outcomes. HRV collected before, during, and after mental stressors. 
+
+---
+# Analytical Plans
+
+---
+# Results

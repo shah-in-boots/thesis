@@ -5,11 +5,14 @@ library(tarchetypes)
 source("R/packages.R")
 
 # Set target-specific options such as packages.
-tar_option_set()
+tar_option_set(
+	error = "save"
+)
 
 # Define targets
 targets <- list(
-	# Make project plan
+	# Project overview
+	tar_render(overview, "R/overview.Rmd")
 )
 
 # End with a call to tar_pipeline() to wrangle the targets together.
