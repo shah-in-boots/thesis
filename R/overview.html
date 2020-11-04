@@ -4,7 +4,7 @@
     <title>Disturbances of the Neurocardiac Axis</title>
     <meta charset="utf-8" />
     <meta name="author" content="Anish Shah, MD" />
-    <meta name="date" content="2020-10-28" />
+    <meta name="date" content="2020-10-29" />
     <script src="overview_files/header-attrs-2.5/header-attrs.js"></script>
     <link href="overview_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="overview_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
@@ -18,20 +18,19 @@ class: center, middle, title-slide
 ## MSCR Thesis Overview
 ### Anish Shah, MD
 ### Department of Epidemiology, Rollins School of Public Health, Emory University, Atlanta, Georgia
-### October 28, 2020
+### October 29, 2020
 
 ---
 
 
 # Introduction
 
-
 ### Thesis Overview
 
 - Temporal relationship of ANS dysfunction with psychological and cardiac disease
-   - __Acute__: the active stressor, such as mental stress or acute coronary reperfusion
-   - __Daily__: both daily and circadian parameters and cross-sectional relationships
-   - __Longitudinal__: effect of ANS function on clinical outcomes
+   - **Acute**: the active stressor, such as mental stress or acute coronary reperfusion
+   - **Diurnal: both daily and circadian parameters and cross-sectional relationships
+   - **Longitudinal**: effect of ANS function on clinical outcomes
    
 - Neurocardiology assumes ANS is bidirectional bridge between heart and brain
    - Limitations in ability to non-invasively measure ANS function
@@ -42,7 +41,7 @@ class: center, middle, title-slide
 # Background I
 
 .center[
-_Heart rate variability (HRV) can represent the current state of the ANS as a potential "biomarker" of neurocardiac health._
+*Heart rate variability (HRV) can represent the current state of the ANS as a potential "biomarker" of neurocardiac health.*
 ]
 
 .pull-left[
@@ -82,22 +81,39 @@ _Heart rate variability (HRV) can represent the current state of the ANS as a po
 ]
 
 ---
-# Aims 
+# Aims I
 
 Using available clinical data, will review the relationship of autonomic dysfunction with neurocardiac changes acutely, over the course of a day, and over the course of months to years.
 
-1. __Examine the relationship of acute HRV changes with coronary perfusion/reperfusion and psychological distress__ (Biobank)
+1. **Examine the relationship of acute HRV changes with coronary perfusion/reperfusion and psychological distress** (Biobank)
 	
-2. __Examine the relationship of daily HRV with changes in psychological distress and myocardial perfusion, including acute mental stress and chronic__ (MIMS/MIPS, Twins)
+1. **Examine the relationship of daily HRV with changes in psychological distress and myocardial perfusion, including acute mental stress and chronic stress** (MIMS/MIPS, Twins)
 	
-3. __Examine the relationship of circadian HRV at predicting long-term events based on mental stress and autononomic function__ (MIMS/MIPS, Twins)
+1. **Examine the relationship of circadian HRV at predicting long-term events based on mental stress and autononomic function** (MIMS/MIPS, Twins, ARIC)
 
-4. __Explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis__ (Biobank, MIMS/MIPS, Twins)
+1. **Explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis** (Biobank, MIMS/MIPS, Twins)
+
+---
+# Aims II
+
+The background work supporting the aims is as follows:
+
+- ECG signal for Biobank, Twins, MIMS/MIPS has been generated previously
+
+- HRV and perfusion data has been shown to be related in a circadian fashion [1]
+
+- HRV and long-term outcomes has been shown to effect psychosocial factors and mortality/morbidity [2]
+
+- Harmonic regression methods have been developed for analyzing diurnal data [3]
+
+.footnote[
+[1] [Shah et al 2020](https://doi.org/10.1016/j.ijcard.2020.01.069)  
+[2] Under review, presented at [AHA Epidemiology](https://www.ahajournals.org/doi/10.1161/circ.141.suppl_1.P542)  
+[3] R Package called [card](https://cran.r-project.org/web/packages/card/index.html)
+]
 
 ---
 # Hypotheses
-
-Based off the aims, the following hypotheses are expected:
 
 - Coronary disease will show an acute and chronic relationship with HRV, including a difference between epicardial and resistance vessel disease
 
@@ -106,29 +122,88 @@ Based off the aims, the following hypotheses are expected:
 - Changes in autonomic function coupled with abnormal neurocardiac pathology will show an additive effect of increased mortality
 
 ---
-# Study Design
+# Study Design I
 
-_Due to COVID-19, the datasets are reduced in size, and alternative data sources were used_.
+### Study Overview and Data Collection 
 
-### Data collection
+*Emory Biobank*: Psychological factors and HRV collected on patients undergoing coronary angiography. Currently enrolling rare patients. [1]
 
-- Emory Cardiovascular Biobank - continually enrolling, however limited by COVID
-- Emory Twins Study - enrollment and follow-up data is completed and available
-- MIMS/MIPS - enrollment and follow-up data is completed and available
+*Emory Twins Study*: Veteran twins present for clinical profiling, Holter monitoring, and quantitative myocardial perfusion imaging. Follow-up for outcomes. Enrollment and follow-up complete.
 
-### Study Overview
+*MIMS/MIPS*: Mental stress study looking at inducible myocardial ischemia and clinical outcomes. HRV collected before, during, and after mental stressors. Enrollment and follow-up complete.
 
-Emory Biobank: Psychological factors and HRV collected on patients undergoing coronary angiography.
+*ARIC*: Large epidemiology dataset with &gt;20+ years of patient follow-up, including short-term HRV and several time points. Enrollment and follow-up complete.
 
-Emory Twins Study: Veteran twins present for clinical profiling, Holter monitoring, and quantitative myocardial perfusion imaging. Follow-up for outcomes.
-
-MIMS/MIPS: Mental stress study looking at inducible myocardial ischemia and clinical outcomes. HRV collected before, during, and after mental stressors. 
+.footnote[
+[1] _Due to COVID-19, the datasets are reduced in size, and alternative data sources were used_.
+]
 
 ---
-# Analytical Plans
+# Study Design II
+
+### ECG Measures
+
+Within the several datasets that will be used, ECG is collected in a raw format in the Emory Biobank, Twins, MIMS/MIPS and has already been processed to different HRV signals, including morphology changes. In ARIC, this data has been pre-processed to HRV.
+
+### Coronary/cardiovascular measures
+
+Within the Biobank, coronary angiography data is collected, including intervention. Within Twins, quantitative PET data has been collected and analyzed (showing myocardial perfusion data and coronary flow reserve).
+
+### Clinical/psychological measures
+
+For both Biobank (PHQ-9), MIMS/MIPS (BDI), and Twins (BDI), ARIC (vital exhaustion), extensive clinical and psychological profiling is available. MIMS/MIPS in addition includes a mental-stress challenge during their study visit.
 
 ---
-# Results
+# Analytical Plans I
+
+## Acute Changes
+
+1. Assess pre/post reperfusion HRV, with controls being patients with no intervention. Further adjustment for coronary stenosis. (**Biobank**)
+   - Coronary angiography scores and pre/post flow rates after intervention 
+   - Include effect of depression (PHQ-9) on HRV (additional covariate and/or strata)
+
+1. Effect of acute mental stress on HRV (**MIMS/MIPS**)
+   - Effect of acute mental stress and immediate changes in HRV
+   - Assess relationship of mental stress and HRV "recovery" to baseline
+   - Relationship between those with and without MSIMI (mental stress-induced myocardial ischemia) and HRV
+   
+---
+# Analytical Plans II
+
+## Diurnal Changes
+
+1. Create and implement a harmonic regression model with multiple components to assess ECG features 
+   - Assess implementation in 24 hour datasets (**Biobank** and **Twins**)
+   - Assess implementation in &gt;24 hour datasets (**Twins** and **MIMS/MIPS**)
+   - Assess implementation in &lt;12 hour datasets (**MIMS/MIPS**)
+   
+1. Using cosinor regression to assess relationship of ECG with...
+   - Myocardial perfusion abnormalities (**Twins**)
+   - Depression via BDI and PHQ-9 (**Twins** and **Biobank**)
+   - MSIMI (**MIMS/MIPS**)
+
+	
+---
+# Analytical Plans III
+
+## Longitudinal changes
+
+1. Model relationship of circadian/cosinor ECG with future events
+   - With adjustment for clinical/psychological covariates (**Twins**)
+   - With adjustment/stratification by MSIMI (**MIMS/MIPS**)
+   
+1. Examine relationship of changes in HRV with long-term outcomes
+   - Psychosocial stress including vital exhaustion, social isolation, and anger proneness (**ARIC**)
+
+---
+# Results and Conclusions
+
+The analyses are in various stages of work, outlined here:
+
+- Twins data has published analysis on circadian patterns on myocardial perfusion, longitudinal outcomes and relationship to depression are pending
+- Biobank data has been collected, but comparative analyses has not been completed
+- MIMS/MIPS data has been collected, and preliminary analyses have begun
+- ARIC data and longitudinal outcomes have been analyzed, with association of mortality and HRV as an additive effect to psychosocial stress
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

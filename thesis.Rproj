@@ -14,4 +14,3 @@ LaTeX: XeLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
-LineEndingConversion: None
