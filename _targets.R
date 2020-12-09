@@ -2,10 +2,18 @@ library(targets)
 library(tarchetypes)
 
 # Functions
-source("R/packages.R")
+source("R/options.R")
 
 # Set target-specific options such as packages.
 tar_option_set(
+	packages = c(
+		# Personal
+		"card", "marksman",
+		# Tidy
+		"tidyverse", "tidymodels", "gt", "gtsummary", "ggdag",
+		# Stats
+		"lme4", "Hmisc"
+	),
 	error = "save"
 )
 

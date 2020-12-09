@@ -13,13 +13,22 @@ output:
      titleSlideClass: ["center", "middle"]
 ---
 
+```{r include = FALSE}
+knitr::opts_chunk$set(
+   fig.retina = 3,
+   warning = FALSE,
+   message = FALSE,
+   echo = FALSE
+)
+```
+
 # Introduction
 
 ### Thesis Overview
 
 - Temporal relationship of ANS dysfunction with psychological and cardiac disease
    - **Acute**: the active stressor, such as mental stress or acute coronary reperfusion
-   - **Diurnal: both daily and circadian parameters and cross-sectional relationships
+   - **Diurnal**: both daily and circadian parameters and cross-sectional relationships
    - **Longitudinal**: effect of ANS function on clinical outcomes
    
 - Neurocardiology assumes ANS is bidirectional bridge between heart and brain
@@ -71,22 +80,9 @@ output:
 ]
 
 ---
-# Aims I
+# Background III
 
-Using available clinical data, will review the relationship of autonomic dysfunction with neurocardiac changes acutely, over the course of a day, and over the course of months to years.
-
-1. **Examine the relationship of acute HRV changes with coronary perfusion/reperfusion and psychological distress** (Biobank)
-	
-1. **Examine the relationship of daily HRV with changes in psychological distress and myocardial perfusion, including acute mental stress and chronic stress** (MIMS/MIPS, Twins)
-	
-1. **Examine the relationship of circadian HRV at predicting long-term events based on mental stress and autononomic function** (MIMS/MIPS, Twins, ARIC)
-
-1. **Explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis** (Biobank, MIMS/MIPS, Twins)
-
----
-# Aims II
-
-The background work supporting the aims is as follows:
+The background work supporting the feasability of the aims is as follows:
 
 - ECG signal for Biobank, Twins, MIMS/MIPS has been generated previously
 
@@ -96,20 +92,144 @@ The background work supporting the aims is as follows:
 
 - Harmonic regression methods have been developed for analyzing diurnal data [3]
 
+- Modeling package to assist with multiple outcomes [4]
+
 .footnote[
 [1] [Shah et al 2020](https://doi.org/10.1016/j.ijcard.2020.01.069)  
-[2] Under review, presented at [AHA Epidemiology](https://www.ahajournals.org/doi/10.1161/circ.141.suppl_1.P542)  
-[3] R Package called [card](https://cran.r-project.org/web/packages/card/index.html)
+[2] Accepted manuscript in JAHA, presented at [AHA Epidemiology](https://www.ahajournals.org/doi/10.1161/circ.141.suppl_1.P542)  
+[3] R Package called [card](https://cran.r-project.org/web/packages/card/index.html)  
+[4] R package called [marksman](https://github.com/asshah4/marksman)
 ]
 
 ---
-# Hypotheses
+# Specific Aims Overview
 
-- Coronary disease will show an acute and chronic relationship with HRV, including a difference between epicardial and resistance vessel disease
+Using available clinical data, will review the relationship of autonomic dysfunction with neurocardiac changes acutely, over the course of a day, and over the course of months to years.
 
-- Psychological stress will show an acute and chronic relationship with HRV, including differences in circadian rhythm
+**AIM #1: To establish the relationship of coronary artery perfusion and reperfusion (through revascularization) with autonomic nervous system function. **
+	
+**AIM #2: To establish the effect of autonomic function on the relationship between psychological distress, both acute and chronic, and abnormal myocardial perfusion.** 
 
-- Changes in autonomic function coupled with abnormal neurocardiac pathology will show an additive effect of increased mortality
+**AIM #3: To examine the effect of stress reactivity on risk prediction of long-term events.**
+
+**AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis.** 
+
+---
+# Aim I
+
+**AIM #1: To establish the relationship of coronary artery perfusion and reperfusion (through revascularization) with autonomic nervous system function. ** *In patients with obstructive CAD, reperfusion will lead to increased HRV afterwards as compared to patients without obstructive CAD undergoing cardiac catheterization. The baseline HRV will have a inverse relationship with psychological stress (measured by BDI).*
+
+.pull-left[
+- Stable CAD + psychological stress has $\uparrow$ CV mortality, potential through ANS
+- Unknown how reperfusion affects ANS in stable CAD
+- ECG data (HRV) can be collected before/after reperfusion
+- Control for intra-procedural variables using *nonobstructive* CAD patients
+- **Biobank** cohort
+]
+
+.pull-right[
+```{r}
+dagify(
+   hrv ~ cad + pci + psych,
+   pci ~ cad,
+   labels = c(
+      "hrv" = "HRV",
+      "pci" = "Revascularization",
+      "psych" = "Psychological Stress",
+      "cad" = "CAD"
+   )) %>%
+   ggdag(text = FALSE, use_labels = "label") +
+   theme_dag()
+```
+]
+
+---
+# Aim II
+
+**AIM #2: To establish the effect of autonomic function on the relationship between psychological distress, both acute and chronic, and abnormal myocardial perfusion.** *Acute mental stress will lead to abnormalities in HRV. HRV will be associated with chronic psychological distress, including depression/anxiety and allostatic load. The abnormalities will be most prominently seen in changes to circadian rhythm of HRV. Abnormalities in HRV will associate with increased risk of abnormal MPI and of MSIMI.*
+
+.pull-left[
+- Acute mental stress can lead to inducible myocardial ischemia (MSIMI)
+- Chronic psychological stress effects ANS function (circadian rhythm, coronary flow reserve) 
+- Acute and chronic psychological stress show $\uparrow$ risk of cardiovascular mortality/morbidity
+- **Twins** and **MIMS/MIPS** cohorts
+]
+
+.pull-right[
+```{r}
+dagify(
+   mpi ~ hrv,
+   hrv ~ ms + ps + psych,
+   ms ~ psych,
+   mpi ~ ms + ps,
+   circ ~ psych + hrv,
+   labels = c(
+      "hrv" = "HRV",
+      "psych" = "Psychological Stress",
+      "mpi" = "Myocardial Ischemia",
+      "ms" = "Mental Stress",
+      "ps" = "Physical Stress",
+      "circ" = "Circadian Changes"
+   )) %>%
+   ggdag(text = FALSE, use_labels = "label", layout = "tree") +
+   theme_dag()
+```
+]
+
+---
+# Aim III
+
+**AIM #3: To examine the effect of stress reactivity on risk prediction of long-term events.** *Abnormal HRV in response to mental stress will lead to increased cardiovascular disease events. Abnormal circadian changes in HRV will associate with increased cardiovascular disease events and susceptibility to incident psychological distress.*
+
+.pull-left[
+- Stress reactivity defined as abnormal ANS response to *everyday* stressor
+- Includes HRV responses to... 
+   - mental stress 
+   - physical stress
+   - abnormal coronary flow reserve
+   - circadian disruption
+- Abnormal stress reactivity has few known associations with outcomes
+- **Twins** and **MIMS/MIPS** cohorts
+]
+
+.pull-right[
+```{r}
+dagify(
+   outcomes ~ ms + cfr + circ + hrv,
+   ms ~ hrv,
+   cfr ~ hrv,
+   circ ~ hrv,
+   labels = c(
+      "hrv" = "HRV",
+      "ms" = "Mental Stress",
+      "cfr" = "Abnormal Coronary Flow Reserve",
+      "circ" = "Circadian Changes",
+      "outcomes" = "Outcomes"
+   )
+) %>%
+   ggdag(text = FALSE, use_labels = "label", layout = "nicely") +
+   theme_dag()
+```
+]
+
+---
+# Aim IV
+
+**AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis.** *Circadian changes, measured through cosinor metrics, will have greater predictivity of disturbances of the neurocardiac axis (both psychological distress and myocardial perfusion abnormalities) than that of 24-hour HRV summary statistics.*
+
+.pull-left[
+- Harmonic regression is powerful tool to assess autoregressive data
+- Multiple periodicities exist in human diurnal variation of ANS function
+- Statistical models that incorporate both population and multiple components will have greater granularity for analyzing circadian rhythms
+]
+
+.pull-right[
+```{r}
+data(twins)
+model <- cosinor(rDYX ~ hour, twins, tau = c(24, 12))
+ggcosinor(model)
+```
+]
 
 ---
 # Study Design I
