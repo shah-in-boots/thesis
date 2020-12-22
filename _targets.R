@@ -8,7 +8,7 @@ source("R/options.R")
 tar_option_set(
 	packages = c(
 		# Personal
-		"card", "marksman",
+		"card", "octomod",
 		# Tidy
 		"tidyverse", "tidymodels", "gt", "gtsummary", "ggdag",
 		# Stats
