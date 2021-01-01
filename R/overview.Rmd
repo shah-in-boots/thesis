@@ -23,14 +23,14 @@ knitr::opts_chunk$set(
 )
 
 # While working on it
-#library(ggdag)
-#library(tidyverse)
-#library(card)
+library(ggdag)
+library(tidyverse)
+library(card)
 ```
 
 # Introduction
 
-Autonomic dysfunction is associated with both psychological abnormalities and cardiac disease. 
+The neurocardiac response to an acute stressor thought of as **stress reactivity**. Abnormal responses are described as autonomic dysfunction - associated with both psychological and cardiac disease. 
 
 Manifestations:
 
@@ -108,13 +108,17 @@ Measurements:
 ---
 # Specific Aims Overview
 
-1. **To examine the cross-sectional relationship between ANS function and coronary artery reperfusion (through revascularization).** 
+.center[
+This thesis aims to study the effect of acute stress reactivity (measured by coronary ischemia/reperfusion and mental stress), and chronic stress reactivity (abnormalities due to psychological disease) with autonomic dysfunction, and its overall impact on mortality.
+]
 
-1. **To determine the if ANS dysfunction mediates the relationship of acute/chronic $\Psi$ distress and CAD, measured by MPI and cardiac catheterization.**  
+- **AIM #1: To assess acute stress reactivity by examinining the mechanism of acute ischemia/infarction and reperfusion on cardiac autonomic activity.** 
 
-1. **To explore the association of abnormal stress reactivity on increased long-term MACE.**   
+- **AIM #2: To determine if ANS dysfunction mediates the relationship of acute/chronic $\Psi$ distress and CAD, measured by MPI and cardiac catheterization.**  
 
-1. **To explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis.**  
+- **AIM #3: To explore the association of autonomic stress reactivity with future events.**   
+
+- **AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods to quantify circadian changes in ANS dysfunction.**  
 
 ---
 # Study Design I
@@ -148,17 +152,17 @@ Observational/cross-sectional design. Veteran twins were enrolled for quantitati
 
 ### MIMS/MIPS
 
-Observational/cross-sectional design. Patients after recent catheterization for chest pain were enrolled, primarily Grady and EUH. They returned for first visit within 6 months of event. Mental stress and physical stress performed, followed by quantitative MPI. ECG collected before, during, and after mental stress challenge. Follow-up data for clinical outcomes collected.
+Observational/cross-sectional design. Patients after recent catheterization for chest pain or abnormal MPI were enrolled, primarily Grady and EUH. They returned for first visit within 6 months of event. Mental stress and physical stress performed, followed by quantitative MPI. ECG collected before, during, and after mental stress challenge. Follow-up data for clinical outcomes collected.
 
 - ECG: 1-lead to 12-lead ECG monitors were placed. Data transformed to HRV using MATLAB
-- CAD: Stress test performed initially using either mental/physical stress. Quantitative MPI performed on all patients, with coronary flow reserve measured
+- CAD: Stress test performed initially using either mental/physical stress. Qualitative MPI performed on all patients, with coronary flow reserve measured
 - $\Psi$: Depression and anxiety data collected using SCID
 - Follow-up: Adjudicated outcome events (MACE, hospitalization, etc) were collected
 
 ---
 # Aim I
 
-**AIM #1: To examine the cross-sectional relationship between ANS function and coronary artery reperfusion (through revascularization).** 
+**AIM #1: To assess acute stress reactivity by examinining the mechanism of acute ischemia/infarction and reperfusion on cardiac autonomic activity.** 
 *Hypothesis: In obstructive CAD, reperfusion of the coronary arteries will associate with increased HRV compared to those without reperfusion.*
 
 .pull-left[
@@ -179,7 +183,7 @@ dg <- dagify(
       "pci" = "Revascularization",
       "cad" = "CAD"
    ),
-   exposure = "pci",
+   exposure = "cad",
    outcome = "hrv"
 )
 
@@ -217,14 +221,16 @@ tidy_dagitty(dg, layout = "nicely") %>%
 
 ### Statistics
 
-- HRV pre/post PCI using *Paired T-Test*
-- HRV post-PCI to controls (no revascularization) using *ANOVA*
+- *Paired T-test* to compare HRV pre/post PCI 
+- *Linear regression* to measure effect of revascularization on HRV
+- *Logistic regression* to measure association of prior HRV to predict if PCI is performed
+- Adjusted models for cardiovascular and psychological risk factors
 
 ---
 # Aim II
 
-**AIM #2: To determine the if ANS dysfunction mediates the relationship of acute/chronic $\Psi$ distress and CAD, measured by MPI and cardiac catheterization.**  
-*Hypothesis: 1) Acute/chronic stress will be associated with abnormal HRV. 2) HRV will be associated with abnormal MPI and obstructive CAD. 3) The association between stress and abnormal myocardial perfusion will be mediated by HRV.*
+**AIM #2: To determine if ANS dysfunction mediates the relationship of acute/chronic $\Psi$ distress and CAD, measured by MPI and cardiac catheterization.**  
+*Hypothesis: 1) HRV will be associated with both acute and chronic stress. 2) HRV will be associated with abnormal MPI and obstructive CAD. 3) The association between stress reactivity and abnormal MPI will be mediated by HRV.*
 
 .pull-left[
 - **Twins** has data on chronic stress and MPI 
@@ -285,15 +291,16 @@ tidy_dagitty(dg, layout = "nicely") %>%
 ### Statistics
 
 - HRV before and after acute stress using *Paired T-test* (MIMS/MIPS)
-- HRV after acute stress compared to control using *ANOVA* (MIMS/MIPS)
-- CAD/MPI and HRV using *logistic regression*, with adjustment for $\Psi$ covariates (all)
-- Mediation of acute/chronic stress with CAD/MPI by HRV using *mediation analysis* (all)
+- *Paired T-test* to compare HRV before and after acute stress challenge
+- *Logistic regression* for HRV and PTSD/depression
+- *Logistic regression* for HRV and MPI (both mental and physical stress)
+- Adjust regressions for $\Psi$ and traditional risk factors
 
 ---
 # Aim III
 
-**AIM #3: To explore the association of abnormal stress reactivity on increased MACE.**   
-*Hypothesis: 1) Abnormal stress reactivity, defined by abnormal HRV response to acute/chronic stress, will associate with an increased HR for MACE as compared to normal stress reactivity responses. 2) Abnormal stress reactivity will show additive effect to the increased HR from abnormal MPI.*
+**AIM #3: To explore the association of autonomic stress reactivity with future events.**   
+*Hypothesis: 1) Abnormal stress reactivity, defined by abnormal circadian rhythm, abnormal HRV to acute/chronic stress, will associate with increased HR for MACE. 2) Abnormal stress reactivity will show persistent increased HR over the effect of abnormal MPI.*
 
 .pull-left[
 - In **Twins** and **MIMS/MIPS** cohort: 
@@ -360,15 +367,16 @@ tidy_dagitty(dg, layout = "nicely") %>%
 
 ### Statistics
 
-- *Cox Proportional Hazard Models* (all)
-   - MACE and stress reactivity
-   - MACE and abnormal MPI 
-   - Adjust by including both MPI and stress reactivity in models
+- *Cox Proportional Hazard Models* 
+	- MACE ~ circadian disruption
+	- MACE ~ abnormal HRV to acute stress 
+	- MACE ~ MSIMI + abnormal HRV
+- Models will be adjusted for MPI
 
 ---
 # Aim IV
 
-**AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods in ECG signal processing techniques in statistical analysis.**  
+**AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods to quantify circadian changes in ANS dysfunction.**  
 *Hypothesis: Circadian changes in continuous HRV, measured through cosinor metrics, will have stronger associations with $\Psi$ distress and abnormal myocardial perfusion then summary HRV measurements.* 
 
 .pull-left[
