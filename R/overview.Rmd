@@ -118,8 +118,6 @@ This thesis aims to study the effect of acute stress reactivity (measured by cor
 
 - **AIM #3: To explore the association of autonomic stress reactivity with future events.**   
 
-- **AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods to quantify circadian changes in ANS dysfunction.**  
-
 ---
 # Study Design I
 
@@ -372,52 +370,6 @@ tidy_dagitty(dg, layout = "nicely") %>%
 	- MACE ~ abnormal HRV to acute stress 
 	- MACE ~ MSIMI + abnormal HRV
 - Models will be adjusted for MPI
-
----
-# Aim IV
-
-**AIM #4: To explore the utility of advanced harmonic regression modeling and feature reduction methods to quantify circadian changes in ANS dysfunction.** 
-*Hypothesis: Circadian changes in continuous HRV, measured through cosinor metrics, will have stronger associations with $\Psi$ distress and abnormal myocardial perfusion then summary HRV measurements.* 
-
-.pull-left[
-- Uses ECG data from **Biobank**, **Twins**, and **MIMS/MIPS** to obtain cosinor metrics
-- Methods-focused aim to develop appropriate modeling/statistical technique for analysis
-]
-
-.pull-right[
-```{r}
-data(twins)
-model <- cosinor(rDYX ~ hour, twins, tau = c(24, 12))
-ggcosinor(model) +
-   theme(
-      legend.box.background = element_rect(fill = "#FAFAFA", colour = NA),
-      legend.title = element_blank(),
-      legend.key = element_rect(fill = "#FAFAFA", colour = NA),
-      legend.background = element_rect(fill = "#FAFAFA", colour = NA),
-      panel.background = element_rect(fill = "#FAFAFA", colour = NA),
-      plot.background = element_rect(fill = "#FAFAFA", colour = NA),
-      axis.title = element_blank(),
-      axis.text = element_blank(),
-      axis.ticks = element_blank()
-   )
-```
-]
-
----
-# Aim IV: Analytical Plan
-
-### Methods
-
-- Create harmonic regression analysis tools in `R`
-- Create multiple-component harmonic regression tools in `R`
-
-### Statistics
-
-- *Cosinor Regression*
-   - HRV
-   - Adjust/compare by psychiatric disease 
-   - Adjust/compare by abnormal MPI
-- Compare fit between *cosinor* and *linear* regression models
 
 ---
 # Status, Results and Conclusions
