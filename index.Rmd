@@ -1,0 +1,25 @@
+---
+title: "Stress Reactivity"
+subtitle: "Disturbances of the Neurocardiac Axis"
+author: "Anish Shah"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::pdf_book
+bibliography: ["../bibliography/Neurocardiology.bib", "../bibliography/Publications.bib"]
+bibliostyle: apalike
+documentclass: book
+colorlinks: yes
+graphics: yes
+lot: yes
+lof: yes
+fontsize: 11pt
+mainfont: Palatino
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.8"
+---
+
+```{r, include=FALSE}
+# Setup with targets
+library(targets)
+tar_load(chapters)
+```

@@ -1,0 +1,98 @@
+---
+title: "Stress Reactivity"
+subtitle: "Disturbances of the Neurocardiac Axis"
+author: "Anish Shah"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::pdf_book
+bibliography: ["../bibliography/Neurocardiology.bib", "../bibliography/Publications.bib"]
+bibliostyle: apalike
+documentclass: book
+colorlinks: yes
+graphics: yes
+lot: yes
+lof: yes
+fontsize: 11pt
+mainfont: Palatino
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.8"
+---
+
+```{r, include=FALSE}
+# Setup with targets
+library(targets)
+tar_load(chapters)
+```
+
+```{r, include=FALSE}
+# References
+library(RefManageR)
+tar_load(file_bib)
+BibOptions(
+	check.entries = FALSE,
+	style = "markdown",
+	bib.style = "authoryear",
+	longnamesfirst = FALSE,
+	max.names = 1,
+	hyperlink = FALSE,
+	dashed = FALSE,
+	no.print.fields = c("doi", "url", "issn", "isbn")
+)
+bib <- ReadBib(file_bib, check = FALSE)
+```
+
+Testing citatins. [@Shah2020d]
+
+R... [@R-base]
+
+Using citr [@Shah2020a]
+
+<!--chapter:end:index.Rmd-->
+
+# (PART\*) INTRODUCTION {.unnumbered}
+
+<!--chapter:end:dissertation/01-introduction.Rmd-->
+
+# (PART\*) BACKGROUND {-}
+
+<!--chapter:end:dissertation/02-background.Rmd-->
+
+# (PART\*) METHODS {-}
+
+<!--chapter:end:dissertation/03-methods.Rmd-->
+
+# (PART\*) RESULTS {-}
+
+
+<!--chapter:end:dissertation/04-results.Rmd-->
+
+# (PART\*) DISCUSSION {-}
+
+<!--chapter:end:dissertation/05-discussion.Rmd-->
+
+# (PART\*) CONCLUSIONS {-}
+
+
+<!--chapter:end:dissertation/06-conclusions.Rmd-->
+
+# (PART\*) REFERENCES {-}
+
+```{r}
+knitr::write_bib(c("knitr"))
+```
+
+### Software
+
+This package uses R software. 
+
+<!--chapter:end:dissertation/07-references.Rmd-->
+
+# (PART\*) TABLES {-}
+
+<!--chapter:end:dissertation/08-tables.Rmd-->
+
+# (PART\*) FIGURES {-}
+
+
+<!--chapter:end:dissertation/09-figures.Rmd-->
+

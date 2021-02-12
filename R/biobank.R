@@ -73,14 +73,16 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		left_join(clinical[c("patid", "stenosis")], ., by = "patid") %>%
 		filter(!is.na(stenosis) & !is.na(context)) %>%
 		select(-patid) %>%
-		tbl_summary(
-			by = context,
-			digits = all_continuous() ~ 1,
-		) %>%
-		add_strata(
+		tbl_strata(
 			strata = stenosis,
-			additional_fn = ~ add_p(.x),
-			method = "merge"
+			.tbl_fun =
+				~.x %>%
+				tbl_summary(
+					by = context,
+					digits = all_continuous() ~ 1,
+				) %>%
+				add_p(),
+			.combine_with = "tbl_merge"
 		) %>%
 		modify_header(update = list(
 			label ~ '**ECG Metrics**',

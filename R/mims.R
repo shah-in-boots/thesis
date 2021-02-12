@@ -6,24 +6,27 @@ make_mims_tables <- function(clinical) {
 		clinical %>%
 		select(c(studygroup, age_bl, female_bl, race_bl, bmi, smk_now1, cath_cad70binary, starts_with("hx_"), rdr_msi_bl, rdr_psi2_bl, scid_depression_bl, scid_ptsd_bl)) %>%
 		select(-c(hx_revasc_bl)) %>%
-		tbl_summary(
-			by = rdr_msi_bl,
-			type = list(c(rdr_psi2_bl, scid_ptsd_bl, scid_depression_bl, female_bl) ~ "dichotomous", c(race_bl) ~ "categorical"),
-			value = list(female_bl ~ "Female"),
-			missing = "no",
-			label = list(rdr_psi2_bl ~ "PSIMI", female_bl ~ "Sex (Female)"),
-		) %>%
-		add_p() %>%
-		add_strata(
+		filter(!is.na(studygroup)) %>%
+		tbl_strata(
 			strata = studygroup,
-			method = "merge",
+			.tbl_fun =
+				~.x %>%
+				tbl_summary(
+					by = rdr_msi_bl,
+					type = list(c(rdr_psi2_bl, scid_ptsd_bl, scid_depression_bl, female_bl) ~ "dichotomous", c(race_bl) ~ "categorical"),
+					value = list(female_bl ~ "Female"),
+					missing = "no",
+					label = list(rdr_psi2_bl ~ "PSIMI", female_bl ~ "Sex (Female)"),
+				) %>%
+				add_p(),
+			.combine_with = "tbl_merge"
 		) %>%
 		modify_header(update = list(
 			label ~ 'Characteristic',
 			stat_1_1 ~ '**MSIMI = 0**, <br> N = 256',
 			stat_2_1 ~ '**MSIMI = 1**, <br> N = 50',
-			stat_1_2 ~ '**MSIMI = 0**, <br> N = 454',
-			stat_2_2 ~ '**MSIMI = 1**, <br> N = 193'
+			stat_1_2 ~ '**MSIMI = 0**, <br> N = 440',
+			stat_2_2 ~ '**MSIMI = 1**, <br> N = 188'
 		)) %>%
 		modify_spanning_header(ends_with("_1") ~ "MIMS") %>%
 		modify_spanning_header(ends_with("_2") ~ "MIPS") %>%

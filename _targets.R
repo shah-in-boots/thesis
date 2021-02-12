@@ -6,6 +6,7 @@ source("R/options.R")
 source("R/biobank.R")
 source("R/mims.R")
 source("R/twins.R")
+source("R/thesis.R")
 
 # Set target-specific options such as packages.
 tar_option_set(
@@ -23,7 +24,7 @@ tar_option_set(
 		"magrittr", "magick", "equatiomatic", "survminer"
 	),
 
-	error = "stop"
+	error = "continue"
 )
 
 # Define targets
@@ -80,8 +81,13 @@ targets <- list(
 	tar_render(overview, "R/overview.Rmd"),            # Latest Version: 01/01/21
 
 	# Thesis Presentation
-	tar_render(defense, "./defense.Rmd")              # Latest Version: 02/01/21
-)
+	#tar_render(defense, "R/defense.Rmd"),              # Latest Version: 02/08/21
 
-# Make Pipeline
-#tar_pipeline(targets)
+	# Dissertation
+	#tar_files(chapters, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE))
+	tar_file(index, "./index.Rmd"),
+	tar_target(paths, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE)),
+	tar_target(chapters, paths, format = "file", pattern = map(paths)),
+	tar_target(dissertation, write_dissertation(index, chapters))
+
+)

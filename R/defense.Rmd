@@ -1,0 +1,804 @@
+---
+title: "<span style = 'font-size: 120%;'>Stress Reactivity</span>"
+subtitle: "<span style = 'font-size: 90%;>Disturbances of the Neurocardiac Axis</span>"
+author: "Anish Sanjay Shah, MD<br><span style = 'font-size: 50%;'>Department of Epidemiology<br>Rollins School of Public Health<br>Emory University</span>"
+date: "February 8, 2021"
+output:
+ xaringan::moon_reader:
+   css: ["xaringan-themer.css", "personal.css"]
+   self_contained: true
+   nature:
+     titleSlideClass: ["left", "middle", "inverse"]
+---
+
+class: middle, center, inverse
+# INTRODUCTION
+
+```{r, knitr, include=FALSE}
+knitr::opts_chunk$set(
+   fig.retina = 3,
+   warning = FALSE,
+   message = FALSE,
+   echo = FALSE,
+   fig.showtext = TRUE
+)
+```
+
+```{r, targets, include=FALSE}
+library(targets)
+tar_load(biobank_tables)
+tar_load(mims_clinical)
+tar_load(mims_outcomes)
+tar_load(mims_models)
+tar_load(mims_survival)
+tar_load(mims_tables)
+tar_load(mims_reports)
+tar_load(twins_ecg)
+```
+
+```{r, colors, echo=FALSE, include=FALSE, eval=FALSE}
+# Colors
+library(xaringancolor)
+setup_colors(
+	darkblue = "#0c2340",
+	gold = "#b58500",
+	blue = "#012169",
+	yellow = "#f2a900",
+	teal = "#487f84",
+	orange = "#c35413",
+	red = "#da291c",
+	violet = "#6558b1",
+	magenta = "#c6007e",
+	lightblue = "#008dba",
+	black = "#101820",
+	grey = "#b1b3b3"
+)
+
+```
+
+<div style = "position:fixed; visibility: hidden">
+$$\require{color}\definecolor{darkblue}{rgb}{0.0470588235294118, 0.137254901960784, 0.250980392156863}$$
+$$\require{color}\definecolor{gold}{rgb}{0.709803921568627, 0.52156862745098, 0}$$
+$$\require{color}\definecolor{blue}{rgb}{0.00392156862745098, 0.129411764705882, 0.411764705882353}$$
+$$\require{color}\definecolor{yellow}{rgb}{0.949019607843137, 0.662745098039216, 0}$$
+$$\require{color}\definecolor{teal}{rgb}{0.282352941176471, 0.498039215686275, 0.517647058823529}$$
+$$\require{color}\definecolor{orange}{rgb}{0.764705882352941, 0.329411764705882, 0.0745098039215686}$$
+$$\require{color}\definecolor{red}{rgb}{0.854901960784314, 0.16078431372549, 0.109803921568627}$$
+$$\require{color}\definecolor{violet}{rgb}{0.396078431372549, 0.345098039215686, 0.694117647058824}$$
+$$\require{color}\definecolor{magenta}{rgb}{0.776470588235294, 0, 0.494117647058824}$$
+$$\require{color}\definecolor{lightblue}{rgb}{0, 0.552941176470588, 0.729411764705882}$$
+$$\require{color}\definecolor{black}{rgb}{0.0627450980392157, 0.0941176470588235, 0.125490196078431}$$
+$$\require{color}\definecolor{grey}{rgb}{0.694117647058824, 0.701960784313725, 0.701960784313725}$$
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: {
+      darkblue: ["{\\color{darkblue}{#1}}", 1],
+      gold: ["{\\color{gold}{#1}}", 1],
+      blue: ["{\\color{blue}{#1}}", 1],
+      yellow: ["{\\color{yellow}{#1}}", 1],
+      teal: ["{\\color{teal}{#1}}", 1],
+      orange: ["{\\color{orange}{#1}}", 1],
+      red: ["{\\color{red}{#1}}", 1],
+      violet: ["{\\color{violet}{#1}}", 1],
+      magenta: ["{\\color{magenta}{#1}}", 1],
+      lightblue: ["{\\color{lightblue}{#1}}", 1],
+      black: ["{\\color{black}{#1}}", 1],
+      grey: ["{\\color{grey}{#1}}", 1]
+    },
+    loader: {load: ['[tex]/color']},
+    tex: {packages: {'[+]': ['color']}}
+  }
+});
+</script>
+
+<style>
+.darkblue {color: #0C2340;}
+.gold {color: #B58500;}
+.blue {color: #012169;}
+.yellow {color: #F2A900;}
+.teal {color: #487F84;}
+.orange {color: #C35413;}
+.red {color: #DA291C;}
+.violet {color: #6558B1;}
+.magenta {color: #C6007E;}
+.lightblue {color: #008DBA;}
+.black {color: #101820;}
+.grey {color: #B1B3B3;}
+</style>
+
+
+```{r flair_color, echo=FALSE}
+library(flair)
+darkblue <- "#0C2340"
+gold <- "#B58500"
+blue <- "#012169"
+yellow <- "#F2A900"
+teal <- "#487F84"
+orange <- "#C35413"
+red <- "#DA291C"
+violet <- "#6558B1"
+magenta <- "#C6007E"
+lightblue <- "#008DBA"
+black <- "#101820"
+grey <- "#B1B3B3"
+```
+
+```{r, xaringan, include=FALSE}
+# Xaringan HTML issue
+options(htmltools.preserve.raw = FALSE) 
+
+# Themer
+library(xaringanthemer)
+style_duo(
+	primary_color = darkblue,
+	secondary_color = yellow,
+	header_font_google = xaringanthemer::google_font("Lora"),
+	text_font_google = xaringanthemer::google_font("Source Sans Pro"),
+	code_font_google = xaringanthemer::google_font("Fira Mono")
+)
+```
+
+```{r, references, include=FALSE}
+library(RefManageR)
+tar_load(file_bib)
+BibOptions(
+	check.entries = FALSE,
+	style = "markdown",
+	bib.style = "authoryear",
+	longnamesfirst = FALSE,
+	max.names = 1,
+	hyperlink = FALSE,
+	dashed = FALSE,
+	no.print.fields = c("doi", "url", "issn", "isbn")
+)
+bib <- ReadBib(file_bib, check = FALSE)
+```
+
+---
+
+## Outline
+
+
+1. Relevant background on neurocardiac axis and clinical overview
+
+1. Thesis overview
+
+1. Study design and analytical methods
+
+1. Results of analysis
+
+1. Discussion of key findings
+
+1. Conclusion and final thoughts
+
+---
+
+## Clinical Relevance
+
+- Coronary artery disease (CAD) is the leading cause of death and psychological diseases, e.g. depression, are the leading cause of disability **worldwide** `r Citep(bib, c("McAloon2016b", "Friedrich2017b"))`
+- Cardiovascular disease is comorbid with psychological disease, e.g. 20% of patients with CAD have depression, with subsequent 3 times greater risk of mortality `r Citep(bib, c("Meijer2011", "Jha2019"))`
+- Acute mental stress leads to increased risk of myocardial ischemia and is suggestive of worse outcomes `r Citep(bib, "Vaccarino2018")`
+- Chronic stress can lead to autonomic changes over time `r Citep(bib, "Shah2020a")`
+
+<hr>
+
+<font size="5">
+
+.right[Study of stress-related physiologic measures may help inform future cardiovascular disease management.]
+
+</font>
+
+---
+
+background-image: url("refs/2016-shivkumar-neurocardiac-schematic.png")
+background-size: contain
+background-position: right
+
+## Neurocardiac Axis
+
+.pull-left[
+Multiple levels of neural regulation of cardiac physiology:
+
+- Intrinsic cardiac nervous system
+- Intrathoracic cardiac nervous system
+- Central nervous system
+
+There are both **afferent** and **efferent** systems interactions.
+
+*Ex: psychological stress can cause an increased heart rate, or a heart attack can lead to feelings of anxiety or nervousness*
+
+.footer[`r Citet(bib, "Shivkumar2016a")`]
+]
+
+---
+
+background-image: url("refs/2011-taggart-neurocardiac.png")
+background-size: contain
+background-position: right
+
+.left-column[
+Theoretical model of how neural and psychological factors effect .teal[sinoatrial node] function, coronary blood flow, and .teal[myocardial repolarization].
+
+Clinically, cardiovascular outcomes have neurocardiac mechanisms.
+
+With ECG, we can measure these effects through **heart rate variability** and changes in **morphology**.
+
+.footer[.left[`r Citet(bib, "Taggart2011a")`]]
+]
+
+
+---
+
+## ECG Findings
+
+.left-column[
+<br>
+```{r, out.height="20%"}
+knitr::include_graphics("refs/2018-kentta-twa.png")
+```
+]
+
+.right-column[
+**Heart Rate Variability**
+
+- Fluctuations in HR are mediated by sympathetic (SNS) and parasympathetic (PNS) inputs to the .teal[sinoatrial node]
+- Rapid changes reflect vagal/PNS control
+- Slower changes reflect SNS and PNS integration
+- External factors: activity, mental stress, etc
+- Internal factors: respiration, baroreceptor reflexes, circadian rhythm, RAAS, neuroendocrine, etc.
+
+**Morphology**
+
+- ECG changes reflect how the heart repolarizes after each beat
+- T-wave area correlates with sympathetic tone `r Citep(bib, "Kentta2018")`
+]
+
+---
+
+class: middle
+## Specific Aims
+
+---
+
+class: middle
+
+.left-column[
+Objectives:
+
+- Effect of .red[cardiovascular disease] on .teal[autonomic dysfunction] 
+
+- Association of .violet[acute and chronic psychological stress] with .teal[autonomic dysfunction]
+
+- .teal[Autonomic dysfunction] impact on increased risk for overall .gold[adverse events]
+
+]
+
+.right-column[.center[
+```{r, thesis dag, figure.height=9, figure.width=9}
+dagify(
+	ans ~ cad,
+	psych ~ ans,
+	mm ~ cad + ans + psych, 
+	cad ~ psych,
+	labels = c(
+		"ans" = "Autonomic Dysfunction",
+		"cad" = "Coronary Artery Disease",
+		"psych" = "Mental Stress",
+		"mm" = "Adverse Events"
+	),
+	outcome = "mm",
+	exposure = c("ans")
+) %>%
+	tidy_dagitty(layout = "kk") %>%
+	node_status() %>%
+	ggplot(aes(x = x, y = y, xend = xend, yend = yend, color = name)) +
+	geom_dag_edges(edge_color = grey, arrow_directed = grid::arrow(length = grid::unit(10, "pt"), type = "closed")) +
+	geom_dag_point() +
+	geom_dag_label_repel(
+		aes(label = label), size = 3,
+		nudge_y = -5, nudge_x = -5
+	) +
+	scale_color_manual(values = c(teal, red, gold, violet)) +
+	annotate(
+		"text", x = 1.1, y = 0.8,
+		label = "Aim I", color = "white", size = 7
+	) +
+	annotate(
+		"text", x = -0.3, y = 0.3,
+		label = "Aim II", color = "white", size = 7
+	) +
+	annotate(
+		"text", x = 1.1, y = -0.7,
+		label = "Aim III", color = "white", size = 7
+	) + 
+	theme_xaringan() + 
+	theme(
+		legend.position = "none",
+		panel.background = element_blank(),
+		panel.grid = element_blank(),
+		axis.ticks = element_blank(),
+		axis.title = element_blank(),
+		axis.text = element_blank()
+	) 
+```
+]]
+
+---
+
+class: middle, center, inverse
+# METHODS
+
+---
+
+## Study Design
+
+The Myocardial Infarction and Mental Stress (MIMS) and Mental Stress Ischemia Mechanisms and Prognosis Study (MIPS) are similar observational, cross-sectional studies. Patients after recent catheterization for chest pain or abnormal stress test enrolled (Grady and Emory). They returned for first visit within 6 months of event. 
+
+- *Coronary Artery Disease*: Stress test performed initially using either mental/physical stress. Qualitative myocardial perfusion imaging performed on all patients
+- *Electrocardiography*: 1-lead to 12-lead ECG monitors were placed. Signal transformed to HRV using MATLAB `r Citep(bib, "Vest2018")`, with all HRV metrics log-transformed prior to analysis
+- *Mental Stress*: Depression and PTSD data collected using DSM-IV standardized questionnaires, mental stress challenge also performed
+- *Outcomes*: Adjudicated outcome events (MACE, hospitalization, etc) are collected
+
+---
+
+## AIM I
+
+.pull-left[
+
+**To assess the association between myocardial ischemia and coronary perfusion changes in cardiac autonomic activity.**
+
+*Hypothesis:*
+
+Decreased HRV to rest and stress provocation will associate with increased odds ratio for mental stress-induced myocardial ischemia compared with physical stress-induced myocardial ischemia.
+]
+
+.pull-right[
+*Plan:*
+
+- Assess association between HRV (exposure) and physical stress-induced myocardial ischemia (outcome) in logistic regression models
+- Assess association between HRV (exposure) and mental stress-induced myocardial ischemia (outcome) in logistic regression models
+]
+
+---
+
+## AIM II
+
+.pull-left[
+
+**To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.**
+
+*Hypothesis:*
+
+Decreased HRV to rest and stress provocation is associated with acute mental stress and mental stress-induced myocardial ischemia, and after adjustment for both clinical and chronic mental stressors (depression and PTSD).
+]
+
+.pull-right[
+*Plan:*
+
+- Compare HRV before, during and after mental stress challenge using **t-tests**
+- Assess association between HRV (exposure) and depression/PTSD diagnosis (outcome) in **logistic regression** models
+- Assess association between HRV (exposure) and mental stress-induced myocardial ischemia (outcome) in **logistic regression** models, with sequential adjustment for clinical covariates
+]
+
+---
+
+## AIM III
+
+.pull-left[
+
+**To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.**   
+
+*Hypothesis:*
+
+Decreased HRV during rest and stress provocation is associated with increased cardiovascular mortality, and mediates the increased mortality seen with mental stress induced myocardial ischemia.
+]
+
+.pull-right[
+*Plan:*
+
+- Cumulative incidence curves for overall mortality
+- Evaluate effect of HRV on hazard ratio of cardiovascular mortality and recurrent events using **Cox proportional hazard models**
+- Evaluate effect of HRV on hazard ratio of MSIMI on cardiovascular mortality  and recurrent MACE 
+]
+
+---
+
+class: middle, center, inverse
+# RESULTS
+
+---
+
+class: center, middle
+#### Table 1
+
+```{r, mims table 1}
+mims_tables$one %>%
+	tab_options(
+		table.font.size = "14px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+
+---
+
+class: center, middle
+#### Relationship between HRV and Abnormal Myocardial Perfusion Imaging
+
+.left[
+```{r, types of ischemia}
+mims_reports$stress %>%
+	tab_options(
+		table.font.size = "11px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]
+
+.footer[.yellow[Aim I]]
+
+---
+
+class: center, middle
+#### Relationship between HRV and Stress Provocation
+
+```{r, figure of HRV by stress phase, fig.width = 11}
+mims_clinical %>%
+	select(c(starts_with(c("lf_", "hf_", "twa_", "hr_")), rdr_msi_bl)) %>%
+	select(-contains(c("rest_stress", "stress_rec"))) %>%
+	pivot_longer(cols = starts_with(c("lf_", "hf_", "twa_", "hr_")), names_to = "measures") %>%
+	separate(col = "measures", into = c("hrv", "phase"), sep = "_") %>%
+	filter(value < 150) %>%
+	mutate(
+		phase = factor(phase, levels = c("rest", "stress", "recovery"), labels = c("Rest", "Stress", "Recovery")),
+		hrv = factor(hrv, levels = c("hf", "lf", "twa", "hr"), labels = c("High Frequency", "Low Frequency", "T Wave Area", "Heart Rate"))
+	) %>%
+	ggplot(aes(x = phase, y = value, fill = phase)) +
+	facet_wrap(~hrv, scales = "free") +
+	geom_violin() +
+	geom_jitter(size = 0.2, width = 0.1, alpha = 0.2, color = "white") +
+	scale_fill_manual(values = c(teal, orange, gold)) +
+	theme_xaringan() + 
+	theme(
+		legend.position = "none",
+		panel.background = element_blank(),
+		panel.grid = element_blank(),
+		strip.background = element_blank(),
+		strip.text = element_text(color = "white")
+	) +
+	labs(
+		x = "Mental Stress Challenge Phase",
+		y = "HRV Metric"
+	)
+```
+
+.left[.footer[.yellow[Aim II]]]
+
+---
+
+class: center, middle
+#### Changes in HRV by Stress Provocation
+
+.pull-left[.left[
+Comparing the distribution of HRV between groups using **paired t-tests**, during each phase of acute mental stress testing.
+
+- Rest = before testing  
+- Stress = during mental stress challenge  
+- Recovery = after testing  
+
+Each of these ECG metrics was tested against the corresponding *rest* measure.
+]]
+
+.pull-right[.left[
+```{r}
+mims_tables$paired %>%
+	tab_options(
+		table.font.size = "14px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]]
+
+.footer[.yellow[Aim II]]
+
+---
+
+class: center, middle
+#### Assocation of HRV with Depression and PTSD
+
+.left-column[.left[
+Depression and PTSD were diagnosed using structured clinical interview for the DSM-IV (SCID). 
+
+Each model is a **logistic regression** showing association with HRV metrics and psychiatric diagnosis.
+]]
+
+.right-column[.left[
+```{r, stress HRV and psych}
+mims_reports$psych %>%
+	tab_options(
+		table.font.size = "11px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]]
+
+.left[.footer[.yellow[Aim II]]]
+
+---
+
+class: center, middle
+#### Distribution of HRV by MSIMI
+
+.pull-left[.left[
+Comparing the distribution of HRV between MSIMI groups during each phase of acute mental stress testing.
+
+- Rest = before testing  
+- Stress = during mental stress challenge  
+- Recovery = after testing  
+]]
+
+.pull-right[.left[
+```{r, table of HRV by stress phase}
+mims_tables$hrv %>%
+	tab_options(
+		table.font.size = "14px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]]
+
+.footer[.yellow[Aim II]]
+
+---
+
+class: center, middle
+#### Assocation of HRV and MSIMI
+
+.left[
+```{r, MSIMI and HRV}
+mims_reports$mpi %>%
+	tab_options(
+		table.font.size = "14px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]
+
+MSIMI is associated with both low and high frequency HRV. The relationship is most prominently seen with .teal[HF HRV]. There is an OR of 0.5 for developing MSIMI for every 1 unit increase in HRV (log ms<sup>2</sup>)
+
+.left[.footer[.yellow[Aim II]]]
+
+---
+
+class: center, middle
+
+```{r}
+m <- mims_models$equipment$adjusted_hf_stress$fit[[14]]$fit
+equatiomatic::extract_eq(m, intercept = "beta", wrap = TRUE, terms_per_line = 2)
+```	
+
+.left[.footer[.yellow[Aim II]]]
+
+---
+
+class: center, middle
+
+#### Cumulative Incidence Curves by both Mental Stress and Heart Rate Variability
+
+```{r, km curves, fig.width=11}
+# Survival figure
+df <- left_join(mims_outcomes$death, mims_clinical, by = c("id" = "patid")) %>%
+	mutate(HRV = Hmisc::cut2(lf_stress, g = 2, levels.mean = TRUE))
+fitLF <- survfit(Surv(stop, status) ~ HRV, data = df)
+fitMS <- survfit(Surv(stop, status) ~ rdr_msi_bl, data = df)
+hrv <- ggsurvplot(
+	fitLF, data = df, fun = "cumhaz",
+	linetype = "strata", conf.int = TRUE, pval = TRUE,
+	legend = "bottom", legend.title = "HRV", legend.labs = c("Low", "High"),
+	palette = c(gold, grey), ggtheme = theme_xaringan(),
+	font.x = 14, font.y = 14, font.legend = 14, 
+	font.xtickslab = 12, font.ytickslab = 12,
+)
+msimi <- ggsurvplot(
+	fitMS, data = df, fun = "cumhaz",
+	linetype = "strata", conf.int = TRUE, pval = TRUE,
+	legend = "bottom", legend.title = "MSIMI", legend.labs = c("No", "Yes"),
+	palette = c(grey, gold), ggtheme = theme_xaringan(),
+	font.x = 14, font.y = 14, font.legend = 14, 
+	font.xtickslab = 12, font.ytickslab = 12,
+)
+cowplot::plot_grid(hrv$plot, msimi$plot, nrow = 2)
+```
+
+.left[.footer[.yellow[Aim III]]]
+
+---
+
+class: center, middle
+#### Association between HRV and Cardiovascular Mortality
+
+.left[
+```{r, MSIMI and outcomes}
+mims_reports$outcomes %>%
+	tab_options(
+		table.font.size = "11px",
+		data_row.padding = px(1),
+		row_group.padding = px(2),
+		footnotes.padding = px(1),
+		source_notes.padding = px(1),
+	) %>%
+	as_raw_html()
+```
+]
+
+Recurrent event models are included for comparison, which incorporate repeat major cardiovascular events and mortality.
+
+.left[.footer[.yellow[Aim III]]]
+
+---
+
+class: center, middle
+#### Assessment of Proportional Hazards
+
+```{r, cox diagnostics, fig.width=10, fig.height=6}
+df <- left_join(mims_outcomes$death, mims_clinical, by = c("id" = "patid"))
+fit <- coxph(Surv(stop, status) ~ rdr_msi_bl + lf_stress, data = df)
+ftest <- cox.zph(fit)
+colnames(ftest$y) <- c("MSIMI", "Stress LF")
+cox <- ggcoxzph(
+	ftest, font.main = 16, font.y = 14, font.x = 14,
+	font.xtickslab = 12, font.ytickslab = 12,
+	point.col = gold, ggtheme = theme_xaringan()
+)
+cowplot::plot_grid(cox$`1`, cox$`2`, nrow = 2)
+```
+
+Schoenfeld residuals, including global test, were not significant, suggesting that proportional hazards throughout study time span. 
+
+.left[.footer[.yellow[Aim III]]]
+
+---
+
+class: middle, center, inverse
+# DISCUSSION
+
+---
+
+## Key Findings
+
+--
+
+- Decreased HRV is associated with abnormal myocardial perfusion, particularly in those with MSIMI (.yellow[Aim I])
+
+--
+
+- Acute mental stress is associated with decreased HRV (.yellow[Aim II])
+
+--
+
+- Decreased HRV is associated with MSIMI in adjusted models (.yellow[Aim II])
+
+--
+
+- Decreased HRV has a similar increased hazard for mortality as MSIMI in survival analysis (.yellow[Aim III])
+
+--
+
+- Decreased HRV is an effect modifier for the increased hazard for mortality from MSIMI (.yellow[Aim III])
+
+---
+
+## Interpretation
+
+- Resting heart rate was associated with both depression and PTSD, suggesting that a central mechanism is likely sympathovagal imbalance
+
+- MSIMI was most strongly associated with decreased HF, suggesting vagal withdrawal and potential baroreceptor dysfunction
+
+- Autonomic dysfunction, particularly as a result of acute stressors, may be the mechanism by which MSIMI leads to increased cardiovascular mortality and events
+
+---
+
+.pull-left[
+### Limitations
+
+- Limited enrollment for adequate power of .yellow[Aim I]
+- Interpreting censoring events has limitations, as obtained from secondary sources
+- Quality of ECG signal is non-uniform
+- Multiple hypothesis testing with highly correlated data is more complex
+- Relationship between HRV and chronic stress not as robust
+]
+
+.pull-right[
+### Strengths
+
+- Findings from MIMS/MIPS are parallel to findings in Twins analysis, suggesting generalizability
+- HRV processing similar between studies
+- Highlights importance of autonomic function in neurocardiac axis
+]
+
+---
+
+## Future Directions
+
+
+.pull-left[
+1. Assess effects of coronary artery disease using angiography in a well-powered cohort
+
+1. Analyze relationships of HRV with types of outcomes
+
+1. Study effect of circadian changes in HRV with relationship to depression and PTSD, and relationship with future hazard for cardiovascular mortality
+]
+
+.pull-right[
+```{r, cosnior, fig.height=6, fig.width=4}
+df <-
+	twins_ecg %>%
+	select(hour, dyx) %>%
+	na.omit() 
+
+m1 <- cosinor(dyx ~ hour, tau = 24, data = df)
+m2 <- cosinor(dyx ~ hour, tau = c(24, 12), data = df)
+ggcosinor(list(single = m1, multiple = m2)) + 
+	theme_xaringan() +
+	scale_color_manual(name = "Components", values = c(grey, teal)) + 
+	labs(
+		x = "Time (hours of day)",
+		y = "HRV"
+	) + 
+	theme(
+		legend.position = "bottom",
+		axis.title = element_text(size = 14),
+		axis.text = element_text(size = 12),
+		legend.title = element_text(size = 14)
+	)
+```
+]
+
+
+---
+
+class: middle, center, inverse
+# REFERENCES
+
+---
+
+```{r, r1, echo=FALSE, results='asis'}
+PrintBibliography(bib, start = 1, end = 7)
+```
+
+---
+
+```{r, r2, echo=FALSE, results='asis'}
+PrintBibliography(bib, start = 8, end = 10)
+```
+
+---
+
+class: middle, center, inverse
+# THANK YOU
