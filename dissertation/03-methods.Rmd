@@ -1,1 +1,23 @@
 # (PART\*) METHODS {-}
+
+# Specific Aims
+
+The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis. 
+
+1. To assess the association between myocardial ischemia and coronary perfusion on cardiac autonomic activity. 
+1. To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.
+1. To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.
+
+# Study Design
+
+## Population characteristics
+
+## Measurements
+
+## Sample size and power considerations
+
+# Analysis
+
+## Descriptive analysis
+
+## Statistical inference

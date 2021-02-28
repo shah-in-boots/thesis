@@ -1,2 +1,30 @@
 # (PART\*) RESULTS {-}
 
+# Clinical Characteristics
+
+- Table 1 for Biiobank \@ref(TableOneBiobank)
+- Table 1 for Twins \@ref(TableOneTwins)
+- Table 1 for MIMS/MIPS \@ref(TableOneMIMS)
+
+# Myocardial Ischemia
+
+- HRV by CAD status in Biobank \@ref(TableBiobankHRV)
+- Timing of CAD intervention compared to prior during angiography \@ref(TableBiobankTiming)
+- Assocation between early morning HRV and MPI \@ref(TableTwinsMPI)
+- Circadian changes in HRV and relationship to MPI \@ref(TableTwinsCircMPI)
+- Relationship between shorter term HRV and MPI based on both physical and mental stress testing \@ref(TableMimsStress)
+
+# Mental Stress and Myocardial Perfusion
+
+- Distribution of HRV at rest, stress, and recovery during mental stress challenge \@ref(FigureMimsViolin)
+- Difference in HRV within subject during stress testing \@ref(TableMimsPaired)
+- HRV pattern by MSIMI status \@ref(TableMimsHRV)
+- Assocation between depression and PTSD with MSIMI \@ref(TableMimsPsych)
+- Association between depression/PTSD with early morning HRV measures \@ref(TableTwinsPsych)
+- Circadian changes in HRV and psych disorder \@ref(TableTwinsCircPsych)
+- Connection between mental stress and HRV, including depression covariables \@ref(TableMimsMSIMI)
+
+# Clinical Outcomes
+
+- Overall cardiovascular mortality and outcomes (unadjusted)
+\@ref(TableTwinsOutcomes)

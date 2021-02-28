@@ -1,1 +1,27 @@
-# (PART\*) INTRODUCTION {.unnumbered}
+\mainmatter
+
+# (PART\*) INTRODUCTION {-}
+
+# Overview
+
+### Research Problem
+
+-   Mental stress can cause changes in the brain\
+-   These changes can lead to depression and psych disease\
+-   Those changes lead to increased cardiovascular disease\
+-   Patients that are comorbid with psych and CAD do worse clinically
+
+The relationship between the autonomic nervous system, stress reactivity, cardiovascular disease, and overall outcomes is outlined in Figure \@ref(FigureDag).
+
+# Outline
+
+1.  Research problem
+1.  Purpose of research
+1.  Underlying causal mechanisms
+1.  Overview of how to address problem
+
+
+> "Why did he die on Tuesday and not on Monday?"
+>
+> --- Douglas Zipes
+
