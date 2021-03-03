@@ -16,13 +16,7 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		tbl_summary(
 			missing = "no",
 			value = list(c(stenosis, sad) ~ "1")
-		) %>%
-		as_gt() %>%
-		tab_header(
-			title = "Emory Cardiovascular Biobank",
-			subtitle = "Clinical Characteristics"
-		) %>%
-		tab_source_note("CASS = Coronary Artery Surgery Score")
+		)
 
 	# HRV Table
 	hrv <-
@@ -42,12 +36,7 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 			stat_1 ~ '**No Revascularization** <br> N = 14',
 			stat_2 ~ '**Revascularization** <br> N = 34',
 			p.value ~ '**p-value**'
-		)) %>%
-		as_gt() %>%
-		tab_header(
-			title = "HRV by Revascularization Status",
-			subtitle = "Emory Cardiovascular Biobank"
-		)
+		))
 
 	# Comparing HRV by context
 	x <- ecg$timed %>%
@@ -64,7 +53,6 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		group_by(stenosis) %>%
 		gt(rowname_col = "hrv")
 
-
 	# HRV by Context
 	timing <-
 		ecg$timed %>%
@@ -72,6 +60,7 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		filter(context %in% c("start", "balloon")) %>%
 		left_join(clinical[c("patid", "stenosis")], ., by = "patid") %>%
 		filter(!is.na(stenosis) & !is.na(context)) %>%
+		mutate(stenosis = factor(stenosis, levels = c(0, 1), labels = c("No Revascularization", "Revascularization"))) %>%
 		select(-patid) %>%
 		tbl_strata(
 			strata = stenosis,
@@ -92,12 +81,7 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 			stat_1_2 ~ '**Balloon** <br> N = 15',
 			stat_2_2 ~ '**Start** <br> N = 20',
 			p.value_2 ~ '**p-value**'
-		)) %>%
-		as_gt() %>%
-		tab_header(
-			title = "HRV by Time of Catheterization",
-			subtitle = "Emory Cardiovascular Biobank"
-		)
+		))
 
 	# Make list
 	tables <- list(

@@ -5,6 +5,7 @@ make_twins_tables <- function(clinical, ecg) {
 	one <-
 		clinical %>%
 		select(study, age, bmi, race, smoking, prevchd, chf, hptn, dm, ptsd, sad_bin, pet_bin) %>%
+		mutate(study = factor(study, levels = c("THS1", "SAVEIT", "THS2", "ETSF"))) %>%
 		tbl_summary(
 			by = study,
 			missing = "no",
@@ -16,12 +17,7 @@ make_twins_tables <- function(clinical, ecg) {
 			stat_2 ~ '**SAVEIT** <br> N = 206',
 			stat_3 ~ '**THS1** <br> N = 360',
 			stat_4 ~ '**THS2** <br> N = 164'
-		)) %>%
-		as_gt() %>%
-		tab_header(title = "Twins: Cohort Descriptions") %>%
-		tab_source_note("ETSF = Emory Twins Study Follow-up, SAVEIT = Stress and Vascular Evaluation in Twins, THS = Twins Heart Study") %>%
-		tab_options(table.font.size = "11px") %>%
-		as_raw_html()
+		))
 
 	# Table on HRV findings
 	hrv <-
@@ -37,12 +33,7 @@ make_twins_tables <- function(clinical, ecg) {
 			stat_2 ~ '**SAVEIT** <br> N = 206',
 			stat_3 ~ '**THS1** <br> N = 360',
 			stat_4 ~ '**THS2** <br> N = 164'
-		)) %>%
-		as_gt() %>%
-		tab_header(title = "HRV In Twin Cohorts") %>%
-		tab_source_note("ETSF = Emory Twins Study Follow-up, SAVEIT = Stress and Vascular Evaluation in Twins, THS = Twins Heart Study") %>%
-		tab_options(table.font.size = "11px") %>%
-		as_raw_html()
+		))
 
 	# Findings
 	tables <- list(
@@ -156,43 +147,164 @@ make_twins_models <- function(clinical, ecg) {
 
 }
 
-# Outcomes
-make_twins_survival <- function(clinical, ecg, outcomes) {
+make_twins_circadian <- function(clinical, cosinors) {
 
 	octobeast <-
 		octomod() %>%
-		core(inner_join(ecg, outcomes$death, by = c("vetrid" = "id"))) %>%
+		core(left_join(cosinors$single, clinical, by = "patid")) %>%
 		arm(
-			title = "death_outcomes",
-			plan = Surv(stop, status) ~ hf + lf + vlf + dyx + ac + rr,
+			title = "single_log",
+			plan = ptsd + sad_bin + pet_bin ~ mesor + amp1 + phi1 + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			approach = logistic_reg() %>% set_engine("glmer"),
+			exposure = c("(1 | pair)", "(1 | vetrid)"),
+			pattern = "direct",
+			strata = "outcomes"
+		) %>%
+		arm(
+			title = "single_lin",
+			plan = beck_total + global_cfr ~ mesor + amp1 + phi1 + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			approach = linear_reg() %>% set_engine("lmer"),
+			exposure = c("(1 | pair)", "(1 | vetrid)"),
+			pattern = "direct",
+			strata = "outcomes"
+		) %>%
+		equip(which_arms = c("single_lin", "single_log")) %>%
+		change_core(left_join(cosinors$multiple, clinical, by = "patid")) %>%
+		arm(
+			title = "multiple_log",
+			plan = ptsd + sad_bin + pet_bin ~ mesor + amp1 + phi1 + amp2 + phi2 + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			approach = logistic_reg() %>% set_engine("glmer"),
+			exposure = c("(1 | pair)", "(1 | vetrid)"),
+			pattern = "direct",
+			strata = "outcomes"
+		) %>%
+		arm(
+			title = "multiple_lin",
+			plan = beck_total + global_cfr ~ mesor + amp1 + phi1 + amp2 + phi2 + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			approach = linear_reg() %>% set_engine("lmer"),
+			exposure = c("(1 | pair)", "(1 | vetrid)"),
+			pattern = "direct",
+			strata = "outcomes"
+		) %>%
+		equip(which_arms = c("multiple_log", "multiple_lin"))
+
+	# Return octobeast
+	octobeast
+
+}
+
+# Outcomes
+make_twins_survival <- function(clinical, ecg, outcomes) {
+
+	# Clinical data
+	df <- inner_join(ecg, clinical, by = "vetrid")
+
+	octobeast <-
+		octomod() %>%
+		# Overall mortality
+		core(inner_join(df, outcomes$death, by = c("vetrid" = "id"))) %>%
+		arm(
+			title = "hf_death",
+			plan = Surv(stop, status) ~ hf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
+			pattern = "sequential",
 			strata = "hour"
 		) %>%
-		equip(which_arms = "death_outcomes") %>%
-		change_core(inner_join(ecg, outcomes$cvd, by = c("vetrid" = "id"))) %>%
 		arm(
-			title = "cvd_outcomes",
-			plan = Surv(stop, status) ~ hf + lf + vlf + dyx + ac + rr,
+			title = "lf_death",
+			plan = Surv(stop, status) ~ lf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
+			pattern = "sequential",
 			strata = "hour"
 		) %>%
-		equip(which_arms = "cvd_outcomes")
+		arm(
+			title = "vlf_death",
+			plan = Surv(stop, status) ~ vlf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "dyx_death",
+			plan = Surv(stop, status) ~ dyx + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "ac_death",
+			plan = Surv(stop, status) ~ ac + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "rr_death",
+			plan = Surv(stop, status) ~ rr + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		equip(which_arms = c("hf_death", "lf_death", "vlf_death", "dyx_death", "ac_death", "rr_death")) %>%
+		# CVD mortality
+		change_core(inner_join(df, outcomes$cvd, by = c("vetrid" = "id"))) %>%
+		arm(
+			title = "hf_cvd",
+			plan = Surv(stop, status) ~ hf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "lf_cvd",
+			plan = Surv(stop, status) ~ lf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "vlf_cvd",
+			plan = Surv(stop, status) ~ vlf + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "dyx_cvd",
+			plan = Surv(stop, status) ~ dyx + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "ac_cvd",
+			plan = Surv(stop, status) ~ ac + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		arm(
+			title = "rr_cvd",
+			plan = Surv(stop, status) ~ rr + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			strata = "hour"
+		) %>%
+		equip(which_arms = c("hf_cvd", "lf_cvd", "vlf_cvd", "dyx_cvd", "ac_cvd", "rr_cvd"))
 
 	# Return
 	octobeast
 }
 
 # Report out twin models
-report_twins_models <- function(models, survival) {
+report_twins_models <- function(models, survival, circadian) {
 
-	# Set Up All Models ------------------------------------------------------
+	# Set Up Hourly Data ------------------------------------------------------
 	unadj <- 2 # HRV
 	adj_demo <- 4 # + age + BMI
 	adj_cv <- 9 # + smoking, CAD, CHF, HTN, DM
 
-	df <-
+	hourly <-
 		models$equipment %>%
 		bind_rows(.id = "arm") %>%
 		select(outcomes, test_num, level, tidied) %>%
@@ -211,7 +323,7 @@ report_twins_models <- function(models, survival) {
 
 	# Psych Models -------------------------------
 	psych <-
-		df %>%
+		hourly %>%
 		filter(outcomes %in% c("PTSD", "Depression")) %>%
 		gt(rowname_col = "test_num", groupname_col = "outcomes") %>%
 		cols_merge(columns = starts_with("hf_"), pattern = "{1} ({2}, {3})") %>%
@@ -221,28 +333,24 @@ report_twins_models <- function(models, survival) {
 		cols_merge(columns = starts_with("ac"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(columns = everything(), decimals = 2) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "lf_estimate", rows = abs(lf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "hf_estimate", rows = abs(hf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "vlf_estimate", rows = abs(vlf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "ac_estimate", rows = abs(ac_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "dyx_estimate", rows = abs(dyx_statistic) > 2.0)
-		) %>%
-		tab_header(
-			title = "Early Morning HRV and Chronic Psychological Stress",
-			subtitle = "Emory Twins Study"
 		) %>%
 		cols_label(
 			lf_estimate = "LF",
@@ -262,12 +370,11 @@ report_twins_models <- function(models, survival) {
 		tab_footnote(
 			footnote = "Model 3 = Model 2 + Smoking + HTN + Cardiovascular Disease",
 			locations = cells_stub(rows = c(5:6))
-		) %>%
-		tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. Green highlight signifies p-value < 0.05. PTSD = Post-Traumatic Stress Disorder, HRV = Heart Rate Variability, LF = Low Frequency HRV, HF = High Frequency HRV, VLF = Very Low Frequency HRV, AC = Acceleration Capacity" )
+		)
 
 	# Ischemia Models  ----------------------------------------------------
 	mpi <-
-		df %>%
+		hourly %>%
 		filter(outcomes %in% c("Coronary Flow Reserve", "Abnormal MPI")) %>%
 		gt(rowname_col = "test_num", groupname_col = "outcomes") %>%
 		cols_merge(columns = starts_with("hf_"), pattern = "{1} ({2}, {3})") %>%
@@ -277,26 +384,25 @@ report_twins_models <- function(models, survival) {
 		cols_merge(columns = starts_with("ac"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(columns = everything(), decimals = 2) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "lf_estimate", rows = abs(lf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "hf_estimate", rows = abs(hf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "vlf_estimate", rows = abs(vlf_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "ac_estimate", rows = abs(ac_statistic) > 2.0)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "dyx_estimate", rows = abs(dyx_statistic) > 2.0)
 		) %>%
-		tab_header(title = "Early Morning HRV and Myocardial Perfusion") %>%
 		cols_label(
 			lf_estimate = "LF",
 			hf_estimate = "HF",
@@ -315,54 +421,186 @@ report_twins_models <- function(models, survival) {
 		tab_footnote(
 			footnote = "Model 3 = Model 2 + Smoking + HTN + Cardiovascular Disease",
 			locations = cells_stub(rows = c(5:6))
-		) %>%
-		tab_source_note("Green highlight signifies p-value < 0.05. HRV = Heart Rate Variability, LF = Low Frequency HRV, HF = High Frequency HRV, VLF = Very Low Frequency HRV, AC = Acceleration Capacity" )
+		)
 
 	# Survival -------------------------------------------------------------
+	unadj <- 1
+	adj_mpi <- 2
+	adj_demo <- 6
+	adj_cvd <- 10
+	adj_sad <- 11
+
 	outcomes <-
 		survival$equipment %>%
 		bind_rows(.id = "arm") %>%
-		select(arm, level, test_num, tidied) %>%
+		filter(str_detect(arm, "death")) %>%
+		select(level, test_num, tidied) %>%
 		unnest(tidied) %>%
 		filter(level %in% c(6:9)) %>%
-		group_by(arm, term) %>%
-		arrange(p.value, .by_group = TRUE) %>%
+		filter(term %in% c("ac", "dyx", "hf", "lf", "vlf", "rr")) %>%
+		filter(test_num %in% c(unadj, adj_mpi, adj_demo, adj_cvd, adj_sad)) %>%
+		mutate(test_num = factor(test_num, labels = paste("Model", 1:5))) %>%
+		group_by(test_num, term) %>%
+		arrange(-abs(statistic), .by_group = TRUE) %>%
 		slice(1) %>%
 		ungroup() %>%
-		select(arm, term, estimate, conf.low, conf.high, p.value) %>%
+		select(test_num, term, estimate, conf.low, conf.high, p.value) %>%
 		pivot_wider(
-			names_from = arm,
+			names_from = term,
 			values_from = c(estimate, conf.low, conf.high, p.value),
-			names_glue = "{arm}_{.value}"
+			names_glue = "{term}_{.value}"
 		) %>%
-		gt(rowname_col = "term") %>%
-		cols_merge(columns = starts_with("death"), pattern = "{1} ({2}, {3})") %>%
-		cols_merge(columns = starts_with("cvd"), pattern = "{1} ({2}, {3})") %>%
+		gt(rowname_col = "test_num") %>%
+		cols_merge(columns = starts_with("ac"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("dyx"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("hf"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("lf"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("vlf"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("rr"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(
-			columns = contains("outcomes"),
+			columns = contains(c("estimate", "conf")),
 			decimals = 2,
 			drop_trailing_zeros = TRUE
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
-			locations = cells_body(columns = starts_with("death"),
-														 rows = death_outcomes_p.value < .05)
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("ac"),
+														 rows = ac_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
-			locations = cells_body(columns = starts_with("cvd"),
-														 rows = cvd_outcomes_p.value < .05)
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("dyx"),
+														 rows = dyx_p.value < .05)
 		) %>%
-		tab_header(
-			title = "Outcomes by HRV",
-			subtitle = "Emory Twins Study"
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("hf"),
+														 rows = hf_p.value < .05)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("lf"),
+														 rows = lf_p.value < .05)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("vlf"),
+														 rows = vlf_p.value < .05)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("rr"),
+														 rows = rr_p.value < .05)
+		) %>%
+		cols_label(
+			ac_estimate = "Acceleration Capacity",
+			dyx_estimate = "Dyx",
+			hf_estimate = "High Frequency HRV",
+			lf_estimate = "Low Frequency HRV",
+			vlf_estimate = "Very Low Frequency HRV",
+			rr_estimate = "RR Intervals"
+		)
+
+	# Set up cosinor setup --------------------------------------------------------
+
+	circ <-
+		circadian$equipment %>%
+		bind_rows(.id = "arm") %>%
+		filter(str_detect(arm, "single")) %>%
+		filter(level %in% c("hf", "lf", "vlf", "ac", "dyx", "rr")) %>%
+		select(outcomes, level, tidied) %>%
+		unnest(tidied) %>%
+		select(-c(group, effect, p.value, std.error)) %>%
+		filter(term %in% c("mesor", "amp1", "phi1")) %>%
+		pivot_wider(names_from = "term", values_from = c("estimate", "conf.low", "conf.high", "statistic"), names_glue = "{term}_{.value}") %>%
+		mutate(outcomes = factor(outcomes, levels = c("global_cfr", "pet_bin", "ptsd", "sad_bin", "beck_total"), labels = c("Coronary Flow Reserve", "Abnormal MPI", "PTSD", "Depression", "BDI Score"))) %>%
+		mutate(level = case_when(
+			level == "hf" ~ "High Frequency HRV",
+			level == "lf" ~ "Low Frequency HRV",
+			level == "vlf" ~ "Very Low Frequency HRV",
+			level == "dyx" ~ "Dyx",
+			level == "ac" ~ "Acceleration Capacity",
+			level == "rr" ~ "RR Intervals"
+		))
+
+	# Psych Cosinor --------------------------------------------------------
+	psych_cosinor <-
+		circ %>%
+		group_by(outcomes) %>%
+		filter(outcomes %in% c("Depression", "PTSD")) %>%
+		gt(rowname_col = "level") %>%
+		cols_merge(columns = starts_with("mesor_"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("amp1_"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("phi1_"), pattern = "{1} ({2}, {3})") %>%
+		fmt_number(
+			columns = starts_with(c("mesor_", "amp1", "phi1")),
+			decimals = 2,
+			drop_trailing_zeros = TRUE
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("mesor"),
+														 rows = abs(mesor_statistic) > 2.0)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("amp1"),
+														 rows = abs(amp1_statistic) > 2.0)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("phi1"),
+														 rows = abs(phi1_statistic) > 2.0)
+		) %>%
+		cols_label(
+			mesor_estimate = "MESOR",
+			amp1_estimate = "Amplitude",
+			phi1_estimate = "Phi"
+		)
+
+
+	# Ischemia Cosinor --------------------------------------------------------
+	ischemia_cosinor <-
+		circ %>%
+		group_by(outcomes) %>%
+		filter(outcomes %in% c("Abnormal MPI", "Coronary Flow Reserve")) %>%
+		gt(rowname_col = "level") %>%
+		cols_merge(columns = starts_with("mesor_"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("amp1_"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("phi1_"), pattern = "{1} ({2}, {3})") %>%
+		fmt_number(
+			columns = starts_with(c("mesor_", "amp1", "phi1")),
+			decimals = 2,
+			drop_trailing_zeros = TRUE
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("mesor"),
+														 rows = abs(mesor_statistic) >= 2.0)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("amp1"),
+														 rows = abs(amp1_statistic) >= 2.0)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = starts_with("phi1"),
+														 rows = abs(phi1_statistic) >= 2.0)
+		) %>%
+		cols_label(
+			mesor_estimate = "MESOR",
+			amp1_estimate = "Amplitude",
+			phi1_estimate = "Phi"
 		)
 
 	# Return -------------------------------------------------------------
 	tables <- list(
 		psych = psych,
 		mpi = mpi,
-		outcomes = outcomes
+		outcomes = outcomes,
+		psych_cosinor = psych_cosinor,
+		ischemia_cosinor = ischemia_cosinor
 	)
 
 	# Returning

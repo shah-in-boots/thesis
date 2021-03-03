@@ -17,8 +17,7 @@ make_mims_tables <- function(clinical) {
 					value = list(female_bl ~ "Female"),
 					missing = "no",
 					label = list(rdr_psi2_bl ~ "PSIMI", female_bl ~ "Sex (Female)"),
-				) %>%
-				add_p(),
+				),
 			.combine_with = "tbl_merge"
 		) %>%
 		modify_header(update = list(
@@ -29,13 +28,7 @@ make_mims_tables <- function(clinical) {
 			stat_2_2 ~ '**MSIMI = 1**, <br> N = 188'
 		)) %>%
 		modify_spanning_header(ends_with("_1") ~ "MIMS") %>%
-		modify_spanning_header(ends_with("_2") ~ "MIPS") %>%
-		as_gt() %>%
-		tab_header(
-			title = "MIMS and MIPS Cohorts",
-			subtitle = "Clinical Characteristics"
-		) %>%
-		tab_source_note("MSIMI = Mental Stress Induced Myocardial Ischemia; PSIMI = Physical Stress Induced Myocardial Ischemia, MIMS = Myocardial Infarction and Mental Stress, MIPS = Mental Stress Ischemia Mechanisms and Prognosis Study")
+		modify_spanning_header(ends_with("_2") ~ "MIPS")
 
 	# Distribution of HRV
 	paired <-
@@ -94,17 +87,7 @@ make_mims_tables <- function(clinical) {
 		) %>%
 		cols_hide("p.value") %>%
 		fmt_number(columns = everything(), decimals = 1) %>%
-		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
-			locations = cells_body(rows = p.value < 0.05)
-		) %>%
-		cols_label(estimate = "Mean (95% CI)", statistic = "T-statistic") %>%
-		tab_header(
-			title = "Distribution of HRV by Stress Phase",
-			subtitle = "Within Subject Testing in MIMS/MIPS Cohorts"
-		) %>%
-		tab_stubhead("ECG/HRV Metric") %>%
-		tab_source_note("Each metric is tested against corresponding resting value. Highlighted cells signify p-value < 0.05. HRV = Heart Rate Variability")
+		cols_label(estimate = "Mean (95% CI)", statistic = "T-statistic")
 
 	# MSIMI and HRV
 	hrv <-
@@ -125,21 +108,11 @@ make_mims_tables <- function(clinical) {
 			p.value ~ '**p-value**'
 		)) %>%
 		as_gt() %>%
-		tab_header(
-			title = "HRV and Mental Stress",
-			subtitle = "MIMS and MIPS Cohorts"
-		) %>%
-		tab_stubhead("ECG/HRV Metrics") %>%
 		tab_row_group(group = "Low Frequency HRV", rows = 1:3) %>%
 		tab_row_group(group = "High Frequency HRV", rows = 4:6) %>%
 		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
 		tab_row_group(group = "Heart Rate", rows = 10:12) %>%
-		tab_source_note("MSIMI = Mental Stress Induced Myocardial Ischemia") %>%
-		cols_hide(columns = "p.value") %>%
-		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
-			locations = cells_body(rows = p.value < 0.05)
-		)
+		cols_hide(columns = "p.value")
 
 	# Tables
 	tables <- list(
@@ -155,6 +128,30 @@ make_mims_tables <- function(clinical) {
 
 # Figures
 make_mims_figures <- function(clinical, outcomes) {
+
+	violin <-
+		clinical %>%
+		select(c(starts_with(c("lf_", "hf_", "twa_", "hr_")), rdr_msi_bl)) %>%
+		select(-contains(c("rest_stress", "stress_rec"))) %>%
+		pivot_longer(cols = starts_with(c("lf_", "hf_", "twa_", "hr_")), names_to = "measures") %>%
+		separate(col = "measures", into = c("hrv", "phase"), sep = "_") %>%
+		filter(value < 150) %>%
+		mutate(
+			phase = factor(phase, levels = c("rest", "stress", "recovery"), labels = c("Rest", "Stress", "Recovery")),
+			hrv = factor(hrv, levels = c("hf", "lf", "twa", "hr"), labels = c("High Frequency", "Low Frequency", "T Wave Area", "Heart Rate"))
+		) %>%
+		ggplot(aes(x = phase, y = value, fill = phase)) +
+		facet_wrap(~hrv, scales = "free") +
+		geom_violin() +
+		geom_jitter(size = 0.2, width = 0.1, alpha = 0.2, color = "white")
+
+	# List
+	figures <- list(
+		violin = violin
+	)
+
+	# Return
+	figures
 
 }
 
@@ -274,7 +271,6 @@ make_mims_survival <- function(clinical, outcomes) {
 report_mims_models <- function(models, survival) {
 
 	# Psych ---------------------------------------------------------------
-
 	psych <-
 		models$equipment$psych %>%
 		bind_rows(.id = "arm") %>%
@@ -290,10 +286,6 @@ report_mims_models <- function(models, survival) {
 		)) %>%
 		gt(rowname_col = "phase") %>%
 		tab_stubhead("ECG/HRV Metric") %>%
-		tab_header(
-			title = "HRV and Chronic Psychological Stress",
-			subtitle = "MIMS/MIPS Cohorts"
-		) %>%
 		cols_merge(
 			columns = starts_with("scid_depression_bl"),
 			pattern = "{1} ({2}, {3}) <br> AUC {5}"
@@ -308,14 +300,14 @@ report_mims_models <- function(models, survival) {
 			decimals = 2
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = vars(scid_ptsd_bl_estimate),
 				rows = scid_ptsd_bl_p.value < 0.05
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = vars(scid_depression_bl_estimate),
 				rows = scid_depression_bl_p.value < 0.05
@@ -328,9 +320,6 @@ report_mims_models <- function(models, survival) {
 		cols_label(
 			scid_depression_bl_estimate = "SCID Depression",
 			scid_ptsd_bl_estimate = "SCID PTSD"
-		) %>%
-		tab_source_note(
-			source_note = md("Highlighted boxes represent significant findings. SCID = Structured Clinical Interview for the DSM-IV, PTSD = Post-Traumatic Stress Disorder")
 		) %>%
 		tab_footnote(
 			footnote = "Logistic regression model, OR with 95% CI and concordance statistic.",
@@ -378,21 +367,21 @@ report_mims_models <- function(models, survival) {
 			decimals = 2
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = vars(rdr_combined_estimate),
 				rows = rdr_combined_p.value < 0.05
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = vars(rdr_msi_bl_estimate),
 				rows = rdr_msi_bl_p.value < 0.05
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = vars(rdr_psi2_bl_estimate),
 				rows = rdr_psi2_bl_p.value < 0.05
@@ -406,9 +395,6 @@ report_mims_models <- function(models, survival) {
 			rdr_combined_estimate = "Combined MSIMI/PSIMI",
 			rdr_msi_bl_estimate = "MSIMI",
 			rdr_psi2_bl_estimate = "PSIMI"
-		) %>%
-		tab_source_note(
-			source_note = md("Highlighted boxes represent significant findings. MSIMI = Mental Stress-Induced Myocardial Ischemia, PSIMI = Physical Stress-Induced Myocardial Ischemia, HRV = Heart Rate Variability")
 		) %>%
 		tab_footnote(
 			footnote = "Logistic regression model, OR with 95% CI and concordance statistic.",
@@ -459,28 +445,28 @@ report_mims_models <- function(models, survival) {
 			decimals = 2
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = "lf_stress_estimate",
 				rows = lf_stress_p.value < .01
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = "lf_rest_estimate",
 				rows = lf_rest_p.value < .05
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = "hf_stress_estimate",
 				rows = hf_stress_p.value < .05
 			)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = "hf_rest_estimate",
 				rows = hf_rest_p.value < .05
@@ -492,12 +478,7 @@ report_mims_models <- function(models, survival) {
 			hf_stress_estimate = "Stress HF",
 			hf_rest_estimate = "Rest HF"
 		) %>%
-		tab_stubhead(label = "Adjusted Models") %>%
-		tab_header(
-			title = "Mental Stress-Induced Myocardial Ischemia and HRV",
-			subtitle = "Sequential Models in MIMS/MIPS"
-		) %>%
-		tab_source_note("Highlighted boxes signify p.value < 0.05. MSIMI = Mental Stress-Induced Myocardial Ischemia, LF = Low Frequency HRV, HF = High Frequency HRV") %>%
+		tab_stubhead(label = "Sequential Models") %>%
 		tab_footnote(
 			footnote = "Model 1 = MSIMI ~ HRV",
 			locations = cells_stub(rows = 1)
@@ -552,32 +533,32 @@ report_mims_models <- function(models, survival) {
 			drop_trailing_zeros = TRUE
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("death"),
 														 rows = death_outcomes_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("cv_death"),
 														 rows = cv_death_outcomes_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("marg"),
 														 rows = marginal_outcomes_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("pwptt"),
 														 rows = pwptt_outcomes_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("pwpgt"),
 														 rows = pwpgt_outcomes_p.value < .05)
 		) %>%
 		tab_style(
-			style = list(cell_fill(color = "#487f84"), cell_text(color = "white")),
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("ag"),
 														 rows = ag_outcomes_p.value < .05)
 		) %>%
@@ -604,14 +585,7 @@ report_mims_models <- function(models, survival) {
 			style = cell_borders(sides = "right"),
 			locations = cells_body(columns = "term")
 		) %>%
-		cols_hide(columns = "test_num") %>%
-		cols_width(vars(term) ~ px(150)) %>%
-		cols_align(align = "right", columns = vars(term)) %>%
-		tab_header(
-			title = "Outcomes Analysis for Mental Stress and HRV",
-			subtitle = "Traditional and Recurrent Event Models in MIMS/MIPS"
-		) %>%
-		tab_source_note("Estimates = HR (95% CI). Highlighted boxes signify p-value < 0.05. PWP = Prentice, Williams, and Peterson models, MSIMI = Mental Stress-Induced Myocardial Ischemia, LF = Low Frequency, HF = High Frequency, HRV = Heart Rate Variability")
+		cols_hide(columns = "test_num")
 
 	# Return -------------------------------------------------------
 

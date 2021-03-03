@@ -1,25 +1,116 @@
 ---
-title: "Stress Reactivity"
-subtitle: "Disturbances of the Neurocardiac Axis"
-author: "Anish Shah"
+title: |
+  Stress Reactivity  
+  Disturbances of the Neurocardiac Axis
+subtitle: "Anish Sanjay Shah"
+author: |
+  A thesis submitted for the degree of  
+  *Master of Science in Clinical Research*   
+  Laney Graduate School  
+  Emory University  
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::pdf_book
+output: 
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    lot: no
+    lof: no
+    toc_unnumber: no
+    toc_appendix: yes
+    toc_depth: 3
 bibliography: ["../bibliography/Neurocardiology.bib", "../bibliography/Publications.bib"]
-bibliostyle: apalike
+csl: "../bibliography/american-journal-of-epidemiology.csl"
+link-citations: yes
 documentclass: book
+classoption: openany
 colorlinks: yes
 graphics: yes
-lot: yes
-lof: yes
+geometry:
+- top=1in
+- bottom=1in
+- left=1.5in
+- right=1.5in
 fontsize: 11pt
-mainfont: Palatino
+mainfont: Constantia
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.8"
+header-includes:
+  - \AtBeginDocument{\frontmatter}	
+  - \usepackage{float}
+  - \usepackage{setspace}
+  - \usepackage{longtable}
+  - \usepackage{booktabs}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+  - \usepackage{graphicx}
 ---
 
-```{r, include=FALSE}
-# Setup with targets
-library(targets)
-tar_load(chapters)
+```{r setup, global_options, include=FALSE}
+# Knitr layout options
+knitr::opts_chunk$set(
+  cache = TRUE,
+  eval = TRUE,
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  dpi = 300,
+  dev = "png",
+  options("scipen" = 0, "digits" = 3)
+)
+```
+
+```{r flair_color}
+library(flair)
+darkblue <- "#0C2340"
+gold <- "#B58500"
+blue <- "#012169"
+yellow <- "#F2A900"
+teal <- "#487F84"
+orange <- "#C35413"
+red <- "#DA291C"
+violet <- "#6558B1"
+magenta <- "#C6007E"
+lightblue <- "#008DBA"
+black <- "#101820"
+grey <- "#B1B3B3"
+```
+
+# Preface
+
+# Acknowledgements
+
+Foremost, I would like to thank my mentors and mentoring team. Dr. Shah has been a tremendous supporter of my academic growth, and has challenged me to continue to explore and learn, and create an area of academic excellence for myself. Dr. Alonso and Dr. Thames have all supported my efforts through direct mentorship and academic guidance. Dr. Quyyumi and Dr. Vaccarino have created a research environment that has laid the groundwork for these projects.
+
+Second, I would like to thank the support staff that has allowed this research to unfold, from the EPICORE group with Nancy Murrah and Lucy Shallenberger, to the MSCR program with Cheryl Sroka and the outstanding MSCR instructors.
+
+Finally, I would like to thank my family for their patience and support.
+
+
+# Abbreviations
+
+There are several key abbreviations that will be used throughout. They have been outlined here for reference.
+
+```{r abbreviations}
+tribble(
+	~Term, ~Abbreviation,
+	"HRV", "Heart Rate Variability",
+	"CAD", "Coronary Artery Disease",
+	"MACE", "Major Adverse Cardiovascular Events",
+	"Biobank", "Emory Cardiovascular Biobank",
+	"MIMS", "Myocardial Infraction and Mental Stress",
+	"MIPS", "Mental Stress Ischemia Mechanisms and Prognosis Study",
+	"Twins", "Emory Twins Study"
+) %>%
+	arrange(Term) %>%
+	gt() 
 ```

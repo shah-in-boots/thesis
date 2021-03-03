@@ -19,9 +19,11 @@ tar_option_set(
 		# Publication/presentation
 		"knitr", "kableExtra", "RefManageR", "bibtex",
 		# Stats
-		"lme4", "Hmisc", "survival", "ggdag", "multilevelmod", "broom.mixed",
+		"lme4", "Hmisc", "survival", "multilevelmod", "broom.mixed",
+		# Graphing
+		"ggdag", "survminer",
 		# Helpers
-		"magrittr", "magick", "equatiomatic", "survminer"
+		"magrittr", "magick", "equatiomatic"
 	),
 
 	error = "continue"
@@ -56,8 +58,13 @@ targets <- list(
 	tar_target(twins_ecg, readRDS(file_twins_ecg)),
 	tar_file(file_twins_outcomes, "../twins/_targets/objects/outcomes"),
 	tar_target(twins_outcomes, readRDS(file_twins_outcomes)),
+	tar_file(file_twins_cosinors, "../twins/_targets/objects/cosinors"),
+	tar_target(twins_cosinors, readRDS(file_twins_cosinors)),
 
 	### Analysis ---------------------------------------------------------------
+
+	# Overview
+	tar_target(diagrams, draw_diagrams()),
 
 	# Biobank
 	tar_target(biobank_tables, make_biobank_tables(biobank_clinical, biobank_ecg, biobank_labels)),
@@ -73,21 +80,26 @@ targets <- list(
 	tar_target(twins_tables, make_twins_tables(twins_clinical, twins_ecg)),
 	tar_target(twins_models, make_twins_models(twins_clinical, twins_ecg)),
 	tar_target(twins_survival, make_twins_survival(twins_clinical, twins_ecg, twins_outcomes)),
-	tar_target(twins_reports, report_twins_models(twins_models, twins_survival)),
+	tar_target(twins_circadian, make_twins_circadian(twins_clinical, twins_cosinors)),
+	tar_target(twins_reports, report_twins_models(twins_models, twins_survival, twins_circadian)),
 
 	### Publication / Presentation ---------------------------------------------
 
 	# Project overview
-	tar_render(overview, "R/overview.Rmd"),            # Latest Version: 01/01/21
+	#tar_render(overview, "R/overview.Rmd"),           # Latest Version: 01/01/21
 
 	# Thesis Presentation
-	#tar_render(defense, "R/defense.Rmd"),              # Latest Version: 02/08/21
+	#tar_render(defense, "R/defense.Rmd"),             # Latest Version: 02/08/21
 
 	# Dissertation
-	#tar_files(chapters, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE))
 	tar_file(index, "./index.Rmd"),
 	tar_target(paths, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE)),
 	tar_target(chapters, paths, format = "file", pattern = map(paths)),
-	tar_target(dissertation, write_dissertation(index, chapters))
+	tar_target(dissertation, write_dissertation(
+		index, chapters, diagrams,
+		biobank_tables,
+		twins_tables, twins_reports,
+		mims_tables, mims_reports, mims_figures
+	))
 
 )

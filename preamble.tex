@@ -1,0 +1,18 @@
+% Remove "Chapter X" pattern
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+% Short landscape command for both windows/mac
+\usepackage{pdflscape}
+\newcommand{\bland}{\begin{landscape}}
+\newcommand{\eland}{\end{landscape}}
+
+% Short footnote command for both windows/mac
+\newcommand{\bfoot}{\begin{footnotesize}}
+\newcommand{\efoot}{\end{footnotesize}}
+
+% Handle spacing
+\usepackage[none]{hyphenat}
+\raggedbottom
