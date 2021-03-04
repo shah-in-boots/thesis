@@ -1,4 +1,4 @@
-# (PART\*) APPENDIX {.unnumbered}
+# (PART\*) APPENDIX {-}
 
 ```{r, include=FALSE, echo=FALSE}
 tar_load(diagrams)
@@ -9,6 +9,7 @@ tar_load(mims_reports)
 tar_load(twins_tables)
 tar_load(twins_reports)
 ```
+
 
 # TABLES AND FIGURES
 
@@ -22,20 +23,20 @@ tar_load(twins_reports)
 diagrams$dag +
 	scale_color_manual(values = c(teal, gold), na.value = grey) + 
 	theme(
-		  legend.position = "none",
-		  plot.caption = element_text(hjust = 0)
-		  ) +
+		legend.position = "none",
+		plot.caption = element_text(hjust = 0)
+  ) +
 	labs(
-		 title = "Stress Reactivity and the Neurocardiac Axis",
-		 caption = "Directed acyclic graph of the relationship between neurocardiac stressors and potential effect on clinical outcomes, including major adverse cardiovascular events."
-		 )
+		title = "Stress Reactivity and the Neurocardiac Axis",
+		caption = "Directed acyclic graph of the relationship between neurocardiac stressors and potential effect on clinical outcomes, including major adverse cardiovascular events."
+	)
 ```
 
 \newpage
+\bfoot
 
 ### Biobank Cohort Description {#TableOneBiobank}
 
-\bfoot
 
 ```{r}
 biobank_tables$one %>%
@@ -47,10 +48,10 @@ biobank_tables$one %>%
 \efoot
 \newpage
 \bland
+\bfoot
 
 ### Twin Cohorts Description {#TableOneTwins}
 
-\bfoot
 
 ```{r}
 twins_tables$one %>%
@@ -63,10 +64,10 @@ twins_tables$one %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### Mental Stress Cohorts Description {#TableOneMIMS}
 
-\bfoot
 
 ```{r}
 mims_tables$one %>%
@@ -79,10 +80,9 @@ mims_tables$one %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### HRV in Twins Cohorts {#TableTwinsHRV}
-
-\bfoot
 
 ```{r}
 twins_tables$hrv %>%
@@ -97,10 +97,9 @@ twins_tables$hrv %>%
 ## MYOCARDIAL ISCHEMIA
 
 \bland
+\bfoot
 
 ### Relationship Between Obstructive and Non-Obstructive Coronary Artery Disease {#TableBiobankHRV}
-
-\bfoot
 
 ```{r}
 biobank_tables$hrv %>%
@@ -113,10 +112,9 @@ biobank_tables$hrv %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### HRV by Timing of Revascularization {#TableBiobankTiming}
-
-\bfoot
 
 ```{r}
 biobank_tables$timing %>%
@@ -129,10 +127,10 @@ biobank_tables$timing %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### Relationship of HRV with both Mental and Physical Stress {#TableMimsStress}
 
-\bfoot
 
 ```{r}
 mims_reports$stress %>%
@@ -143,10 +141,9 @@ mims_reports$stress %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### Quantitative Myocardial Perfusion and HRV {#TableTwinsMPI}
-
-\bfoot
 
 ```{r}
 twins_reports$mpi %>%
@@ -158,10 +155,9 @@ twins_reports$mpi %>%
 \eland
 \newpage
 \bland
+\bfoot
 
 ### Circadian HRV and Myocardial Perfusion {#TableTwinsCircMPI}
-
-\bfoot
 
 ```{r}
 twins_reports$ischemia_cosinor %>%
@@ -172,7 +168,7 @@ twins_reports$ischemia_cosinor %>%
 \efoot
 \eland
 
-## Mental Stress and Myocardial Perfusion
+## MENTAL STRESS AND MYOCARDIAL PERFUSION
 
 ### HRV and Mental Stress Challenge {#FigureMimsViolin}
 
@@ -182,21 +178,20 @@ mims_figures$violin
 
 \newpage
 \bland
+\bfoot
 
 ### Distribution of HRV and Mental Stress Challenge {#TableMimsPaired}
-
-\bfoot
 
 ```{r}
 mims_tables$paired
 ```
 
 \efoot
+\eland
 \newpage
+\bfoot
 
 ### Distribution of HRV and MSIMI {#TableMimsHRV}
-
-\bfoot
 
 ```{r}
 mims_tables$hrv %>%
@@ -206,10 +201,10 @@ mims_tables$hrv %>%
 
 \efoot
 \newpage
+\bfoot
 
 ### Depression and PTSD with Mental Stress Challenge {#TableMimsPsych}
 
-\bfoot
 
 ```{r}
 mims_reports$psych %>%
@@ -220,6 +215,7 @@ mims_reports$psych %>%
 \efoot
 \newpage
 \bland
+\bfoot
 
 ### HRV and Chronic Mental Stress in Twins {#TableTwinsPsych}
 
@@ -232,10 +228,9 @@ twins_reports$psych %>%
 \efoot
 \eland
 \newpage
+\bfoot
 
 ### Circadian HRV and Chronic Mental Stress {#TableTwinsCircPsych}
-
-\bfoot
 
 ```{r}
 twins_reports$psych_cosinor %>%
@@ -246,10 +241,9 @@ twins_reports$psych_cosinor %>%
 \efoot
 \newpage
 \bland
+\bfoot
 
 ### Modeling Mental Stress-Induced Myocardial Ischemia and HRV {#TableMimsMSIMI}
-
-\bfoot
 
 ```{r}
 mims_reports$mpi %>%
@@ -264,10 +258,9 @@ mims_reports$mpi %>%
 ## CLINICAL OUTCOMES
 
 \bland
+\bfoot
 
 ### Outcomes in MIMS/MIPS
-
-\bfoot
 
 ```{r}
 mims_reports$outcomes %>%
@@ -281,7 +274,8 @@ mims_reports$outcomes %>%
 \efoot
 \eland
 \newpage
-
+\bland
+\bfoot
 
 ### Outcomes in Twins {#TableTwinsOutcomes}
 
@@ -291,3 +285,5 @@ twins_reports$outcomes %>%
 	tab_source_note("Every unit increased in HRV had the associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV = heart rate variability.")
 ```
 
+\efoot
+\eland
