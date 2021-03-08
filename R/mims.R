@@ -22,10 +22,10 @@ make_mims_tables <- function(clinical) {
 		) %>%
 		modify_header(update = list(
 			label ~ 'Characteristic',
-			stat_1_1 ~ '**MSIMI = 0**, <br> N = 256',
-			stat_2_1 ~ '**MSIMI = 1**, <br> N = 50',
-			stat_1_2 ~ '**MSIMI = 0**, <br> N = 440',
-			stat_2_2 ~ '**MSIMI = 1**, <br> N = 188'
+			stat_1_1 ~ '**MSIMI = 0**, N = 256',
+			stat_2_1 ~ '**MSIMI = 1**, N = 50',
+			stat_1_2 ~ '**MSIMI = 0**, N = 440',
+			stat_2_2 ~ '**MSIMI = 1**, N = 188'
 		)) %>%
 		modify_spanning_header(ends_with("_1") ~ "MIMS") %>%
 		modify_spanning_header(ends_with("_2") ~ "MIPS")
@@ -103,16 +103,15 @@ make_mims_tables <- function(clinical) {
 		add_p() %>%
 		modify_header(update = list(
 			label ~ '**Characteristic**',
-			stat_1 ~ '**MSIMI = 0**, <br> N = 710',
-			stat_2 ~ '**MSIMI = 1**, <br> N = 243',
+			stat_1 ~ '**MSIMI = 0**, N = 710',
+			stat_2 ~ '**MSIMI = 1**, N = 243',
 			p.value ~ '**p-value**'
 		)) %>%
 		as_gt() %>%
 		tab_row_group(group = "Low Frequency HRV", rows = 1:3) %>%
 		tab_row_group(group = "High Frequency HRV", rows = 4:6) %>%
 		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
-		tab_row_group(group = "Heart Rate", rows = 10:12) %>%
-		cols_hide(columns = "p.value")
+		tab_row_group(group = "Heart Rate", rows = 10:12)
 
 	# Tables
 	tables <- list(
@@ -209,58 +208,112 @@ make_mims_survival <- function(clinical, outcomes) {
 		octomod() %>%
 		core(inner_join(clinical, outcomes$death, by = c("patid" = "id"))) %>%
 		arm(
-			title = "death_outcomes",
-			plan = Surv(stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest,
+			title = "lf_death",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl")
+			pattern = "sequential",
+			exposure = c("lf_stress")
 		) %>%
-		equip(which_arms = "death_outcomes") %>%
+		equip(which_arms = "lf_death") %>%
 		change_core(inner_join(clinical, outcomes$death_cv, by = c("patid" = "id"))) %>%
 		arm(
-			title = "cv_death_outcomes",
-			plan = Surv(stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest,
+			title = "lf_cv_death",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl")
+			pattern = "sequential",
+			exposure = c("lf_stress")
 		) %>%
-		equip(which_arms = "cv_death_outcomes") %>%
+		equip(which_arms = "lf_cv_death") %>%
 		change_core(inner_join(clinical, outcomes$mace_marginal, by = c("patid" = "id"))) %>%
 		arm(
-			title = "marginal_outcomes",
-			plan = Surv(start, stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest + cluster(patid),
+			title = "lf_marg",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid),
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl", "cluster(patid)")
+			pattern = "sequential",
+			exposure = c("lf_stress", "cluster(patid)")
 		) %>%
-		equip(which_arms = "marginal_outcomes") %>%
+		equip(which_arms = "lf_marg") %>%
 		change_core(inner_join(clinical, outcomes$mace_pwptt, by = c("patid" = "id"))) %>%
 		arm(
-			title = "pwptt_outcomes",
-			plan = Surv(start, stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest + cluster(patid) + strata(strata),
+			title = "lf_pwptt",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid) + strata(strata),
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl", "cluster(patid)", "strata(strata)")
+			pattern = "sequential",
+			exposure = c("lf_stress", "cluster(patid)", "strata(strata)")
 		) %>%
-		equip(which_arms = "pwptt_outcomes") %>%
+		equip(which_arms = "lf_pwptt") %>%
 		change_core(inner_join(clinical, outcomes$mace_pwpgt, by = c("patid" = "id"))) %>%
 		arm(
-			title = "pwpgt_outcomes",
-			plan = Surv(start, stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest + cluster(patid) + strata(strata),
+			title = "lf_pwpgt",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid) + strata(strata),
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl", "cluster(patid)", "strata(strata)")
+			pattern = "sequential",
+			exposure = c("lf_stress", "cluster(patid)", "strata(strata)")
 		) %>%
-		equip(which_arms = "pwpgt_outcomes") %>%
+		equip(which_arms = "lf_pwpgt") %>%
 		change_core(inner_join(clinical, outcomes$mace_ag, by = c("patid" = "id"))) %>%
 		arm(
-			title = "ag_outcomes",
-			plan = Surv(start, stop, status) ~ rdr_msi_bl + lf_stress + lf_rest + hf_stress + hf_rest,
-			approach = cox_reg() %>% set_engine("survival", method = "breslow", robust = TRUE),
-			pattern = "parallel",
-			exposure = c("rdr_msi_bl", "cluster(patid)", "strata(strata)")
+			title = "lf_ag",
+			plan = Surv(stop, status) ~ lf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid),
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("lf_stress", "cluster(patid)")
 		) %>%
-		equip(which_arms = "ag_outcomes")
+		equip(which_arms = "lf_ag") %>%
+		change_core(inner_join(clinical, outcomes$death, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_death",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress")
+		) %>%
+		equip(which_arms = "hf_death") %>%
+		change_core(inner_join(clinical, outcomes$death_cv, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_cv_death",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl,
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress")
+		) %>%
+		equip(which_arms = "hf_cv_death") %>%
+		change_core(inner_join(clinical, outcomes$mace_marginal, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_marg",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid),
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress", "cluster(patid)")
+		) %>%
+		equip(which_arms = "hf_marg") %>%
+		change_core(inner_join(clinical, outcomes$mace_pwptt, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_pwptt",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid) + strata(strata),
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress", "cluster(patid)", "strata(strata)")
+		) %>%
+		equip(which_arms = "hf_pwptt") %>%
+		change_core(inner_join(clinical, outcomes$mace_pwpgt, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_pwpgt",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid) + strata(strata),
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress", "cluster(patid)", "strata(strata)")
+		) %>%
+		equip(which_arms = "hf_pwpgt") %>%
+		change_core(inner_join(clinical, outcomes$mace_ag, by = c("patid" = "id"))) %>%
+		arm(
+			title = "hf_ag",
+			plan = Surv(stop, status) ~ hf_stress + rdr_msi_bl + age_bl + bmi + female_bl + race_bl + smk_now1 + hx_diabetes_bl + hx_hypertension_bl + hx_hbchol_bl + hx_revasc_bl + hx_ptca_bl + hx_cabg_bl + scid_depression_bl + scid_ptsd_bl + cluster(patid),
+			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
+			pattern = "sequential",
+			exposure = c("hf_stress", "cluster(patid)")
+		) %>%
+		equip(which_arms = "hf_ag")
 
 	# Return
 	octobeast
@@ -288,11 +341,11 @@ report_mims_models <- function(models, survival) {
 		tab_stubhead("ECG/HRV Metric") %>%
 		cols_merge(
 			columns = starts_with("scid_depression_bl"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("scid_ptsd_bl"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		fmt_number(
 			columns = starts_with("scid"),
@@ -351,15 +404,15 @@ report_mims_models <- function(models, survival) {
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_msi_bl"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_psi2_bl"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_combined"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		fmt_number(
 			columns = starts_with("rdr"),
@@ -425,19 +478,19 @@ report_mims_models <- function(models, survival) {
 		gt(rowname_col = "test_num") %>%
 		cols_merge(
 			columns = starts_with("lf_stress"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("lf_rest"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("hf_stress"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		cols_merge(
 			columns = starts_with("hf_rest"),
-			pattern = "{1} ({2}, {3}) <br> AUC {5}"
+			pattern = "{1} ({2}, {3}), AUC {5}"
 		) %>%
 		fmt_number(
 			columns = everything(),
@@ -448,7 +501,7 @@ report_mims_models <- function(models, survival) {
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(
 				columns = "lf_stress_estimate",
-				rows = lf_stress_p.value < .01
+				rows = lf_stress_p.value < .05
 			)
 		) %>%
 		tab_style(
@@ -502,25 +555,33 @@ report_mims_models <- function(models, survival) {
 
 	# Outcomes -----------------------------------------------------------
 
+	unadj <- 1
+	adj_ms <- 2
+	adj_demo <- 6
+	adj_risk <- 10
+	adj_cv <- 13
+	adj_psych <- 15
+
 	outcomes <-
 		survival$equipment %>%
 		bind_rows(.id = "arm") %>%
-		filter(str_detect(arm, "_outcomes")) %>%
+		separate(arm, into = c("hrv", "model"), sep = "_", extra = "merge") %>%
 		unnest(tidied) %>%
-		select(c(arm, test_num, term, estimate, conf.low, conf.high, p.value)) %>%
+		select(c(hrv, model, test_num, term, estimate, conf.low, conf.high, p.value)) %>%
+		filter(test_num %in% c(unadj, adj_ms, adj_demo, adj_risk, adj_cv, adj_psych)) %>%
+		filter(str_detect(term, pattern = "stress")) %>%
+		select(-term) %>%
 		pivot_wider(
-			names_from = arm,
+			names_from = model,
 			values_from = c(estimate, conf.low, conf.high, p.value),
-			names_glue = "{arm}_{.value}"
+			names_glue = "{model}_{.value}"
 		) %>%
-		mutate(term = case_when(
-			term == "rdr_msi_bl1" ~ "MSIMI",
-			term == "lf_stress" ~ "Stress LF HRV",
-			term == "lf_rest" ~ "Rest LF HRV",
-			term == "hf_stress" ~ "Stress HF HRV",
-			term == "hf_rest" ~ "Rest HF HRV"
+		mutate(test_num = paste("Model", c(1:6, 1:6))) %>%
+		mutate(hrv = case_when(
+			hrv == "lf" ~ "Stress Low Frequency HRV",
+			hrv == "hf" ~ "Stress High Frequency HRV",
 		)) %>%
-		gt() %>%
+		gt(rowname_col = "test_num", groupname_col = "hrv") %>%
 		cols_merge(columns = starts_with("death"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("cv_"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("marg"), pattern = "{1} ({2}, {3})") %>%
@@ -528,64 +589,72 @@ report_mims_models <- function(models, survival) {
 		cols_merge(columns = starts_with("pwpgt"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("ag"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(
-			columns = contains("outcomes"),
+			columns = contains("_"),
 			decimals = 2,
 			drop_trailing_zeros = TRUE
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("death"),
-														 rows = death_outcomes_p.value < .05)
+														 rows = death_p.value < .01)
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("cv_death"),
-														 rows = cv_death_outcomes_p.value < .05)
+														 rows = cv_death_p.value < .01)
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("marg"),
-														 rows = marginal_outcomes_p.value < .05)
+														 rows = marg_p.value < .01)
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("pwptt"),
-														 rows = pwptt_outcomes_p.value < .05)
+														 rows = pwptt_p.value < .01)
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("pwpgt"),
-														 rows = pwpgt_outcomes_p.value < .05)
+														 rows = pwpgt_p.value < .01)
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = starts_with("ag"),
-														 rows = ag_outcomes_p.value < .05)
+														 rows = ag_p.value < .01)
 		) %>%
 		cols_label(
-			death_outcomes_estimate = "Death",
-			cv_death_outcomes_estimate = "Cardiovascular Death",
-			marginal_outcomes_estimate = "Marginal",
-			pwptt_outcomes_estimate = "PWP Total Time",
-			pwpgt_outcomes_estimate = "PWP Gap Time",
-			ag_outcomes_estimate = "Anderson Gill",
-			term = "Parameters"
+			death_estimate = "Death",
+			cv_death_estimate = "Cardiovascular Death",
+			marg_estimate = "Marginal",
+			pwptt_estimate = "PWP Total Time",
+			pwpgt_estimate = "PWP Gap Time",
+			ag_estimate = "Anderson Gill",
 		) %>%
-		tab_row_group(rows = 1, group = "Model 1") %>%
-		tab_row_group(rows = 2:3, group = "Model 2") %>%
-		tab_row_group(rows = 4:5, group = "Model 3") %>%
-		tab_row_group(rows = 6:7, group = "Model 4") %>%
-		tab_row_group(rows = 8:9, group = "Model 5") %>%
-		row_group_order(groups = c("Model 1", "Model 2", "Model 3", "Model 4", "Model 5")) %>%
-		tab_style(
-			style = cell_borders(sides = c("top", "bottom")),
-			locations = cells_row_groups(groups  = TRUE)
+		tab_footnote(
+			footnote = "Model 1 = MSIMI ~ HRV",
+			locations = cells_stub(rows = c(1, 7))
 		) %>%
-		tab_style(
-			style = cell_borders(sides = "right"),
-			locations = cells_body(columns = "term")
+		tab_footnote(
+			footnote = "Model 2 = Model 1 + MSIMI",
+			locations = cells_stub(rows = c(2, 8))
 		) %>%
-		cols_hide(columns = "test_num")
+		tab_footnote(
+			footnote = "Model 3 = Model 2 + Age + BMI + Sex + Race",
+			locations = cells_stub(rows = c(3, 9))
+		) %>%
+		tab_footnote(
+			footnote = "Model 4 = Model 3 + Smoking + Diabetes + Hypertension + Hyperlipidemia",
+			locations = cells_stub(rows = c(4, 10))
+		) %>%
+		tab_footnote(
+			footnote = "Model 5 = Model 4 + Known Coronary/Peripheral Artery Disease",
+			locations = cells_stub(rows = c(5, 11))
+		) %>%
+		tab_footnote(
+			footnote = "Model 6 = Model 5 + Depression + Post-Traumatic Stress Disorder",
+			locations = cells_stub(rows = c(6, 12))
+		)
 
 	# Return -------------------------------------------------------
 

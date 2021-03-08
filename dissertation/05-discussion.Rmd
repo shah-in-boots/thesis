@@ -2,6 +2,11 @@
 
 # Major Findings
 
+## Myocardial Ischemia
+
+- DYX but not HRV associated with abnormal MPI
+- HRV associated with CFR more than MPI
+
 # Strengths and Limitations
 
 # Next Steps

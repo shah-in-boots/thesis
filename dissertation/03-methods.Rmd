@@ -8,13 +8,49 @@ The response to both physiological and psychological stress can be markers of ov
 1. To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.
 1. To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.
 
+To achieve these aims, we will leverage the several data sets, including the Emory Cardiovascular Biobank (*Biobank*), the Myocardial Infarction and Mental Stress (*MIMS*) and Mental Stress Ischemia Mechanisms and Prognosis Study (*MIPS*), and the Emory Twins Study (*Twins*). Each of these data sets contribute variations of coronary artery physiology, acute and chronic mental stressors, and electrocardiographic data of varying recording lengths.
+
 # Study Design
 
-## Population characteristics
+## Population Characteristics and Study Overview
+
+### Emory Cardiovascular Biobank
+
+The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes.[@Ko2017] 
+All patients aged 18 years and older undergoing cardiac catherization are included. 
+They are excluded if they have congenital heart disease, severe valvular heart disease, severe anemia, a recent blood transfusion, myocarditis, history of active inflammatory disease, cancer or are unable or not willing to provide consent (approximately 5%). 
+Those that are found to have atrial fibrillation or have >20% ectopic beat burden or noise, as well as those that are pacer dependent were excluded.
+Those with known CAD were also excluded.
+
+
+General Protocol: The enrollment, consent, and detailed phenotyping of the patients has been described in prior studies of the Biobank.22 Additional measures, including lifestyle factors, medical comorbidities, revascularization during the index cardiac catheterization, and previous revascularization procedures are ascertained via patient interview and chart review. The study will enroll participants daily from October 2019 until December 2020. The Biobank enrolls on average 10-20 patients per week, and we estimate from our pilot study that up to half will meet inclusion criteria for the sub-study and agree to ECG analysis. 
+
+Heart Rate Variability: As described above, we will collect ambulatory ECG with the VivaLNK patch. I will continue to supervise and assist the study staff with data collection efforts. The consent will occur in the evening before, or morning of the catherization. The patch will be applied to the left mid-axillary line immediately after informed consent and will continue collecting data for up to 24 hours. We will use a commercial from HeartTrends (Lev-El Diagnostics Ltd., Israel) to generate the Dyx measure. We will also use an open source, internally developed HRV toolbox to provide frequency and time domain HRV metrics.25 A materials transfer agreement with the company is already in place with HeartTrends for unrestricted evaluation of ECG data. We are using HRV from the first hour of monitoring within the 7 AM to 10 AM time block as our primary time of measurement.
+
+Psychological Measures: The enrollment protocol includes patient interviews by study staff. Depressive symptoms will be assessed via the 9-question Primary Care Evaluation of Mental Disorders Brief Patient Health Questionnaire (PHQ-9).50 Moderate-severe depression is considered when the PHQ-9 score is 10 points or higher (out of 27). This cutpoint has a sensitivity and specificity of 88% for major depression.24
+
+Cardiac Measures: The primary cardiac outcome is obstructive CAD, measured by >70% stenosis or hemodynamic significance by fractional flow reserve. Coronary angiography will also be evaluated by the Gensini score, which is a visual estimation of luminal narrowing in multiple segments based on a modified form of the American Heart Association classification of the coronary tree by trained cardiologists.29 Coronary angiography will also be evaluated using the Coronary Artery Surgery Study (CASS), which evaluates the number of major epicardial vessels that have a certain percent stenosis, e.g. the CASS-50 score determines the number of vessels with > 50% stenosis. During catherization additional values of end-diastolic pressure and ejection fraction are collected as important covariates and potential confounders that may influence HRV.
+
+
+### Emory Twins Study
+
+The *Twins* is a cross-sectional study was designed to evaluate the relationship
+of abnormal stress myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
+Subjects were drawn from the Emory Twin Study, which recruited middle-aged male twin pairs from the Vietnam Era Twin Registry.[@Shah2013; @Vaccarino2009a; @Goldberg2002]
+
+Pairs of twins were examined at the Emory University General Clinical Research Center, and all data collection occurred during a 24-hour ad- mission under controlled conditions. The twins in each pair maintained a nearly identical schedule, with all data collection beginning and end- ing at the same time. The twins arrived at 11 AM, with ECG recording started at approximately 1 PM, questionnaires and examperformed be- tween 2 and 4 PM, dinner at 5 PM, bedtime at 10 PM, wake-up time at 6:30 AM, and PET scans performed between 8 and 10 AM the following morning. Subjects were excluded from analysis if they had known IHD, defined as previous diagnosis ofmyocardial infarction or previous coro- nary revascularization procedure, were unable to complete pharmaco- logical stress testing, or used beta-blockers because of known effects onHRV and stress test results. The studywas approved by the Emory In- stitutional Review Board and all subjects gave informed consent.
+2.2.
 
 ## Measurements
 
+### Electrocardiography Measures
+
+### Psychological Measures
+
+### Cardiac Measures
+
 ## Sample size and power considerations
+
 
 # Analysis
 

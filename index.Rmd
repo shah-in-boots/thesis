@@ -38,8 +38,8 @@ monofontoptions: "Scale=0.8"
 header-includes:
   - \AtBeginDocument{\frontmatter}	
   - \usepackage{float}
-  - \usepackage{setspace}
   - \usepackage{longtable}
+  - \usepackage{setspace}
   - \usepackage{booktabs}
   - \usepackage{array}
   - \usepackage{multirow}
@@ -58,14 +58,14 @@ header-includes:
 ```{r setup, global_options, include=FALSE}
 # Knitr layout options
 knitr::opts_chunk$set(
-  cache = TRUE,
+  cache = FALSE,
   eval = TRUE,
   echo = FALSE,
   warning = FALSE,
   message = FALSE,
   dpi = 300,
   dev = "png",
-  options("scipen" = 0, "digits" = 3)
+  options("scipen" = 0, "digits" = 2)
 )
 ```
 

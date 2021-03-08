@@ -15,7 +15,7 @@ tar_option_set(
 		# Personal
 		"card", "octomod",
 		# Tidy statistics
-		"tidyverse", "tidymodels", "gt", "gtsummary",
+		"tidyverse", "tidymodels", "gt", "gtsummary", "labelled",
 		# Publication/presentation
 		"knitr", "kableExtra", "RefManageR", "bibtex",
 		# Stats
@@ -79,7 +79,7 @@ targets <- list(
 	# Twins
 	tar_target(twins_tables, make_twins_tables(twins_clinical, twins_ecg)),
 	tar_target(twins_models, make_twins_models(twins_clinical, twins_ecg)),
-	tar_target(twins_survival, make_twins_survival(twins_clinical, twins_ecg, twins_outcomes)),
+	tar_target(twins_survival, make_twins_survival(twins_clinical, twins_ecg, twins_outcomes, twins_cosinors)),
 	tar_target(twins_circadian, make_twins_circadian(twins_clinical, twins_cosinors)),
 	tar_target(twins_reports, report_twins_models(twins_models, twins_survival, twins_circadian)),
 

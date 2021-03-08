@@ -1,5 +1,5 @@
 book_filename: "dissertation.Rmd"
-delete_merged_file: false
+delete_merged_file: true
 rmd_subdir: ["./dissertation"]
 output_dir: ["./"]
 language:

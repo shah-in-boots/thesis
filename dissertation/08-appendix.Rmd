@@ -10,12 +10,13 @@ tar_load(twins_tables)
 tar_load(twins_reports)
 ```
 
-
 # TABLES AND FIGURES
 
-\newpage
-
 ## Clinical Overview
+
+*The follow section divides the relevant figures and tables into those describing the study, aims, and clinical cohorts.*
+
+\newpage
 
 ### Overview of Stress Reactivity {#FigureDag}
 
@@ -37,7 +38,6 @@ diagrams$dag +
 
 ### Biobank Cohort Description {#TableOneBiobank}
 
-
 ```{r}
 biobank_tables$one %>%
 	as_gt() %>%
@@ -51,7 +51,6 @@ biobank_tables$one %>%
 \bfoot
 
 ### Twin Cohorts Description {#TableOneTwins}
-
 
 ```{r}
 twins_tables$one %>%
@@ -67,7 +66,6 @@ twins_tables$one %>%
 \bfoot
 
 ### Mental Stress Cohorts Description {#TableOneMIMS}
-
 
 ```{r}
 mims_tables$one %>%
@@ -93,19 +91,38 @@ twins_tables$hrv %>%
 
 \efoot
 \eland
+\newpage
 
-## MYOCARDIAL ISCHEMIA
+## Myocardial Ischemia
 
+*The follow section divides the relevant figures and tables into those that pertain to the relationship of autonomic function and myocardial ischemia, including both obstructive coronary artery disease and myocardial perfusion.*
+
+\newpage
 \bland
 \bfoot
 
-### Relationship Between Obstructive and Non-Obstructive Coronary Artery Disease {#TableBiobankHRV}
+### Relationship Between Obstructive and Non-Obstructive Coronary Artery Disease {#TableBiobankCAD}
 
 ```{r}
-biobank_tables$hrv %>%
+biobank_tables$cad %>%
 	as_gt() %>%
 	tab_header(title = "HRV and Obstructive CAD", subtitle = "Emory Cardiovascular Biobank") %>%
 	tab_source_note("In patients undergoing angiography, HRV metrics were described in those with both obstructive (>70%) and nonobstructive CAD, and evaluated for differences in distribution. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
+```
+
+\efoot
+\eland
+\newpage
+\bland
+\bfoot
+
+### Effective of Revascularization on Autonomic Function {#TableBiobankRevasc}
+
+```{r}
+biobank_tables$revasc %>%
+	as_gt() %>%
+	tab_header(title = "HRV and Revascularization", subtitle = "Emory Cardiovascular Biobank") %>%
+	tab_source_note("In patients undergoing angiography, HRV metrics were described in those that received revascularization, and evaluated for differences in distribution. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
 ```
 
 \efoot
@@ -120,7 +137,7 @@ biobank_tables$hrv %>%
 biobank_tables$timing %>%
 	as_gt() %>%
 	tab_header(title = "HRV and Timing of Myocardial Reperfusion", subtitle = "Emory Cardiovascular Biobank") %>%
-	tab_source_note("HRV was measured at the start of coronary angiography, as well as intervention. Coronary arteries with obstructive disease are reperfused using balloon angioplasty and potential stenting. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
+	tab_source_note("HRV was measured before the procedure started and during the time of coronary angiography (versus intervention). Coronary arteries with obstructive disease are reperfused using balloon angioplasty and potential stenting. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
 ```
 
 \efoot
@@ -131,10 +148,10 @@ biobank_tables$timing %>%
 
 ### Relationship of HRV with both Mental and Physical Stress {#TableMimsStress}
 
-
 ```{r}
 mims_reports$stress %>%
-	tab_header(title = "Myocardial Perfusion Imaging with Physical and Mental Stress", subtitle = "MIMS/MIPS Cohorts") 
+	tab_header(title = "Myocardial Perfusion Imaging with Physical and Mental Stress", subtitle = "MIMS/MIPS Cohorts") %>%
+	tab_source_note("HRV was measured during the three stages of mental stress challenge and compared in logistic regression models with the results of myocardial perfusion imaging. HRV = heart rate variability, MSIMI = mental stress-induced myocardial ischemia, PSIMI = physical stress-induced myocardial ischemia, AUC = area under receiver-operator curve. Bolded text signifies a p-value < 0.05.")
 ```
 
 \efoot
@@ -167,49 +184,22 @@ twins_reports$ischemia_cosinor %>%
 
 \efoot
 \eland
-
-## MENTAL STRESS AND MYOCARDIAL PERFUSION
-
-### HRV and Mental Stress Challenge {#FigureMimsViolin}
-
-```{r}
-mims_figures$violin
-```
-
 \newpage
-\bland
-\bfoot
 
-### Distribution of HRV and Mental Stress Challenge {#TableMimsPaired}
+## Psychological Stress
 
-```{r}
-mims_tables$paired
-```
+*The follow section divides the relevant figures and tables into those that pertain to the relationship of autonomic function and psychological stress, including both acute mental stress and chronic psychological stress.*
 
-\efoot
-\eland
 \newpage
 \bfoot
 
-### Distribution of HRV and MSIMI {#TableMimsHRV}
+### Depression by PHQ-9 and HRV
 
 ```{r}
-mims_tables$hrv %>%
-	tab_header(title = "HRV distribution by MSIMI", subtitle = "MIMS/MIPS cohorts") %>%
-	tab_source_note("The distribution of HRV between those with MSIMI and those without. The HRV metric are stratified by phase of mental stress challenge. MSIMI = mental stress-induced myocardial ischemia, HRV = heart rate variability.")
-```
-
-\efoot
-\newpage
-\bfoot
-
-### Depression and PTSD with Mental Stress Challenge {#TableMimsPsych}
-
-
-```{r}
-mims_reports$psych %>%
-	tab_header(title = "Mental Stress Challenge HRV and Chronic Psychological Stress", subtitle = "MIMS/MIPS Cohorts") %>%
-	tab_source_note("The association between HRV during mental stress challenge and the chronic psychological stressors of depression and PTSD are described. HRV = heart rate variability.")
+biobank_tables$sad %>%
+	as_gt() %>%
+	tab_header(title = "HRV and Depression by PHQ-9", subtitle = "Emory Cardiovascular Biobank") %>%
+	tab_source_note("In patients undergoing angiography, HRV metrics were described in those with moderate to severe depressive symptoms to those with mild to minimal symptoms by PHQ-9. HRV = Heart Rate Variability, PHQ-9 = Patient Health Questionnaire.")
 ```
 
 \efoot
@@ -240,6 +230,63 @@ twins_reports$psych_cosinor %>%
 
 \efoot
 \newpage
+
+### HRV and Mental Stress Challenge {#FigureMimsViolin}
+
+```{r}
+mims_figures$violin +
+	scale_fill_manual(values = c(teal, gold, blue)) + 
+	theme_minimal() +
+	theme(legend.position = "none") +
+	labs(
+		x = "Mental Stress Challenge Phase",
+		y = "HRV",
+		title = "HRV Response to Mental Stress",
+		caption = "The distribution of HRV and ECG findings in different phases of mental stress challenges."
+	)
+```
+
+\newpage
+\bfoot
+
+### Distribution of HRV and Mental Stress Challenge {#TableMimsPaired}
+
+```{r}
+mims_tables$paired %>%
+	tab_header(
+		title = "Difference between Mental Stress Challenge Phases and ECG Metrics",
+		subtitle = "MIMS/MIPS Cohorts"
+	) %>%
+	tab_source_note("HRV summarised during stress and recovery phase of the mental stress challenge were compared to rest HRV. HRV = heart rate variability.")
+```
+
+\efoot
+\newpage
+\bfoot
+
+### Distribution of HRV and MSIMI {#TableMimsHRV}
+
+```{r}
+mims_tables$hrv %>%
+	tab_header(title = "HRV distribution by MSIMI", subtitle = "MIMS/MIPS cohorts") %>%
+	tab_source_note("The distribution of HRV between those with MSIMI and those without. The HRV metric are stratified by phase of mental stress challenge. MSIMI = mental stress-induced myocardial ischemia, HRV = heart rate variability.")
+```
+
+\efoot
+\newpage
+\bfoot
+
+### Depression and PTSD with Mental Stress Challenge {#TableMimsPsych}
+
+
+```{r}
+mims_reports$psych %>%
+	tab_header(title = "Mental Stress Challenge HRV and Chronic Psychological Stress", subtitle = "MIMS/MIPS Cohorts") %>%
+	tab_source_note("The association between HRV during mental stress challenge and the chronic psychological stressors of depression and PTSD are described. HRV = heart rate variability.")
+```
+
+\efoot
+\newpage
 \bland
 \bfoot
 
@@ -255,24 +302,10 @@ mims_reports$mpi %>%
 \eland
 \newpage
 
-## CLINICAL OUTCOMES
+## Clinical Outcomes
 
-\bland
-\bfoot
+*The follow section divides the relevant figures and tables into those describing the relationship between autonomic dysfunction and clinical outcomes.*
 
-### Outcomes in MIMS/MIPS
-
-```{r}
-mims_reports$outcomes %>%
-	tab_header(
-		title = "Outcomes Analysis for Mental Stress and HRV",
-		subtitle = "Traditional and Recurrent Event Models in MIMS/MIPS"
-	) %>%
-	tab_source_note("Estimates = HR (95% CI). Bolded terms signify p-value < 0.05. PWP = Prentice, Williams, and Peterson models, MSIMI = Mental Stress-Induced Myocardial Ischemia, LF = Low Frequency, HF = High Frequency, HRV = Heart Rate Variability")
-```
-
-\efoot
-\eland
 \newpage
 \bland
 \bfoot
@@ -283,6 +316,35 @@ mims_reports$outcomes %>%
 twins_reports$outcomes %>%
 	tab_header(title = "Clinical Outcomes by HRV", subtitle = "Emory Twins Study") %>%
 	tab_source_note("Every unit increased in HRV had the associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV = heart rate variability.")
+```
+
+\efoot
+\eland
+\newpage
+\bfoot
+
+### Circadian Outcomes in Twins {#TableTwinsCircOutcomes}
+
+```{r}
+twins_reports$outcomes_cosinor %>%
+	tab_header(title = "Clinical Outcomes by Circadian HRV", subtitle = "Emory Twins Study") %>%
+	tab_source_note("The HRV metrics are measured over 24 hours using cosinor statistics. Every unit increase in HRV had an associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity, MESOR = midline estimating statistic of rhythm, Amplitude = maximum distance from MESOR, Phi = shift of acrophase")
+```
+
+\efoot
+\newpage
+\bland
+\bfoot
+
+### Outcomes in MIMS/MIPS {#TableMimsOutcomes}
+
+```{r}
+mims_reports$outcomes %>%
+	tab_header(
+		title = "Outcomes Analysis for Mental Stress and HRV",
+		subtitle = "Traditional and Recurrent Event Models in MIMS/MIPS"
+	) %>%
+	tab_source_note("This summarises the Cox proportional hazard models for both censoring events and for recurrent event analyses. Estimates = HR (95% CI). Bolded terms signify p-value < 0.05. PWP = Prentice, Williams, and Peterson models, MSIMI = Mental Stress-Induced Myocardial Ischemia, LF = Low Frequency, HF = High Frequency, HRV = Heart Rate Variability")
 ```
 
 \efoot
