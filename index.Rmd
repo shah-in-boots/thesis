@@ -39,7 +39,6 @@ header-includes:
   - \AtBeginDocument{\frontmatter}	
   - \usepackage{float}
   - \usepackage{longtable}
-  - \usepackage{setspace}
   - \usepackage{booktabs}
   - \usepackage{array}
   - \usepackage{multirow}
@@ -95,7 +94,6 @@ Second, I would like to thank the support staff that has allowed this research t
 
 Finally, I would like to thank my family for their patience and support.
 
-
 # Abbreviations
 
 There are several key abbreviations that will be used throughout. They have been outlined here for reference.
@@ -107,9 +105,13 @@ tribble(
 	"CAD", "Coronary Artery Disease",
 	"MACE", "Major Adverse Cardiovascular Events",
 	"Biobank", "Emory Cardiovascular Biobank",
-	"MIMS", "Myocardial Infraction and Mental Stress",
-	"MIPS", "Mental Stress Ischemia Mechanisms and Prognosis Study",
-	"Twins", "Emory Twins Study"
+	"MIMS", "Myocardial Infarction and Mental Stress",
+	"MIPS", "Mental Stress Ischemia Prognosis Study",
+	"Twins", "Emory Twins Study",
+	"PTSD", "Post-Traumatic Stress Disorder",
+	"MI", "Myocardial Infarction",
+	"MPI", "Myocardial Perfusion Imaging",
+	"CFR", "Coronary Flow Reserve"
 ) %>%
 	arrange(Term) %>%
 	gt() 

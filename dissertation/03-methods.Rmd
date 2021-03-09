@@ -8,7 +8,7 @@ The response to both physiological and psychological stress can be markers of ov
 1. To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.
 1. To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.
 
-To achieve these aims, we will leverage the several data sets, including the Emory Cardiovascular Biobank (*Biobank*), the Myocardial Infarction and Mental Stress (*MIMS*) and Mental Stress Ischemia Mechanisms and Prognosis Study (*MIPS*), and the Emory Twins Study (*Twins*). Each of these data sets contribute variations of coronary artery physiology, acute and chronic mental stressors, and electrocardiographic data of varying recording lengths.
+To achieve these aims, we will leverage the several data sets, including the Emory Cardiovascular Biobank (*Biobank*), the Myocardial Infarction and Mental Stress (*MIMS*) and Mental Stress Ischemia Prognosis Study (*MIPS*), and the Emory Twins Study (*Twins*). Each of these data sets contribute variations of coronary artery physiology, acute and chronic mental stressors, and electrocardiographic data of varying recording lengths.
 
 # Study Design
 
@@ -18,28 +18,52 @@ To achieve these aims, we will leverage the several data sets, including the Emo
 
 The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes.[@Ko2017] 
 All patients aged 18 years and older undergoing cardiac catherization were included. 
-During the index cardiac catheterization, additional measures including lifestyle factors, medical comorbidities, revascularization and previous procedures were ascertained via patient interview and chart review. 
-Additionally, ambulatory ECG is collected with the VivaLNK patch, which is placed on the morning of cardiac catheterization and removed after catheterization for up to 24 h of data recording.
+During the index cardiac catheterization, additional measures including lifestyle factors, psychological status, medical comorbidities, revascularization and previous procedures were ascertained via patient interview and chart review. 
+Additionally, ambulatory ECG was collected with the VivaLNK patch, which was placed on the morning of cardiac catheterization and removed after catheterization for up to 24 h of data recording.
 Patients were excluded if they have congenital heart disease, severe valvular heart disease, severe anemia, a recent blood transfusion, myocarditis, history of active inflammatory disease, cancer or are unable or not willing to provide consent (approximately 5%). 
 Those that are found to have atrial fibrillation or have >20% ectopic beat burden or noise, as well as those that are pacer dependent were excluded.
 Those with known CAD were also excluded.
 
 ### Emory Twins Study
 
-The *Twins* is a cross-sectional study was designed to evaluate the relationship
-of abnormal stress myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
+The *Twins* is a cross-sectional study was designed to evaluate the relationship of abnormal stress myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
 Subjects were drawn from the Emory Twin Study, which recruited middle-aged male twin pairs from the Vietnam Era Twin Registry.[@Shah2013; @Vaccarino2009a; @Goldberg2002]
 Pairs of twins were examined at the Emory University General Clinical Research Center, and all data collection occurred during a 24-hour admission under controlled conditions. 
 The twins in each pair maintained a nearly identical schedule, with all data collection beginning and ending at the same time. 
 The twins arrived at 11 AM, with ECG recording started at approximately 1 PM, questionnaires and exam performed between 2 and 4 PM, dinner at 5 PM, bedtime at 10 PM, wake-up time at 6:30 AM, and PET scans performed between 8 and 10 AM the following morning. 
+The twins were followed longitudinally for follow-up events, including review of national registries, which were adjudicated.
 Subjects were excluded from analysis if they were unable to complete pharmacological stress testing. 
+
+### Mental Stress Ischemia Mechanisms and Prognosis, Myocardial Infarction and Mental Stress
+
+The study design has been described prior, and is the same between the two cohorts.[@Hammadah2017a] 
+The *MIMS* cohorts had recent myocardial ischemia within the 8 months prior to enrollment and were younger than 61 years of age at time of screening. 
+The *MIPS* cohort included patients with stable CAD diagnosed via coronary angiogram, documented MI, or positive nuclear stress test. 
+All patients underwent mental stress test and physical stress test using either treadmill or regadenosine, and were randomly assigned to complete one and then the other in two separate visits within a week.
+During the initial visit, medical history and psychological assessments were performed as well.
+During the mental stress testing, all patients had ECG recordings made of variable duration.
+Patients were followed longitudinally for 3-5 years for follow-up events, which were adjudicated.
+Patients were excluded for having acute coronary syndrome or decompensated heart failure, severe psychiatric conditions other than depression, pregnancy, uncontrolled high blood pressure, or contraindications to pharmacological stress testing. 
 
 ## Measurements
 
 ### Electrocardiography Measures
 
-*Biobank*
-Heart Rate Variability: As described above, we will collect ambulatory ECG with the VivaLNK patch. I will continue to supervise and assist the study staff with data collection efforts. The consent will occur in the evening before, or morning of the catherization. The patch will be applied to the left mid-axillary line immediately after informed consent and will continue collecting data for up to 24 hours. We will use a commercial from HeartTrends (Lev-El Diagnostics Ltd., Israel) to generate the Dyx measure. We will also use an open source, internally developed HRV toolbox to provide frequency and time domain HRV metrics.25 A materials transfer agreement with the company is already in place with HeartTrends for unrestricted evaluation of ECG data. We are using HRV from the first hour of monitoring within the 7 AM to 10 AM time block as our primary time of measurement.
+In all three cohorts, ECG data was collected and analyzed using similar techniques. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
+
+Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains.[@TaskForceoftheESCandNAS1996a]
+Time domain measures we used include the RR interval duration (converted to heart rate in beats-per-minute), the standard deviation of normally conducted RR intervals (SDNN), the root mean square of successive differences in normally conducted RR intervals (RMSSD), and the proportion of normally conducted RR intervals that differ by more than 50 ms divided by the total number of normally conducted RR intervals (PNN50). 
+Frequency-domain measures computed through power spectral analysis categorize variability as very low frequency (VLF, 0.0033 to <0.04 Hz), low frequency (LF, 0.04 to <0.15 Hz) or high frequency (HF, 0.15 to 0.40 Hz).[@Akselrod1981]
+These frequency categories reflect autonomically mediated heart rate responses to physiologic stimuli, including influences of the renin-angiotensin-aldosterone system, baroreceptor activity, and respiration.[@Akselrod1981]
+The sympathetic and parasympathetic nervous systems influence them to different degrees. 
+HF reflects primarily parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity.[@ReyesdelPaso2013] 
+Total power HRV is a nonspecific global measure. 
+RMSSD is an approximate correlate of HF, and SDNN is an approximate correlate of TP, supporting the physiological basis of these markers.[Electrophysiology1996b]
+These metrics are well-known as physiologic markers of acute and chronic stress, and measure slightly different aspects of autonomic nervous system function.
+HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-El Diagnostics Ltd, Israel), which generated the *Dyx* measure.
+*Dyx* is derived from heart rate time series analysis and measures the variability and randomness of the heart rhythm. 
+*Dyx* is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in Figure \@ref(FigurePoincare).
+*Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability.[@Olesen2005; @Lewkowicz2002]
 
 ### Psychological Measures
 
@@ -50,6 +74,7 @@ Psychological Measures: The enrollment protocol includes patient interviews by s
 
 *Biobank*
 Cardiac Measures: The primary cardiac outcome is obstructive CAD, measured by >70% stenosis or hemodynamic significance by fractional flow reserve. Coronary angiography will also be evaluated by the Gensini score, which is a visual estimation of luminal narrowing in multiple segments based on a modified form of the American Heart Association classification of the coronary tree by trained cardiologists.29 Coronary angiography will also be evaluated using the Coronary Artery Surgery Study (CASS), which evaluates the number of major epicardial vessels that have a certain percent stenosis, e.g. the CASS-50 score determines the number of vessels with > 50% stenosis. During catherization additional values of end-diastolic pressure and ejection fraction are collected as important covariates and potential confounders that may influence HRV.
+
 ## Sample size and power considerations
 
 

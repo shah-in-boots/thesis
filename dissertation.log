@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.7)  7 MAR 2021 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.7)  8 MAR 2021 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,6 +425,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language5
 LaTeX Info: Redefining \_ on input line 43.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 Excluding comment 'comment') (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/lat
@@ -435,8 +437,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box55
 \@float@everytoks=\toks28
 \@floatcapt=\box56
-) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen185
@@ -560,32 +560,32 @@ File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 ) (./dissertation.aux)
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Info: Redefining \microtypecontext on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Info: Redefining \microtypecontext on input line 162.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 161.
+LaTeX Info: Redefining \showhyphens on input line 162.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -604,7 +604,7 @@ fg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 161.
+Package hyperref Info: Link coloring ON on input line 162.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -616,9 +616,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 161.
-LaTeX Info: Redefining \pageref on input line 161.
-LaTeX Info: Redefining \nameref on input line 161.
+LaTeX Info: Redefining \ref on input line 162.
+LaTeX Info: Redefining \pageref on input line 162.
+LaTeX Info: Redefining \nameref on input line 162.
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write4
 \openout4 = `dissertation.out'.
@@ -660,39 +660,39 @@ LaTeX Info: Redefining \nameref on input line 161.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-63.
+64.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-63.
+64.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-163.
+164.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-163.
+164.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 163.
+(Font)              <12> on input line 164.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 163.
+(Font)              <8> on input line 164.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 163.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 163
+(Font)              <6> on input line 164.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 164
 .
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 163
+LaTeX Font Info:    Trying to load font information for U+msb on input line 164
 .
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -708,52 +708,51 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 6.
 [2
 
-]
-Underfull \hbox (badness 2119) in paragraph at lines 46--46
+] [3]
+Underfull \hbox (badness 2119) in paragraph at lines 48--48
  [][] [][]\T1/lmr/m/n/10.95 (+20) Relationship Be-tween Ob-struc-tive and Non-O
 bstructive 
  []
 
-[3])
+[4])
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
 
-[4] [5
+[5] [6
 
-] [6
+] [7
 
 ]
-Underfull \vbox (badness 10000) detected at line 199
+Underfull \vbox (badness 10000) detected at line 204
  []
 
-[7
-
-] [8
+[8
 
 ] [1
+
 
 ]
 Chapter 1.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 211.
+(hyperref)                than one, level fixed on input line 216.
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-16.
+21.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
@@ -773,183 +772,268 @@ Chapter 3.
 Chapter 4.
 [6
 
-] [7
+] [7] [8] [9
 
 ]
 Chapter 5.
-[8
+[10
 
 ]
 Chapter 6.
-[9
-
-] [10]
-Chapter 7.
 [11
 
-] [12
+]
+Underfull \hbox (badness 6893) in paragraph at lines 331--331
+|[]\T1/lmr/bx/n/12 (+20) Mental Stress Is-chemia Mech-a-nisms and Prog-no-sis,
+ []
+
+[12] [13] [14]
+Chapter 7.
+[15
+
+] [16
 
 ]
 Chapter 8.
 
-LaTeX Warning: Reference `TableOneMims' on page 13 undefined on input line 346.
+LaTeX Warning: Reference `TableOneMims' on page 17 undefined on input line 406.
 
 
-[13
+[17
 
 ]
 Chapter 9.
-[14
+[18
 
-]
+] [19]
 Chapter 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
 |[]\T1/lmr/bx/n/17.28 (+20) Psychological Stress and My-ocar-dial
  []
 
-[15
+[20
 
-]
+] [21]
 Chapter 11.
-[16
+[22
 
-] [17
+] [23
 
 ]
 Chapter 12.
-[18
+[24
 
 ]
 Chapter 13.
-[19
+[25
 
 ]
 Chapter 14.
-[20
+[26
 
-] [21
+] [27
 
-] [22] [23
+] [28] [29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
 \T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
 / 29288185 % 20http : / / www .
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 460--463
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 520--523
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--463
+Underfull \hbox (badness 10000) in paragraph at lines 520--523
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 464--467
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 524--527
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--467
+Underfull \hbox (badness 10000) in paragraph at lines 524--527
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 468--471
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 528--531
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--471
+Underfull \hbox (badness 10000) in paragraph at lines 528--531
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 472--475
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 532--535
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--475
+Underfull \hbox (badness 10000) in paragraph at lines 532--535
 
  []
 
-[24] [25
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
+/ 28002382 % 20http : / / www .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 536--539
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--539
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 540--543
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--543
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 544--547
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--547
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 550--550
+\T1/lmr/m/n/10.95 (+20) of low fre-quency heart rate vari-abil-ity as an in-dex
+ of sym-pa-thetic
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 550--550
+\T1/lmr/m/n/10.95 (+20) car-diac tone: A re-view with em-pha-sis on a re-anal-y
+-sis of pre-vi-ous
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 550--550
+\T1/lmr/m/n/10.95 (+20) stud-ies. \T1/lmr/m/it/10.95 (+20) Psy-chophys-i-ol-ogy
+ \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2013;50(5):477--487.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--550
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
+xy . library . emory . edu / doi / pdf / 10 . 1111 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--550
+\T1/lmr/m/n/10.95 (+20) psyp . 12027 % 20http : / / www . ncbi . nlm . nih . go
+v / pubmed / 23445494 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 548--551
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--551
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
+\T1/lmr/m/n/10.95 (+20) 26 / i = 5 / a = 002 ? key = crossref . fae68af48013829
+ef154a6b703ade0b3 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 552--555
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--555
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 556--559
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--559
+
+ []
+
+[31] [32
 
 ]
 Chapter 15.
-[26
+[33
 
 ]
-<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=563, 1466.47874pt x
+<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=626, 1466.47874pt x
  855.195pt>
 File: dissertation_files/figure-latex/unnamed-chunk-13-1.png Graphic file (type
  png)
 <use dissertation_files/figure-latex/unnamed-chunk-13-1.png>
 Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-13-1.png
-  used on input line 495.
+  used on input line 582.
 (pdftex.def)             Requested size: 397.47617pt x 231.79309pt.
-[27 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
+[34 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
+<refs/poincare.jpg, id=634, 976.64874pt x 538.01pt>
+File: refs/poincare.jpg Graphic file (type jpg)
+<use refs/poincare.jpg>
+Package pdftex.def Info: refs/poincare.jpg  used on input line 589.
+(pdftex.def)             Requested size: 234.14714pt x 128.98547pt.
+[35 <./refs/poincare.jpg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 510.
+(Font)              <9> on input line 604.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 510.
+(Font)              <5> on input line 604.
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
-[29
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
+
+ []
+
+[37
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 622--623
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
-
- []
-
-[30
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 665--666
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
-
- []
-
-[31
-
-
-] [32
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 715--717
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
  []
 
@@ -958,193 +1042,221 @@ Underfull \hbox (badness 10000) in paragraph at lines 719--720
 
  []
 
-[33
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 759--761
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
-
- []
-
-[34
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
-
- []
-
-[35
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 856--857
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 859--860
-
- []
-
-[36
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 895--898
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 900--901
-
- []
-
-[37
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 941--942
-
- []
-
 [38
 
 
-] [39
+]
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
+
+ []
+
+[39
+
+
+] [40
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 987--989
+Underfull \hbox (badness 10000) in paragraph at lines 809--811
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 991--992
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 1026--1029
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1032
+Underfull \hbox (badness 10000) in paragraph at lines 813--814
 
  []
 
 [41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+Underfull \hbox (badness 10000) in paragraph at lines 853--855
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 857--858
 
  []
 
 [42
 
-]
-<dissertation_files/figure-latex/unnamed-chunk-27-1.png, id=669, 1913.1475pt x 
-1310.8975pt>
-File: dissertation_files/figure-latex/unnamed-chunk-27-1.png Graphic file (type
- png)
-<use dissertation_files/figure-latex/unnamed-chunk-27-1.png>
-Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-27-1.png
-  used on input line 1080.
-(pdftex.def)             Requested size: 397.48158pt x 272.35622pt.
-[43 <./dissertation_files/figure-latex/unnamed-chunk-27-1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1119--1120
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1165--1167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1169--1170
-
- []
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1254--1255
-
- []
-
-[47
-
-] [48
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1301--1306
+Underfull \hbox (badness 10000) in paragraph at lines 898--900
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1308--1309
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
+
+ []
+
+[43
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 950--951
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--954
+
+ []
+
+[44
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 989--992
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 994--995
+
+ []
+
+[45
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1036
+
+ []
+
+[46
+
+
+] [47
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1086
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1126
 
  []
 
 [49
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
 
  []
 
 [50
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1395
+<dissertation_files/figure-latex/unnamed-chunk-28-1.png, id=738, 1913.1475pt x 
+1310.8975pt>
+File: dissertation_files/figure-latex/unnamed-chunk-28-1.png Graphic file (type
+ png)
+<use dissertation_files/figure-latex/unnamed-chunk-28-1.png>
+Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-28-1.png
+  used on input line 1174.
+(pdftex.def)             Requested size: 397.48158pt x 272.35622pt.
+[51 <./dissertation_files/figure-latex/unnamed-chunk-28-1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
+
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 1259--1261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1397--1398
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1264
 
  []
 
-[51
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 1309--1310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1312--1313
+
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 1341--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+
+ []
+
+[55
+
+] [56
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
+
+ []
+
+[57
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
+
+ []
+
+[58
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1489
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1492
+
+ []
+
+[59
 
 ] (./dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: DA601486049A0FC8DF3886BAD14D2E53;11668.
+(rerunfilecheck)             Checksum: 305FA31984CB4AED46256A9499954115;12376.
  ) 
 Here is how much of TeX's memory you used:
- 15818 strings out of 480984
- 241562 string characters out of 5907359
- 620127 words of memory out of 5000000
- 32250 multiletter control sequences out of 15000+600000
- 496751 words of font info for 189 fonts, out of 8000000 for 9000
+ 15871 strings out of 480984
+ 242402 string characters out of 5907359
+ 622327 words of memory out of 5000000
+ 32262 multiletter control sequences out of 15000+600000
+ 497769 words of font info for 199 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,10n,74p,1201b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,10n,74p,1520b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
 /Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/
 asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/ass
@@ -1164,10 +1276,10 @@ m/lmri12.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/l
 mri9.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro1
 0.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pf
 b>
-Output written on dissertation.pdf (59 pages, 919128 bytes).
+Output written on dissertation.pdf (67 pages, 1138800 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 222 named destinations out of 1000 (max. 500000)
- 51723 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 904 PDF objects out of 1000 (max. 8388607)
+ 807 compressed objects within 9 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 51744 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,5 +1,7 @@
 # (PART\*) APPENDIX {-}
 
+# TABLES AND FIGURES
+
 ```{r, include=FALSE, echo=FALSE}
 tar_load(diagrams)
 tar_load(biobank_tables)
@@ -10,7 +12,8 @@ tar_load(twins_tables)
 tar_load(twins_reports)
 ```
 
-# TABLES AND FIGURES
+\bgroup
+\singlespacing
 
 ## Clinical Overview
 
@@ -31,6 +34,14 @@ diagrams$dag +
 		title = "Stress Reactivity and the Neurocardiac Axis",
 		caption = "Directed acyclic graph of the relationship between neurocardiac stressors and potential effect on clinical outcomes, including major adverse cardiovascular events."
 	)
+```
+
+\newpage
+
+### Poincaré Plot of HRV {#FigurePoincare}
+
+```{r}
+knitr::include_graphics("refs/poincare.jpg")
 ```
 
 \newpage
@@ -349,3 +360,4 @@ mims_reports$outcomes %>%
 
 \efoot
 \eland
+\egroup
