@@ -16,7 +16,7 @@ To achieve these aims, we will leverage the several data sets, including the Emo
 
 ### Emory Cardiovascular Biobank
 
-The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes.[@Ko2017] 
+The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes [@Ko2017].
 All patients aged 18 years and older undergoing cardiac catherization were included. 
 During the index cardiac catheterization, additional measures including lifestyle factors, psychological status, medical comorbidities, revascularization and previous procedures were ascertained via patient interview and chart review. 
 Additionally, ambulatory ECG was collected with the VivaLNK patch, which was placed on the morning of cardiac catheterization and removed after catheterization for up to 24 h of data recording.
@@ -27,7 +27,7 @@ Those with known CAD were also excluded.
 ### Emory Twins Study
 
 The *Twins* is a cross-sectional study was designed to evaluate the relationship of abnormal stress myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
-Subjects were drawn from the Emory Twin Study, which recruited middle-aged male twin pairs from the Vietnam Era Twin Registry.[@Shah2013; @Vaccarino2009a; @Goldberg2002]
+Subjects were drawn from the Emory Twin Study, which recruited middle-aged male twin pairs from the Vietnam Era Twin Registry [@Shah2013; @Vaccarino2009a; @Goldberg2002].
 Pairs of twins were examined at the Emory University General Clinical Research Center, and all data collection occurred during a 24-hour admission under controlled conditions. 
 The twins in each pair maintained a nearly identical schedule, with all data collection beginning and ending at the same time. 
 The twins arrived at 11 AM, with ECG recording started at approximately 1 PM, questionnaires and exam performed between 2 and 4 PM, dinner at 5 PM, bedtime at 10 PM, wake-up time at 6:30 AM, and PET scans performed between 8 and 10 AM the following morning. 
@@ -36,7 +36,7 @@ Subjects were excluded from analysis if they were unable to complete pharmacolog
 
 ### Mental Stress Ischemia Mechanisms and Prognosis, Myocardial Infarction and Mental Stress
 
-The study design has been described prior, and is the same between the two cohorts.[@Hammadah2017a] 
+The study design has been described prior, and is the same between the two cohorts [@Hammadah2017a].
 The *MIMS* cohorts had recent myocardial ischemia within the 8 months prior to enrollment and were younger than 61 years of age at time of screening. 
 The *MIPS* cohort included patients with stable CAD diagnosed via coronary angiogram, documented MI, or positive nuclear stress test. 
 All patients underwent mental stress test and physical stress test using either treadmill or regadenosine, and were randomly assigned to complete one and then the other in two separate visits within a week.
@@ -51,31 +51,60 @@ Patients were excluded for having acute coronary syndrome or decompensated heart
 
 In all three cohorts, ECG data was collected and analyzed using similar techniques. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
 
-Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains.[@TaskForceoftheESCandNAS1996a]
+Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains [@TaskForceoftheESCandNAS1996a].
 Time domain measures we used include the RR interval duration (converted to heart rate in beats-per-minute), the standard deviation of normally conducted RR intervals (SDNN), the root mean square of successive differences in normally conducted RR intervals (RMSSD), and the proportion of normally conducted RR intervals that differ by more than 50 ms divided by the total number of normally conducted RR intervals (PNN50). 
-Frequency-domain measures computed through power spectral analysis categorize variability as very low frequency (VLF, 0.0033 to <0.04 Hz), low frequency (LF, 0.04 to <0.15 Hz) or high frequency (HF, 0.15 to 0.40 Hz).[@Akselrod1981]
-These frequency categories reflect autonomically mediated heart rate responses to physiologic stimuli, including influences of the renin-angiotensin-aldosterone system, baroreceptor activity, and respiration.[@Akselrod1981]
+Frequency-domain measures computed through power spectral analysis categorize variability as very low frequency (VLF, 0.0033 to <0.04 Hz), low frequency (LF, 0.04 to <0.15 Hz) or high frequency (HF, 0.15 to 0.40 Hz) [@Akselrod1981].
+These frequency categories reflect autonomically mediated heart rate responses to physiologic stimuli, including influences of the renin-angiotensin-aldosterone system, baroreceptor activity, and respiration [@Akselrod1981].
 The sympathetic and parasympathetic nervous systems influence them to different degrees. 
-HF reflects primarily parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity.[@ReyesdelPaso2013] 
+HF reflects primarily parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity [@ReyesdelPaso2013].
 Total power HRV is a nonspecific global measure. 
 RMSSD is an approximate correlate of HF, and SDNN is an approximate correlate of TP, supporting the physiological basis of these markers.[Electrophysiology1996b]
-Acceleration capacity and deceleration capacity were also included where available, based on signal quality and recording length, as they also reflect clinically relevant sympathetic and vagal activity.[@Bauer2006c]
+Acceleration capacity and deceleration capacity were also included where available, based on signal quality and recording length, as they also reflect clinically relevant sympathetic and vagal activity [@Bauer2006c].
 These metrics are well-known as physiologic markers of acute and chronic stress, and measure slightly different aspects of autonomic nervous system function.
 HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-El Diagnostics Ltd, Israel), which generated the *Dyx* measure.
 *Dyx* is derived from heart rate time series analysis and measures the variability and randomness of the heart rhythm. 
 *Dyx* is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in Figure \@ref(FigurePoincare).
-*Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability.[@Olesen2005; @Lewkowicz2002]
+*Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability [@Olesen2005; @Lewkowicz2002].
+
+In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics.
 
 ### Psychological Measures
 
+In all cohorts, chronic psychological variables were measured through patient interviews. 
+In the *Biobank*, depressive symptoms were assessed via the 9-question Primary Care Evaluation of Mental Disorders Brief Patient Health Questionnaire (PHQ-9) [@Kroenke2001].
+Moderate-severe depression is considered when the PHQ-9 score is 10 points or higher (out of 27), with this cutpoint having a sensitivity and specificity of 88% for major depression. 
+Within the *Twins* and *MIMS/MIPS* cohorts, depressive symptomers were assessed with Beck's Depression Inventory, which includes 21 items with 4 statements scored 0-3, with higher scores indicating higher severity of depression [@Beck1988].
+A cut-off of $\geq$ 14 points was used to identify patients with moderate-to-severe depressive symptom burden.
+The diagnosis of post-traumatic stress disorder (PTSD) was defined using the Structured Clinical Interview for Diagnostic and Statistical Manual of Mental Disorders, 4th Edition (DSM-IV) [@First2004].
 
-*Biobank*
-Psychological Measures: The enrollment protocol includes patient interviews by study staff. Depressive symptoms will be assessed via the 9-question Primary Care Evaluation of Mental Disorders Brief Patient Health Questionnaire (PHQ-9).50 Moderate-severe depression is considered when the PHQ-9 score is 10 points or higher (out of 27). This cutpoint has a sensitivity and specificity of 88% for major depression.24
+In the *MIMS/MIPS* cohort, there was a separate protocol for acute mental stress challenge. 
+Patients were initially allowed to rest for 30 minutes in a calm, quiet, dimly lit, and temperature-regulated room.
+After the resting period, mental stress was induced by a standardized public speaking task, as previously described [@DavidGoldberg1996].
+The patients were asked to imagine a real-life stressful situation, such as a close relative having been mistreated in a nursing home, and then asked to make up a realistic story around this scenario.
+They were given two minutes to prepare the statement, and three minutes to present it in front of a video camera and an audience.
+The patients were told that the speech would be evaluated for content, quality, and duration.
 
 ### Cardiac Measures
 
-*Biobank*
-Cardiac Measures: The primary cardiac outcome is obstructive CAD, measured by >70% stenosis or hemodynamic significance by fractional flow reserve. Coronary angiography will also be evaluated by the Gensini score, which is a visual estimation of luminal narrowing in multiple segments based on a modified form of the American Heart Association classification of the coronary tree by trained cardiologists.29 Coronary angiography will also be evaluated using the Coronary Artery Surgery Study (CASS), which evaluates the number of major epicardial vessels that have a certain percent stenosis, e.g. the CASS-50 score determines the number of vessels with > 50% stenosis. During catherization additional values of end-diastolic pressure and ejection fraction are collected as important covariates and potential confounders that may influence HRV.
+All cohorts underwent imaging of the heart through different modalities, which all assess complementary aspects of myocardial blood flow. 
+
+The *Biobank* used direct coronary angiography through cardiac catheterization.
+Obstructive CAD was defined as $\ge$ 70% stenosis or hemodynamic significance by fractional flow reserve. 
+Coronary angiography was used to determine the Gensini score, which is a visual estimation of luminal narrowing in multiple segments based on a modified form of the American Heart Association classification of the coronary tree by trained cardiologists [@Gensini1983].
+Coronary angiography was also evaluated using the Coronary Artery Surgery Study (CASS), which evaluates the number of major epicardial vessels that have a certain percent stenosis, e.g. the CASS-50 score determines the number of vessels with $\ge$ 50% stenosis [@Ringqvist1983].
+Importantly, direct coronary angiography is limited to visualization of the large, epicardial conduit vessels.
+
+
+TWINS
+All subjects, for research purposes, underwent MPI using nitrogen-
+13-ammonia positron emission tomography with adenosine as the pharmacologic stressor. Adenosine doses were calculated to induce maximal coronary vasodilation [32]. Areas of diminished uptake indi- cate reduced capacity to maximally vasodilate, thereby causing relative coronary hypoperfusion. Images were visually interpreted by experi- enced cardiologists and radiologists with training in nuclear cardiology. Quantitative analysis was performedwith the Emory Cardiac Toolbox to generate: a) coronary flow reserve (CFR) for absolute myocardial blood flow during stress and rest, and b) the stress total severity score (STSS), which measures the sum of the number of standard deviations below the expected value for eachpixel compared to a database ofnormal con- trols [33]. CFRwas defined as the ratio ofmean stress to rest myocardial blood flow (mL/min/g), and low CFR was defined as a ratio b1.5 [34]. Abnormal MPI findings were defined as N5% MPI deficit. For generaliz- ability, semi-quantitative assessments were used as the primary out- come. Gallium (Ge-68) was used for attenuation correction, and thus coronary
+
+
+MIMS/MIPS
+Subjects underwent three SPECT myocardial perfusion imag-
+ing scans following injection of sestamibi radiolabelled with Technetium-99m (99mTc sestamibi), at rest, after mental stress, and after physical (exercise or pharmacological) stress. Testing was done on a dedicated ultra-fast solid-state camera (Discovery NM 530c, General Electric, Milwaukee, WI) without attenuation correction [17]. Only one resting scan was performed, with myocardial perfusion images acquired after the injection of 10–15 mCi of [99mTc] sestamibi according to body weight. The stress scan (either mental or physical) followed at least 2 hours later and 30–45 mCi of [99mTc] sestamibi were administered, with a 3:1 ratio of stress to rest radiotracer dose. On the mental stress day, [99mTc]sestamibi was injected one
+minute after the onset of the public speech. On the exercise stress day, subjects were submitted to a standard Bruce protocol with exercise target set at 85% of maximum predicted heart rate and the radiotracer was injected at peak exertion. For both stress conditions, stress images were acquired 45–60 minutes after radiotracer injection using previously described methodology [18]. The ECG, blood pressure and heart rate were continuously monitored during the test. For patients undergoing a pharmaco- logical stress test, 0.4 mg of regadenoson (Astellas, Northbrook, Illinois), an adenosine receptor agonist, were administered intravenously in approximately 10 seconds, and [99mTc] sestamibi was injected right after regadenoson. SPECT images were then obtained as described above. Myocardial perfusion abnormalities were quantified by means
+of the Emory Cardiac Toolbox software, which provides objective quantitative assessment of perfusion with established validity and reproducibility [19,20]. Automated analysis for SPECT myocar- dial perfusion imaging is equivalent to visual analysis by expert readers [21,22], but is more reproducible, since interpreter variability is an important source of heterogeneity in imaging results [23,24]. With automated analysis, such variability is removed, making this technique more reproducible and thus better suited for studies with serial SPECT scans such as ours. Briefly, the three-dimensional tracer uptake distribution in the left ventricle was oriented along the short axis and sampled onto a two-dimensional polar map. An operator-independ
 
 ## Sample size and power considerations
 

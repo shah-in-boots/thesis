@@ -1,7 +1,8 @@
 # (PART\*) REFERENCES {-}
 
-\begin{singlespace}
+\bgroup
+\singlespacing
 
 <div id="refs"></div>
 
-\end{singlespace}
+\egroup
