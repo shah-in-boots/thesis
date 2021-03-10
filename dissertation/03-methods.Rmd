@@ -59,6 +59,7 @@ The sympathetic and parasympathetic nervous systems influence them to different 
 HF reflects primarily parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity.[@ReyesdelPaso2013] 
 Total power HRV is a nonspecific global measure. 
 RMSSD is an approximate correlate of HF, and SDNN is an approximate correlate of TP, supporting the physiological basis of these markers.[Electrophysiology1996b]
+Acceleration capacity and deceleration capacity were also included where available, based on signal quality and recording length, as they also reflect clinically relevant sympathetic and vagal activity.[@Bauer2006c]
 These metrics are well-known as physiologic markers of acute and chronic stress, and measure slightly different aspects of autonomic nervous system function.
 HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-El Diagnostics Ltd, Israel), which generated the *Dyx* measure.
 *Dyx* is derived from heart rate time series analysis and measures the variability and randomness of the heart rhythm. 
@@ -66,6 +67,7 @@ HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-E
 *Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability.[@Olesen2005; @Lewkowicz2002]
 
 ### Psychological Measures
+
 
 *Biobank*
 Psychological Measures: The enrollment protocol includes patient interviews by study staff. Depressive symptoms will be assessed via the 9-question Primary Care Evaluation of Mental Disorders Brief Patient Health Questionnaire (PHQ-9).50 Moderate-severe depression is considered when the PHQ-9 score is 10 points or higher (out of 27). This cutpoint has a sensitivity and specificity of 88% for major depression.24

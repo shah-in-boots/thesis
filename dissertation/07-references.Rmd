@@ -1,3 +1,7 @@
 # (PART\*) REFERENCES {-}
 
+\begin{singlespace}
+
 <div id="refs"></div>
+
+\end{singlespace}
