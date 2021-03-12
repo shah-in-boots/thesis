@@ -62,7 +62,7 @@ make_twins_models <- function(clinical, ecg) {
 		# Logistic - MPI, Depression, PTSD
 		arm(
 			title = "log_lf_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ lf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = ptsd + sad_bin + pet_bin ~ lf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -70,7 +70,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "log_hf_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ hf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = ptsd + sad_bin + pet_bin ~ hf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -78,7 +78,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "log_vlf_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ vlf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = ptsd + sad_bin + pet_bin ~ vlf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -86,7 +86,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "log_dyx_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ dyx + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = ptsd + sad_bin + pet_bin ~ dyx + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -94,7 +94,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "log_ac_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ ac + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = ptsd + sad_bin + pet_bin ~ ac + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -103,7 +103,7 @@ make_twins_models <- function(clinical, ecg) {
 		# Linear models - CFR
 		arm(
 			title = "lin_lf_adjusted",
-			plan = global_cfr ~ lf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = global_cfr ~ lf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -111,7 +111,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "lin_hf_adjusted",
-			plan = global_cfr ~ hf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = global_cfr ~ hf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -119,7 +119,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "lin_vlf_adjusted",
-			plan = global_cfr ~ vlf + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = global_cfr ~ vlf + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -127,7 +127,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "lin_dyx_adjusted",
-			plan = global_cfr ~ dyx + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = global_cfr ~ dyx + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -135,7 +135,7 @@ make_twins_models <- function(clinical, ecg) {
 		) %>%
 		arm(
 			title = "lin_ac_adjusted",
-			plan = global_cfr ~ ac + age + bmi + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			plan = global_cfr ~ ac + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -325,8 +325,8 @@ report_twins_models <- function(models, survival, circadian) {
 
 	# Set Up ------------------------------------------------------
 	unadj <- 2 # HRV
-	adj_demo <- 4 # + age + BMI
-	adj_cv <- 9 # + smoking, CAD, CHF, HTN, DM
+	adj_demo <- 5 # + age + BMI
+	adj_cv <- 10 # + smoking, CAD, CHF, HTN, DM
 
 	hourly <-
 		models$equipment %>%
@@ -388,7 +388,7 @@ report_twins_models <- function(models, survival, circadian) {
 			locations = cells_stub(rows = c(1:2))
 		) %>%
 		tab_footnote(
-			footnote = "Model 2 = Model 1 + Age + BMI",
+			footnote = "Model 2 = Model 1 + Age + BMI + Race",
 			locations = cells_stub(rows = c(3:4))
 		) %>%
 		tab_footnote(
@@ -439,7 +439,7 @@ report_twins_models <- function(models, survival, circadian) {
 			locations = cells_stub(rows = c(1:2))
 		) %>%
 		tab_footnote(
-			footnote = "Model 2 = Model 1 + Age + BMI",
+			footnote = "Model 2 = Model 1 + Age + BMI + Race",
 			locations = cells_stub(rows = c(3:4))
 		) %>%
 		tab_footnote(

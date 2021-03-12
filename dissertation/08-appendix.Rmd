@@ -1,16 +1,7 @@
 # (PART\*) APPENDIX {-}
+# (APPENDIX) APPENDIX {-}
 
 # TABLES AND FIGURES
-
-```{r, include=FALSE, echo=FALSE}
-tar_load(diagrams)
-tar_load(biobank_tables)
-tar_load(mims_tables)
-tar_load(mims_figures)
-tar_load(mims_reports)
-tar_load(twins_tables)
-tar_load(twins_reports)
-```
 
 \bgroup
 \singlespacing

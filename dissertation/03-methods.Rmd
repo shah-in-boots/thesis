@@ -1,6 +1,6 @@
 # (PART\*) METHODS {-}
 
-# Specific Aims
+# Specific Aims {#aims}
 
 The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis. 
 
@@ -52,6 +52,7 @@ Patients were excluded for having acute coronary syndrome or decompensated heart
 In all three cohorts, ECG data was collected and analyzed using similar techniques. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
 
 Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains [@TaskForceoftheESCandNAS1996a].
+HRV was calculated through the Physionet Cardiovascular Signal Toolbox [@Vest2018], which is an open-source MATLAB software for analyzing ECG signal.
 Time domain measures we used include the RR interval duration (converted to heart rate in beats-per-minute), the standard deviation of normally conducted RR intervals (SDNN), the root mean square of successive differences in normally conducted RR intervals (RMSSD), and the proportion of normally conducted RR intervals that differ by more than 50 ms divided by the total number of normally conducted RR intervals (PNN50). 
 Frequency-domain measures computed through power spectral analysis categorize variability as very low frequency (VLF, 0.0033 to <0.04 Hz), low frequency (LF, 0.04 to <0.15 Hz) or high frequency (HF, 0.15 to 0.40 Hz) [@Akselrod1981].
 These frequency categories reflect autonomically mediated heart rate responses to physiologic stimuli, including influences of the renin-angiotensin-aldosterone system, baroreceptor activity, and respiration [@Akselrod1981].
@@ -66,7 +67,7 @@ HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-E
 *Dyx* is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in Figure \@ref(FigurePoincare).
 *Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability [@Olesen2005; @Lewkowicz2002].
 
-In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics.
+In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins* [@Refinetti2007]. Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area.
 
 ### Psychological Measures
 
@@ -94,23 +95,96 @@ Coronary angiography was used to determine the Gensini score, which is a visual 
 Coronary angiography was also evaluated using the Coronary Artery Surgery Study (CASS), which evaluates the number of major epicardial vessels that have a certain percent stenosis, e.g. the CASS-50 score determines the number of vessels with $\ge$ 50% stenosis [@Ringqvist1983].
 Importantly, direct coronary angiography is limited to visualization of the large, epicardial conduit vessels.
 
+The *Twins* study used MPI using underwent MPI using nitrogen-13-ammonia positron emission tomography (PET) with adenosine as the pharmacologic stressor.
+Adenosine doses were calculated to induce maximal coronary vasodilation [@Vaccarino2011]. 
+Areas of diminished uptake indicate reduced capacity to maximally vasodilate, thereby causing relative coronary hypoperfusion. 
+Images were visually interpreted by experienced cardiologists and radiologists with training in nuclear cardiology. 
+Quantitative analysis was performed with the Emory Cardiac Toolbox to generate: a) coronary flow reserve (CFR) for absolute myocardial blood flow during stress and rest, and b) the stress total severity score (STSS), which measures the sum of the number of standard deviations below the expected value for each pixel compared to a database of normal controls [@Hutchins1990]. 
+CFR was defined as the ratio of mean stress to rest myocardial blood flow (mL/min/g), and low CFR was defined as a ratio $<$ 1.5 [@Gould2018a].
+Abnormal MPI findings were defined as $>$ 5% MPI deficit.
+For generalizability, semi-quantitative assessments were used. 
 
-TWINS
-All subjects, for research purposes, underwent MPI using nitrogen-
-13-ammonia positron emission tomography with adenosine as the pharmacologic stressor. Adenosine doses were calculated to induce maximal coronary vasodilation [32]. Areas of diminished uptake indi- cate reduced capacity to maximally vasodilate, thereby causing relative coronary hypoperfusion. Images were visually interpreted by experi- enced cardiologists and radiologists with training in nuclear cardiology. Quantitative analysis was performedwith the Emory Cardiac Toolbox to generate: a) coronary flow reserve (CFR) for absolute myocardial blood flow during stress and rest, and b) the stress total severity score (STSS), which measures the sum of the number of standard deviations below the expected value for eachpixel compared to a database ofnormal con- trols [33]. CFRwas defined as the ratio ofmean stress to rest myocardial blood flow (mL/min/g), and low CFR was defined as a ratio b1.5 [34]. Abnormal MPI findings were defined as N5% MPI deficit. For generaliz- ability, semi-quantitative assessments were used as the primary out- come. Gallium (Ge-68) was used for attenuation correction, and thus coronary
+In the *MIMS/MIPS*, MPI was also used but with single-photon emission computered tomography (SPECT), using sestamibi radio-labelled with Technetium-99. 
+SPECT was performed at rest, after mental stress, and after physical stress (either exercise or pharmacological). 
+Myocardial perfusion abnormalities were quantified using the Emory Cardiac Toolbox software, similar to the *Twins*, and semi-quantitative assessments were determined.
 
+## Sample Size and Power Considerations
 
-MIMS/MIPS
-Subjects underwent three SPECT myocardial perfusion imag-
-ing scans following injection of sestamibi radiolabelled with Technetium-99m (99mTc sestamibi), at rest, after mental stress, and after physical (exercise or pharmacological) stress. Testing was done on a dedicated ultra-fast solid-state camera (Discovery NM 530c, General Electric, Milwaukee, WI) without attenuation correction [17]. Only one resting scan was performed, with myocardial perfusion images acquired after the injection of 10–15 mCi of [99mTc] sestamibi according to body weight. The stress scan (either mental or physical) followed at least 2 hours later and 30–45 mCi of [99mTc] sestamibi were administered, with a 3:1 ratio of stress to rest radiotracer dose. On the mental stress day, [99mTc]sestamibi was injected one
-minute after the onset of the public speech. On the exercise stress day, subjects were submitted to a standard Bruce protocol with exercise target set at 85% of maximum predicted heart rate and the radiotracer was injected at peak exertion. For both stress conditions, stress images were acquired 45–60 minutes after radiotracer injection using previously described methodology [18]. The ECG, blood pressure and heart rate were continuously monitored during the test. For patients undergoing a pharmaco- logical stress test, 0.4 mg of regadenoson (Astellas, Northbrook, Illinois), an adenosine receptor agonist, were administered intravenously in approximately 10 seconds, and [99mTc] sestamibi was injected right after regadenoson. SPECT images were then obtained as described above. Myocardial perfusion abnormalities were quantified by means
-of the Emory Cardiac Toolbox software, which provides objective quantitative assessment of perfusion with established validity and reproducibility [19,20]. Automated analysis for SPECT myocar- dial perfusion imaging is equivalent to visual analysis by expert readers [21,22], but is more reproducible, since interpreter variability is an important source of heterogeneity in imaging results [23,24]. With automated analysis, such variability is removed, making this technique more reproducible and thus better suited for studies with serial SPECT scans such as ours. Briefly, the three-dimensional tracer uptake distribution in the left ventricle was oriented along the short axis and sampled onto a two-dimensional polar map. An operator-independ
-
-## Sample size and power considerations
-
+The subjects for the *Biobank* were enrolled from September 2019 to February 2020, however further enrollment was limited due to the COVID-19 pandemic. 
+It was expected that approximately 200 patients would be needed for adequate power, but due to limitations, the analyses were conducted on available data.
+The enrollment for *MIMS/MIPS* and *Twins* was completed prior to the initiation of this analysis, and provided a robust population to expand upon and answer the specific aims.
 
 # Analysis
 
-## Descriptive analysis
+Statistical analysis was performed using R 4.0.0 (R Core Team 2020, Vienna, Austria). 
+The analytical approach was guided by the specific aims (Section \@ref(aims)). 
 
-## Statistical inference
+## Clinical Characteristics
+
+In the *Biobank*, HRV was summarized over the recording length and at 15-30 minute intervals at the time of coronary angiography. 
+In the *Twins*, HRV was computed hourly, including *Dyx*. 
+The 24-hour data was used to generate cosinor statistics as well using published software [@Shah2020d]. 
+In the *MIMS/MIPS*, HRV was computed for each phase of the mental stress challenge. 
+Power spectral density measures of HF, LF, and VLF HRV were log-transformed for normal distribution.
+Each of the clinical cohorts was described by clinical covariates, including frequency of comorbid diseases and summary statistics of continuous measures.
+
+## Myocardial Ischemia
+
+The purpose of **Aim I** was to identify the relationship of autonomic dysfunction with CAD, as measured by both coronary angiography and MPI. 
+Within the *Biobank*, summary HRV metrics were compared between those with obstructive CAD versus nonobstructive CAD using the Wilcoxon rank sum test. HRV was then assess in a similar manner between those receiving revascularization and those that did not. HRV was segmented by timing of coronary angiography. HRV was compared at the start of catheterization (or initial intervention in those that were revascularized) to the 30 minutes before the procedure, by intervention status. 
+
+To evaluate the relationship with myocardial perfusion, HRV was also assessed within the *MIMS/MIPS* cohort, which had both mental and physical stress MPI as outcomes. 
+Logistic regressions were used with HRV during stress and rest as the exposures, not adjusted for clinical covariates. 
+The area under the receiver-operator characteristic curves were generated. 
+
+```{r}
+fit <- 
+	twins_models$equipment$lin_lf_adjusted %>%
+	filter(outcomes == "global_cfr" & level == 7 & test_num == 10) %>%
+	pull(fit) %>%
+	.[[1]] %>%
+	pluck("fit")
+
+extract_eq(fit, wrap = TRUE, terms_per_line = 4)
+```
+
+Within the *Twins*, similar analyses were performed with MPI and hourly HRV. Early morning, approximately 7 AM, HRV was used based on previous work suggesting the strong temporal relationship of HRV with clinical outcomes [@Shah2020]. 
+Generalized linear mixed-effects models with Laplace approximations were used to account for clustering within twin pairs and within repeat study visits [@Carlin2005a].
+Coronary flow reserve was treated as the outcome variable in linear models, and abnormal MPI was treated as the outcome variable in logistic models. 
+With the mixed-effects model, with random effects or conditioning for both twin pair status and repeat study visits. 
+The models were sequentially adjusted for demographic variables (age, BMI, and race), and then for cardiovascular risk factors (smoking, hypertension, cardiovascular disease).
+HRV was summarized as cosinor metrics of MESOR (midline estimating statistic of rhythm), amplitude, and acrophase. 
+These metrics were treated as exposures, with CFR and MPI as outcomes, in mixed effects models as above.
+
+## Psychological Stress
+
+The purpose of **Aim II** was to establish the relationship between psychological stress and autonomic dysfunction.
+Acute psychological stress was defined as the mental stress challenge in the *MIMS/MIPS* cohorts. Chronic psychological stress was defined as diagnoses of depression and PTSD, and/or symptom burden.
+
+In the *Biobank*, the distribution of HRV was compared between those with depression, as measured by PHQ-9, using Wilcoxon rank sum test. 
+In the *Twins*, using the above described generalized linear mixed-effects models, regression analysis was performed with early morning HRV as the exposure and either PTSD or depression as the outcome. 
+Sequential adjustment was performed for demographic factors and cardiovascular risk factors. 
+Cosinor metrics were also used as additional exposure variables in additional mixed-models.
+
+The *MIMS/MIPS* cohort offered the opportunity to assess both acute and chronic psychological stress. 
+The distribution of HRV was visually compared between phases of the mental stress challenge for all subjects.
+HRV was then analyzed within subjects by comparing the rest phase to the both the stress and recovery phase using paired T-test.
+The distribution of HRV was then compared by phase in those with MSIMI and those without MSIMI using the Wilcoxon rank sum test.
+Logistic regression models were used with PTSD and depression as outcomes and HRV by stress phase as exposures, without adjustment, and concordance statistics were generated.
+Logistic regression models were then built with MSIMI as the outcome and stress HRV as the exposure, along with concordance statistics.
+These models were sequentially adjusted for demographic factors (age, BMI, sex, race), cardiovascular risk factors (smoking, hypertension, diabetes, hyperlipidemia), known cardiovascular disease (coronary/peripheral artery disease), and then with chronic psychological stress (depression, PTSD). 
+
+## Clinical Outcomes
+
+The purpose of **Aim III** was to evaluate the role of autonomic dysfunction in clinical outcomes, and understand the effect of autonomic dysfunction on the relationship between outcomes and both psychological stress and myocardial ischemia. Clinical outcomes were available in the *Twins* and *MIMS/MIPS* cohorts. Proportional hazard assumptions were assessed visually in both cohorts.
+
+The clinical outcomes of interest were overall mortality and death by cardiovascular disease in the *Twins*. 
+Early morning HRV was treated as the exposure, with the survival time before censoring event as the outcome in Cox proportional hazard models. 
+The models were sequentially adjusted for myocardial ischemia, demographic factors (age, BMI, race), cardiovascular factors (known cardiovascular disease, hypertension, diabetes, smoking), and psychological factors (depression, PTSD). 
+In a similar fashion, cosinor metrics for HRV were used as exposure variables in models that were sequentially adjusted as above. 
+
+In the *MIMS/MIPS*, the clinical outcomes of interest were overall mortality, cardiovascular mortality, and recurrent cardiovascular events including myocardial infarction or revascularization. 
+Cox proportional hazard models were used for both overall and cardiovascular mortality. 
+Recurrent event analysis used proportional hazard models with strata for events and individuals using marginal models, Prentice-Williams-Peterson models (both total and gap time), and Anderson-Gill models [@Amorim2015a]. 
+These models were sequentially adjusted for demographic factors (age, BMI, sex, race), cardiovascular risk factors (smoking, hypertension, diabetes, hyperlipidemia), known cardiovascular disease (coronary/peripheral artery disease), and then with chronic psychological stress (depression, PTSD). 
+

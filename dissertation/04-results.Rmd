@@ -1,23 +1,4 @@
-# (PART\*) RESULTS {.unnumbered}
-
-```{r, include=FALSE}
-# Biobank
-tar_load(biobank_tables)
-
-# Twins
-tar_load(twins_reports)
-tar_load(twins_tables)
-tar_load(twins_ecg)
-tar_load(twins_clinical)
-tar_load(twins_models)
-
-# MIMS/MIPS
-tar_load(mims_tables)
-tar_load(mims_figures)
-tar_load(mims_reports)
-tar_load(mims_clinical)
-tar_load(mims_models)
-```
+# (PART\*) RESULTS {-}
 
 # Clinical Characteristics
 

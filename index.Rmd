@@ -84,8 +84,6 @@ black <- "#101820"
 grey <- "#B1B3B3"
 ```
 
-# Preface
-
 # Acknowledgements
 
 Foremost, I would like to thank my mentors and mentoring team. Dr. Shah has been a tremendous supporter of my academic growth, and has challenged me to continue to explore and learn, and create an area of academic excellence for myself. Dr. Alonso and Dr. Thames have all supported my efforts through direct mentorship and academic guidance. Dr. Quyyumi and Dr. Vaccarino have created a research environment that has laid the groundwork for these projects.
@@ -97,6 +95,10 @@ Finally, I would like to thank my family for their patience and support.
 # Abbreviations
 
 There are several key abbreviations that will be used throughout. They have been outlined here for reference.
+
+<br>
+
+\bfoot
 
 ```{r abbreviations}
 tribble(
@@ -111,8 +113,35 @@ tribble(
 	"PTSD", "Post-Traumatic Stress Disorder",
 	"MI", "Myocardial Infarction",
 	"MPI", "Myocardial Perfusion Imaging",
-	"CFR", "Coronary Flow Reserve"
+	"CFR", "Coronary Flow Reserve",
+	"MSIMI", "Mental Stress-Induced Myocardial Ischemia",
+	"PSIMI", "Physical Stress-Induced Myocardial Ischemia",
+	"ANS", "Autonomic Nervous System"
 ) %>%
 	arrange(Term) %>%
 	gt() 
+```
+
+\efoot
+
+```{r, include=FALSE}
+# Overview
+tar_load(diagrams)
+
+# Biobank
+tar_load(biobank_tables)
+
+# Twins
+tar_load(twins_reports)
+tar_load(twins_tables)
+tar_load(twins_ecg)
+tar_load(twins_clinical)
+tar_load(twins_models)
+
+# MIMS/MIPS
+tar_load(mims_tables)
+tar_load(mims_figures)
+tar_load(mims_reports)
+tar_load(mims_clinical)
+tar_load(mims_models)
 ```

@@ -2,25 +2,37 @@
 
 # (PART\*) INTRODUCTION {-}
 
-# Overview
-
-### Research Problem
-
--   Mental stress can cause changes in the brain\
--   These changes can lead to depression and psych disease\
--   Those changes lead to increased cardiovascular disease\
--   Patients that are comorbid with psych and CAD do worse clinically
-
-
-# Outline
-
-1.  Research problem
-1.  Purpose of research
-1.  Underlying causal mechanisms
-1.  Overview of how to address problem
-
+# The Problem
 
 > "Why did he die on Tuesday and not on Monday?"
 >
 > --- Douglas Zipes
 
+1.  Research problem
+
+- Mental stress can cause changes in the brain
+- These changes can lead to depression and psych disease
+- Those changes lead to increased cardiovascular disease
+- Patients that are comorbid with psych and CAD do worse clinically
+
+The underlying concept in the question posed by Dr. Zipes is that the cardiac substrate is can be triggered into an catastrophic maelstrom [@Zipes2010]. 
+That trigger is oftentimes psychological in nature [@Lown1979].
+Depression, for example, is the leading cause of disabilty in the world [@Friedrich2017b], and CAD is the leading cause of death [@McAloon2016b]. 
+The prevalence of depression is 20% in patients with CAD, and in those with comorbid depression and CAD, there is a 3-fold increase in cardiovascular mortality [@Jha2019; Meijer2011].
+By understanding how the body reacts to mental stress, we can learn how to control and modify these triggers to prevent cardiovascular mortality.
+
+1.  Purpose of research
+
+- Purpose of research is to see if physiological and psychological stress can be measured
+- Attempt to quantify the neurocardiac axis by measuring ANS function from neural perspective and from cardiac perspective
+- Leveraging different types of "stress" to help answer this question
+- Stress = myocardial ischemia, chronic psychological, acute mental stress, circadian/diurnal 
+
+
+# The Approach
+
+1.  Underlying causal mechanisms
+
+Part of this increased mortality is likely due to dysfunction of the autonomic nervous system [@Stein2000].
+
+1.  Overview of how to address problem

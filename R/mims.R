@@ -371,8 +371,8 @@ report_mims_models <- function(models, survival) {
 		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
 		tab_row_group(group = "Heart Rate", rows = 10:12) %>%
 		cols_label(
-			scid_depression_bl_estimate = "SCID Depression",
-			scid_ptsd_bl_estimate = "SCID PTSD"
+			scid_depression_bl_estimate = "Depression",
+			scid_ptsd_bl_estimate = "PTSD"
 		) %>%
 		tab_footnote(
 			footnote = "Logistic regression model, OR with 95% CI and concordance statistic.",

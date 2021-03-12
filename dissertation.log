@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.7)  9 MAR 2021 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.11)  12 MAR 2021 07:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,11 +705,11 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 {/Users/asshah4/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
 (./dissertation.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 6.
+(Font)              <10.95> on input line 12.
 [2
 
 ] [3]
-Underfull \hbox (badness 2119) in paragraph at lines 48--48
+Underfull \hbox (badness 2119) in paragraph at lines 49--49
  [][] [][]\T1/lmr/m/n/10.95 (+20) Relationship Be-tween Ob-struc-tive and Non-O
 bstructive 
  []
@@ -720,43 +720,23 @@ bstructive
 
 [5] [6
 
-] [7
-
 ]
-Underfull \vbox (badness 10000) detected at line 204
+Underfull \vbox (badness 10000) detected at line 206
  []
 
-[8
+[7
+
+] [8
 
 ] [1
 
-
 ]
 Chapter 1.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 216.
-
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-21.
+35.
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
-
- []
-
-[2
+) [2
 
 ]
 Chapter 2.
@@ -783,367 +763,557 @@ Chapter 6.
 [11
 
 ]
-Underfull \hbox (badness 6893) in paragraph at lines 331--331
+Underfull \hbox (badness 6893) in paragraph at lines 367--367
 |[]\T1/lmr/bx/n/12 (+20) Mental Stress Is-chemia Mech-a-nisms and Prog-no-sis,
  []
 
-[12] [13] [14] [15] [16] [17]
+[12] [13] [14] [15] [16]
 Chapter 7.
-[18
+[17
 
-] [19
+]
+Overfull \hbox (301.9776pt too wide) detected at line 487
+[][]
+ []
+
+[18] [19] [20] [21
 
 ]
 Chapter 8.
 
-LaTeX Warning: Reference `TableOneMims' on page 20 undefined on input line 435.
+LaTeX Warning: Reference `TableOneMims' on page 22 undefined on input line 549.
 
 
-[20
+[22
 
 ]
 Chapter 9.
-[21
-
-] [22]
-Chapter 10.
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--470
-|[]\T1/lmr/bx/n/17.28 (+20) Psychological Stress and My-ocar-dial
- []
-
 [23
 
 ] [24]
-Chapter 11.
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--584
+|[]\T1/lmr/bx/n/17.28 (+20) Psychological Stress and My-ocar-dial
+ []
+
 [25
 
-] [26
+] [26]
+Chapter 11.
+[27
+
+] [28
 
 ]
 Chapter 12.
-[27
+[29
 
 ]
 Chapter 13.
-[28
+[30
 
 ]
 Chapter 14.
-[29
+[31
 
-] [30
+] [32
 
-] [31] [32
+] [33] [34
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+\T1/lmr/m/n/10.95 (+9) ([][]$http : / / circ . ahajournals . org / %20https : /
+ / www . ahajournals . org / doi / 10 . 1161 /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 666--669
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--669
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 670--673
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--673
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 674--677
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--677
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 678--681
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--681
+
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 684--684
+\T1/lmr/m/n/10.95 (+20) Re-view. 2019;73:1827--1845. ([][]$http : / / www . ncb
+i . nlm . nih . gov / pubmed /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 682--685
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 682--685
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 686--689
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 \T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
 / 29288185 % 20http : / / www .
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 552--555
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 690--693
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--555
+Underfull \hbox (badness 10000) in paragraph at lines 690--693
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 556--559
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 694--697
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--559
+Underfull \hbox (badness 10000) in paragraph at lines 694--697
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 560--563
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 698--701
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--563
+Underfull \hbox (badness 10000) in paragraph at lines 698--701
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 564--567
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 702--705
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--567
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--570
+Underfull \hbox (badness 10000) in paragraph at lines 708--708
 \T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
 / 28002382 % 20http : / / www .
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 568--571
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 706--709
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--571
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 572--575
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 710--713
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--575
+Underfull \hbox (badness 10000) in paragraph at lines 710--713
 
  []
 
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
+\T1/lmr/m/it/10.95 (+20) Mea-sure-ment \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-
+ti-cle]. 2018;39(10):105004. ([][]$http :
+ []
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 576--579
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 714--717
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 576--579
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
 
  []
 
 
-Underfull \hbox (badness 1515) in paragraph at lines 582--582
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 718--721
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--721
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 724--724
 \T1/lmr/m/n/10.95 (+20) of low fre-quency heart rate vari-abil-ity as an in-dex
  of sym-pa-thetic
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 582--582
+Underfull \hbox (badness 1325) in paragraph at lines 724--724
 \T1/lmr/m/n/10.95 (+20) car-diac tone: A re-view with em-pha-sis on a re-anal-y
 -sis of pre-vi-ous
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 582--582
+Underfull \hbox (badness 3250) in paragraph at lines 724--724
 \T1/lmr/m/n/10.95 (+20) stud-ies. \T1/lmr/m/it/10.95 (+20) Psy-chophys-i-ol-ogy
  \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2013;50(5):477--487.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 \T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
 xy . library . emory . edu / doi / pdf / 10 . 1111 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
 \T1/lmr/m/n/10.95 (+20) psyp . 12027 % 20http : / / www . ncbi . nlm . nih . go
 v / pubmed / 23445494 % 20http :
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 580--583
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 722--725
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--583
+Underfull \hbox (badness 10000) in paragraph at lines 722--725
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 584--587
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 726--729
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--587
+Underfull \hbox (badness 10000) in paragraph at lines 726--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--590
+Underfull \hbox (badness 10000) in paragraph at lines 732--732
 \T1/lmr/m/n/10.95 (+20) 26 / i = 5 / a = 002 ? key = crossref . fae68af48013829
 ef154a6b703ade0b3 % 20http :
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 588--591
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 730--733
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--591
+Underfull \hbox (badness 10000) in paragraph at lines 730--733
 
  []
 
-[33]
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 592--595
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 734--737
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--595
+Underfull \hbox (badness 10000) in paragraph at lines 734--737
 
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 598--598
+Underfull \hbox (badness 4205) in paragraph at lines 740--740
+[]\T1/lmr/m/n/10.95 (+20) Refinetti R, Cornélis-sen G, Hal-berg F. Pro-ce-dures
+ for nu-mer-i-cal
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 740--740
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2007;38(4):275--325. ([][]$https : / / www 
+. tandfonline . com / action /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 738--741
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--741
+
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 744--744
 \T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2001;16(9):606--13. ([][]$http : / / www . 
 ncbi . nlm . nih . gov / pubmed /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 744--744
 \T1/lmr/m/n/10.95 (+20) 11556941 % 20http : / / www . pubmedcentral . nih . gov
  / articlerender . fcgi ? artid =
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 596--599
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 742--745
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--599
+Underfull \hbox (badness 10000) in paragraph at lines 742--745
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 600--603
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 746--749
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 600--603
+Underfull \hbox (badness 10000) in paragraph at lines 746--749
 
  []
 
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 604--607
+[36]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 750--753
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--607
+Underfull \hbox (badness 10000) in paragraph at lines 750--753
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 608--611
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 754--757
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--611
+Underfull \hbox (badness 10000) in paragraph at lines 754--757
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 612--615
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 758--761
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--615
+Underfull \hbox (badness 10000) in paragraph at lines 758--761
 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 616--619
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 762--765
 [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--619
+Underfull \hbox (badness 10000) in paragraph at lines 762--765
 
  []
 
-[34] [35
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 766--769
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--769
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 770--773
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--773
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 774--777
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--777
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 778--781
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--781
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 784--784
+[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
+ heart
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 784--784
+\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
+-ocar-dial per-fu-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 784--784
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
+e / pii / S0167527319355214 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 782--785
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 788--788
+[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
+ heart
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 788--788
+\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
+-ocar-dial per-fu-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
+e / pii / S0167527319355214 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 786--789
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
+
+ []
+
+[37]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 790--793
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 794--797
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--797
+
+ []
+
+[38pdfTeX warning (ext4): destination with the same identifier (name{ref-Shah20
+20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.803 \part*{APPENDIX}\label{part-appendix}}
+                                            ] [39
 
 ]
-Chapter 15.
-[36
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 807.
+
+Appendix A.
+[40
 
 ]
-<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=664, 1466.47874pt x
+<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=746, 1466.47874pt x
  855.195pt>
 File: dissertation_files/figure-latex/unnamed-chunk-13-1.png Graphic file (type
  png)
 <use dissertation_files/figure-latex/unnamed-chunk-13-1.png>
 Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-13-1.png
-  used on input line 644.
+  used on input line 826.
 (pdftex.def)             Requested size: 397.47617pt x 231.79309pt.
-[37 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
-<refs/poincare.jpg, id=672, 976.64874pt x 538.01pt>
+[41 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
+<refs/poincare.jpg, id=755, 976.64874pt x 538.01pt>
 File: refs/poincare.jpg Graphic file (type jpg)
 <use refs/poincare.jpg>
-Package pdftex.def Info: refs/poincare.jpg  used on input line 651.
+Package pdftex.def Info: refs/poincare.jpg  used on input line 833.
 (pdftex.def)             Requested size: 234.14714pt x 128.98547pt.
-[38 <./refs/poincare.jpg>]
+[42 <./refs/poincare.jpg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 666.
+(Font)              <9> on input line 848.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 666.
+(Font)              <5> on input line 848.
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
-
- []
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
-
- []
-
-[40
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 781--782
-
- []
-
-[41
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
-
- []
-
-[42
-
-
-] [43
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 871--873
+Underfull \hbox (badness 10000) in paragraph at lines 872--873
 
  []
 
@@ -1152,15 +1322,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 875--876
 
  []
 
-[44
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 915--917
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 913--914
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 919--920
+Underfull \hbox (badness 10000) in paragraph at lines 916--917
+
+ []
+
+[44
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 960--961
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
 
  []
 
@@ -1168,200 +1348,246 @@ Underfull \hbox (badness 10000) in paragraph at lines 919--920
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 960--962
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 964--965
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
 
  []
 
 [46
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
-
- []
-
-[47
-
+] [47
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
 
  []
 
 [48
 
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1099
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
 
  []
 
 [49
 
 
-] [50
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
+
+ []
+
+[50
+
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1143--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
 
  []
 
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1185
+[51
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+Underfull \hbox (badness 10000) in paragraph at lines 1238--1239
 
  []
 
 [52
 
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+Underfull \hbox (badness 10000) in paragraph at lines 1279--1280
 
  []
 
 [53
 
+
+] [54
+
 ]
-<dissertation_files/figure-latex/unnamed-chunk-28-1.png, id=776, 1913.1475pt x 
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1330
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1370
+
+ []
+
+[56
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+
+ []
+
+[57
+
+]
+<dissertation_files/figure-latex/unnamed-chunk-28-1.png, id=857, 1913.1475pt x 
 1310.8975pt>
 File: dissertation_files/figure-latex/unnamed-chunk-28-1.png Graphic file (type
  png)
 <use dissertation_files/figure-latex/unnamed-chunk-28-1.png>
 Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-28-1.png
-  used on input line 1236.
+  used on input line 1418.
 (pdftex.def)             Requested size: 397.48158pt x 272.35622pt.
-[54 <./dissertation_files/figure-latex/unnamed-chunk-28-1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1275--1276
+[58 <./dissertation_files/figure-latex/unnamed-chunk-28-1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1458
 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 1321--1323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1325--1326
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 1371--1372
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 1503--1505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
+Underfull \hbox (badness 10000) in paragraph at lines 1507--1508
 
  []
 
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 1403--1408
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
-
- []
-
-[58
-
-] [59
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1462
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1464--1465
-
- []
-
-[60
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1504--1505
-
- []
-
-[61
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1545--1551
-
- []
-
-
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 1553--1554
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
+
+ []
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 1585--1590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1593
+
+ []
+
 [62
+
+] [63
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
+
+ []
+
+[64
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1687
+
+ []
+
+[65
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1733
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1736
+
+ []
+
+[66
 
 ] (./dissertation.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 305FA31984CB4AED46256A9499954115;12376.
+(rerunfilecheck)             Checksum: AA53635539E7F5A87581B0236A0099D4;12553.
  ) 
 Here is how much of TeX's memory you used:
- 15893 strings out of 480984
- 242666 string characters out of 5907359
- 622327 words of memory out of 5000000
- 32262 multiletter control sequences out of 15000+600000
- 498455 words of font info for 205 fonts, out of 8000000 for 9000
+ 15924 strings out of 480984
+ 243015 string characters out of 5907358
+ 624292 words of memory out of 5000000
+ 32265 multiletter control sequences out of 15000+600000
+ 501745 words of font info for 209 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,10n,74p,1520b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,10n,74p,1520b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
 /Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/
 asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/ass
 hah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/asshah4/Li
-brary/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</Users/asshah4/Library/
-TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/asshah4/Library/Tin
-yTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/asshah4/Library/TinyTe
-X/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/asshah4/Library/TinyTeX/te
-xmf-dist/fonts/type1/public/lm/lmmi9.pfb></Users/asshah4/Library/TinyTeX/texmf-
-dist/fonts/type1/public/lm/lmr10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist
-/fonts/type1/public/lm/lmr12.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fon
-ts/type1/public/lm/lmr17.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmr6.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/
-public/lm/lmr9.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/publi
-c/lm/lmri10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/l
-m/lmri12.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/l
-mri9.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro1
-0.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.p
-fb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on dissertation.pdf (70 pages, 1151611 bytes).
+brary/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/Users/asshah4/Libra
+ry/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</Users/asshah4/Library/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/asshah4/Library/TinyTe
+X/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/asshah4/Library/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/asshah4/Library/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmex10.pfb></Users/asshah4/Library/TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmmi6.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/font
+s/type1/public/lm/lmmi8.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/ty
+pe1/public/lm/lmmi9.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/
+public/lm/lmr10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/publ
+ic/lm/lmr12.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/l
+m/lmr17.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lm
+r6.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pf
+b></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></U
+sers/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></User
+s/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/a
+sshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users/assha
+h4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></Users/asshah4/
+Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/asshah4/Lib
+rary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on dissertation.pdf (74 pages, 1207509 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 844 compressed objects within 9 object streams
- 250 named destinations out of 1000 (max. 500000)
- 51744 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1051 PDF objects out of 1200 (max. 8388607)
+ 940 compressed objects within 10 object streams
+ 271 named destinations out of 1000 (max. 500000)
+ 53800 words of extra memory for PDF output out of 61914 (max. 10000000)
 

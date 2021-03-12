@@ -14,7 +14,7 @@ write_dissertation <- function(index, ...) {
 # Supporting schematics and diagrams
 draw_diagrams <- function() {
 
-	# Overview DAG
+	# Overview DAG -------------------------------------------------------
 	dag <- dagify(
 		ans ~ cad,
 		out ~ cad,
@@ -46,9 +46,16 @@ draw_diagrams <- function() {
 		) +
 		theme_dag()
 
-	# List
+	# Example of Cosinor ----------------------------------------------------
+	data(triplets)
+	single_lf <- cosinor(LF ~ hour, tau = 24, data = triplets)
+	multi_lf <- cosinor(LF ~ hour, tau = c(24, 12), data = triplets)
+	gg <- ggcosinor(single_lf)
+
+	# Returning list --------------------------------------------------------
 	diagrams <- list(
-		dag = dag
+		dag = dag,
+		cosinor = gg
 	)
 
 	# Return
