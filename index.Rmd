@@ -16,9 +16,7 @@ output:
       in_header: preamble.tex
     lot: no
     lof: no
-    toc_unnumber: no
-    toc_appendix: yes
-    toc_depth: 3
+    toc: false
 bibliography: ["../bibliography/Neurocardiology.bib", "../bibliography/Publications.bib"]
 csl: "../bibliography/american-journal-of-epidemiology.csl"
 link-citations: yes
@@ -83,6 +81,10 @@ lightblue <- "#008DBA"
 black <- "#101820"
 grey <- "#B1B3B3"
 ```
+
+\begin{singlespace}
+\tableofcontents
+\end{singlespace}
 
 # Acknowledgements
 

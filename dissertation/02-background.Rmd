@@ -1,31 +1,53 @@
 # (PART\*) BACKGROUND {-}
 
-1. ANS dysfunction
-1. CAD and MPI and CFR
-1. Psychological changes that effect ANS
-1. 
+# Clinical Importance
 
-# Review of the Literature
+Psychological stress is increasingly recognized as an important potentially modifiable risk factor for cardiovascular disease [@Steptoe2012].
+Psychiatric disease leads to an increase cardiovascular disease and overall mortality.
+PTSD, for example, has twice the hazard ratio for not only progressive coronary artery disease, but also for overall mortality [@Boscarino2008].
+Depression and loneliness have a distinct increase in all-cause mortality [@Steptoe2013a], and almost twice twice the risk of coronary artery disease [@Ford1998].
+Specifically, depression is the leading cause of disability worldwide, estimated to be prevalent in over 300 million people, which accounts for roughly 4% of the global population [@Friedrich2017b].
+In the United States, the estimated economic burden of depression is $210 billion dollars as of 2010, doubling in cost from 2000 [@Greenberg2015b], suggesting a worsening, growing burden.
+CAD on the other hand remains the leading cause of death [@McAloon2016b]. 
+This corresponds with approximately $204 billion dollars of estimated direct and indirect costs, with both continuing to climb [@Benjamin2018c]. 
 
+In individuals with CAD, the prevalence of depression is estimated to be 20%, and in those with comorbid depression and CAD, there is over a 3-fold increase in cardiovascular mortality [@Jha2019; @Meijer2011].
+This increased risk of mortality in CAD with depression has remained unchanged over the past 35 years [@Carney2017], as only in recent years has depression been considered an additional prognostic marker of mortality in CAD [@Lichtman2014].
 
+Although interventions such as cognitive behavioral therapy and antidepressants are well-proven in reducing symptoms of psychological distress, their impacts are only modest in patients with CAD, and they do not impact event-free survival [@Berkman2003].
+Although the American College of Cardiology recommends depression should be routinely screened for in patients with cardiovascular disease, there is limited evidence that this leads to an improvement in overall mortality [@Kronish2019].
+More research is needed to understand the therapeutic mechanism underlying psychological distress and CAD [@Carney2017], as there are no effective therapies for these high-risk individuals in comorbid patients.
 
-# Clinical Relevance
+The causal mechanism is suspected to be through ANS dysfunction, as this has been found to occur in both diseases of the brain and heart [@Davis1993].
+Not only are somatic symptoms of psychological stress predictive of cardiovascular mortality, but they may be explained by changes seen in HRV [@Smolderen2017; @Shah2021a].
+Similarly, abnormalities in myocardial perfusion are related to and may be predated by abnormalities in HRV [@Shah2020]. 
+Thus, investigating the role of autonomic dysfunction in neurocardiac disorders is both mechanistically plausible and may allow for the development of efficacious therapeutic interventions.
 
+# Relevant Literature
 
-Burden of Depression in Coronary Artery Disease: An Untreated Epidemic
+The heart itself harbors an intrinsic cardiac nervous system that responds to changes in autonomic tone, such as in myocardial ischemia and infarction, by changing chronotropic, inotropic, and dromotropic responses [@Armour1999; @Zipes1990].
+Autonomic dysfunction occurs at multiple levels, from central neurological processes to cardiovascular reflexes [@Abboud2011]. 
+This includes vagal withdrawal seen in depression and heigtened sympathetic tone seen in PTSD or cardiovascular disease.
+Depression, for example, has been linked to dysregulation of the ANS through changes in levels of catecholamines [@Veith1994b], increased cardiovascular reactivity to stress [@Hughes2008], and decreased baroreflex sensitivity [@Davydov2007].
 
-Depression is the leading cause of disability in the world,2 and CAD is the leading cause of death.3 Depression is estimated to occur in over 300 million people, which accounts for roughly 4% of the global population.2 The estimated yearly economic burden of depression in US is $210 billion dollars and the estimated direct and indirect costs of CAD is $204 billion, with the cost of both continuing to climb.34,35 In individuals with CAD, the prevalence of depression is up to 20%.4 In comorbid depression and CAD, there is a 3-fold increase in the incidence of secondary cardiovascular disease (CVD) outcomes;6 however only in the last several years has depression been recognized as an additional prognostic marker of mortality.5 The rate of increased mortality in CAD with depression has remained unchanged over the past 35 years.6 
+ANS-related mechanisms are important as they may inform future therapies. 
+In the past, stellectomy was found to reduce angina pectoris and ventricular dysrhythmias [@Schwartz2017a].
+Modern interventions have shown to improve symptom burden in both depression and CAD [@Penninx2017].
+Vagal nerve stimulation has been shown to relieve cardiac arrhythmias, and has been effective against treatment-resistant depression [@Zhang2011a].
+In PTSD, non-invasive vagal nerve stimulation has also been found to blunt the sympathetic response to stress [@Gurel2019a].
 
-Critical Gap in the Evidence Linking Depression Treatment with CVD Risk Reduction
+HRV has been shown to be an effective ECG-based biomarker for ANS dysfunction. 
+HRV is an accepted measure of autonomic activity, as it is an integration of sympathetic and parasympathetic efferent input at the level of the sinoatrial node [@Saul1990].
+For example, the non-linear HRV marker of *Dyx* has been shown to predict ventricular dysrhythmia and cardiovascular mortality after myocardial infarction, with a hazard ratio of 2.4 (95% CI 1.5 --- 3.8) [@Jørgensen2016]. 
+In addition, individuals with chest pain and abnormal *Dyx* had an odds ratio of 8 (95% CI 3.1 --- 23.99) for abnormal exercise stress test [@Goldkorn2015b].
+Not only does HRV correlate well with cardiovascular disease, but is strongly correlated with depression [@Stein2000]. 
+This relationship between psychological stress, cardiovascular disease, and the autonomic nervous system is thus an appropriate candidate for further investigation, particularly in justifying the clinical utility in measuing autonomic dysfunction [@Carney2005].
+In addition to chronic mental stress, acute mental stress has become a more common way of assessing physiological reactivity. 
+Mental stress has been shown to associate with chronic psychological stressors [@Petrowski2016], and can also lead to the development of myocardial ischemia [@Arri2016]. 
+This phenomenon, known as mental stress-induced myocardial ischemia (MSIMI), is an important reaction to stress that has been shown to predict long-term clinical outcomes [@Vaccarino2018].
+HRV has been shown that to associate with acute mental stress [@Castaldo2015], but the relationship between MSIMI has not yet been determined.
 
-Although interventions such as cognitive behavioral therapy and antidepressants are well-proven in reducing depressive symptoms, their impacts are only modest in CAD patients, and they do not impact event-free survival.7 Although the American College of Cardiology recommends depression should be routinely screened for in patients with cardiovascular disease,4 there is limited evidence that this leads to an improvement in overall mortality.8 More research is needed to understand the potential therapeutic mechanisms underlying depression and CAD1 in order to develop more effective therapies for the high-risk individuals in which both occur together. Our key premise for this investigation is that autonomic mechanisms can help fill this critical gap and provide insight into future novel, more effective therapies for both depression and CAD.
-
-Autonomic Nervous System Plays an Important Mechanistic Role in both Depression and CAD
-
-Dysfunction of the autonomic nervous system (ANS) has been found to occur in diseases of both the brain and heart, and may also underly somatic symptoms and vasomotor abnormalities observed in depression.36  Autonomic dysfunction occurs at multiple levels, from central neurological processes to peripheral cardiovascular reflexes.37 This includes vagal withdrawal in depression and heightened sympathetic tone in cardiovascular disease, for example. Depression has been linked to dysregulation of the ANS though increased levels of catecholamines,38 increased cardiovascular reactivity to stress,39 and decreased baroreflex sensitivity.40 The heart itself harbors an intrinsic cardiac nervous system that responds to changes in autonomic tone, such as in myocardial ischemia and infarction (MI), by changing heart rate, strength contraction, or the speed of nerve conduction.32,41 
-
-Study of ANS-related mechanisms may inform future therapies. Interventions targeting ANS dysfunction show improved symptom burden in both depression and CAD and warrant additional research.10 For example, the vagal nerve activity may protect against ventricular fibrillation,42 and vagal nerve stimulation has been shown to relieve angina pectoris and cardiac arrhythmias.12,13 Vagal nerve stimulation (VNS) is also effective in treatment-resistant depression.11 Dr. Shah has studied non-invasive VNS in PTSD and found that it blunts the sympathetic response to stress.43 In summary, ANS dysfunction occurs in both depression and CAD, and research in this area is important as neuromodulation therapies such as non-invasive VNS are studied and become increasingly available.
-
-Advances in Electrocardiography can Assess Autonomic Dysfunction
-
-A novel ECG-based biomarker for ANS dysfunction, Dyx, has surfaced in the last several years, and is actively being investigated by the company HeartTrends, LLC for its clinical application in CAD risk stratification. Dyx is an advanced heart rate variability (HRV) metric that strongly associates with myocardial ischemia and future adverse outcomes.19,20 HRV is an accepted measure of cardiac autonomic activity, which is the integration of the multiple levels of sympathetic and parasympathetic efferent input at the level of the sinoatrial node. 15,16 Dyx is derived from heart rate time series analysis and measures the variability and randomness of the heart rhythm. Dyx is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in our prior work (Figure D1).44 Dyx is calculated as the ratio of the kurtosis along the y-axis and the x-axis of the ellipse, better capturing the density of heart beats and thus including non-linear features of heart rate dynamics.17,18 Low Dyx predicts ventricular dysrhythmia and cardiovascular mortality after myocardial infarction, with a hazard ratio of 2.4 (95% CI 1.5 – 3.8).18,19 In addition, individuals with chest pain and low Dyx had an odds ratio of 8 (95% CI 3.1 – 23.9) for having abnormal exercise stress test results.20,21 This makes Dyx a strong candidate for assessing ANS dysfunction in our proposal.
+The circadian rhythm in autonomic dysfunction is also relevant. The response to the stress of changing from sleep to wake has been seen to associate with increased cardiovascular mortality.
+There is an increased frequency of sudden cardiac death based on time of day, usually peaking between 6 AM and 10 AM [@Muller1999; @Boudreau2011], with a secondary peak between 6 PM and 8 PM [@Mulcahy1988]. 
+There is a circadian pattern to autonomic outflow, melatonin, cortisol, and circulating catecholamines which could increase vulnerability to ischemia and cardiac death during morning hours [@Boudreau2011; Scheer2010].
+The relationship of circadian changes in HRV and myocardial perfusion has been shown to be related [@Shah2020], but how circadian changes may be important in psychological stress and overall mortality is not yet known.

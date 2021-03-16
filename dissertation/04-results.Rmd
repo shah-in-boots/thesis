@@ -82,7 +82,7 @@ Within the *Twins*, diurnal HRV metrics were measured using cosinor analysis.
 The relationship of the MESOR, amplitude, and acrophase with abnormal MPI and coronary flow reserve were evaluated (Table \@ref(TableTwinsCircMPI)). 
 The MESOR in particular showed a consistent relationship with coronary flow reserve, with a `r mpi$mesor_estimate[mpi$level == "Low Frequency HRV"]` (`r mpi$mesor_conf.low[mpi$level == "Low Frequency HRV"]`, `r mpi$mesor_conf.high[mpi$level == "Low Frequency HRV"]`) increase in every 1 unit increase in LF HRV, and a `r mpi$mesor_estimate[mpi$level == "Dyx"]` (`r mpi$mesor_conf.low[mpi$level == "Dyx"]`, `r mpi$mesor_conf.high[mpi$level == "Dyx"]`) increase for every 1 unit increase in *Dyx*.
 
-# Psychological Stress and Myocardial Ischemia
+# Psychological Stress
 
 Chronic psychological stressors were analyzed using all three cohorts. 
 In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9.

@@ -131,7 +131,10 @@ Each of the clinical cohorts was described by clinical covariates, including fre
 ## Myocardial Ischemia
 
 The purpose of **Aim I** was to identify the relationship of autonomic dysfunction with CAD, as measured by both coronary angiography and MPI. 
-Within the *Biobank*, summary HRV metrics were compared between those with obstructive CAD versus nonobstructive CAD using the Wilcoxon rank sum test. HRV was then assess in a similar manner between those receiving revascularization and those that did not. HRV was segmented by timing of coronary angiography. HRV was compared at the start of catheterization (or initial intervention in those that were revascularized) to the 30 minutes before the procedure, by intervention status. 
+Within the *Biobank*, summary HRV metrics were compared between those with obstructive CAD versus nonobstructive CAD using the Wilcoxon rank sum test. 
+HRV was then assess in a similar manner between those receiving revascularization and those that did not. 
+HRV was segmented by timing of coronary angiography. 
+HRV was compared at the start of catheterization (or initial intervention in those that were revascularized) to the 30 minutes before the procedure, by intervention status. 
 
 To evaluate the relationship with myocardial perfusion, HRV was also assessed within the *MIMS/MIPS* cohort, which had both mental and physical stress MPI as outcomes. 
 Logistic regressions were used with HRV during stress and rest as the exposures, not adjusted for clinical covariates. 

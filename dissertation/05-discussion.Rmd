@@ -2,10 +2,28 @@
 
 # Major Findings
 
-## Myocardial Ischemia
+- Aim 1: HRV and MPI/CAD on cath
+- Aim 2: HRV and acute/chronic mental stress
+- Aim 3: HRV and MACE
 
+- HRV not associated with obstructive CAD or percent stenosis
+- MPI however is strongly related, particularly with mental stress (MSIMI)
+- CFR and HRV more strongly related than with MPI
+- Circadian pattern / nature to relationship
+- Dyx was higher in those with CAD
 - DYX but not HRV associated with abnormal MPI
 - HRV associated with CFR more than MPI
+
+- HRV not strongly associated by PHQ-9 
+- HRV strongly related to PTSD and MDD
+- PTSD and depression both related to circadian HRV
+
+- HRV strongly predicts clinical outcomes
+- Twins and MIMS similar
+- circadian prediction is present
+
+# Stress Reactivity
+
 
 # Strengths and Limitations
 
