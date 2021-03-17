@@ -5,6 +5,7 @@
 The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis. 
 
 1. **To assess the autonomic mechanisms underlying ischemic heart disease.** 
+1. **To asses the autonomic mechanisms underlying psychological stress.**
 1. To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.
 1. To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.
 
@@ -19,7 +20,7 @@ To achieve these aims, we will leverage the several data sets, including the Emo
 The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes [@Ko2017].
 All patients aged 18 years and older undergoing cardiac catherization were included. 
 During the index cardiac catheterization, additional measures including lifestyle factors, psychological status, medical comorbidities, revascularization and previous procedures were ascertained via patient interview and chart review. 
-Additionally, ambulatory ECG was collected with the VivaLNK patch, which was placed on the morning of cardiac catheterization and removed after catheterization for up to 24 h of data recording.
+Additionally, ambulatory ECG was collected with the VivaLNK patch, which was placed on the morning of cardiac catheterization and removed after catheterization for up to 24 hour of data recording.
 Patients were excluded if they have congenital heart disease, severe valvular heart disease, severe anemia, a recent blood transfusion, myocarditis, history of active inflammatory disease, cancer or are unable or not willing to provide consent (approximately 5%). 
 Those that are found to have atrial fibrillation or have >20% ectopic beat burden or noise, as well as those that are pacer dependent were excluded.
 Those with known CAD were also excluded.
