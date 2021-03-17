@@ -334,7 +334,7 @@ report_twins_models <- function(models, survival, circadian) {
 		select(outcomes, test_num, level, tidied) %>%
 		unnest(tidied) %>%
 		filter(level %in% 6:7) %>%
-		filter(term %in% c("lf", "hf", "vlf", "ac", "dyx")) %>%
+		filter(term %in% c("lf", "hf", "vlf", "ac", "dyx", "rr")) %>%
 		filter(test_num %in% c(unadj, adj_demo, adj_cv)) %>%
 		group_by(outcomes, test_num, term) %>%
 		arrange(-abs(statistic), .by_group = TRUE) %>%
