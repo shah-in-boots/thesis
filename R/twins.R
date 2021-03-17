@@ -100,6 +100,14 @@ make_twins_models <- function(clinical, ecg) {
 			approach = logistic_reg() %>% set_engine("glmer"),
 			strata = "hour"
 		) %>%
+		arm(
+			title = "log_rr_adjusted",
+			plan = ptsd + sad_bin + pet_bin ~ rr + age + bmi + rrre + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			exposure = c("(1 | vetrid)", "(1 | pair)"),
+			pattern = "sequential",
+			approach = logistic_reg() %>% set_engine("glmer"),
+			strata = "hour"
+		) %>%
 		# Linear models - CFR
 		arm(
 			title = "lin_lf_adjusted",
@@ -136,6 +144,14 @@ make_twins_models <- function(clinical, ecg) {
 		arm(
 			title = "lin_ac_adjusted",
 			plan = global_cfr ~ ac + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			exposure = c("(1 | vetrid)", "(1 | pair)"),
+			pattern = "sequential",
+			approach = linear_reg() %>% set_engine("lmer"),
+			strata = "hour"
+		) %>%
+		arm(
+			title = "lin_rr_adjusted",
+			plan = global_cfr ~ rr + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
