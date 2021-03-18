@@ -95,6 +95,95 @@ twins_tables$hrv %>%
 \eland
 \newpage
 
+## Psychological Stress
+
+*The follow section divides the relevant figures and tables into those that pertain to the relationship of autonomic function and psychological stress, including both acute mental stress and chronic psychological stress.*
+
+\newpage
+
+### HRV and Mental Stress Challenge {#FigureMimsViolin}
+
+```{r}
+mims_figures$violin +
+	scale_fill_manual(values = c(teal, gold, blue)) + 
+	theme_minimal() +
+	theme(legend.position = "none") +
+	labs(
+		x = "Mental Stress Challenge Phase",
+		y = "HRV",
+		title = "HRV Response to Mental Stress",
+		caption = "The distribution of HRV and ECG findings in different phases of mental stress challenges."
+	)
+```
+
+\newpage
+\bfoot
+
+### Distribution of HRV and Mental Stress Challenge {#TableMimsPaired}
+
+```{r}
+mims_tables$paired %>%
+	tab_header(
+		title = "Difference between Mental Stress Challenge Phases and ECG Metrics",
+		subtitle = "MIMS/MIPS Cohorts"
+	) %>%
+	tab_source_note("HRV summarised during stress and recovery phase of the mental stress challenge were compared to rest HRV. HRV = heart rate variability.")
+```
+
+\efoot
+\newpage
+\bfoot
+
+### Depression and PTSD with Mental Stress Challenge {#TableMimsPsych}
+
+```{r}
+mims_reports$psych %>%
+	tab_header(title = "Mental Stress Challenge HRV and Chronic Psychological Stress", subtitle = "MIMS/MIPS Cohorts") %>%
+	tab_source_note("The association between HRV during mental stress challenge and the chronic psychological stressors of depression and PTSD are described. HRV = heart rate variability.")
+```
+
+\efoot
+\newpage
+\bfoot
+
+### Depression by PHQ-9 and HRV
+
+```{r}
+biobank_tables$sad %>%
+	as_gt() %>%
+	tab_header(title = "HRV and Depression by PHQ-9", subtitle = "Emory Cardiovascular Biobank") %>%
+	tab_source_note("In patients undergoing angiography, HRV metrics were described in those with moderate to severe depressive symptoms to those with mild to minimal symptoms by PHQ-9. HRV = Heart Rate Variability, PHQ-9 = Patient Health Questionnaire.")
+```
+
+\efoot
+\newpage
+\bland
+\bfoot
+
+### HRV and Chronic Mental Stress in Twins {#TableTwinsPsych}
+
+```{r}
+twins_reports$psych %>% 
+	tab_header(title = "Morning HRV and Chronic Psychological Stress", subtitle = "Emory Twins Study") %>%
+	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
+```
+
+\efoot
+\eland
+\newpage
+\bfoot
+
+### Circadian HRV and Chronic Mental Stress {#TableTwinsCircPsych}
+
+```{r}
+twins_reports$psych_cosinor %>%
+	tab_header(title = "Circadian HRV and Chronic Psychological Stress", subtitle = "Emory Twins Study") %>%
+	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. The HRV metrics are measured over 24 hours using cosinor statistics.  PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity, MESOR = midline estimating statistic of rhythm, Amplitude = maximum distance from MESOR, Phi = shift of acrophase")
+```
+
+\efoot
+\newpage
+
 ## Myocardial Ischemia
 
 *The follow section divides the relevant figures and tables into those that pertain to the relationship of autonomic function and myocardial ischemia, including both obstructive coronary artery disease and myocardial perfusion.*
@@ -187,83 +276,6 @@ twins_reports$ischemia_cosinor %>%
 \efoot
 \eland
 \newpage
-
-## Psychological Stress
-
-*The follow section divides the relevant figures and tables into those that pertain to the relationship of autonomic function and psychological stress, including both acute mental stress and chronic psychological stress.*
-
-\newpage
-\bfoot
-
-### Depression by PHQ-9 and HRV
-
-```{r}
-biobank_tables$sad %>%
-	as_gt() %>%
-	tab_header(title = "HRV and Depression by PHQ-9", subtitle = "Emory Cardiovascular Biobank") %>%
-	tab_source_note("In patients undergoing angiography, HRV metrics were described in those with moderate to severe depressive symptoms to those with mild to minimal symptoms by PHQ-9. HRV = Heart Rate Variability, PHQ-9 = Patient Health Questionnaire.")
-```
-
-\efoot
-\newpage
-\bland
-\bfoot
-
-### HRV and Chronic Mental Stress in Twins {#TableTwinsPsych}
-
-```{r}
-twins_reports$psych %>% 
-	tab_header(title = "Morning HRV and Chronic Psychological Stress", subtitle = "Emory Twins Study") %>%
-	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
-```
-
-\efoot
-\eland
-\newpage
-\bfoot
-
-### Circadian HRV and Chronic Mental Stress {#TableTwinsCircPsych}
-
-```{r}
-twins_reports$psych_cosinor %>%
-	tab_header(title = "Circadian HRV and Chronic Psychological Stress", subtitle = "Emory Twins Study") %>%
-	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. The HRV metrics are measured over 24 hours using cosinor statistics.  PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity, MESOR = midline estimating statistic of rhythm, Amplitude = maximum distance from MESOR, Phi = shift of acrophase")
-```
-
-\efoot
-\newpage
-
-### HRV and Mental Stress Challenge {#FigureMimsViolin}
-
-```{r}
-mims_figures$violin +
-	scale_fill_manual(values = c(teal, gold, blue)) + 
-	theme_minimal() +
-	theme(legend.position = "none") +
-	labs(
-		x = "Mental Stress Challenge Phase",
-		y = "HRV",
-		title = "HRV Response to Mental Stress",
-		caption = "The distribution of HRV and ECG findings in different phases of mental stress challenges."
-	)
-```
-
-\newpage
-\bfoot
-
-### Distribution of HRV and Mental Stress Challenge {#TableMimsPaired}
-
-```{r}
-mims_tables$paired %>%
-	tab_header(
-		title = "Difference between Mental Stress Challenge Phases and ECG Metrics",
-		subtitle = "MIMS/MIPS Cohorts"
-	) %>%
-	tab_source_note("HRV summarised during stress and recovery phase of the mental stress challenge were compared to rest HRV. HRV = heart rate variability.")
-```
-
-\efoot
-\newpage
 \bfoot
 
 ### Distribution of HRV and MSIMI {#TableMimsHRV}
@@ -272,19 +284,6 @@ mims_tables$paired %>%
 mims_tables$hrv %>%
 	tab_header(title = "HRV distribution by MSIMI", subtitle = "MIMS/MIPS cohorts") %>%
 	tab_source_note("The distribution of HRV between those with MSIMI and those without. The HRV metric are stratified by phase of mental stress challenge. MSIMI = mental stress-induced myocardial ischemia, HRV = heart rate variability.")
-```
-
-\efoot
-\newpage
-\bfoot
-
-### Depression and PTSD with Mental Stress Challenge {#TableMimsPsych}
-
-
-```{r}
-mims_reports$psych %>%
-	tab_header(title = "Mental Stress Challenge HRV and Chronic Psychological Stress", subtitle = "MIMS/MIPS Cohorts") %>%
-	tab_source_note("The association between HRV during mental stress challenge and the chronic psychological stressors of depression and PTSD are described. HRV = heart rate variability.")
 ```
 
 \efoot

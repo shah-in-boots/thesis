@@ -1,6 +1,6 @@
 # (PART\*) RESULTS {-}
 
-# Clinical Characteristics
+# Study Overview
 
 The study populations in the three cohorts are uniquely suited for these analyses. They are complementary in their description of cardiovascular disease, autonomic function, and psychological factors, and are described here.
 
@@ -33,56 +33,24 @@ All participants were male, and `r prop.table(table(twins_clinical$race))[1]*100
 The average rate over the enrollment periods of abnormal MPI was `r prop.table(table(twins_clinical$pet_bin))[2]*100`%.
 The average rate of PTSD was `r prop.table(table(twins_clinical$ptsd))[2]*100`% and the average rate of depression was `r prop.table(table(twins_clinical$sad_bin))[2]*100`%.
 
-# Myocardial Ischemia
-
-The relationship of autonomic dysfunction to CAD as measured by coronary angiography was assessed in the *Biobank* cohort. 
-When comparing summary HRV metrics between those with obstructive CAD versus nonobstructive CAD, there were no significant differences between HRV distributions (\@ref(TableBiobankCAD)). 
-When comparing those that had revascularization of the CAD and those that did not (\@ref(TableBiobankRevasc)), there was a difference seen in RR interval. 
-Those that underwent revascularization had a mean (95% CI) RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_2)`, while those that did not had a mean RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_1)`.
-There was a trend towards an increased *Dyx* in those that underwent revascularization (`r inline_text(biobank_tables$revasc, dyx, column = stat_2)`) than those that did not (`r inline_text(biobank_tables$revasc, dyx, column = stat_1)`).
-No other HRV metrics were associated with revascularization.
-To effect of the timing of revascularization on the subsequent changes in HRV acutely were assessed, as described in Table \@ref(TableBiobankTiming). 
-No differences were seen between HRV before or after cardiac catheterization.
-
-```{r, include=FALSE}
-mims <-
-	mims_models$equipment$ischemia %>%
-	unnest(tidied) %>%
-	filter(term != "(Intercept)") %>%
-	filter(outcomes == "rdr_msi_bl")
-
-hf <- mims[mims$term == "hf_stress",]
-lf <- mims[mims$term == "lf_stress",]
-```
-
-The relationship of autonomic dysfunction to qualitative MPI was assessed using both mental stress and physical stress in the *MIMS/MIPS* cohorts.
-ECG and HRV metrics did not have an association with abnormal MPI with combined mental and physical stress nor with physical stress.
-Both lf HRV and LF HRV most prominently had an association with MSIMI, with stress HRV HRV having an odds ratio (OR) = `r hf$estimate` (95% CI `r hf$conf.low`, `r hf$conf.high`) and LF HRV having an OR = `r lf$estimate` (95% CI `r lf$conf.low`, `r lf$conf.high`). 
-The other associations are described in Table \@ref(TableMimsStress).
-
-```{r, include=FALSE}
-twins <- twins_reports$mpi[["_data"]]
-mpi <- twins[twins$outcomes == "Abnormal MPI" & twins$test_num == "Model 3",]
-cfr <- twins[twins$outcomes == "Coronary Flow Reserve" & twins$test_num == "Model 3",]
-```
-
-This relationship between myocardial perfusion and autonomic dysfunction was further explored using quantitative MPI in the *Twins* cohort. 
-Morning HRV at approximately 7 AM was predominately associated with coronary flow reserve, as described in Table \@ref(TableTwinsMPI). 
-A change in 1 unit of LF HRV was associated with an `r cfr$lf_estimate` (95% CI `r cfr$lf_conf.low`, `r cfr$lf_conf.high`) in adjusted models. 
-*Dyx* had an OR = `r mpi$dyx_estimate` (95% CI `r mpi$dyx_conf.low`, `r mpi$dyx_conf.high`) for abnormal MPI.
-
-```{r, include=FALSE}
-# Findings
-twins <- twins_reports$ischemia_cosinor[["_data"]]
-mpi <- twins[twins$outcomes == "Abnormal MPI", ]
-cfr <- twins[twins$outcomes == "Coronary Flow Reserve",]
-```
-
-Within the *Twins*, diurnal HRV metrics were measured using cosinor analysis. 
-The relationship of the MESOR, amplitude, and acrophase with abnormal MPI and coronary flow reserve were evaluated (Table \@ref(TableTwinsCircMPI)). 
-The MESOR in particular showed a consistent relationship with coronary flow reserve, with a `r mpi$mesor_estimate[mpi$level == "Low Frequency HRV"]` (`r mpi$mesor_conf.low[mpi$level == "Low Frequency HRV"]`, `r mpi$mesor_conf.high[mpi$level == "Low Frequency HRV"]`) increase in every 1 unit increase in LF HRV, and a `r mpi$mesor_estimate[mpi$level == "Dyx"]` (`r mpi$mesor_conf.low[mpi$level == "Dyx"]`, `r mpi$mesor_conf.high[mpi$level == "Dyx"]`) increase for every 1 unit increase in *Dyx*.
-
 # Psychological Stress
+
+Acute mental stress was assessed primarily using the *MIMS/MIPS* cohorts. 
+The distribution of HRV metrics based on the phase of acute mental stress challenge was evaluated, as seen in Figure \@ref(FigureMimsViolin). 
+There were small differences between stress and rest HRV, as seen in Table \@ref(TableMimsPaired).
+The difference in distribution of HRV was compared between those that had MSIMI and those that did not, as described in \@ref(TableMimsHRV).
+There was a decrease in HRV in those with MSIMI compared to those without, except with heart rate. 
+
+```{r, include=FALSE}
+mims <- mims_reports$psych[["_data"]]
+hr <- mims[mims$hrv == "hr" & mims$phase == "Rest", ]
+lf <- mims[mims$hrv == "lf" & mims$phase == "Recovery", ]
+```
+
+The association between HRV during acute mental stress and chronic mental stress was also assessed (Table \@ref(TableMimsPsych)).
+Every 10 beat/minute increase in resting heart rate had an OR = `r hr$scid_ptsd_bl_estimate` (95% CI `r hr$scid_ptsd_bl_conf.low`, `r hr$scid_ptsd_bl_conf.high`) for PTSD and an OR = `r hr$scid_depression_bl_estimate` (95% CI `r hr$scid_depression_bl_conf.low`, `r hr$scid_depression_bl_conf.high`) for depression. 
+Every 1 unit increase in LF HRV during recovery had an OR = `r lf$scid_ptsd_bl_estimate` (95% CI `r lf$scid_ptsd_bl_conf.low`, `r lf$scid_ptsd_bl_conf.high`) for depression. 
+No other HRV metrics were strongly associated.
 
 Chronic psychological stressors were analyzed using all three cohorts. 
 In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9.
@@ -113,26 +81,58 @@ sad <- twins_reports$psych_cosinor[["_data"]] %>%
 	filter(level == "Low Frequency HRV")
 ```
 
-WHen using the diurnal HRV metrics, measured by cosinor analysis, significant relationships were seen with both depression and PTSD in the MESOR and amplitude (Table \@ref(TableTwinsCircPsych)).
+When assessing circadian autonomic variability, measured by cosinor analysis, significant relationships were seen with both depression and PTSD in the MESOR and amplitude (Table \@ref(TableTwinsCircPsych)).
 For example, every 1 unit increase in the MESOR of LF HRV had an OR = `r ptsd$mesor_estimate` (95% `r ptsd$mesor_conf.low`, `r ptsd$mesor_conf.high`) and every 1 unit increase in the amplitude had an OR = `r ptsd$amp1_estimate` (95% `r ptsd$amp1_conf.low`, `r ptsd$amp1_conf.high`) for PTSD.
 Every 1 unit increase in the MESOR of LF HRV had an OR = `r sad$mesor_estimate` (95% `r sad$mesor_conf.low`, `r sad$mesor_conf.high`) and every 1 unit increase in the amplitude had an OR = `r sad$amp1_estimate` (95% `r sad$amp1_conf.low`, `r sad$amp1_conf.high`) for depression.
 
-Acute mental stress was also assessed primarily using the *MIMS/MIPS* cohorts. 
-The distribution of HRV metrics based on the phase of acute mental stress challenge was evaluated, as seen in Figure \@ref(FigureMimsViolin). 
-There were small differences between stress and rest HRV, as seen in Table \@ref(TableMimsPaired).
-The difference in distribution of HRV was compared between those that had MSIMI and those that did not, as described in \@ref(TableMimsHRV).
-There was a decrease in HRV in those with MSIMI compared to those without, except with heart rate. 
+# Myocardial Ischemia
+
+The relationship of autonomic dysfunction to CAD as measured by coronary angiography was assessed in the *Biobank* cohort. 
+When comparing summary HRV metrics between those with obstructive CAD versus nonobstructive CAD, there were no significant differences between HRV distributions (\@ref(TableBiobankCAD)). 
+When comparing those that had revascularization of the CAD and those that did not (\@ref(TableBiobankRevasc)), there was a difference seen in RR interval. 
+Those that underwent revascularization had a mean (95% CI) RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_2)`, while those that did not had a mean RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_1)`.
+There was a trend towards an increased *Dyx* in those that underwent revascularization (`r inline_text(biobank_tables$revasc, dyx, column = stat_2)`) than those that did not (`r inline_text(biobank_tables$revasc, dyx, column = stat_1)`).
+No other HRV metrics were associated with revascularization.
+To effect of the timing of revascularization on the subsequent changes in HRV acutely were assessed, as described in Table \@ref(TableBiobankTiming). 
+No differences were seen between HRV before or after cardiac catheterization.
 
 ```{r, include=FALSE}
-mims <- mims_reports$psych[["_data"]]
-hr <- mims[mims$hrv == "hr" & mims$phase == "Rest", ]
-lf <- mims[mims$hrv == "lf" & mims$phase == "Recovery", ]
+mims <-
+	mims_models$equipment$ischemia %>%
+	unnest(tidied) %>%
+	filter(term != "(Intercept)") %>%
+	filter(outcomes == "rdr_msi_bl")
+
+hf <- mims[mims$term == "hf_stress",]
+lf <- mims[mims$term == "lf_stress",]
 ```
 
-The association between HRV during acute mental stress and chronic mental stress was also assessed (Table \@ref(TableMimsPsych)).
-Every 10 beat/minute increase in resting heart rate had an OR = `r hr$scid_ptsd_bl_estimate` (95% CI `r hr$scid_ptsd_bl_conf.low`, `r hr$scid_ptsd_bl_conf.high`) for PTSD and an OR = `r hr$scid_depression_bl_estimate` (95% CI `r hr$scid_depression_bl_conf.low`, `r hr$scid_depression_bl_conf.high`) for depression. 
-Every 1 unit increase in LF HRV during recovery had an OR = `r lf$scid_ptsd_bl_estimate` (95% CI `r lf$scid_ptsd_bl_conf.low`, `r lf$scid_ptsd_bl_conf.high`) for depression. 
-No other HRV metrics were strongly associated.
+The relationship of autonomic dysfunction to myocardial perfusion was assessed using both mental stress and physical stress in the *MIMS/MIPS* cohorts.
+ECG and HRV metrics did not have an association with abnormal MPI with combined mental and physical stress nor with physical stress.
+Both HF HRV and LF HRV most prominently had an association with MSIMI, with stress HRV HRV having an odds ratio (OR) = `r hf$estimate` (95% CI `r hf$conf.low`, `r hf$conf.high`) and LF HRV having an OR = `r lf$estimate` (95% CI `r lf$conf.low`, `r lf$conf.high`). 
+The other associations are described in Table \@ref(TableMimsStress).
+
+```{r, include=FALSE}
+twins <- twins_reports$mpi[["_data"]]
+mpi <- twins[twins$outcomes == "Abnormal MPI" & twins$test_num == "Model 3",]
+cfr <- twins[twins$outcomes == "Coronary Flow Reserve" & twins$test_num == "Model 3",]
+```
+
+This relationship between myocardial perfusion and autonomic dysfunction was further explored using quantitative MPI in the *Twins* cohort. 
+Morning HRV at approximately 7 AM was predominately associated with coronary flow reserve, as described in Table \@ref(TableTwinsMPI). 
+A change in 1 unit of LF HRV was associated with an `r cfr$lf_estimate` (95% CI `r cfr$lf_conf.low`, `r cfr$lf_conf.high`) in adjusted models. 
+*Dyx* had an OR = `r mpi$dyx_estimate` (95% CI `r mpi$dyx_conf.low`, `r mpi$dyx_conf.high`) for abnormal MPI.
+
+```{r, include=FALSE}
+# Findings
+twins <- twins_reports$ischemia_cosinor[["_data"]]
+mpi <- twins[twins$outcomes == "Abnormal MPI", ]
+cfr <- twins[twins$outcomes == "Coronary Flow Reserve",]
+```
+
+Within the *Twins*, circadian autonomic variability was measured using cosinor analysis. 
+The relationship of the MESOR, amplitude, and acrophase with abnormal MPI and coronary flow reserve were evaluated (Table \@ref(TableTwinsCircMPI)). 
+The MESOR in particular showed a consistent relationship with coronary flow reserve, with a `r mpi$mesor_estimate[mpi$level == "Low Frequency HRV"]` (`r mpi$mesor_conf.low[mpi$level == "Low Frequency HRV"]`, `r mpi$mesor_conf.high[mpi$level == "Low Frequency HRV"]`) increase in every 1 unit increase in LF HRV, and a `r mpi$mesor_estimate[mpi$level == "Dyx"]` (`r mpi$mesor_conf.low[mpi$level == "Dyx"]`, `r mpi$mesor_conf.high[mpi$level == "Dyx"]`) increase for every 1 unit increase in *Dyx*.
 
 ```{r, include=FALSE}
 mims <- mims_reports$mpi[["_data"]] %>%
@@ -155,7 +155,7 @@ Clinical outcome data was available in both the *Twins* and the *MIMS/MIPS* coho
 With the *Twins*, early morning HRV showed a robust association with overall mortality and with cardiovascular disease, as seen in Table \@ref(TableTwinsOutcomes).
 In fully adjusted models for overall mortality, *Dyx* and VLF HRV had the strongest association. 
 With every 1 unit of increase in *Dyx*, there was a hazard ratio (HR) = `r twins$dyx_estimate` (95% CI `r twins$dyx_conf.low`, `r twins$dyx_conf.high`), and with every 1 unit increase in VLF HRV, there was a HR = `r twins$vlf_estimate` (95% CI `r twins$vlf_conf.low`, `r twins$vlf_conf.high`).
-When evaluating the relationship of circadian changes in HRV and clinical outcomes, *Dyx* was a significant predictor of both overall and cardiovascular mortality.
+When evaluating the relationship of circadian autonomic variability and clinical outcomes, *Dyx* was a significant predictor of both overall and cardiovascular mortality.
 The MESOR of *Dyx* had a HR = `r circ$mesor_estimate` (95% CI `r circ$mesor_conf.low`, `r circ$mesor_conf.high`) and the amplitude of *Dyx* had a HR = `r circ$amp1_estimate` (95% CI `r circ$amp1_conf.low`, `r circ$amp1_conf.high`).
 Further relationships are outlined in \@ref(TableTwinsCircOutcomes).
 
@@ -168,4 +168,4 @@ hf <- mims %>% filter(hrv == "Stress High Frequency HRV")
 
 Using the *MIMS/MIPS* cohorts, stress HRV was compared with clinical outcomes. 
 There was a robust relationship between stress HRV and overall mortality, cardiovascular mortality, and recurrent cardiovascular events as described in Table \@ref(TableMimsOutcomes).
-In fully adjusted models for cardiovascular mortality, including adjustment for MSIMI, 1 unit increase in stress LF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`) and HF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`).
+In fully adjusted models for cardiovascular mortality, including primary adjustment for MSIMI, 1 unit increase in stress LF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`) and HF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`).

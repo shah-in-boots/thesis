@@ -54,7 +54,8 @@ make_twins_models <- function(clinical, ecg) {
 
 	df <-
 		full_join(clinical, ecg, by = c("vetrid", "study", "patid", "pair")) %>%
-		filter(hour %in% c(6:7))
+		filter(hour %in% c(6:7)) %>%
+		mutate(bpm = (1 / (rr * 1/1000 * 1 / 60))/10)
 
 	octobeast <-
 		octomod() %>%
@@ -101,8 +102,8 @@ make_twins_models <- function(clinical, ecg) {
 			strata = "hour"
 		) %>%
 		arm(
-			title = "log_rr_adjusted",
-			plan = ptsd + sad_bin + pet_bin ~ rr + age + bmi + rrre + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			title = "log_bpm_adjusted",
+			plan = ptsd + sad_bin + pet_bin ~ bpm + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = logistic_reg() %>% set_engine("glmer"),
@@ -150,8 +151,8 @@ make_twins_models <- function(clinical, ecg) {
 			strata = "hour"
 		) %>%
 		arm(
-			title = "lin_rr_adjusted",
-			plan = global_cfr ~ rr + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
+			title = "lin_bpm_adjusted",
+			plan = global_cfr ~ bpm + age + bmi + race + smoking + prevchd + chf + hptn + dm + (1 | vetrid) + (1 | pair),
 			exposure = c("(1 | vetrid)", "(1 | pair)"),
 			pattern = "sequential",
 			approach = linear_reg() %>% set_engine("lmer"),
@@ -214,8 +215,10 @@ make_twins_circadian <- function(clinical, cosinors) {
 make_twins_survival <- function(clinical, ecg, outcomes, cosinors) {
 
 	# With cosinor outcomes
-	df <- inner_join(ecg, clinical, by = "vetrid") %>%
-		filter(hour %in% c(6:7))
+	df <-
+		inner_join(ecg, clinical, by = "vetrid") %>%
+		filter(hour %in% c(6:7)) %>%
+		mutate(bpm = (1 / (rr * 1/1000 * 1 / 60))/10)
 	cos_df <- inner_join(cosinors$single, clinical, by = "patid")
 
 	octobeast <-
@@ -258,13 +261,13 @@ make_twins_survival <- function(clinical, ecg, outcomes, cosinors) {
 			strata = "hour"
 		) %>%
 		arm(
-			title = "rr_death",
-			plan = Surv(stop, status) ~ rr + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			title = "bpm_death",
+			plan = Surv(stop, status) ~ bpm + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
 			pattern = "sequential",
 			strata = "hour"
 		) %>%
-		equip(which_arms = c("hf_death", "lf_death", "vlf_death", "dyx_death", "ac_death", "rr_death")) %>%
+		equip(which_arms = c("hf_death", "lf_death", "vlf_death", "dyx_death", "ac_death", "bpm_death")) %>%
 		# CVD mortality
 		change_core(inner_join(df, outcomes$cvd, by = c("vetrid" = "id"))) %>%
 		arm(
@@ -303,13 +306,13 @@ make_twins_survival <- function(clinical, ecg, outcomes, cosinors) {
 			strata = "hour"
 		) %>%
 		arm(
-			title = "rr_cvd",
-			plan = Surv(stop, status) ~ rr + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
+			title = "bpm_cvd",
+			plan = Surv(stop, status) ~ bpm + pet_bin + age + bmi + race + smoking + prevchd + chf + hptn + dm + sad_bin + ptsd,
 			approach = cox_reg() %>% set_engine("survival", method = "breslow"),
 			pattern = "sequential",
 			strata = "hour"
 		) %>%
-		equip(which_arms = c("hf_cvd", "lf_cvd", "vlf_cvd", "dyx_cvd", "ac_cvd", "rr_cvd")) %>%
+		equip(which_arms = c("hf_cvd", "lf_cvd", "vlf_cvd", "dyx_cvd", "ac_cvd", "bpm_cvd")) %>%
 		# Cosinor analysis
 		change_core(inner_join(cos_df, outcomes$death, by = c("vetrid" = "id"))) %>%
 		arm(
@@ -350,7 +353,7 @@ report_twins_models <- function(models, survival, circadian) {
 		select(outcomes, test_num, level, tidied) %>%
 		unnest(tidied) %>%
 		filter(level %in% 6:7) %>%
-		filter(term %in% c("lf", "hf", "vlf", "ac", "dyx", "rr")) %>%
+		filter(term %in% c("lf", "hf", "vlf", "ac", "dyx", "bpm")) %>%
 		filter(test_num %in% c(unadj, adj_demo, adj_cv)) %>%
 		group_by(outcomes, test_num, term) %>%
 		arrange(-abs(statistic), .by_group = TRUE) %>%
@@ -371,6 +374,7 @@ report_twins_models <- function(models, survival, circadian) {
 		cols_merge(columns = starts_with("vlf_"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("dyx_"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("ac"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("bpm"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(columns = everything(), decimals = 2) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
@@ -390,6 +394,10 @@ report_twins_models <- function(models, survival, circadian) {
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = "bpm_estimate", rows = abs(bpm_statistic) > 2.0)
+		) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "dyx_estimate", rows = abs(dyx_statistic) > 2.0)
 		) %>%
 		cols_label(
@@ -397,8 +405,10 @@ report_twins_models <- function(models, survival, circadian) {
 			hf_estimate = "HF",
 			vlf_estimate = "VLF",
 			ac_estimate = "AC",
-			dyx_estimate = md("*Dyx*")
+			dyx_estimate = md("*Dyx*"),
+			bpm_estimate = "BPM"
 		) %>%
+		cols_hide("bpm_estimate") %>%
 		tab_footnote(
 			footnote = "Model 1 = HRV",
 			locations = cells_stub(rows = c(1:2))
@@ -422,7 +432,12 @@ report_twins_models <- function(models, survival, circadian) {
 		cols_merge(columns = starts_with("vlf_"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("dyx_"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("ac"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("bpm"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(columns = everything(), decimals = 2) %>%
+		tab_style(
+			style = list(cell_text(weight = "bold")),
+			locations = cells_body(columns = "bpm_estimate", rows = abs(bpm_statistic) > 2.0)
+		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
 			locations = cells_body(columns = "lf_estimate", rows = abs(lf_statistic) > 2.0)
@@ -448,8 +463,10 @@ report_twins_models <- function(models, survival, circadian) {
 			hf_estimate = "HF",
 			vlf_estimate = "VLF",
 			ac_estimate = "AC",
-			dyx_estimate = md("*Dyx*")
+			dyx_estimate = md("*Dyx*"),
+			bpm_estimate = "BPM"
 		) %>%
+		cols_hide("bpm_estimate") %>%
 		tab_footnote(
 			footnote = "Model 1 = HRV",
 			locations = cells_stub(rows = c(1:2))
@@ -476,7 +493,7 @@ report_twins_models <- function(models, survival, circadian) {
 		select(outcome, test_num, level, tidied) %>%
 		filter(level %in% c(6:7)) %>%
 		unnest(tidied) %>%
-		filter(term %in% c("ac", "dyx", "hf", "lf", "vlf", "rr")) %>%
+		filter(term %in% c("ac", "dyx", "hf", "lf", "vlf", "bpm")) %>%
 		filter(test_num %in% c(unadj, adj_mpi, adj_demo, adj_cvd, adj_sad)) %>%
 		group_by(outcome, term, test_num) %>%
 		arrange(-abs(statistic), .by_group = TRUE) %>%
@@ -499,7 +516,7 @@ report_twins_models <- function(models, survival, circadian) {
 		cols_merge(columns = starts_with("hf"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("lf"), pattern = "{1} ({2}, {3})") %>%
 		cols_merge(columns = starts_with("vlf"), pattern = "{1} ({2}, {3})") %>%
-		cols_merge(columns = starts_with("rr"), pattern = "{1} ({2}, {3})") %>%
+		cols_merge(columns = starts_with("bpm"), pattern = "{1} ({2}, {3})") %>%
 		fmt_number(
 			columns = contains(c("estimate", "conf")),
 			decimals = 2,
@@ -532,8 +549,8 @@ report_twins_models <- function(models, survival, circadian) {
 		) %>%
 		tab_style(
 			style = list(cell_text(weight = "bold")),
-			locations = cells_body(columns = starts_with("rr"),
-														 rows = rr_p.value < .05)
+			locations = cells_body(columns = starts_with("bpm"),
+														 rows = bpm_p.value < .05)
 		) %>%
 		cols_label(
 			ac_estimate = "Acceleration Capacity",
@@ -541,9 +558,9 @@ report_twins_models <- function(models, survival, circadian) {
 			hf_estimate = "High Frequency HRV",
 			lf_estimate = "Low Frequency HRV",
 			vlf_estimate = "Very Low Frequency HRV",
-			rr_estimate = "RR Intervals"
+			bpm_estimate = "Heart Rate"
 		) %>%
-		cols_hide("rr_estimate") %>%
+		cols_hide("bpm_estimate") %>%
 		tab_footnote(
 			footnote = "Model 1 = HRV",
 			locations = cells_stub(rows = c(1,6))
@@ -572,7 +589,7 @@ report_twins_models <- function(models, survival, circadian) {
 		circadian$equipment %>%
 		bind_rows(.id = "arm") %>%
 		filter(str_detect(arm, "single")) %>%
-		filter(level %in% c("hf", "lf", "vlf", "ac", "dyx", "rr")) %>%
+		filter(level %in% c("hf", "lf", "vlf", "ac", "dyx", "bpm")) %>%
 		select(outcomes, level, tidied) %>%
 		unnest(tidied) %>%
 		select(-c(group, effect, p.value, std.error)) %>%
@@ -585,7 +602,7 @@ report_twins_models <- function(models, survival, circadian) {
 			level == "vlf" ~ "Very Low Frequency HRV",
 			level == "dyx" ~ "Dyx",
 			level == "ac" ~ "Acceleration Capacity",
-			level == "rr" ~ "RR Intervals"
+			level == "bpm" ~ "Heart Rate"
 		))
 
 	# Psych Cosinor --------------------------------------------------------
@@ -686,7 +703,7 @@ report_twins_models <- function(models, survival, circadian) {
 			level == "vlf" ~ "Very Low Frequency HRV",
 			level == "dyx" ~ "Dyx",
 			level == "ac" ~ "Acceleration Capacity",
-			level == "rr" ~ "RR Intervals"
+			level == "bpm" ~ "Heart Rate"
 		)) %>%
 		gt(rowname_col = "level", groupname_col = "outcome") %>%
 		cols_merge(columns = starts_with("mesor_"), pattern = "{1} ({2}, {3})") %>%

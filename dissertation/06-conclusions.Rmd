@@ -1,3 +1,14 @@
 # (PART\*) CONCLUSIONS {-}
 
-Here are my thoughts.
+The objective of this study was to evaluate how stress reactivity effects cardiovascular disease and clinical outcomes. 
+By leveraging several methods of assessing stress, as described in the specific aims, we were able to assess the relationship of stress with autonomic dysfunction along the neurocardiac axis. 
+We were able to demonstrate the association of autonomic metrics with both psychological stress and myocardial ischemia, and using nuanced differences between our datasets, evaluate specific components of psychological stress and coronary artery disease.
+
+The most prominent finding was the relationship of autonomic metrics with MSIMI.
+This ties together the effect of acute mental stress on myocardial ischemia through autonomic mechanisms that are readily quantifiable. 
+Not only is there a relationship with MSIMI, but autonomic dysfunction in response to stress may in fact mediate the increased mortality seen with MSIMI.
+An additional important discovery was the relationship of circadian autonomic variability to abnormal myocardial blood flow, psychological stress, and overall clinical outcomes. 
+This diurnal pattern supports the known circadian pattern of MACE, most commonly seen between 6 AM  and 10 AM, and subsequently between 6 PM and 8 PM [@Muller1999]. 
+
+These findings are part and parcel of a	quantifiable approach to measuring stress reactivity, supporting the clinical significance on multiple levels of the neurocardiac axis, including mortality.
+The next steps will be to identify if the autonomic response to stress can be modulated, and whether this will lead to decreases in cardiovascular disease, psychological distress, and overall mortality.

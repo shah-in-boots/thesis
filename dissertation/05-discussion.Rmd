@@ -1,84 +1,156 @@
 # (PART\*) DISCUSSION {-}
 
-# Major Findings
+# Principal Findings
 
 This was a multi-cohort study evaluating the relationship between physiological and psychological stress with autonomic dysfunction, enriched for subjects both with cardiovascular and psychiatric illness.
-The use of three varied cohorts allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and allowed for leveraging the importance of stress reactivity with clinical outcomes.
+The use of three varied cohorts allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
 We found a strong relationship between autonomic dysfunction and both acute and chronic mental stress and with myocardial ischemia. 
 We found that autonomic dysfunction not only predicted clinical outcomes, but also mediated the increased mortality in those with mental stress.
-We summarize the major findings, corresponding to the specific aims, below.
-
-## Myocardial Ischemia
-
-The strongest relationship between autonomic dysfunction and myocardial ischemia was seen with coronary flow reserve, and not with overall abnormal MPI.
-In the *Twins*, coronary flow reserve, which is more related to the coronary microvasculature, showed a reliable relationship with HRV, particularly that of power spectral density. 
-
-In the *Biobank*, epicardial disease had no significant relationships with HRV, and in both the *MIMS/MIPS* and *Twins*, HRV was not strongly related to abnormal MPI with physical stress.
-*Dyx* however did show a strong, and reliable relationship with abnormal MPI, which has been reproduced in the literature [@Goldkorn2015a; @Shah2020]. 
-*Dyx* is a non-linear metric, and may incorporate more information about ectopy and structural heart disease than purely frequency-based HRV metrics.
-
-Within the coronary artery system, there is an important difference between the epicardial conduit vessels and the myocardial resistance vessels.
-The most common and well-studied disease of the the coronary arteries is that of atherosclerosis of the epicardial vessels, however disease of the resistance vessels is becoming more clinically relevant [@Gould2018a].
-Both systems are heavily innervated and respond to different autonomic inputs, and also have afferent systems, allowing for bidirectional communication [@Armour1999].
-Our findings support the hypothesis that that autonomic dysfunction, measured by HRV, is more strongly related with the microvascular resistance vessels than with the epicardial vessels.
+We summarize the major findings below.
 
 ## Psychological Stress
 
-HRV has a known relationship to both depression and PTSD [@Shah2015a; @Huang2018; @Carney2001a].
-Normal HRV, for example, can provide a resilience to developing depression and depressive symptom burden, and vagal nerve stimulation lead to decreases in depressive symptoms [@Huang2018; @Hopp2013].
-Not only does HRV correlate with anxiety and depressive symptoms, it imparts an additional risk to overall cardiovascular mortality [@Shah2021a].
-We found that the strongest relationships with depression to be with frequency-domain HRV, particularly with LF and VLF HRV. 
-This relationship was most prominent in the *Twins*, particularly in the early morning hours with hour-long recordings. 
-Both HF and LF HRV were related to PTSD in the *Twins* with early morning recordings.
-In shorter recordings from the *MIMS/MIPS* cohort, only LF HRV during recovery was related to depression. 
-Short-term recordings were only associated with PTSD with an increase in T-Wave area during both stress and recovery.
-Elevated heart rate at rest however was associated with both depression and PTSD.
-The findings are consistent with the literature, suggesting that both depression and PTSD, as examples of chronic mental stress, can lead to changes in autonomic tone. 
+In **Aim I**, we studied the potential autonomic mechanisms that may underlie both acute and chronic mental stress.
+Psychological stress has an increased risk of cardiovascular mortality beyond that of maladaptive health behaviors [@Steptoe2013a; @Steptoe2012].
+Both depression and PTSD show an excess risk of cardiovascular disease that cannot be explained by symptom burden [@Smolderen2017; @Ahmadi2011].
+Stress and its effect on autonomic function may play a role in this excess risk [@Salahuddin2007], thus our aim to study underlying autonomic mechanisms may help to explain this disparity.
 
-Within *MIMS/MIPS*, mental stress challenge allowed us to measure and quantify the acute change in HRV.
-There were significant changes during acute mental stress, particularly within HF and LF HRV, most prominent in the stress phase.
-These results were within subjects, allowing for control for different baselines.
-The pattern seen is consistent with the literature, suggesting that there is sympathetic activation and parasympathetic withdrawal during acute mental stress [@Castaldo2015].
-The clinical implications of this extend to not only this study, but for its potential use in daily life [@Salahuddin2007].
+We found that within subjects, there was a significant difference in autonomic metrics during stress, with return towards baseline during recovery.
+Heart rate, as expected, increased during acute stress, however both HF and LF HRV decreased in power. 
+On the other hand, T wave area remained persistently decreased during recovery as compared to rest.
+This suggests that the autonomic mechanisms at hand have a range of effects of differing duration, with electrical and morphological changes being the most persistent, and frequency-domain metrics, such as HF HRV, being the most rapid and prominent.
+Even shorter-term HRV metrics have been used, recorded under $<$ 1 minute, and have shown differences for mental stress activities during daily living [@Salahuddin2007], however the clinical importance of this is unknown.
+Our approach and findings are more robust due to the controlled experimental environment, measurement during recovery, and ability to adjust for relevant clinical covariates.
+The likely mechanism that occurs during acute mental stress is sympathetic activation and parasympathetic withdrawal.
+These findings allow us to utilize the ECG-based response to stress as an additional exposure for neurocardiac disease and clinical outcomes.
+
+We sought to identify if the change in autonomic function in response to acute stress would associate with the chronic mental stress of depression or PTSD. 
+We found that elevated resting heart rate was associated with both psychiatric diseases, and decreases in LF HRV during recovery were associated with only depression. 
+This was contrary to what we expected, as there is a known relationship of HRV with both depression and PTSD [@Shah2013; @Carney1995].
+Prior studies have shown the relationship of HRV and depression with longer-duration ECG recordings, such as 24 hour Holter monitor [@Carney2001a].
+Our findings are most likely limited by the short duration of recordings.
+Autonomic modulation is a dynamic phenomenon, and by measuring during stress and recovery, the underlying abnormalities may be suppressed.
+
+Due to the multiple available data sets, we were able to ask this question about the relationship of autonomic dysfunction and chronic mental stress using longer term recordings.
+We found that HRV, particularly during morning hours, was more robustly associated with HRV. 
+The strongest association for depression was LF and VLF HRV, and for PTSD was acceleration capacity and HF and LF HRV.
+Although these associations are supported in the literature [@Shah2013; @Carney2001a], our findings are unique in that they were selected at purely early morning hours.
+Due to the auto-regressive nature of ECG signal, 24 hour data could not easily be assessed in a similar manner, and thus cosinor analysis was performed [@Shah2020d].
+We evaluated circadian autonomic variability and found a much more robust relationship between autonomic function and both depression and PTSD.
+The global or equatorial measure of autonomic tone, described by the MESOR, and the overall amplitude of autonomic tone, were decreased in patients with both depression and PTSD with frequency-domain HRV and acceleration capacity. 
+*Dyx* variability had less changes in amplitude than other variables. 
+There were no changes in the acrophase, best described as the time to peak amplitude of the signal, in any of these measures.
+This suggest that the relationship between autonomic function and psychiatric disease may more strongly have circadian characteristics than previously thought [@Lam2008; @Iverson2002].
+Depressive symptom burden, for example, has a level of diurnal variation [@Wirz-Justice2008], which may be quantified by autonomic metrics.
+
+## Myocardial Ischemia
+
+In **Aim II**, we studied the autonomic mechanisms underlying ischemic heart disease.
+IHD is not fully understood, as half of sudden cardiac deaths occur in men and women without known cardiovascular disease [@Niemeijer2015; @Madsen1985; @Hayashi2015]. 
+There are important levels to the coronary artery system, including epicardial conduit vessels and the myocaridal resistance vessels. 
+The difference between the two has started to become more clinically relevant as we begin to understand that myocardial ischemia is not only a problem of epicardial atherosclerotic disease [@Gould2018a].
+The ANS however has been implicated for its prominent role in regulation of cardiac electrophysiology, contractility, coronary vasomotor tone, amongst other effects [@Abboud2011].
+Both macrovascular and microvascular systems are heavily innervated and respond to different autonomic inputs, and also have afferent systems, allowing for bidirectional communication [@Armour1999].
+Thus, understanding the differences and quantifying the effect of autonomic dysfunction as it relates to myocardial ischemia will help us to better understand and differentiate between these diseases burdens and their corresponding increased risks.
+
+We first sought to evaluate the role of obstructive CAD on autonomic function. 
+By assessing obstructive CAD through direct angiography, we were limited to assessing purely epicardial disease.
+We found no strong relationship between autonomic metrics and obstructive CAD, however there was a trend towards higher *Dyx* in subjects with obstructive CAD.
+We found that those who underwent revascularization had a lower heart rate than those who did not, and similarly, *Dyx* trended higher in those patients than those without revascularization.
+This is a counterintuitve finding, in that literature there has been increasing support that HRV metrics such as *Dyx* may correlate with abnormal stress tests [@Shah2020; @Goldkorn2015b; @Goldenberg2019].
+However, in these studies, subjects had no known CAD, and were of low to intermediate pretest probability. 
+The subjects we found with obstructive CAD would have been excluded, which may explain the findings or that obstructive CAD may modify autonomic tone in a non-linear manner.
+
+We extended the prior analysis to review HRV during the process of revascularization. 
+During revascularization, we compared the time after initial angioplasty to the 30 minutes preceding the case.
+We found no differences between HRV before or after cardiac catheterization was initiated, regardless of revascularization was performed.
+This finding is even more surprising in that revascularization is known to lead to autonomic changes immediately, such as an increased transient risk for ventricular arrhythmias [@Lown1979a]
+This may be based on the chronicity of the epicardial disease, as a majority of these subjects were outpatient at the time of catheterization.
+
+We evaluated the epicardial vessels through myocardial perfusion, using either exercise or pharmacological stress, and assessed the relationship with autonomic function. 
+We used acute stress changes, early morning changes, and circadian autonomic variability as metrics of autonomic tone.
+We found that short-term recordings of autonomic metrics had no association with physical stress-induced myocardial ischemia (PSIMI), either at rest, stress, or during recovery.
+When we extended the recording duration to 1 hour, selected at 7 AM based on prior findings [@Shah2020], we found associations primarily with *Dyx*, even after adjustment for cardiovascular risk factors and known cardiovascular disease.
+When using the full 24 hour recording, there were no prominent relationships with abnormal MPI.
+These findings do show a pattern that increased *Dyx* decreases the risk for having an abnormal MPI, which is similar in that of the ECG metrics available, it is the only one to show a consistent relationship with suspected epicardial disease.
+However, the relationship is inverse than that of the findings of obstructive CAD on angiography, which begs the question of the mechanism by which *Dyx* is associated with epicardial disease.
+
+To fully delineate the pathways involved in IHD, we evaluated the myocardial blood flow through coronary flow reserve, and assessed the relationship with autonomic dysfunction as previously.
+Using quantitative PET, we were able to measure coronary flow reserve, which may be related by the autonomic activity [@Hammadah2018b].
+We found that early morning HRV was reliably related to CFR, even after adjustment for traditional risk factors.
+The most prominent association was with LF HRV and the other frequency-domain HRV metrics.
+When assessed using circadian autonomic variability, the relationship was consistent, and showed not only a relationship with the MESOR, but also that of the amplitude.
+These findings suggest that CFR, as compared to MPI, may be more regulated by autonomic tone, which supports the circadian distribution of major adverse cardiovascular events [@Muller1999].
+
+The relationship of stress reactivity and myocardial perfusion was systematically assessed to understand if there were common, autonomic mechanisms underlying both.
+By measuring HRV during acute mental stress challenge, we were able to create a surrogate for stress reactivity. 
+This marker was used as a predictor for the development of mental stress-induced myocardial ischemia (MSIMI). 
+We found that HRV, but not heart rate or T wave area, was significantly lower in those with MSIMI, particularly during the stress phase.
+We found a robust association in logistic models, particularly with HF and LF HRV during stress, for the risk of MSIMI.
+Every 1 unit increase in HRV lead to approximately half the risk of developing MSIMI.
+Even when adjusted for cardiovascular risk factors, the relationship remained robust, and was unchanged by the inclusion of chronic mental stress variables of PTSD and depression.
+This finding is the first of its kind, as it shows a direct relationship between MSIMI and autonomic dysfunction in a non-invasive, quantifiable manner, and highlights the important autonomic mechanisms underlying MSIMI.
 
 ## Clinical Outcomes
 
-We found that early morning HRV showed a robust association with overall mortality and cardiovascular disease within the *Twins*. 
-This both confirms and expands upon the literature, extending for example the relationship of LF HRV and *Dyx* to a more specific, at-risk population [@Jørgensen2016; @Maheshwari2016]. 
-Not only was average HRV found to be predictive, but HRV during times of stress within *MIMS/MIPS* had a particularly strong relationship for both cardiovascular mortality and recurrent cardiovascular events. 
-This suggests a robust relationship between autonomic dysfunction and the propensity for cardiovascular death, which is a mechanism that has not yet truly been addresses in managing cardiovascular disease [@Shivkumar2016a].
+In **Aim III**, we sought to understand the autonomic mechanisms underlying the risk of major adverse cardiovascular events (MACE). 
+In large, population studies, LF HRV has been seen to associate with an increased risk for overall mortality [@Shah2021; @Maheshwari2016].
+Autonomic dysfunction has become an increasingly recognized additional risk factor for overall cardiovascular mortality [@Liew2015].
+Certain measures, such as *Dyx* have even shown increased mortality after myocardial infarction similar in effect to that of decreased ejection fraction [@Jørgensen2016].
+This suggests that autonomic testing is just at its nacency at helping to predict cardiovascular events [@Bauer2017].
 
-# Stress Reactivity
+We examined the utility of a morning autonomic changes with both overall and cardiovascular mortality. 
+We found that both LF and VLF HRV were consistently associated with mortality, however *Dyx* was the most prominent marker of outcomes.
+When measuring circadian autonomic variability, the MESOR of both LF and VLF HRV were both strongly associated with mortality.
+*Dyx* once again was most strongly associated, with a robust relationship of both MESOR and amplitude. 
+Heart rate was also seen to be related, both through MESOR and amplitude, with increased heart rate leading to increased mortality, with decreased amplitude associated with decreased mortality.
+These findings were robust through adjustment of abnormal MPI, cardiovascular risk factors, known IHD, as well as chronic mental stress.
+This supports the idea that autonomic dysfunction is a unique, independent risk factor for mortality.
+The relationship of autonomic function with mortality reflects that changes in diurnal rhythm is a clinical important entity, and either may predict or share a common pathology that leads to increased cardiovascular risk.
 
-The objective of this study was to evaluate how stress reactivity effects cardiovascular disease and clinical outcomes. 
-By leveraging several methods of assessing stress, as described in the specific aims, we were able to assess the relationship of stress with autonomic dysfunction along the neurocardiac axis. 
-The most prominent finding was the relationship of HRV with MSIMI.
-This incorporates not only the effect of acute mental stress, but also that of myocardial ischemia, connecting the two processes through autonomic dysfunction.
-Subsequently, we were able to test this relationship with clinical outcomes, as there is a known relationship between MSIMI and an increased hazard ratio for both mortality and cardiovascular events.
-HRV remained a significant predictor of future adverse events, while MSIMI did not once introduced into adjusted models.
-This suggests that HRV, and thus autonomic dysfunction, may actual be the mediator of MSIMI.
+Similar to circadian changes, acute mental stress may serve as a method to elicit autonomic dysfunction. 
+This type of autonomic dysfunction may also increase risk for MACE. 
+We found that stress HRV was a robust predictor of not only cardiovascular death, but also recurrent cardiovascular events, with a hazard ratio ranging from 0.3 -- 0.5.
+When adjusted for MSIMI, there was no change in the effect size of stress HRV on mortality or recurrent MACE, and MSIMI was not found to be a significant covariate. 
+These findings were similar after adjustment for cardiovascular disease and risk factors, as well as chronic mental stress.
+This suggests that not only does HRV strongly associate with MSIMI, but explains the known increased cardiovascular risk that is associated with MSIMI.
+This supports the concept that not only does autonomic dysfunction lead to MSIMI and explain its increased risk of mortality, but is likely the mechanism by which MSIMI occurs [@Shivkumar2016a].
 
-We assessed stress and stress reactivity through another important paradigm - that of circadian changes in HRV. 
-Major adverse cardiovascular events follow a diurnal pattern, with the most common time of events being between 6 AM to 10 AM, and the second most common being between 6 PM and 8 PM [@Muller1999].
-Circadian rhythms were measured using cosinor analysis, and the resulting MESOR, amplitude, and acrophase were modeled within the *Twins* [@Shah2020d], as 24 hour recordings were available.
-This allowed us to assess the relationship the impact of circadian stress on HRV, serving almost as a natural stress test.
-We found that the MESOR of all HRV metrics was associated with coronary flow reserve, as well as the amplitude of VLF HRV, suggesting the presence of diurnal changes that are autonomic in nature.
-More robustly, the MESOR and amplitude were associated with both depression and PTSD, with an OR ranging from 0.2 to 0.5 between most HRV metrics.
-Moreover, the effect of decreased in MESOR and amplitude were also seen as clinically relevant predictors of both all cause mortality and cardiovascular death.
-The MESOR and amplitude of *Dyx*, for example, had a HR of 0.3-0.4 for overall mortality.
-These circadian changes were more closely related than purely cross-sectional HRV modeling.
-This suggests that both psychological and cardiac stressors are associated with global changes in autonomic tone, as manifested by circadian dysfunction, and that this dysfunction is an additional risk factor in overall mortality.
-
-# Next Steps
-
-## Strengths and Limitations
+# Limitations and Future Direction
 
 Each of the cohorts had unique strengths and limitations. 
+First, the generalizability of these findings is someone limited, in that the populations had different baseline characteristics, such as frequency of CAD, sex, and age.
+ECG metrics are likely not able to be compared between groups due to these class differences.
+However, there is some evidence that HRV is not readily made to be standardized across populations [@Nunan2010], and there may be reason to compare findings within an individual instead.
 Globally, the method of sampling of ECG signal and the generation of HRV is fraught with potential errors, including interpolation methods, signal duration, noise. 
-Another limitation is that our signal recordings between cohorts is not of a similar length, thus the exact metrics, such as cosinor analysis, could not be used equivalently between groups.
+ECG signal was also recording using different technologies, from the VivaLNK ECG patch to single and multi lead Holter monitors.
+Our signal recordings between cohorts is not of a similar length, thus the exact metrics, such as cosinor analysis, could not be used equivalently between groups.
+The amount of noise, differences in sampling frequencies, and overall quality led to exclusion of signal that was considered unusuable.
 These are common errors faced by researchers within the field, which we minimized using standardized, open-source techniques [@Vest2018].
+However, as we have worked through these errors in prior studies, there is confidence that there are similar patterns between groups even with the cohort variability.
+
+Chronic psychological stress was measured in the binary form of a single diagnosis. 
+Treating depression and PTSD as continuous variables may have provided a more useful outcome in assessing the effect of autonomic dysfunction but was limited by the frequency of symptom burden.
+In addition, symptom burden was assessed differently between cohorts, such as using the PHQ-9 in the *Biobank* and Beck's Depression Inventory in the *Twins*.
+However, the correlation between the two forms are high, and allow for some level of generalizability and extrapolation of autonomic function to its relationship with depressive symptom burden.
 
 This is similar to limitations in assessing CAD, in that each cohort used a separate method for assessing myocardial perfusion, from direct coronary angiography to PET and SPECT.
+Coronary artery calcium was not available in nuclear imaging, thus confirming the presence of epicardial coronary disease was not possible.
+Additional factors, such as prior coronary revascularization, reason for angiography, and clinical context, were not able to be accounted for as easily due to the limited number of events.
 At the same time, the differences in imaging modalities assesses different components of neurocardiac axis, from epicardial disease to microvascular disease, giving a more nuanced understanding of cardiovascular physiology.
 
-## Future Directions
+Clinically, although the follow-up events were adjudicated, primary data on the cause of death was not always able to be obtained. 
+Between cohorts, cardiovascular events were not necessarily measured in the same way, such as recurrent events recorded in the *MIMS/MIPS* cohort, but only initial events in the *Twins*.
+In addition, follow-up data may have led to conflicting or overlapping events, such as onset of atrial fibrillation during hospitalization for decompensated heart failure, and based on the modeling approaches used, we would not be able to control for same-day events.
+However, the use of recurrent events was strengthened particularly by using a series of recurrent event modeling approaches, all with similar findings suggesting a robust and persistent relationship with autonomic dysfunction and clinical outcomes.
+
+The largest strengths of this study are the use of multiple cohorts, the rigor applied to each hypothesis, and advanced statistical techniques to control for confounding, such as mixed effects models to control for twins.
+The ability to share similar ECG metrics between cohorts also allowed for some translation of study findings between groups.
+
+This study reveals a number of important clinical questions. 
+Autonomic changes may not only associate with overall depression or PTSD, but may also precede or correlate with changes in symptom burden, or may an intervenable metric to help control symptoms, such as with biofeedback [@Blase2010]. 
+Autonomic dysfunction appears to have a strong associationi with coronary microvascular dysfunction. 
+Assessing microvascular dysfunction during coronary angiography with intracoronary acetylcholine, or through cardiac magnetic resonance imaging, may allow for more precise measurements of coronary flow reserve, and provide a higher fidelity metric for comparison. 
+In addition to baseline HRV predicting future adverse events, repeat HRV metrics would be helpful to assess autonomic function as a dynamic variable that may change over time. 
+This could be expanded to include interventions aimed at improving autonomic function, from cognitive behavioral therapy to vagal nerve stimulation, which would help to assess the role of autonomic dysfunction as a modifiable risk factor.
+The study of the neurocardiac axis is likely in its infancy, with significant room for expansive questions to help tackle this challenging field.

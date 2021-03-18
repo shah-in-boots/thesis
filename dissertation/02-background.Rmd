@@ -30,11 +30,13 @@ Autonomic dysfunction occurs at multiple levels, from central neurological proce
 This includes vagal withdrawal seen in depression and heigtened sympathetic tone seen in PTSD or cardiovascular disease.
 Depression, for example, has been linked to dysregulation of the ANS through changes in levels of catecholamines [@Veith1994b], increased cardiovascular reactivity to stress [@Hughes2008], and decreased baroreflex sensitivity [@Davydov2007].
 
-ANS-related mechanisms are important as they may inform future therapies. 
-In the past, stellectomy was found to reduce angina pectoris and ventricular dysrhythmias [@Schwartz2017a].
-Modern interventions have shown to improve symptom burden in both depression and CAD [@Penninx2017].
+ANS-related mechanisms are important as they are related to both cardiac and neuropsychological disorders.
+The autonomic innervation of the heart has been show repeatedly to play a critical role in myocardial ischemia [@Minisi1991; @Pauziene2016; @Ardell2016a].
+Historically stellectomy was found to reduce angina pectoris and ventricular dysrhythmias [@Schwartz2017a].
+Modern interventions have shown to improve symptom burden not only in CAD, but also in depression [@Penninx2017].
 Vagal nerve stimulation has been shown to relieve cardiac arrhythmias, and has been effective against treatment-resistant depression [@Zhang2011a].
 In PTSD, non-invasive vagal nerve stimulation has also been found to blunt the sympathetic response to stress [@Gurel2019a].
+These relationships between chronic psychological stress, cardiac perfusion and arrhythmias, and the ANS help to establish the important influences on the neurocardiac axis.
 
 HRV has been shown to be an effective ECG-based biomarker for ANS dysfunction. 
 HRV is an accepted measure of autonomic activity, as it is an integration of sympathetic and parasympathetic efferent input at the level of the sinoatrial node [@Saul1990].
@@ -47,7 +49,9 @@ Mental stress has been shown to associate with chronic psychological stressors [
 This phenomenon, known as mental stress-induced myocardial ischemia (MSIMI), is an important reaction to stress that has been shown to predict long-term clinical outcomes [@Vaccarino2018].
 HRV has been shown that to associate with acute mental stress [@Castaldo2015], but the relationship between MSIMI has not yet been determined.
 
-The circadian rhythm in autonomic dysfunction is also relevant. The response to the stress of changing from sleep to wake has been seen to associate with increased cardiovascular mortality.
+The circadian rhythm in autonomic dysfunction is also relevant. 
+The response to the stress of changing from sleep to wake has been seen to associate with increased cardiovascular mortality.
 There is an increased frequency of sudden cardiac death based on time of day, usually peaking between 6 AM and 10 AM [@Muller1999; @Boudreau2011], with a secondary peak between 6 PM and 8 PM [@Mulcahy1988]. 
 There is a circadian pattern to autonomic outflow, melatonin, cortisol, and circulating catecholamines which could increase vulnerability to ischemia and cardiac death during morning hours [@Boudreau2011; Scheer2010].
 The relationship of circadian changes in HRV and myocardial perfusion has been shown to be related [@Shah2020], but how circadian changes may be important in psychological stress and overall mortality is not yet known.
+Thus, studying circadian autonomic variability may reveal insights into the diurnal pattern of clinical disease.

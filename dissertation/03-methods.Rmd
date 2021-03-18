@@ -4,10 +4,39 @@
 
 The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis. 
 
-1. **To assess the autonomic mechanisms underlying ischemic heart disease.** 
-1. **To asses the autonomic mechanisms underlying psychological stress.**
-1. To determine if cardiac autonomic activity modifies the relationship between acute and chronic psychological stress and myocardial ischemia.
-1. To explore the association of cardiac autonomic activity with future major adverse cardiovascular events.
+**AIM I --- Autonomic mechanisms underlying psychological stress.**
+
+1. Explore the effect of acute mental stress on autonomic function. 
+*We hypothesize that short-term autonomic metrics will be abnormal during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
+1. Explore the relationship of autonomic dysfunction at time of acute mental stress with chronic mental stress. 
+*We hypothesize that abnormalities in short-term autonomic metrics will have an increased risk for depression and PTSD.*
+1. Determine the relationship between autonomic dysfunction and chronic mental stress. 
+*We hypothesize that abnormalities in morning autonomic metrics will have an increased risk for depression and PTSD. We hypothesize that circadian autonomic variability will have an increased risk for depression and PTSD.*
+
+**AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
+
+1. Determine the relationship of autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) as measured by coronary angiography. 
+*We hypothesize that autonomic metrics will be in abnormal in subjects with obstructive, epicardial disease.*
+1. Explore the effect of revacularization of obstructive coronary artery disease with changes in autonomic function. 
+*We hypothesize that in subjects undergoing revascularization of the coronary arteries, autonomic metrics will be different after revascularization as compared to before revascularization.*
+1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to physical stress. 
+*We hypothesize that abnormalities in autonomic metrics will associate with abnormal myocardial perfusion from either exercise or pharmacological stress.*
+*We hypothesize that circadian autonomic variability will be associated with abnormal myocardial perfusion.*
+1. Determine the relationship between autonomic dysfunction and myocardial blood flow in response to physical stress. 
+*We hypothesize that abnormalities in autonomic dysfunction will be associated with abnormalities in myocardial blood flow, as measured by coronary flow reserve, after pharmacological stress.*
+*We hypothesize that circadian autonomic variability will be associated with abnormalities in coronary flow reserve.*
+1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to acute and chronic mental stress. 
+*We hypothesize that abnormalities in autonomic metrics will be associated with abnormalities in myocardial perfusion in response to acute mental stress.*  
+*We hypothesize that this relationship will be unaffected by the chronic mental stress of depression and PTSD.*
+
+**AIM III --- Autonomic mechanisms underlying the risk of major adverse cardiovascular events.**
+
+1. Determine the effect of autonomic function on the risk of major adverse cardiovascular events. 
+*We hypothesize that abnormalities in autonomic metrics will be associated with increased overall and cardiovascular mortality.*
+*We hypothesize that circadian autonomic variability will be an associated with increased overall and cardiovascular mortality.*
+1. Explore the relationship of stress-induced autonomic dysfunction on the risk of major adverse cardiovascular events. 
+*We hypothesize that abnormal autonomic metrics in response to acute mental stress will be associated with an increased risk of cardiovascular mortality and recurrent cardiovascular events.*
+*We hypothesize that this risk will not be explained by mental stress-induced myocardial ischemia.*
 
 To achieve these aims, we will leverage the several data sets, including the Emory Cardiovascular Biobank (*Biobank*), the Myocardial Infarction and Mental Stress (*MIMS*) and Mental Stress Ischemia Prognosis Study (*MIPS*), and the Emory Twins Study (*Twins*). Each of these data sets contribute variations of coronary artery physiology, acute and chronic mental stressors, and electrocardiographic data of varying recording lengths.
 

@@ -92,7 +92,7 @@ Foremost, I would like to thank my mentors and mentoring team. Dr. Shah has been
 
 Second, I would like to thank the support staff that has allowed this research to unfold, from the EPICORE group with Nancy Murrah and Lucy Shallenberger, to the MSCR program with Cheryl Sroka and the outstanding MSCR instructors.
 
-Finally, I would like to thank my family for their patience and support.
+Finally, I would like to thank my family for their support, including Michelle for her patience, and of course Ripley and Harper for the always welcome distractions.
 
 # Abbreviations
 
@@ -107,6 +107,7 @@ tribble(
 	~Term, ~Abbreviation,
 	"HRV", "Heart Rate Variability",
 	"CAD", "Coronary Artery Disease",
+	"IHD", "Ischemic Heart Disease",
 	"MACE", "Major Adverse Cardiovascular Events",
 	"Biobank", "Emory Cardiovascular Biobank",
 	"MIMS", "Myocardial Infarction and Mental Stress",
