@@ -40,8 +40,8 @@ These relationships between chronic psychological stress, cardiac perfusion and 
 
 HRV has been shown to be an effective ECG-based biomarker for ANS dysfunction. 
 HRV is an accepted measure of autonomic activity, as it is an integration of sympathetic and parasympathetic efferent input at the level of the sinoatrial node [@Saul1990].
-For example, the non-linear HRV marker of *Dyx* has been shown to predict ventricular dysrhythmia and cardiovascular mortality after myocardial infarction, with a hazard ratio of 2.4 (95% CI 1.5 --- 3.8) [@Jørgensen2016]. 
-In addition, individuals with chest pain and abnormal *Dyx* had an odds ratio of 8 (95% CI 3.1 --- 23.99) for abnormal exercise stress test [@Goldkorn2015b].
+For example, the non-linear HRV marker of *Dyx* has been shown to predict ventricular dysrhythmia and cardiovascular mortality after myocardial infarction, with a hazard ratio of 2.4 (95% CI 1.5 -- 3.8) [@Jørgensen2016]. 
+In addition, individuals with chest pain and abnormal *Dyx* had an odds ratio of 8 (95% CI 3.1 -- 23.99) for abnormal exercise stress test [@Goldkorn2015b].
 Not only does HRV correlate well with cardiovascular disease, but is strongly correlated with depression [@Stein2000]. 
 This relationship between psychological stress, cardiovascular disease, and the autonomic nervous system is thus an appropriate candidate for further investigation, particularly in justifying the clinical utility in measuing autonomic dysfunction [@Carney2005].
 In addition to chronic mental stress, acute mental stress has become a more common way of assessing physiological reactivity. 

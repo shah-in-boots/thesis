@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.17)  17 MAR 2021 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.19)  19 MAR 2021 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,7 +554,7 @@ Package caption Info: wrapfig package is loaded.
 
 (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex
 .def
-File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box69
 ) (./dissertation.aux)
@@ -709,7 +709,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [2
 
 ]
-Underfull \hbox (badness 2119) in paragraph at lines 56--56
+Underfull \hbox (badness 2119) in paragraph at lines 54--54
  [][] [][][]\T1/lmr/m/n/10.95 (+20) Relationship Be-tween Ob-struc-tive and Non
 -Obstructive 
  []
@@ -753,70 +753,86 @@ Chapter 4.
 Chapter 5.
 [10
 
-] [11] [12]
+]
+Underfull \hbox (badness 1546) in paragraph at lines 355--358
+\T1/lmr/m/it/10.95 (+20) that lower stress re-ac-tiv-ity au-to-nomic met-rics w
+ill be as-so-ci-ated with
+ []
+
+[11]
 Chapter 6.
-[13
+[12
 
 ]
-Underfull \hbox (badness 6893) in paragraph at lines 406--406
+Underfull \hbox (badness 6893) in paragraph at lines 403--403
 |[]\T1/lmr/bx/n/12 (+20) Mental Stress Is-chemia Mech-a-nisms and Prog-no-sis,
  []
 
-[14] [15] [16] [17] [18]
+[13] [14] [15] [16] [17]
 Chapter 7.
-[19
+[18
 
 ]
-Overfull \hbox (10.49911pt too wide) detected at line 531
+Overfull \hbox (10.49911pt too wide) detected at line 527
 [][]
  []
 
-[20] [21] [22] [23
+[19] [20] [21] [22
 
 ]
 Chapter 8.
 
-LaTeX Warning: Reference `TableOneMims' on page 24 undefined on input line 593.
+LaTeX Warning: Reference `TableOneMims' on page 23 undefined on input line 589.
 
 
-[24
+[23
 
 ]
 Chapter 9.
-[25
+[24
 
-] [26]
+] [25]
 Chapter 10.
-[27
+[26
 
-] [28]
+] [27]
 Chapter 11.
-[29
+[28
 
-] [30
+] [29
 
 ]
 Chapter 12.
-[31
+[30
 
-] [32] [33] [34] [35] [36] [37]
+] [31] [32] [33] [34] [35] [36]
 Chapter 13.
-[38
+[37
 
-] [39] [40] [41
+] [38] [39] [40
 
-] [42] [43
+] [41] [42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
+Underfull \hbox (badness 10000) in paragraph at lines 859--859
 \T1/lmr/m/n/10.95 (+20) / / www . ncbi . nlm . nih . gov / pmc / articles / PMC
 2566299 / pdf / nihms67338 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--863
+Underfull \hbox (badness 10000) in paragraph at lines 859--859
 \T1/lmr/m/n/10.95 (+20) pdf % 20http : / / www . ncbi . nlm . nih . gov / pubme
 d / 18540155 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 857--860
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 857--860
+
  []
 
 
@@ -870,6 +886,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 877--880
  []
 
 
+Underfull \hbox (badness 1584) in paragraph at lines 883--883
+\T1/lmr/m/n/10.95 (+20) Re-view. 2019;73:1827--1845. ([][]$http : / / www . ncb
+i . nlm . nih . gov / pubmed /
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 881--884
 [][][] []
  []
@@ -877,12 +899,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 881--884
 
 Underfull \hbox (badness 10000) in paragraph at lines 881--884
 
- []
-
-
-Underfull \hbox (badness 1584) in paragraph at lines 887--887
-\T1/lmr/m/n/10.95 (+20) Re-view. 2019;73:1827--1845. ([][]$http : / / www . ncb
-i . nlm . nih . gov / pubmed /
  []
 
 
@@ -896,6 +912,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 885--888
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 891--891
+\T1/lmr/m/n/10.95 (+8) pubmed / 8219819 % 20http : / / www . pubmedcentral . ni
+h . gov / articlerender . fcgi ?
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 889--892
 [][][] []
  []
@@ -903,12 +925,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 889--892
 
 Underfull \hbox (badness 10000) in paragraph at lines 889--892
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
-\T1/lmr/m/n/10.95 (+8) pubmed / 8219819 % 20http : / / www . pubmedcentral . ni
-h . gov / articlerender . fcgi ?
  []
 
 
@@ -931,7 +947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 897--900
 
  []
 
-
+[43]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 901--904
 [][][] []
  []
@@ -941,7 +957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 901--904
 
  []
 
-[44]
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 905--908
 [][][] []
  []
@@ -1002,6 +1018,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 925--928
  []
 
 
+Underfull \hbox (badness 1762) in paragraph at lines 931--931
+[]\T1/lmr/m/n/10.95 (+20) Carney RM, Freed-land KE. De-pres-sion and coro-nary 
+heart dis-ease.
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 929--932
 [][][] []
  []
@@ -1009,12 +1031,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 929--932
 
 Underfull \hbox (badness 10000) in paragraph at lines 929--932
 
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 935--935
-[]\T1/lmr/m/n/10.95 (+20) Carney RM, Freed-land KE. De-pres-sion and coro-nary 
-heart dis-ease.
  []
 
 
@@ -1047,6 +1063,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 941--944
 
  []
 
+[44]
+Underfull \hbox (badness 3364) in paragraph at lines 947--947
+\T1/lmr/m/n/10.95 (+20) and 1-Year Mor-tal-ity af-ter Acute My-ocar-dial In-far
+c-tion: In-sights
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 947--947
+\T1/lmr/m/n/10.95 (+20) from the TRI-UMPH Reg-istry (Trans-la-tional Re-search 
+In-ves-ti-gat-ing
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 947--947
+\T1/lmr/m/n/10.95 (+20) Sta-tus). \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1/l
+mr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2017;135(18):1681--1689.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / www -[] ncbi -[] nlm -[] nih -[] gov 
+. proxy . library . emory . edu / pmc / articles /
+ []
+
 
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 945--948
 [][][] []
@@ -1057,28 +1097,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 945--948
 
  []
 
-[45]
-Underfull \hbox (badness 3364) in paragraph at lines 951--951
-\T1/lmr/m/n/10.95 (+20) and 1-Year Mor-tal-ity af-ter Acute My-ocar-dial In-far
-c-tion: In-sights
- []
 
-
-Underfull \hbox (badness 2970) in paragraph at lines 951--951
-\T1/lmr/m/n/10.95 (+20) from the TRI-UMPH Reg-istry (Trans-la-tional Re-search 
-In-ves-ti-gat-ing
- []
-
-
-Underfull \hbox (badness 4353) in paragraph at lines 951--951
-\T1/lmr/m/n/10.95 (+20) Sta-tus). \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1/l
-mr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2017;135(18):1681--1689.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 951--951
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / www -[] ncbi -[] nlm -[] nih -[] gov 
-. proxy . library . emory . edu / pmc / articles /
+Underfull \hbox (badness 1448) in paragraph at lines 951--951
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2021;10(5):e017172. ([][]$http : / / www . 
+ncbi . nlm . nih . gov / pubmed /
  []
 
 
@@ -1092,9 +1114,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 949--952
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 955--955
-\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2021;10(5):e017172. ([][]$http : / / www . 
-ncbi . nlm . nih . gov / pubmed /
+Underfull \hbox (badness 4913) in paragraph at lines 955--955
+[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
+ heart
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 955--955
+\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
+-ocar-dial per-fu-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--955
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
+e / pii / S0167527319355214 % 20http :
  []
 
 
@@ -1136,21 +1170,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 957--960
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 963--963
-[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
- heart
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 963--963
-\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
--ocar-dial per-fu-sion.
+Underfull \hbox (badness 1895) in paragraph at lines 963--963
+[]\T1/lmr/m/n/10.95 (+20) Armour JA. My-ocar-dial is-chaemia and the car-diac n
+er-vous sys-tem.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 963--963
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
-e / pii / S0167527319355214 % 20http :
+\T1/lmr/m/it/10.95 (+20) Eu-ro-pean heart jour-nal \T1/lmr/m/n/10.95 (+20) [ele
+c-tronic ar-ti-cle]. 1999;16(12):1751--2.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--963
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / cardiovascres 
+/ article -[] abstract / 41 / 1 / 41 /
  []
 
 
@@ -1164,21 +1198,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 961--964
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 967--967
-[]\T1/lmr/m/n/10.95 (+20) Armour JA. My-ocar-dial is-chaemia and the car-diac n
-er-vous sys-tem.
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 967--967
-\T1/lmr/m/it/10.95 (+20) Eu-ro-pean heart jour-nal \T1/lmr/m/n/10.95 (+20) [ele
-c-tronic ar-ti-cle]. 1999;16(12):1751--2.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 967--967
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / cardiovascres 
-/ article -[] abstract / 41 / 1 / 41 /
+\T1/lmr/m/n/10.95 (+9) ([][]$http : / / circ . ahajournals . org / %20https : /
+ / www . ahajournals . org / doi / 10 . 1161 /
  []
 
 
@@ -1192,9 +1214,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 965--968
  []
 
 
+Underfull \hbox (badness 1077) in paragraph at lines 971--971
+[]\T1/lmr/m/n/10.95 (+20) Abboud FM, Thames MD. In-ter-ac-tion of Car-dio-vas-c
+u-lar Re-flexes in
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 971--971
+\T1/lmr/m/n/10.95 (+20) Cir-cu-la-tory Con-trol. \T1/lmr/m/it/10.95 (+20) Com-p
+re-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle].
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 971--971
+\T1/lmr/m/n/10.95 (+20) 2011;675--753. ([][]$https : / / onlinelibrary -[] wile
+y -[] com . proxy . library . emory . edu /
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 971--971
-\T1/lmr/m/n/10.95 (+9) ([][]$http : / / circ . ahajournals . org / %20https : /
- / www . ahajournals . org / doi / 10 . 1161 /
+\T1/lmr/m/n/10.95 (+20) doi / pdf / 10 . 1002 / cphy . cp020319 % 20http : / / 
+doi . wiley . com / 10 . 1002 / cphy .
  []
 
 
@@ -1205,30 +1245,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 969--972
 
 Underfull \hbox (badness 10000) in paragraph at lines 969--972
 
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 975--975
-[]\T1/lmr/m/n/10.95 (+20) Abboud FM, Thames MD. In-ter-ac-tion of Car-dio-vas-c
-u-lar Re-flexes in
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 975--975
-\T1/lmr/m/n/10.95 (+20) Cir-cu-la-tory Con-trol. \T1/lmr/m/it/10.95 (+20) Com-p
-re-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle].
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 975--975
-\T1/lmr/m/n/10.95 (+20) 2011;675--753. ([][]$https : / / onlinelibrary -[] wile
-y -[] com . proxy . library . emory . edu /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
-\T1/lmr/m/n/10.95 (+20) doi / pdf / 10 . 1002 / cphy . cp020319 % 20http : / / 
-doi . wiley . com / 10 . 1002 / cphy .
  []
 
 
@@ -1251,7 +1267,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 977--980
 
  []
 
-
+[45pdfTeX warning (ext4): destination with the same identifier (name{ref-Shah20
+20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.980 
+      ]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 981--984
 [][][] []
  []
@@ -1261,12 +1282,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 981--984
 
  []
 
-[46pdfTeX warning (ext4): destination with the same identifier (name{ref-Shah20
-20}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.984 
-      ]
+
+Underfull \hbox (badness 1142) in paragraph at lines 987--987
+[]\T1/lmr/m/n/10.95 (+20) Minisi AJ, Thames MD. Ac-ti-va-tion of car-diac sym-p
+a-thetic af-fer-ents
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
+\T1/lmr/m/n/10.95 (+20) dur-ing coro-nary oc-clu-sion. Ev-i-dence for re-flex a
+c-ti-va-tion of
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 987--987
+\T1/lmr/m/n/10.95 (+20) sym-pa-thetic ner-vous sys-tem dur-ing trans-mu-ral my-
+ocar-dial is-chemia
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 987--987
+\T1/lmr/m/n/10.95 (+20) in the dog. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1
+/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1991;84(1):357--367.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / circ . ahajournals . org / %20https : 
+/ / www . ahajournals . org / doi / 10 .
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 985--988
 [][][] []
  []
@@ -1274,36 +1320,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 985--988
 
 Underfull \hbox (badness 10000) in paragraph at lines 985--988
 
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 991--991
-[]\T1/lmr/m/n/10.95 (+20) Minisi AJ, Thames MD. Ac-ti-va-tion of car-diac sym-p
-a-thetic af-fer-ents
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 991--991
-\T1/lmr/m/n/10.95 (+20) dur-ing coro-nary oc-clu-sion. Ev-i-dence for re-flex a
-c-ti-va-tion of
- []
-
-
-Underfull \hbox (badness 2772) in paragraph at lines 991--991
-\T1/lmr/m/n/10.95 (+20) sym-pa-thetic ner-vous sys-tem dur-ing trans-mu-ral my-
-ocar-dial is-chemia
- []
-
-
-Underfull \hbox (badness 3492) in paragraph at lines 991--991
-\T1/lmr/m/n/10.95 (+20) in the dog. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1
-/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1991;84(1):357--367.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 991--991
-\T1/lmr/m/n/10.95 (+20) ([][]$http : / / circ . ahajournals . org / %20https : 
-/ / www . ahajournals . org / doi / 10 .
  []
 
 
@@ -1317,6 +1333,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 989--992
  []
 
 
+Underfull \hbox (badness 2600) in paragraph at lines 995--995
+[]\T1/lmr/m/n/10.95 (+20) Ardell JL, Ar-mour JA. Neu-ro-car-di-ol-ogy: Structur
+e-Based func-tion.
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 995--995
+\T1/lmr/m/it/10.95 (+20) Com-pre-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20)
+ [elec-tronic ar-ti-cle]. 2016;6(4):1635--1653.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
+xy . library . emory . edu / doi / pdf / 10 . 1002 /
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 993--996
 [][][] []
  []
@@ -1324,24 +1358,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 993--996
 
 Underfull \hbox (badness 10000) in paragraph at lines 993--996
 
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 999--999
-[]\T1/lmr/m/n/10.95 (+20) Ardell JL, Ar-mour JA. Neu-ro-car-di-ol-ogy: Structur
-e-Based func-tion.
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 999--999
-\T1/lmr/m/it/10.95 (+20) Com-pre-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20)
- [elec-tronic ar-ti-cle]. 2016;6(4):1635--1653.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 999--999
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
-xy . library . emory . edu / doi / pdf / 10 . 1002 /
  []
 
 
@@ -1404,6 +1420,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1017--1020
 
  []
 
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1023
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / ac -[] els -[] cdn -[] com . proxy . 
+library . emory . edu / S000291491500898X / 1 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1023--1023
+\T1/lmr/m/n/10.95 (+20) s2 . 0 -[] S000291491500898X -[] main . pdf ? _tid = 6d
+cdce40 -[] a31f -[] 11e7 -[] a283 -[]
+ []
+
 
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1021--1024
 [][][] []
@@ -1412,18 +1440,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1021--1024
 
 Underfull \hbox (badness 10000) in paragraph at lines 1021--1024
 
- []
-
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / ac -[] els -[] cdn -[] com . proxy . 
-library . emory . edu / S000291491500898X / 1 -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
-\T1/lmr/m/n/10.95 (+20) s2 . 0 -[] S000291491500898X -[] main . pdf ? _tid = 6d
-cdce40 -[] a31f -[] 11e7 -[] a283 -[]
  []
 
 
@@ -1437,6 +1453,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1025--1028
  []
 
 
+Underfull \hbox (badness 1558) in paragraph at lines 1031--1031
+\T1/lmr/m/n/10.95 (+20) is-chaemia. \T1/lmr/m/it/10.95 (+20) Heart \T1/lmr/m/n/
+10.95 (+20) [elec-tronic ar-ti-cle]. 2016;102(6):472--480. ([][]$http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1031
+\T1/lmr/m/n/10.95 (+20) / / heart . bmj . com / %20http : / / link . springer .
+ com / 10 . 1007 / 978 -[] 3 -[] 319 -[] 32480 -[]
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1029--1032
 [][][] []
  []
@@ -1447,15 +1475,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 1029--1032
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 1035--1035
-\T1/lmr/m/n/10.95 (+20) is-chaemia. \T1/lmr/m/it/10.95 (+20) Heart \T1/lmr/m/n/
-10.95 (+20) [elec-tronic ar-ti-cle]. 2016;102(6):472--480. ([][]$http :
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
+[]\T1/lmr/m/n/10.95 (+20) Vaccarino V, Sul-li-van S, Ham-madah M, et al. Men-ta
+l
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 1035--1035
+\T1/lmr/m/n/10.95 (+20) stress-induced-myocardial is-chemia in young pa-tients 
+with re-cent
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 1035--1035
+\T1/lmr/m/n/10.95 (+20) my-ocar-dial in-farc-tion: Sex dif-fer-ences and mech-a
+-nisms. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
-\T1/lmr/m/n/10.95 (+20) / / heart . bmj . com / %20http : / / link . springer .
- com / 10 . 1007 / 978 -[] 3 -[] 319 -[] 32480 -[]
+\T1/lmr/m/n/10.95 (+5) nih . gov / articlerender . fcgi ? artid = PMC5822741 % 
+20https : / / www . ahajournals .
  []
 
 
@@ -1469,30 +1509,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1033--1036
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
-[]\T1/lmr/m/n/10.95 (+20) Vaccarino V, Sul-li-van S, Ham-madah M, et al. Men-ta
-l
- []
-
-
-Underfull \hbox (badness 8170) in paragraph at lines 1039--1039
-\T1/lmr/m/n/10.95 (+20) stress-induced-myocardial is-chemia in young pa-tients 
-with re-cent
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 1039--1039
-\T1/lmr/m/n/10.95 (+20) my-ocar-dial in-farc-tion: Sex dif-fer-ences and mech-a
--nisms. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
-\T1/lmr/m/n/10.95 (+5) nih . gov / articlerender . fcgi ? artid = PMC5822741 % 
-20https : / / www . ahajournals .
- []
-
-
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1037--1040
 [][][] []
  []
@@ -1500,6 +1516,24 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1037--1040
 
 Underfull \hbox (badness 10000) in paragraph at lines 1037--1040
 
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 1043--1043
+[]\T1/lmr/m/n/10.95 (+20) Muller JE. Cir-ca-dian vari-a-tion in car-dio-vas-cu-
+lar events. \T1/lmr/m/it/10.95 (+20) Amer-i-can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / ajh / article 
+-[] lookup / doi / 10 . 1016 / S0895 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+\T1/lmr/m/n/10.95 (+20) 7061(98 ) 00278 -[] 7 % 20http : / / www . sciencedirec
+t . com / science / article / pii /
  []
 
 
@@ -1513,24 +1547,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1041--1044
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 1047--1047
-[]\T1/lmr/m/n/10.95 (+20) Muller JE. Cir-ca-dian vari-a-tion in car-dio-vas-cu-
-lar events. \T1/lmr/m/it/10.95 (+20) Amer-i-can
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / ajh / article 
--[] lookup / doi / 10 . 1016 / S0895 -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1047--1047
-\T1/lmr/m/n/10.95 (+20) 7061(98 ) 00278 -[] 7 % 20http : / / www . sciencedirec
-t . com / science / article / pii /
- []
-
-
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1045--1048
 [][][] []
  []
@@ -1538,6 +1554,18 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1045--1048
 
 Underfull \hbox (badness 10000) in paragraph at lines 1045--1048
 
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 1051--1051
+\T1/lmr/m/n/10.95 (+20) in 150 pa-tients. \T1/lmr/m/it/10.95 (+20) Heart \T1/lm
+r/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1988;60(5):417--423.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+\T1/lmr/m/n/10.95 (+20) ([][]$/pmc / articles / PMC1216600 / ?report = abstract
+ % 20https : / / www . ncbi .
  []
 
 
@@ -1550,16 +1578,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1049--1052
 
  []
 
-
-Underfull \hbox (badness 4341) in paragraph at lines 1055--1055
-\T1/lmr/m/n/10.95 (+20) in 150 pa-tients. \T1/lmr/m/it/10.95 (+20) Heart \T1/lm
-r/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1988;60(5):417--423.
- []
-
-
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
-\T1/lmr/m/n/10.95 (+20) ([][]$/pmc / articles / PMC1216600 / ?report = abstract
- % 20https : / / www . ncbi .
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
+/ 29288185 % 20http : / / www .
  []
 
 
@@ -1570,12 +1592,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1053--1056
 
 Underfull \hbox (badness 10000) in paragraph at lines 1053--1056
 
- []
-
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1059
-\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
-/ 29288185 % 20http : / / www .
  []
 
 
@@ -1609,6 +1625,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1065--1068
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
+/ 28002382 % 20http : / / www .
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1069--1072
 [][][] []
  []
@@ -1616,12 +1638,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1069--1072
 
 Underfull \hbox (badness 10000) in paragraph at lines 1069--1072
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1075
-\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
-/ 28002382 % 20http : / / www .
  []
 
 
@@ -1635,6 +1651,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1073--1076
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
+\T1/lmr/m/it/10.95 (+20) Mea-sure-ment \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-
+ti-cle]. 2018;39(10):105004. ([][]$http :
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1077--1080
 [][][] []
  []
@@ -1642,12 +1664,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1077--1080
 
 Underfull \hbox (badness 10000) in paragraph at lines 1077--1080
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
-\T1/lmr/m/it/10.95 (+20) Mea-sure-ment \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-
-ti-cle]. 2018;39(10):105004. ([][]$http :
  []
 
 
@@ -1661,6 +1677,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 1081--1084
  []
 
 
+Underfull \hbox (badness 1515) in paragraph at lines 1087--1087
+\T1/lmr/m/n/10.95 (+20) of low fre-quency heart rate vari-abil-ity as an in-dex
+ of sym-pa-thetic
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1087--1087
+\T1/lmr/m/n/10.95 (+20) car-diac tone: A re-view with em-pha-sis on a re-anal-y
+-sis of pre-vi-ous
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 1087--1087
+\T1/lmr/m/n/10.95 (+20) stud-ies. \T1/lmr/m/it/10.95 (+20) Psy-chophys-i-ol-ogy
+ \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2013;50(5):477--487.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
+xy . library . emory . edu / doi / pdf / 10 . 1111 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
+\T1/lmr/m/n/10.95 (+20) psyp . 12027 % 20http : / / www . ncbi . nlm . nih . go
+v / pubmed / 23445494 % 20http :
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1085--1088
 [][][] []
  []
@@ -1670,37 +1716,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1085--1088
 
  []
 
-
-Underfull \hbox (badness 1515) in paragraph at lines 1091--1091
-\T1/lmr/m/n/10.95 (+20) of low fre-quency heart rate vari-abil-ity as an in-dex
- of sym-pa-thetic
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 1091--1091
-\T1/lmr/m/n/10.95 (+20) car-diac tone: A re-view with em-pha-sis on a re-anal-y
--sis of pre-vi-ous
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 1091--1091
-\T1/lmr/m/n/10.95 (+20) stud-ies. \T1/lmr/m/it/10.95 (+20) Psy-chophys-i-ol-ogy
- \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2013;50(5):477--487.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1091
-\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
-xy . library . emory . edu / doi / pdf / 10 . 1111 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1091
-\T1/lmr/m/n/10.95 (+20) psyp . 12027 % 20http : / / www . ncbi . nlm . nih . go
-v / pubmed / 23445494 % 20http :
- []
-
-
+[48]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1089--1092
 [][][] []
  []
@@ -1710,7 +1726,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1089--1092
 
  []
 
-[49]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+\T1/lmr/m/n/10.95 (+20) 26 / i = 5 / a = 002 ? key = crossref . fae68af48013829
+ef154a6b703ade0b3 % 20http :
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1093--1096
 [][][] []
  []
@@ -1718,12 +1740,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1093--1096
 
 Underfull \hbox (badness 10000) in paragraph at lines 1093--1096
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1099
-\T1/lmr/m/n/10.95 (+20) 26 / i = 5 / a = 002 ? key = crossref . fae68af48013829
-ef154a6b703ade0b3 % 20http :
  []
 
 
@@ -1737,6 +1753,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1097--1100
  []
 
 
+Underfull \hbox (badness 4205) in paragraph at lines 1103--1103
+[]\T1/lmr/m/n/10.95 (+20) Refinetti R, Cornélis-sen G, Hal-berg F. Pro-ce-dures
+ for nu-mer-i-cal
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 1103--1103
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2007;38(4):275--325. ([][]$https : / / www 
+. tandfonline . com / action /
+ []
+
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1101--1104
 [][][] []
  []
@@ -1747,15 +1775,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1101--1104
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 1107--1107
-[]\T1/lmr/m/n/10.95 (+20) Refinetti R, Cornélis-sen G, Hal-berg F. Pro-ce-dures
- for nu-mer-i-cal
+Underfull \hbox (badness 2418) in paragraph at lines 1107--1107
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2001;16(9):606--13. ([][]$http : / / www . 
+ncbi . nlm . nih . gov / pubmed /
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 1107--1107
-\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2007;38(4):275--325. ([][]$https : / / www 
-. tandfonline . com / action /
+Underfull \hbox (badness 10000) in paragraph at lines 1107--1107
+\T1/lmr/m/n/10.95 (+20) 11556941 % 20http : / / www . pubmedcentral . nih . gov
+ / articlerender . fcgi ? artid =
  []
 
 
@@ -1766,18 +1794,6 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1105--1108
 
 Underfull \hbox (badness 10000) in paragraph at lines 1105--1108
 
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 1111--1111
-\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2001;16(9):606--13. ([][]$http : / / www . 
-ncbi . nlm . nih . gov / pubmed /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1111
-\T1/lmr/m/n/10.95 (+20) 11556941 % 20http : / / www . pubmedcentral . nih . gov
- / articlerender . fcgi ? artid =
  []
 
 
@@ -1820,7 +1836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1121--1124
 
  []
 
-
+[49]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1125--1128
 [][][] []
  []
@@ -1830,7 +1846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1125--1128
 
  []
 
-[50]
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1129--1132
 [][][] []
  []
@@ -1930,7 +1946,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1165--1168
 
  []
 
-
+[50]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1169--1172
 [][][] []
  []
@@ -1940,7 +1956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1169--1172
 
  []
 
-[51]
+
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1173--1176
 [][][] []
  []
@@ -1991,12 +2007,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1189--1192
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 1195--1195
-\T1/lmr/m/n/10.95 (+20) Un-der-ly-ing Sud-den Car-diac Death. \T1/lmr/m/it/10.9
-5 (+20) Cir-cu-la-tion Re-search \T1/lmr/m/n/10.95 (+20) [elec-tronic
- []
-
-
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1193--1196
 [][][] []
  []
@@ -2004,6 +2014,12 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1193--1196
 
 Underfull \hbox (badness 10000) in paragraph at lines 1193--1196
 
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 1199--1199
+\T1/lmr/m/n/10.95 (+20) Un-der-ly-ing Sud-den Car-diac Death. \T1/lmr/m/it/10.9
+5 (+20) Cir-cu-la-tion Re-search \T1/lmr/m/n/10.95 (+20) [elec-tronic
  []
 
 
@@ -2017,12 +2033,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1197--1200
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 1203--1203
-[]\T1/lmr/m/n/10.95 (+20) Lown B. Sud-den car-diac death -- 1978. \T1/lmr/m/it/
-10.95 (+20) Cir-cu-la-tion \T1/lmr/m/n/10.95 (+20) [elec-tronic
- []
-
-
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1201--1204
 [][][] []
  []
@@ -2030,6 +2040,12 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 1201--1204
 
 Underfull \hbox (badness 10000) in paragraph at lines 1201--1204
 
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 1207--1207
+[]\T1/lmr/m/n/10.95 (+20) Lown B. Sud-den car-diac death -- 1978. \T1/lmr/m/it/
+10.95 (+20) Cir-cu-la-tion \T1/lmr/m/n/10.95 (+20) [elec-tronic
  []
 
 
@@ -2052,7 +2068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1209--1212
 
  []
 
-
+[51]
 Overfull \hbox (2.43333pt too wide) in paragraph at lines 1213--1216
 [][][] []
  []
@@ -2062,7 +2078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1213--1216
 
  []
 
-[52]
+
 Underfull \hbox (badness 5878) in paragraph at lines 1219--1219
 []\T1/lmr/m/n/10.95 (+20) Deyell MW, Krahn AD, Gold-berger JJ. Sud-den Car-diac
  Death
@@ -2148,154 +2164,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 1233--1236
 
  []
 
-[53] [54
+[52] [53
 
 ]
 Appendix A.
-[55
+[54
 
 ]
-<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=1047, 1466.47874pt 
-x 855.195pt>
+<dissertation_files/figure-latex/unnamed-chunk-13-1.png, id=1053, 1534.73375pt 
+x 2059.695pt>
 File: dissertation_files/figure-latex/unnamed-chunk-13-1.png Graphic file (type
  png)
 <use dissertation_files/figure-latex/unnamed-chunk-13-1.png>
 Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-13-1.png
   used on input line 1265.
-(pdftex.def)             Requested size: 397.47617pt x 231.79309pt.
-[56 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
-<refs/poincare.jpg, id=1055, 976.64874pt x 538.01pt>
-File: refs/poincare.jpg Graphic file (type jpg)
-<use refs/poincare.jpg>
-Package pdftex.def Info: refs/poincare.jpg  used on input line 1272.
-(pdftex.def)             Requested size: 234.14714pt x 128.98547pt.
-[57 <./refs/poincare.jpg>]
+(pdftex.def)             Requested size: 397.47577pt x 533.4338pt.
+[55 <./dissertation_files/figure-latex/unnamed-chunk-13-1.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 1287.
+(Font)              <9> on input line 1280.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1287.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
-
- []
-
+(Font)              <5> on input line 1280.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1314--1315
 
  []
 
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1353
+
+Underfull \hbox (badness 10000) in paragraph at lines 1317--1318
+
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1359
+
+ []
+
+[57
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1406
+
+ []
+
+[58
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1448--1449
 
  []
 
 [59
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1400
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
-
- []
-
-[60
-
+] [60
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
-
- []
-
-[61
-
-
-] [62
-
-]
-<dissertation_files/figure-latex/unnamed-chunk-19-1.png, id=1093, 1913.1475pt x
- 1310.8975pt>
-File: dissertation_files/figure-latex/unnamed-chunk-19-1.png Graphic file (type
+<dissertation_files/figure-latex/unnamed-chunk-18-1.png, id=1093, 1914.15125pt 
+x 1310.8975pt>
+File: dissertation_files/figure-latex/unnamed-chunk-18-1.png Graphic file (type
  png)
-<use dissertation_files/figure-latex/unnamed-chunk-19-1.png>
-Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-19-1.png
-  used on input line 1462.
-(pdftex.def)             Requested size: 397.48158pt x 272.35622pt.
-[63 <./dissertation_files/figure-latex/unnamed-chunk-19-1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1502
+<use dissertation_files/figure-latex/unnamed-chunk-18-1.png>
+Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-18-1.png
+  used on input line 1465.
+(pdftex.def)             Requested size: 397.48566pt x 272.21619pt.
+[61 <./dissertation_files/figure-latex/unnamed-chunk-18-1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1504--1505
 
  []
 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 1547--1548
-
- []
-
-
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 1550--1551
 
  []
 
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1590
+
+Underfull \hbox (badness 10000) in paragraph at lines 1553--1554
+
+ []
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1592--1593
+Underfull \hbox (badness 10000) in paragraph at lines 1595--1596
 
  []
 
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1630
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 1630--1633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1636
 
  []
 
-[67
+[65
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
+
+ []
+
+[66
+
+] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1723
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1726
 
  []
 
 [68
 
-] [69]
-Underfull \hbox (badness 10000) in paragraph at lines 1718--1720
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1765--1767
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1770
+
+ []
+
+[69
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1809--1811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1813--1814
 
  []
 
 [70
 
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1764
+Underfull \hbox (badness 10000) in paragraph at lines 1861--1862
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+Underfull \hbox (badness 10000) in paragraph at lines 1864--1865
 
  []
 
@@ -2303,12 +2339,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1807--1809
+Underfull \hbox (badness 10000) in paragraph at lines 1900--1903
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1811--1812
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
 
  []
 
@@ -2316,12 +2352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1811--1812
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1859--1860
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1947
 
  []
 
@@ -2329,98 +2360,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1898--1901
+Underfull \hbox (badness 10000) in paragraph at lines 1993--1995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1903--1904
+Underfull \hbox (badness 10000) in paragraph at lines 1997--1998
 
  []
 
 [74
 
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
+Underfull \hbox (badness 10000) in paragraph at lines 2026--2031
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2033--2034
 
  []
 
 [75
 
+] [76
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1991--1993
+Underfull \hbox (badness 10000) in paragraph at lines 2080--2085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1995--1996
-
- []
-
-[76
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2024--2029
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2031--2032
+Underfull \hbox (badness 10000) in paragraph at lines 2087--2088
 
  []
 
 [77
 
-] [78
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
+
+ []
+
+[78
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2078--2083
+Underfull \hbox (badness 10000) in paragraph at lines 2168--2174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2085--2086
+Underfull \hbox (badness 10000) in paragraph at lines 2176--2177
 
  []
 
 [79
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2125--2126
-
- []
-
+Appendix B.
 [80
 
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2166--2172
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2190.
+
+<refs/poincare.jpg, id=1221, 976.64874pt x 538.01pt>
+File: refs/poincare.jpg Graphic file (type jpg)
+<use refs/poincare.jpg>
+Package pdftex.def Info: refs/poincare.jpg  used on input line 2192.
+(pdftex.def)             Requested size: 437.23761pt x 240.86264pt.
+
+Overfull \hbox (39.75261pt too wide) in paragraph at lines 2192--2192
+ [] 
  []
 
+[81 <./refs/poincare.jpg>]
+<dissertation_files/figure-latex/unnamed-chunk-36-1.png, id=1228, 1918.16624pt 
+x 1310.8975pt>
+File: dissertation_files/figure-latex/unnamed-chunk-36-1.png Graphic file (type
+ png)
+<use dissertation_files/figure-latex/unnamed-chunk-36-1.png>
+Package pdftex.def Info: dissertation_files/figure-latex/unnamed-chunk-36-1.png
+  used on input line 2203.
+(pdftex.def)             Requested size: 437.21767pt x 298.79973pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2174--2175
-
+Overfull \hbox (39.73267pt too wide) in paragraph at lines 2203--2203
+ [] 
  []
 
-[81
-
-] (./dissertation.aux)
+[82 <./dissertation_files/figure-latex/unnamed-chunk-36-1.png>] (./dissertation
+.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 3D7AE166B3EF2632B4E9279D4E82D8BE;12512.
+(rerunfilecheck)             Checksum: 12FD8BF52E7CA39CE59DE888360606D7;12722.
  ) 
 Here is how much of TeX's memory you used:
- 15992 strings out of 480983
- 243580 string characters out of 5907347
- 633464 words of memory out of 5000000
- 32246 multiletter control sequences out of 15000+600000
- 502384 words of font info for 215 fonts, out of 8000000 for 9000
+ 16016 strings out of 480983
+ 244233 string characters out of 5907347
+ 633513 words of memory out of 5000000
+ 32257 multiletter control sequences out of 15000+600000
+ 502789 words of font info for 219 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,10n,74p,1201b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,10n,74p,1201b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Use
 rs/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/
 asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/ass
@@ -2445,10 +2490,10 @@ sers/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users
 /asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></Users/as
 shah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/assha
 h4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on dissertation.pdf (87 pages, 1267854 bytes).
+Output written on dissertation.pdf (88 pages, 1358988 bytes).
 PDF statistics:
- 1364 PDF objects out of 1440 (max. 8388607)
- 1237 compressed objects within 13 object streams
- 349 named destinations out of 1000 (max. 500000)
- 51752 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1383 PDF objects out of 1440 (max. 8388607)
+ 1254 compressed objects within 13 object streams
+ 353 named destinations out of 1000 (max. 500000)
+ 51765 words of extra memory for PDF output out of 61914 (max. 10000000)
 

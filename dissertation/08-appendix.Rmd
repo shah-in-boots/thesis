@@ -14,7 +14,7 @@
 
 ### Overview of Stress Reactivity {#FigureDag}
 
-```{r, fig.height=3, fig.width=5}
+```{r, fig.height=7, fig.width=5.5}
 diagrams$dag +
 	scale_color_manual(values = c(teal, gold), na.value = grey) + 
 	theme(
@@ -23,16 +23,11 @@ diagrams$dag +
   ) +
 	labs(
 		title = "Stress Reactivity and the Neurocardiac Axis",
-		caption = "Directed acyclic graph of the relationship between neurocardiac stressors and potential effect on clinical outcomes, including major adverse cardiovascular events."
-	)
-```
-
-\newpage
-
-### Poincaré Plot of HRV {#FigurePoincare}
-
-```{r}
-knitr::include_graphics("refs/poincare.jpg")
+		caption = str_wrap("Directed acyclic graph of the relationship of the specific aims of this study. It demonstrates the relationship between autonomic dysfunction on ischemic heart disease, psychological distress, and future cardiovascular events.")
+	) + 
+	annotate("text", x = 90, y = -70, label = "Aim I", size = 5) +
+	annotate("text", x = -40, y = -150, label = "Aim II", size = 5) +
+	annotate("text", x = 120, y = -160, label = "Aim III", size = 5) 
 ```
 
 \newpage
@@ -73,7 +68,7 @@ twins_tables$one %>%
 mims_tables$one %>%
 	as_gt() %>%
 	tab_header(title = "MIMS and MIPS", subtitle = "Cohort Discription") %>%
-	tab_source_note("MSIMI = Mental Stress Induced Myocardial Ischemia; PSIMI = Physical Stress Induced Myocardial Ischemia, MIMS = Myocardial Infarction and Mental Stress, MIPS = Mental Stress Ischemia Mechanisms and Prognosis Study") 
+	tab_source_note("These cohorts had different levels of cardiovascular risk prior to enrollment. MIPS had myocardial infarction as an inclusion criteria. In addition, there was some cross-over between studies. MSIMI = Mental Stress Induced Myocardial Ischemia; PSIMI = Physical Stress Induced Myocardial Ischemia, MIMS = Myocardial Infarction and Mental Stress, MIPS = Mental Stress Ischemia Mechanisms and Prognosis Study") 
 ```
 
 \efoot
@@ -103,16 +98,19 @@ twins_tables$hrv %>%
 
 ### HRV and Mental Stress Challenge {#FigureMimsViolin}
 
-```{r}
+```{r, fig.align = "center"}
 mims_figures$violin +
 	scale_fill_manual(values = c(teal, gold, blue)) + 
 	theme_minimal() +
-	theme(legend.position = "none") +
+	theme(
+		legend.position = "none",
+		plot.caption = element_text(hjust = 0)
+	) + 
 	labs(
 		x = "Mental Stress Challenge Phase",
-		y = "HRV",
+		y = "ECG Metric",
 		title = "HRV Response to Mental Stress",
-		caption = "The distribution of HRV and ECG findings in different phases of mental stress challenges."
+		caption = str_wrap("This describes the distribution of ECG metrics during each phase of the acute mental stress challenge. The units of each correspond to the original metric.")
 	)
 ```
 
@@ -146,7 +144,7 @@ mims_reports$psych %>%
 \newpage
 \bfoot
 
-### Depression by PHQ-9 and HRV
+### Depression by PHQ-9 and HRV {#TableBiobankPsych}
 
 ```{r}
 biobank_tables$sad %>%
@@ -165,7 +163,7 @@ biobank_tables$sad %>%
 ```{r}
 twins_reports$psych %>% 
 	tab_header(title = "Morning HRV and Chronic Psychological Stress", subtitle = "Emory Twins Study") %>%
-	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
+	tab_source_note("Depression is measured as a binary outcome with Beck Depression Inventory score > 14. The HRV was selected at approximately 7 AM. PTSD = Post-Traumatic Stress Disorder, HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
 ```
 
 \efoot
@@ -173,7 +171,7 @@ twins_reports$psych %>%
 \newpage
 \bfoot
 
-### Circadian HRV and Chronic Mental Stress {#TableTwinsCircPsych}
+### Circadian Autonomic Variability and Chronic Mental Stress {#TableTwinsCircPsych}
 
 ```{r}
 twins_reports$psych_cosinor %>%
@@ -213,7 +211,7 @@ biobank_tables$cad %>%
 biobank_tables$revasc %>%
 	as_gt() %>%
 	tab_header(title = "HRV and Revascularization", subtitle = "Emory Cardiovascular Biobank") %>%
-	tab_source_note("In patients undergoing angiography, HRV metrics were described in those that received revascularization, and evaluated for differences in distribution. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
+	tab_source_note("In patients undergoing angiography, HRV metrics were described in those that received revascularization, and evaluated for differences in distribution. Of note, not all obstructive CAD was amenable to revascularization, based on location of lesion. Only those that underwent intervention, either angioplasty or stent placement, were considered to be revascularized. HRV = Heart Rate Variability, CAD = Coronary Artery Disease.")
 ```
 
 \efoot
@@ -256,7 +254,7 @@ mims_reports$stress %>%
 ```{r}
 twins_reports$mpi %>%
 	tab_header(title = "Myocardial Perfusion Imaging and Morning HRV", subtitle = "Emory Twins Study") %>%
-	tab_source_note("Relationship between abnormal MPI and CFR with HRV. HRV = heart rate variability, MPI = myocardial perfusion imaging, CFR = coronary flow reserve, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
+	tab_source_note("Relationship between abnormal MPI and CFR with HRV. HRV was measured at 7 AM. HRV = heart rate variability, MPI = myocardial perfusion imaging, CFR = coronary flow reserve, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity")
 ```
 
 \efoot
@@ -316,7 +314,7 @@ mims_reports$mpi %>%
 ```{r}
 twins_reports$outcomes %>%
 	tab_header(title = "Clinical Outcomes by HRV", subtitle = "Emory Twins Study") %>%
-	tab_source_note("Every unit increased in HRV had the associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV = heart rate variability.")
+	tab_source_note("Every unit increased in HRV had the associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV was selected at 7 AM. HRV = heart rate variability.")
 ```
 
 \efoot
@@ -328,7 +326,7 @@ twins_reports$outcomes %>%
 
 ```{r}
 twins_reports$outcomes_cosinor %>%
-	tab_header(title = "Clinical Outcomes by Circadian HRV", subtitle = "Emory Twins Study") %>%
+	tab_header(title = "Clinical Outcomes by Circadian Autonomic Variability", subtitle = "Emory Twins Study") %>%
 	tab_source_note("The HRV metrics are measured over 24 hours using cosinor statistics. Every unit increase in HRV had an associated hazard ratio (95% CI) for both overall and cardiovascular mortality. HRV = heart rate variability, LF = low frequency HRV, HF = high frequency HRV, VLF = very low frequency HRV, AC = acceleration capacity, MESOR = midline estimating statistic of rhythm, Amplitude = maximum distance from MESOR, Phi = shift of acrophase")
 ```
 
@@ -351,3 +349,36 @@ mims_reports$outcomes %>%
 \efoot
 \eland
 \egroup
+
+
+# Supplementary Files
+
+\newpage
+\bfoot
+
+### Poincaré Plot of HRV {#FigurePoincare}
+
+```{r, fig.align = "center", out.width = "110%"}
+knitr::include_graphics("refs/poincare.jpg")
+```
+
+The two Poincaré plots represent ECG data at 7 AM for a twin pair that are discordant for stress test results. Both axes are RR interval lengths in milliseconds. The x-axis coordinate represents the RR interval for an initial beat, while the y-axis coordinate represents the RR interval for the following beat, such that the (x, y) coordinate represents (RRn, RRn+1). Each subsequent coordinate is plotted in this way. The red points are beats that were slower than the previous beat, while the blue points were faster than the previous beat. The shape of the resulting plot is abstracted into a single descriptive index called Dyx. The first twin (left) had no myocardial perfusion deficits on stress testing with a Dyx = 3.7. The second twin (right) had an abnormal stress test with a Dyx = 1.7. This is referenced with permission [@Shah2020].
+
+\efoot
+\newpage
+\bfoot
+
+### Cosinor Metrics {#FigureCosinor}
+
+```{r, fig.align = "center", out.width = "80%"}
+diagrams$cosinor +
+	labs(
+		x = "Time of Day (hours)",
+		y = "LF HRV (log ms^2)",
+		title = "Cosinor of Low Frequency HRV",
+		caption = str_wrap("This is an example of a cosinor of LF HRV over the course of 24 hours, which is represented as a simple harmonic regression with specific attributes. These characteristics describe the characteristics of the diurnal variations. HRV = heart rate variability, M = MESOR, A1 = amplitude, P1 = phi (acrophase).")
+	) +
+	theme(plot.caption = element_text(hjust = 0))
+```
+
+\efoot

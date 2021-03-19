@@ -31,7 +31,7 @@ The *Twins* cohort, as described in both Table \@ref(TableOneTwins) and \@ref(Ta
 The mean age was `r inline_text(twins_tables$one, age, column = THS1)` during the initial enrollment period, and was `r inline_text(twins_tables$one, age, column = ETSF)` during the final enrollment period. 
 All participants were male, and `r prop.table(table(twins_clinical$race))[1]*100`% were White.
 The average rate over the enrollment periods of abnormal MPI was `r prop.table(table(twins_clinical$pet_bin))[2]*100`%.
-The average rate of PTSD was `r prop.table(table(twins_clinical$ptsd))[2]*100`% and the average rate of depression was `r prop.table(table(twins_clinical$sad_bin))[2]*100`%.
+The average rate of PTSD was `r prop.table(table(twins_clinical$ptsd))[2]*100`% and the average rate of depression was `r prop.table(table(twins_clinical$sad_bin))[2]*100`%. Of note, as these patients were enrolled for recurrent visits, there is a trend towards decreasing HRV over time, most prominent with LF HRV, which has been noted in the literature [@Shah2021; @Sinnreich1998].
 
 # Psychological Stress
 
@@ -53,7 +53,7 @@ Every 1 unit increase in LF HRV during recovery had an OR = `r lf$scid_ptsd_bl_e
 No other HRV metrics were strongly associated.
 
 Chronic psychological stressors were analyzed using all three cohorts. 
-In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9.
+In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9 (Table \@ref(TableBiobankPsych).
 
 ```{r, include=FALSE}
 ptsd <- twins_reports$psych[["_data"]] %>%
@@ -87,7 +87,7 @@ Every 1 unit increase in the MESOR of LF HRV had an OR = `r sad$mesor_estimate` 
 
 # Myocardial Ischemia
 
-The relationship of autonomic dysfunction to CAD as measured by coronary angiography was assessed in the *Biobank* cohort. 
+The relationship of short-term autonomic metrics to CAD as measured by coronary angiography was assessed in the *Biobank* cohort. 
 When comparing summary HRV metrics between those with obstructive CAD versus nonobstructive CAD, there were no significant differences between HRV distributions (\@ref(TableBiobankCAD)). 
 When comparing those that had revascularization of the CAD and those that did not (\@ref(TableBiobankRevasc)), there was a difference seen in RR interval. 
 Those that underwent revascularization had a mean (95% CI) RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_2)`, while those that did not had a mean RR interval of `r inline_text(biobank_tables$revasc, n_nmean, column = stat_1)`.
@@ -107,7 +107,7 @@ hf <- mims[mims$term == "hf_stress",]
 lf <- mims[mims$term == "lf_stress",]
 ```
 
-The relationship of autonomic dysfunction to myocardial perfusion was assessed using both mental stress and physical stress in the *MIMS/MIPS* cohorts.
+The relationship of stress reactivity autonomic metrics to myocardial perfusion was assessed using both mental stress and physical stress in the *MIMS/MIPS* cohorts.
 ECG and HRV metrics did not have an association with abnormal MPI with combined mental and physical stress nor with physical stress.
 Both HF HRV and LF HRV most prominently had an association with MSIMI, with stress HRV HRV having an odds ratio (OR) = `r hf$estimate` (95% CI `r hf$conf.low`, `r hf$conf.high`) and LF HRV having an OR = `r lf$estimate` (95% CI `r lf$conf.low`, `r lf$conf.high`). 
 The other associations are described in Table \@ref(TableMimsStress).
@@ -118,7 +118,7 @@ mpi <- twins[twins$outcomes == "Abnormal MPI" & twins$test_num == "Model 3",]
 cfr <- twins[twins$outcomes == "Coronary Flow Reserve" & twins$test_num == "Model 3",]
 ```
 
-This relationship between myocardial perfusion and autonomic dysfunction was further explored using quantitative MPI in the *Twins* cohort. 
+This relationship between myocardial perfusion and early morning autonomic metrics was further explored using quantitative MPI in the *Twins* cohort. 
 Morning HRV at approximately 7 AM was predominately associated with coronary flow reserve, as described in Table \@ref(TableTwinsMPI). 
 A change in 1 unit of LF HRV was associated with an `r cfr$lf_estimate` (95% CI `r cfr$lf_conf.low`, `r cfr$lf_conf.high`) in adjusted models. 
 *Dyx* had an OR = `r mpi$dyx_estimate` (95% CI `r mpi$dyx_conf.low`, `r mpi$dyx_conf.high`) for abnormal MPI.
@@ -152,7 +152,7 @@ circ <- twins_reports$outcomes_cosinor[["_data"]] %>%
 ```
 
 Clinical outcome data was available in both the *Twins* and the *MIMS/MIPS* cohorts. 
-With the *Twins*, early morning HRV showed a robust association with overall mortality and with cardiovascular disease, as seen in Table \@ref(TableTwinsOutcomes).
+With the *Twins*, early morning autonomic metrics showed a robust association with overall mortality and with cardiovascular disease, as seen in Table \@ref(TableTwinsOutcomes).
 In fully adjusted models for overall mortality, *Dyx* and VLF HRV had the strongest association. 
 With every 1 unit of increase in *Dyx*, there was a hazard ratio (HR) = `r twins$dyx_estimate` (95% CI `r twins$dyx_conf.low`, `r twins$dyx_conf.high`), and with every 1 unit increase in VLF HRV, there was a HR = `r twins$vlf_estimate` (95% CI `r twins$vlf_conf.low`, `r twins$vlf_conf.high`).
 When evaluating the relationship of circadian autonomic variability and clinical outcomes, *Dyx* was a significant predictor of both overall and cardiovascular mortality.
@@ -166,6 +166,6 @@ lf <- mims %>% filter(hrv == "Stress Low Frequency HRV")
 hf <- mims %>% filter(hrv == "Stress High Frequency HRV")
 ```
 
-Using the *MIMS/MIPS* cohorts, stress HRV was compared with clinical outcomes. 
+Using the *MIMS/MIPS* cohorts, stress reactivity autonomic metrics were compared with clinical outcomes. 
 There was a robust relationship between stress HRV and overall mortality, cardiovascular mortality, and recurrent cardiovascular events as described in Table \@ref(TableMimsOutcomes).
 In fully adjusted models for cardiovascular mortality, including primary adjustment for MSIMI, 1 unit increase in stress LF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`) and HF HRV had a HR = `r lf$cv_death_estimate` (95% CI `r lf$cv_death_conf.low`, `r lf$cv_death_conf.high`).

@@ -16,26 +16,21 @@ draw_diagrams <- function() {
 
 	# Overview DAG -------------------------------------------------------
 	dag <- dagify(
-		ans ~ cad,
-		out ~ cad,
-		ans ~~ ms + psych + circ,
-		stress ~ psych + ms + circ + ps,
-		cad ~ ps + ms,
-		out ~ stress + cad + ans,
+		psych ~ ans,
+		ans ~ stress,
+		ihd ~ ans,
+		mace ~ ans + ihd + psych,
 		labels = c(
-			"cad" = "Coronary Artery Disease",
+			"ihd" = "Ischemic Heart Disease",
 			"ans" = "Autonomic Nervous System",
-			"circ" = "Circadian Disruption",
-			"ms" = "Acute Mental Stress",
-			"ps" = "Acute Physical Stress",
+			"stress" = "Stress",
 			"psych" = "Psychological Distress",
-			"stress" = "Stress Reactivity",
-			"out" = "Outcomes"
+			"mace" = "Major Adverse Cardiovascular Events"
 		),
-		outcome = "out",
-		exposure = c("ans", "stress")
+		outcome = c("ihd", "psych", "mace"),
+		exposure = c("ans")
 	) %>%
-		tidy_dagitty(layout = "kk") %>%
+		tidy_dagitty(layout = "gem", seed = 16) %>%
 		node_status() %>%
 		ggplot(aes(x = x, y = y, xend = xend, yend = yend, color = status)) +
 		geom_dag_point() +
@@ -45,6 +40,7 @@ draw_diagrams <- function() {
 			nudge_y = -5, nudge_x = -5
 		) +
 		theme_dag()
+
 
 	# Example of Cosinor ----------------------------------------------------
 	data(triplets)

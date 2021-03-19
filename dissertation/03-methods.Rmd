@@ -7,38 +7,35 @@ The response to both physiological and psychological stress can be markers of ov
 **AIM I --- Autonomic mechanisms underlying psychological stress.**
 
 1. Explore the effect of acute mental stress on autonomic function. 
-*We hypothesize that short-term autonomic metrics will be abnormal during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
+*We hypothesize that short-term autonomic metrics will be lower during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
 1. Explore the relationship of autonomic dysfunction at time of acute mental stress with chronic mental stress. 
-*We hypothesize that abnormalities in short-term autonomic metrics will have an increased risk for depression and PTSD.*
+*We hypothesize that lower measures of short-term stress reactivity autonomic metrics will have an association with depression and PTSD.*
 1. Determine the relationship between autonomic dysfunction and chronic mental stress. 
-*We hypothesize that abnormalities in morning autonomic metrics will have an increased risk for depression and PTSD. We hypothesize that circadian autonomic variability will have an increased risk for depression and PTSD.*
+*We hypothesize that lower early morning autonomic metrics will have an increased risk for depression and PTSD. We hypothesize that lower circadian autonomic variability will have an association for depression and PTSD.*
 
 **AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
 
 1. Determine the relationship of autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) as measured by coronary angiography. 
-*We hypothesize that autonomic metrics will be in abnormal in subjects with obstructive, epicardial disease.*
-1. Explore the effect of revacularization of obstructive coronary artery disease with changes in autonomic function. 
-*We hypothesize that in subjects undergoing revascularization of the coronary arteries, autonomic metrics will be different after revascularization as compared to before revascularization.*
+*We hypothesize that short-term autonomic metrics will be in lower in subjects with obstructive, epicardial disease.*
+1. Explore the effect of revascularization of obstructive coronary artery disease with changes in autonomic function. 
+*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term autonomic metrics will be higher after revascularization as compared to before revascularization.*
 1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to physical stress. 
-*We hypothesize that abnormalities in autonomic metrics will associate with abnormal myocardial perfusion from either exercise or pharmacological stress.*
+*We hypothesize that lower early morning and stress reactivity autonomic metrics will associate with abnormal myocardial perfusion from physical stress.*
 *We hypothesize that circadian autonomic variability will be associated with abnormal myocardial perfusion.*
 1. Determine the relationship between autonomic dysfunction and myocardial blood flow in response to physical stress. 
-*We hypothesize that abnormalities in autonomic dysfunction will be associated with abnormalities in myocardial blood flow, as measured by coronary flow reserve, after pharmacological stress.*
-*We hypothesize that circadian autonomic variability will be associated with abnormalities in coronary flow reserve.*
+*We hypothesize that lower early morning autonomic dysfunction will be associated with lower myocardial blood flow, as measured by coronary flow reserve, after pharmacological stress.*
+*We hypothesize that circadian autonomic variability will be associated with lower coronary flow reserve.*
 1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to acute and chronic mental stress. 
-*We hypothesize that abnormalities in autonomic metrics will be associated with abnormalities in myocardial perfusion in response to acute mental stress.*  
-*We hypothesize that this relationship will be unaffected by the chronic mental stress of depression and PTSD.*
+*We hypothesize that lower stress reactivity autonomic metrics will be associated with abnormalities in myocardial perfusion.*  
+*We hypothesize that this relationship will not be affected by the chronic mental stress of depression and PTSD.*
 
 **AIM III --- Autonomic mechanisms underlying the risk of major adverse cardiovascular events.**
 
 1. Determine the effect of autonomic function on the risk of major adverse cardiovascular events. 
-*We hypothesize that abnormalities in autonomic metrics will be associated with increased overall and cardiovascular mortality.*
-*We hypothesize that circadian autonomic variability will be an associated with increased overall and cardiovascular mortality.*
-1. Explore the relationship of stress-induced autonomic dysfunction on the risk of major adverse cardiovascular events. 
-*We hypothesize that abnormal autonomic metrics in response to acute mental stress will be associated with an increased risk of cardiovascular mortality and recurrent cardiovascular events.*
-*We hypothesize that this risk will not be explained by mental stress-induced myocardial ischemia.*
-
-To achieve these aims, we will leverage the several data sets, including the Emory Cardiovascular Biobank (*Biobank*), the Myocardial Infarction and Mental Stress (*MIMS*) and Mental Stress Ischemia Prognosis Study (*MIPS*), and the Emory Twins Study (*Twins*). Each of these data sets contribute variations of coronary artery physiology, acute and chronic mental stressors, and electrocardiographic data of varying recording lengths.
+*We hypothesize that lower early morning autonomic metrics and circadian autonomic variability will be associated with increased hazard for overall and cardiovascular mortality.*
+1. Explore the relationship of stress-induced autonomic dysfunction on the risk of major adverse cardiovascular events.
+*We hypothesize that stress reactivity autonomic metrics will be associated with an increased hazard for cardiovascular mortality and recurrent cardiovascular events.*
+*We hypothesize that this relationship will not be explained by mental stress-induced myocardial ischemia.*
 
 # Study Design
 
@@ -97,7 +94,9 @@ HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-E
 *Dyx* is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in Figure \@ref(FigurePoincare).
 *Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability [@Olesen2005; @Lewkowicz2002].
 
-In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins* [@Refinetti2007]. Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area.
+In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins*, as seen in Figure \@ref(FigureCosinor) [@Refinetti2007]. 
+Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area.
+
 
 ### Psychological Measures
 
@@ -148,12 +147,11 @@ The enrollment for *MIMS/MIPS* and *Twins* was completed prior to the initiation
 
 Statistical analysis was performed using R 4.0.0 (R Core Team 2020, Vienna, Austria). 
 The analytical approach was guided by the specific aims (Section \@ref(aims)). 
-
 ## Clinical Characteristics
 
 In the *Biobank*, HRV was summarized over the recording length and at 15-30 minute intervals at the time of coronary angiography. 
 In the *Twins*, HRV was computed hourly, including *Dyx*. 
-The 24-hour data was used to generate cosinor statistics as well using published software [@Shah2020d]. 
+The 24-hour data was used to generate cosinor statistics using published software [@Shah2020d]. 
 In the *MIMS/MIPS*, HRV was computed for each phase of the mental stress challenge. 
 Power spectral density measures of HF, LF, and VLF HRV were log-transformed for normal distribution.
 Each of the clinical cohorts was described by clinical covariates, including frequency of comorbid diseases and summary statistics of continuous measures.

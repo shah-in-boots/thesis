@@ -30,10 +30,10 @@ make_twins_tables <- function(clinical, ecg) {
 		) %>%
 		modify_header(update = list(
 			label ~ "**ECG/HRV Metric**",
-			stat_1 ~ "**THS1**",
-			stat_2 ~ "**SAVEIT**",
-			stat_3 ~ "**THS2**",
-			stat_4 ~ "**ETSF**"
+			stat_1 ~ "**THS1**, N = 361",
+			stat_2 ~ "**SAVEIT**, N = 206",
+			stat_3 ~ "**THS2**, N = 165",
+			stat_4 ~ "**ETSF**, N = 280"
 		))
 
 	# Findings

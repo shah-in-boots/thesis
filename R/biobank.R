@@ -25,13 +25,17 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		clinical %>%
 		mutate(
 			race = labels$Race,
-			gend = labels$Gender
+			gend = labels$Gender,
+			adm_reason = labels$reason,
+			setting = labels$Setting
 		) %>%
 		labelled::set_variable_labels(
 			race = "Race",
-			gend = "Sex"
+			gend = "Sex",
+			setting = "Setting",
+			adm_reason = "Reason for Catheterization",
 		) %>%
-		select(c(age, race, blbmi, gend, phq, sad, gensini, stenosis, cass70)) %>%
+		select(c(age, race, blbmi, gend, setting, adm_reason, phq, sad, gensini, stenosis, cass70)) %>%
 		tbl_summary(
 			missing = "no",
 			value = list(c(stenosis, sad) ~ "1")
@@ -59,24 +63,23 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		))
 
 
-	# Revascularization Table -------------------------------------------------------------
+	# Revascularization Table -----------------------------------------
 	revasc <-
 		ecg$merged %>%
 		group_by(patid) %>%
 		summarise(across(c(n_nmean:ap_en, dyx), ~ mean(.x, na.rm = TRUE)), .groups = "keep") %>%
 		left_join(clinical, ., by = "patid") %>%
-		select(c(stenosis, n_nmean:dyx)) %>%
+		select(c(pci_adm, n_nmean:dyx)) %>%
 		tbl_summary(
-			by = stenosis,
+			by = pci_adm,
 			missing = "no",
-			value = list(c(stenosis) ~ "1"),
 			label = labs
 		) %>%
 		add_p() %>%
 		modify_header(update = list(
-			label ~ '**HRV Metric**',
-			stat_1 ~ '**No Revascularization** N = 14',
-			stat_2 ~ '**Revascularization** N = 34',
+			label ~ '**Characteristic**',
+			stat_1 ~ '**No Revascularization**, N = 34',
+			stat_2 ~ '**Revascularization**, N = 22',
 			p.value ~ '**p-value**'
 		))
 
@@ -86,28 +89,33 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 		group_by(patid) %>%
 		summarise(across(c(n_nmean:ap_en, dyx), ~ mean(.x, na.rm = TRUE)), .groups = "keep") %>%
 		left_join(clinical, ., by = "patid") %>%
-		mutate(cad = if_else(cass70 > 0, 1, 0, missing = 0)) %>%
-		mutate(cad = factor(cad, levels = c(0, 1), labels = c("Nonobstructive CAD", "Obstructive CAD"))) %>%
-		select(c(cad, n_nmean:dyx)) %>%
+		mutate(stenosis = replace_na(stenosis, 0)) %>%
+		select(c(stenosis, n_nmean:dyx)) %>%
 		tbl_summary(
-			by = cad,
+			by = stenosis,
 			missing = "no",
-			value = list(c(cad) ~ "1"),
 			label = labs
 		) %>%
-		add_p()
+		add_p() %>%
+		modify_header(update = list(
+			label ~ '**Characteristic**',
+			stat_1 ~ '**Nonobstructive CAD**, N = 22',
+			stat_2 ~ '**Obstructive CAD**, N = 34',
+			p.value ~ '**p-value**'
+		))
+
 
 	# HRV by Timing Context --------------------------------------------------
 	timing <-
 		ecg$timed %>%
-		select(patid, context, n_nmean:ap_en) %>%
+		select(patid, context, n_nmean:ap_en, -pnn50) %>%
 		filter(context %in% c("start", "balloon")) %>%
-		left_join(clinical[c("patid", "stenosis")], ., by = "patid") %>%
-		filter(!is.na(stenosis) & !is.na(context)) %>%
-		mutate(stenosis = factor(stenosis, levels = c(0, 1), labels = c("No Revascularization", "Revascularization"))) %>%
+		left_join(clinical[c("patid", "pci_adm")], ., by = "patid") %>%
+		filter(!is.na(pci_adm) & !is.na(context)) %>%
+		mutate(pci_adm = factor(pci_adm, levels = c(0, 1), labels = c("No Revascularization", "Revascularization"))) %>%
 		select(-patid) %>%
 		tbl_strata(
-			strata = stenosis,
+			strata = pci_adm,
 			.tbl_fun =
 				~.x %>%
 				tbl_summary(
@@ -118,12 +126,12 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 			.combine_with = "tbl_merge"
 		) %>%
 		modify_header(update = list(
-			label ~ '**ECG Metrics**',
-			stat_1_1 ~ '**Angiography** N = 6',
-			stat_2_1 ~ '**Before** N = 5',
+			label ~ '**Characteristic**',
+			stat_1_1 ~ '**Angiography**, N = 13',
+			stat_2_1 ~ '**Before**, N = 14',
 			p.value_1 ~ '**p-value**',
-			stat_1_2 ~ '**Balloon** N = 15',
-			stat_2_2 ~ '**Before** N = 20',
+			stat_1_2 ~ '**Balloon**, N = 10',
+			stat_2_2 ~ '**Before**, N = 13',
 			p.value_2 ~ '**p-value**'
 		))
 

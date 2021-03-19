@@ -341,11 +341,11 @@ report_mims_models <- function(models, survival) {
 		tab_stubhead("ECG/HRV Metric") %>%
 		cols_merge(
 			columns = starts_with("scid_depression_bl"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("scid_ptsd_bl"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		fmt_number(
 			columns = starts_with("scid"),
@@ -404,15 +404,15 @@ report_mims_models <- function(models, survival) {
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_msi_bl"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_psi2_bl"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("rdr_combined"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		fmt_number(
 			columns = starts_with("rdr"),
@@ -478,19 +478,19 @@ report_mims_models <- function(models, survival) {
 		gt(rowname_col = "test_num") %>%
 		cols_merge(
 			columns = starts_with("lf_stress"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("lf_rest"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("hf_stress"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		cols_merge(
 			columns = starts_with("hf_rest"),
-			pattern = "{1} ({2}, {3}), AUC {5}"
+			pattern = "{1} ({2}, {3})"
 		) %>%
 		fmt_number(
 			columns = everything(),
