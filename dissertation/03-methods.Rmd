@@ -6,20 +6,20 @@ The response to both physiological and psychological stress can be markers of ov
 
 **AIM I --- Autonomic mechanisms underlying psychological stress.**
 
-1. Explore the effect of acute mental stress on autonomic function. 
-*We hypothesize that short-term autonomic metrics will be lower during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
-1. Explore the relationship of autonomic dysfunction at time of acute mental stress with chronic mental stress. 
-*We hypothesize that lower measures of short-term stress reactivity autonomic metrics will have an association with depression and PTSD.*
-1. Determine the relationship between autonomic dysfunction and chronic mental stress. 
-*We hypothesize that lower early morning autonomic metrics will have an increased risk for depression and PTSD. We hypothesize that lower circadian autonomic variability will have an association for depression and PTSD.*
+1. Examine the effect of acute mental stress on sympathovagal balance and cardiac autonomic function in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
+*We hypothesize that heart rate will increase and HRV decrease during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
+1. Examine the relationship of cardiac autonomic dysfunction measured in the setting of acute mental stress challenge with depression and posttrauamtic stress disorder in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
+*We hypothesize that lower short-term HRV during acute stress associate with depression and PTSD.*
+1. Examine the relationship of circadian cardiac autonomic variability over 24 hours with depression and PTSD in a cohort of male veteran twins.
+*We hypothesize that lower circadian variation in HRV (amplitude) and 24-hour mean HRV (mesor) associate with depression and PTSD.*
 
 **AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
 
-1. Determine the relationship of autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) as measured by coronary angiography. 
-*We hypothesize that short-term autonomic metrics will be in lower in subjects with obstructive, epicardial disease.*
-1. Explore the effect of revascularization of obstructive coronary artery disease with changes in autonomic function. 
-*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term autonomic metrics will be higher after revascularization as compared to before revascularization.*
-1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to physical stress. 
+1. Determine the relationship of baseline resting cardiac autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) in a cohort of high-risk patients undergoing coronary angiography. 
+*We hypothesize that short-term autonomic metrics will be in lower in subjects with obstructive, epicardial disease compared to those without evidence of obstructive CAD.*
+1. Examine the acute effect of revascularization of obstructive coronary artery disease on short-term cardiac autonomic function compared to changes that otherwise occur by angiography alone, without intervention. 
+*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term HRV will be lower after revascularization as compared to before revascularization and also compared to HRV during angiography.*
+1. Determine the relationship between autonomic dysfunction and perfusion abnormalities in response to conventional stress-induced myocardial ischemia in a cohot of participants with known CAD. 
 *We hypothesize that lower early morning and stress reactivity autonomic metrics will associate with abnormal myocardial perfusion from physical stress.*
 *We hypothesize that circadian autonomic variability will be associated with abnormal myocardial perfusion.*
 1. Determine the relationship between autonomic dysfunction and myocardial blood flow in response to physical stress. 
