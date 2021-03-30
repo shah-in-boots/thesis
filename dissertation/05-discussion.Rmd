@@ -2,7 +2,7 @@
 
 # Principal Findings
 
-This was a multi-cohort study evaluating the relationship between physiological and psychological stress with autonomic dysfunction, enriched for subjects both with cardiovascular and psychiatric illness.
+Our series of neurocardiac examinations in three distinct cohorts to describes multifaceted relationships amongst the autonomic physiology, psychological stress, and cardiovascular disease.
 The use of three varied cohorts allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
 We found a strong relationship between autonomic dysfunction and both acute and chronic mental stress and with myocardial ischemia. 
 We found that several types of autonomic dysfunction not only predicted clinical outcomes, but also mediated the increased mortality in those with mental stress.
