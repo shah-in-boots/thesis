@@ -58,7 +58,7 @@ Subjects were excluded from analysis if they were unable to complete pharmacolog
 ### Mental Stress Ischemia Mechanisms and Prognosis, Myocardial Infarction and Mental Stress
 
 The study design has been described prior, and is the same between the two cohorts [@Hammadah2017a].
-The *MIMS* cohorts had recent myocardial ischemia within the 8 months prior to enrollment and were younger than 61 years of age at time of screening. 
+The *MIMS* cohort included participants with recent myocardial infarction within the 8 months prior to enrollment who were younger than 61 years of age at time of enrollment. 
 The *MIPS* cohort included patients with stable CAD diagnosed via coronary angiogram, documented MI, or positive nuclear stress test. 
 All patients underwent mental stress test and physical stress test using either treadmill or regadenosine, and were randomly assigned to complete one and then the other in two separate visits within a week.
 During the initial visit, medical history and psychological assessments were performed as well.
