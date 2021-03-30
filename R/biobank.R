@@ -3,22 +3,23 @@ make_biobank_tables <- function(clinical, ecg, labels) {
 
 	# Clean up ECG data
 	labs <- list(
-		n_nmean ~ "RR Interval",
-		sdnn ~ "SDNN",
-		rmssd ~ "RMSSD",
-		pnn50 ~ "PNN50",
-		ulf ~ "Ultra Low Frequency",
-		vlf ~ "Very Low Frequency",
-		lf ~ "Low Frequency",
-		hf ~ "High Frequency",
+		n_nmean ~ "RR Interval (ms)",
+		sdnn ~ "SDNN (ms)",
+		rmssd ~ "RMSSD (ms)",
+		pnn50 ~ "PNN50 (%)",
+		ulf ~ "Ultra Low Frequency (ln ms^2)",
+		vlf ~ "Very Low Frequency (ln ms^2)",
+		lf ~ "Low Frequency (ln ms^2)",
+		hf ~ "High Frequency (ln ms^2)",
 		lfhf ~ "Low/High Frequency Ratio",
-		ttlpwr ~ "Total Power",
-		ac ~ "Acceleration Capacity",
-		dc ~ "Deceleration Capacity",
+		ttlpwr ~ "Total Power (ln ms^2)",
+		ac ~ "Acceleration Capacity (ms)",
+		dc ~ "Deceleration Capacity (ms)",
 		samp_en ~ "Sample Entropy",
 		ap_en ~ "Approximate Entropy",
 		dyx ~ "Dyx"
 	)
+
 
 	# Table 1 ---------------------------------------------------------------
 	one <-

@@ -71,10 +71,10 @@ make_mims_tables <- function(clinical) {
 		separate(vars, into = c("hrv", "phase"), sep = "_") %>%
 		select(c(hrv, phase, estimate, conf.low, conf.high, statistic, p.value)) %>%
 		mutate(hrv = case_when(
-			hrv == "hr" ~ "Heart Rate",
-			hrv == "hf" ~ "High Frequency HRV",
-			hrv == "lf" ~ "Low Frequency HRV",
-			hrv == "twa" ~ "T Wave Area"
+			hrv == "hr" ~ "Heart Rate (10 beats/min)",
+			hrv == "hf" ~ "High Frequency HRV (ln ms^2)",
+			hrv == "lf" ~ "Low Frequency HRV (ln ms^2)",
+			hrv == "twa" ~ "T Wave Area (µVs)"
 		)) %>%
 		mutate(phase = case_when(
 			phase == "stress" ~ "Stress",
@@ -108,10 +108,10 @@ make_mims_tables <- function(clinical) {
 			p.value ~ '**p-value**'
 		)) %>%
 		as_gt() %>%
-		tab_row_group(group = "Low Frequency HRV", rows = 1:3) %>%
-		tab_row_group(group = "High Frequency HRV", rows = 4:6) %>%
-		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
-		tab_row_group(group = "Heart Rate", rows = 10:12)
+		tab_row_group(group = "Low Frequency HRV (ln ms^2)", rows = 1:3) %>%
+		tab_row_group(group = "High Frequency HRV (ln ms^2)", rows = 4:6) %>%
+		tab_row_group(group = "T Wave Area (µVs)", rows = 7:9) %>%
+		tab_row_group(group = "Heart Rate (10 beats/min)", rows = 10:12)
 
 	# Tables
 	tables <- list(
@@ -137,7 +137,7 @@ make_mims_figures <- function(clinical, outcomes) {
 		filter(value < 150) %>%
 		mutate(
 			phase = factor(phase, levels = c("rest", "stress", "recovery"), labels = c("Rest", "Stress", "Recovery")),
-			hrv = factor(hrv, levels = c("hf", "lf", "twa", "hr"), labels = c("High Frequency", "Low Frequency", "T Wave Area", "Heart Rate"))
+			hrv = factor(hrv, levels = c("hf", "lf", "twa", "hr"), labels = c("High Frequency (ln ms^2)", "Low Frequency (ln ms^2)", "T Wave Area (µVs)", "Heart Rate (beats/min)"))
 		) %>%
 		ggplot(aes(x = phase, y = value, fill = phase)) +
 		facet_wrap(~hrv, scales = "free") +
@@ -366,10 +366,10 @@ report_mims_models <- function(models, survival) {
 				rows = scid_depression_bl_p.value < 0.05
 			)
 		) %>%
-		tab_row_group(group = "Low Frequency HRV", rows = 1:3) %>%
-		tab_row_group(group = "High Frequency HRV", rows = 4:6) %>%
-		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
-		tab_row_group(group = "Heart Rate", rows = 10:12) %>%
+		tab_row_group(group = "Low Frequency HRV (ln ms^2)", rows = 1:3) %>%
+		tab_row_group(group = "High Frequency HRV (ln ms^2)", rows = 4:6) %>%
+		tab_row_group(group = "T Wave Area (µVs)", rows = 7:9) %>%
+		tab_row_group(group = "Heart Rate (10 beats/min)", rows = 10:12) %>%
 		cols_label(
 			scid_depression_bl_estimate = "Depression",
 			scid_ptsd_bl_estimate = "PTSD"
@@ -440,10 +440,10 @@ report_mims_models <- function(models, survival) {
 				rows = rdr_psi2_bl_p.value < 0.05
 			)
 		) %>%
-		tab_row_group(group = "Low Frequency HRV", rows = 1:3) %>%
-		tab_row_group(group = "High Frequency HRV", rows = 4:6) %>%
-		tab_row_group(group = "T Wave Area", rows = 7:9) %>%
-		tab_row_group(group = "Heart Rate", rows = 10:12) %>%
+		tab_row_group(group = "Low Frequency HRV (ln ms^2)", rows = 1:3) %>%
+		tab_row_group(group = "High Frequency HRV (ln ms^2)", rows = 4:6) %>%
+		tab_row_group(group = "T Wave Area (µVs)", rows = 7:9) %>%
+		tab_row_group(group = "Heart Rate (10 beats/min)", rows = 10:12) %>%
 		cols_label(
 			rdr_combined_estimate = "Combined MSIMI/PSIMI",
 			rdr_msi_bl_estimate = "MSIMI",
@@ -526,10 +526,10 @@ report_mims_models <- function(models, survival) {
 			)
 		) %>%
 		cols_label(
-			lf_stress_estimate = "Stress LF",
-			lf_rest_estimate = "Rest LF",
-			hf_stress_estimate = "Stress HF",
-			hf_rest_estimate = "Rest HF"
+			lf_stress_estimate = "Stress LF (ln ms^2)",
+			lf_rest_estimate = "Rest LF (ln ms^2)",
+			hf_stress_estimate = "Stress HF (ln ms^2)",
+			hf_rest_estimate = "Rest HF (ln ms^2)"
 		) %>%
 		tab_stubhead(label = "Sequential Models") %>%
 		tab_footnote(
@@ -578,8 +578,8 @@ report_mims_models <- function(models, survival) {
 		) %>%
 		mutate(test_num = paste("Model", c(1:6, 1:6))) %>%
 		mutate(hrv = case_when(
-			hrv == "lf" ~ "Stress Low Frequency HRV",
-			hrv == "hf" ~ "Stress High Frequency HRV",
+			hrv == "lf" ~ "Stress Low Frequency HRV (ln ms^2)",
+			hrv == "hf" ~ "Stress High Frequency HRV (ln ms^2)",
 		)) %>%
 		gt(rowname_col = "test_num", groupname_col = "hrv") %>%
 		cols_merge(columns = starts_with("death"), pattern = "{1} ({2}, {3})") %>%
