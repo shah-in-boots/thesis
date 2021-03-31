@@ -149,7 +149,7 @@ The ability to share similar ECG metrics between cohorts also allowed for some t
 
 This study reveals a number of important clinical questions. 
 Autonomic changes may not only associate with overall depression or PTSD, but may also precede or correlate with changes in symptom burden, or may an intervenable metric to help control symptoms, such as with biofeedback [@Blase2010]. 
-Autonomic dysfunction appears to have a strong associationi with coronary microvascular dysfunction. 
+Autonomic dysfunction appears to have a strong association with coronary microvascular dysfunction. 
 Assessing microvascular dysfunction during coronary angiography with intracoronary acetylcholine, or through cardiac magnetic resonance imaging, may allow for more precise measurements of coronary flow reserve, and provide a higher fidelity metric for comparison. 
 In addition to baseline HRV predicting future adverse events, repeat HRV metrics would be helpful to assess autonomic function as a dynamic variable that may change over time. 
 This could be expanded to include interventions aimed at improving autonomic function, from cognitive behavioral therapy to vagal nerve stimulation, which would help to assess the role of autonomic dysfunction as a modifiable risk factor.
