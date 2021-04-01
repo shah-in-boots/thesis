@@ -89,7 +89,7 @@ HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-E
 *Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability [@Olesen2005; @Lewkowicz2002].
 
 In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins*, as seen in Figure \@ref(FigureCosinor) [@Refinetti2007]. 
-Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area.
+Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area. The frequency domain HRV metrics were log-transformed, and then all metrics were normalized to allow for comparison.
 
 
 ### Psychological Measures

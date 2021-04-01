@@ -5,7 +5,7 @@
 Our series of neurocardiac examinations in three distinct cohorts to describes multifaceted relationships amongst the autonomic physiology, psychological stress, and cardiovascular disease.
 The use of three varied cohorts allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
 We found a strong relationship between autonomic dysfunction and both acute and chronic mental stress and with myocardial ischemia. 
-We found that several types of autonomic dysfunction not only predicted clinical outcomes, but also mediated the increased mortality in those with mental stress. SEE COMMENT
+We found that several types of autonomic dysfunction not only predicted clinical outcomes, but also mediated the increased mortality in those with mental stress.
 We summarize the major findings below.
 
 ## Psychological Stress
@@ -24,7 +24,7 @@ Our approach and findings are more robust due to the controlled experimental env
 The likely mechanism that occurs during acute mental stress is sympathetic activation and parasympathetic withdrawal.
 These findings allow us to utilize the ECG-based response to stress as an additional exposure for neurocardiac disease and clinical outcomes.
 
-SEE COMMENT We sought to identify if the change in autonomic function in response to acute stress would associate with the chronic mental stress of depression or PTSD. 
+We sought to identify if the change in autonomic function in response to acute stress would associate with the chronic mental stress of depression or PTSD. 
 We found that elevated resting heart rate was associated with both psychiatric diseases, and decreases in LF HRV during recovery were associated with only depression. 
 This was contrary to what we expected, as there is a known relationship of HRV with both depression and PTSD [@Shah2013; @Carney1995].
 Prior studies have shown the relationship of HRV and depression with longer-duration ECG recordings, such as 24 hour Holter monitor [@Carney2001a].

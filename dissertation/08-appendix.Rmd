@@ -98,7 +98,7 @@ twins_tables$hrv %>%
 
 ### HRV and Mental Stress Challenge {#FigureMimsViolin}
 
-```{r, fig.align = "center"}
+```{r, fig.align = "center", out.height="100%"}
 mims_figures$violin +
 	scale_fill_manual(values = c(teal, gold, blue)) + 
 	theme_minimal() +
@@ -111,7 +111,8 @@ mims_figures$violin +
 		y = "ECG Metric",
 		title = "HRV Response to Mental Stress",
 		caption = str_wrap("This describes the distribution of ECG metrics during each phase of the acute mental stress challenge. The units of each correspond to the original metric.")
-	)
+	) +
+	ylim(-3, 3)
 ```
 
 \newpage
@@ -122,7 +123,7 @@ mims_figures$violin +
 ```{r}
 mims_tables$paired %>%
 	tab_header(
-		title = "Difference between Mental Stress Challenge Phases and ECG Metrics",
+		title = "Mental Stress Challenge Phases and ECG Metrics",
 		subtitle = "MIMS/MIPS Cohorts"
 	) %>%
 	tab_source_note("HRV summarised during stress and recovery phase of the mental stress challenge were compared to rest HRV. HRV = heart rate variability.")
