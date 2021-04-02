@@ -703,7 +703,7 @@ report_twins_models <- function(models, survival, circadian) {
 			level == "vlf" ~ "Very Low Frequency HRV",
 			level == "dyx" ~ "Dyx",
 			level == "ac" ~ "Acceleration Capacity",
-			level == "rr" ~ "RR Interval"
+			level == "rr" ~ "RR"
 		)) %>%
 		gt(rowname_col = "level", groupname_col = "outcome") %>%
 		cols_merge(columns = starts_with("mesor_"), pattern = "{1} ({2}, {3})") %>%
