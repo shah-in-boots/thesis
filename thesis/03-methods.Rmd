@@ -70,7 +70,7 @@ Patients were excluded for having acute coronary syndrome or decompensated heart
 
 ### Electrocardiography Measures
 
-In all three cohorts, ECG data was collected and analyzed using different ECG acquisition strategies and signal processing methods. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
+In all three cohorts, ECG data were collected and analyzed using different ECG acquisition strategies and signal processing methods. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
 
 Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains [@TaskForceoftheESCandNAS1996a].
 HRV was calculated through the Physionet Cardiovascular Signal Toolbox [@Vest2018], which is an open-source MATLAB software for analyzing ECG signal.
