@@ -3,7 +3,7 @@
 # Principal Findings
 
 Our series of neurocardiac examinations in three distinct cohorts to describes multifaceted relationships amongst the autonomic physiology, psychological stress, and cardiovascular disease.
-The use of cohorts with varied levels of cardiovascular risk allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
+The use of cohorts with varied levels of cardiovascular risk allowed for specific testing of various autonomic mechanisms connecting stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
 We found that autonomic dysfunction was strongly related to psychological stress, and that autonomic changes to stressors was associated with abnormalities in myocardial perfusion.
 The autonomic response to stress was moreover strongly associated with clinical outcomes and increased mortality.
 We believe these findings support autonomic dysfunction as an important clinical manifestation of both psychological and cardiovascular disease.
