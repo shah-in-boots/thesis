@@ -3,22 +3,26 @@
 # Principal Findings
 
 Our series of neurocardiac examinations in three distinct cohorts to describes multifaceted relationships amongst the autonomic physiology, psychological stress, and cardiovascular disease.
-The use of three varied cohorts allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
-We found a strong relationship between autonomic dysfunction and both acute and chronic mental stress and with myocardial ischemia. 
-We found that several types of autonomic dysfunction not only predicted clinical outcomes, but also mediated the increased mortality in those with mental stress.
+The use of cohorts with varied levels of cardiovascular risk allowed for specific testing of the hypothetical pathways between stress and cardiovascular disease, and leveraged the importance of stress reactivity with clinical outcomes, as described in Section \@ref(aims).
+We found that autonomic dysfunction was strongly related to psychological stress, and that autonomic changes to stressors was associated with abnormalities in myocardial perfusion.
+The autonomic response to stress was moreover strongly associated with clinical outcomes and increased mortality.
+We believe these findings support autonomic dysfunction as an important clinical manifestation of both psychological and cardiovascular disease.
 We summarize the major findings below.
 
 ## Psychological Stress
 
 In **Aim I**, we studied the potential autonomic mechanisms that may underlie both acute and chronic mental stress.
+Our most important finding was that both depression and PTSD were associated with not only with acute changes in HRV, but pervasive changes to the overall circadian rhythm, with dampened HRV measurements throughout the day.
 Psychological stress has an increased risk of cardiovascular mortality beyond that of maladaptive health behaviors [@Steptoe2013a; @Steptoe2012].
 Both depression and PTSD show an excess risk of cardiovascular disease that cannot be explained by symptom burden [@Smolderen2017; @Ahmadi2011].
 Stress and its effect on autonomic function may play a role in this excess risk [@Salahuddin2007], thus our aim to study underlying autonomic mechanisms may help to explain this disparity.
+Our findings suggests a pervasive effect of chronic psychiatric disorders on autonomic physiology that warrants further exploration, particularly relevant as they can be measured through non-invasive, ubiquitous ECG-based tools. 
+As psychiatric disease and life stress are both highly prevalent and likely under recognized, these measures may allow us to diagnose and manage autonomic dysfunction more readily.
 
-We found that within subjects, there was a significant difference in autonomic metrics in response to acute stress, with return towards baseline during recovery.
-Heart rate, as expected, increased during acute stress, however both HF and LF HRV decreased in power. 
+We found that within subjects, there were only small difference in autonomic metrics in response to acute stress, with return towards baseline during recovery.
+Heart rate, as expected, increased during acute stress, and both HF and LF HRV decreased in power. 
 On the other hand, T wave area remained persistently decreased during recovery as compared to rest.
-This suggests that the autonomic mechanisms at hand have a range of effects of differing duration, with electrical and morphological changes being the most persistent, and frequency-domain metrics, such as HF HRV, being the most rapid and prominent.
+This suggests that the autonomic mechanisms at hand have a range of effects of differing duration, with electrical and morphological changes being the more persistent, and frequency-domain metrics, such as HF HRV, being the more rapid.
 Even shorter-term HRV metrics have been used, recorded under $<$ 1 minute, and have shown differences for mental stress activities during daily living [@Salahuddin2007], however the clinical importance of this is unknown.
 Our approach and findings are more robust due to the controlled experimental environment, measurement during recovery, and ability to adjust for relevant clinical covariates.
 The likely mechanism that occurs during acute mental stress is sympathetic activation and parasympathetic withdrawal.
@@ -31,7 +35,7 @@ Prior studies have shown the relationship of HRV and depression with longer-dura
 Our findings are most likely limited by the short duration of recordings.
 Autonomic modulation is a dynamic phenomenon, and by measuring during stress and recovery, the underlying abnormalities may be suppressed.
 
-Due to the multiple available data sets, we were able to ask this question about the relationship of autonomic dysfunction and chronic mental stress using longer term recordings.
+We were able to ask this question about the relationship of autonomic dysfunction and chronic mental stress using longer term recordings.
 We found that HRV, particularly during early morning hours, was more robustly associated with HRV. 
 The strongest association for depression was LF and VLF HRV, and for PTSD was acceleration capacity and HF and LF HRV.
 Although these associations are supported in the literature [@Shah2013; @Carney2001a], our findings are unique in that they were selected at purely early morning hours.
@@ -46,15 +50,18 @@ Depressive symptom burden, for example, has a level of diurnal variation [@Wirz-
 ## Myocardial Ischemia
 
 In **Aim II**, we studied the autonomic mechanisms underlying ischemic heart disease.
+Our two most important findings were that autonomic responses to acute stress were strongly associated with MSIMI, and that circadian autonomic variability was associated with coronary flow reserve.
+This supports that important role autonomic regulation plays in cardiovascular physiology, and provides insight into a different facet of IHD. 
 IHD is not fully understood, as half of sudden cardiac deaths occur in men and women without known cardiovascular disease [@Niemeijer2015; @Madsen1985; @Hayashi2015]. 
 There are important levels to the coronary artery system, including epicardial conduit vessels and the myocaridal resistance vessels. 
 The difference between the two has started to become more clinically relevant as we begin to understand that myocardial ischemia is not only a problem of epicardial atherosclerotic disease [@Gould2018a].
 The ANS however has been implicated for its prominent role in regulation of cardiac electrophysiology, contractility, coronary vasomotor tone, amongst other effects [@Abboud2011].
 Both macrovascular and microvascular systems are heavily innervated and respond to different autonomic inputs, and also have afferent systems, allowing for bidirectional communication [@Armour1999].
 Thus, understanding the differences and quantifying the effect of autonomic dysfunction as it relates to myocardial ischemia will help us to better understand and differentiate between these diseases burdens and their corresponding increased risks.
+Clinically, understanding the role of autonomic dysfunction in coronary regulation allows us to study and elucidate novel mechanisms in myocardial blood flow that are not yet understood.
+It also adds to our ability to assess the risk of coronary artery disease, providing an additional non-invasive, ECG-based tool to further risk stratify patients. 
 
-We first sought to evaluate the role of obstructive CAD on autonomic function. 
-By assessing obstructive CAD through direct angiography, we were limited to assessing purely epicardial disease.
+By assessing obstructive CAD through direct angiography, we were able to assessing purely epicardial disease.
 We found no strong relationship between short-term autonomic metrics and obstructive CAD, however there was a trend towards higher *Dyx* in subjects with obstructive CAD.
 We found that those who underwent revascularization had a lower heart rate than those who did not, and similarly, *Dyx* trended higher in those patients than those without revascularization.
 This is a counterintuitive finding, in that literature there has been increasing support that HRV metrics such as *Dyx* may correlate with abnormal stress tests [@Shah2020; @Goldkorn2015b; @Goldenberg2019].
@@ -93,7 +100,8 @@ This finding is the first of its kind, as it shows a direct relationship between
 
 ## Clinical Outcomes
 
-In **Aim III**, we sought to understand the autonomic mechanisms underlying the risk of major adverse cardiovascular events (MACE). 
+In **Aim III**, we sought to understand the autonomic mechanisms underlying the risk of MACE. 
+We found that the autonomic response to acute stress and circadian rhythms leads to an increased risk for MACE.
 In large, population studies, LF HRV has been seen to associate with an increased risk for overall mortality [@Shah2021; @Maheshwari2016].
 Autonomic dysfunction has become an increasingly recognized additional risk factor for overall cardiovascular mortality [@Liew2015].
 Certain measures, such as *Dyx* have even shown increased mortality after myocardial infarction similar in effect to that of decreased ejection fraction [@Jørgensen2016].

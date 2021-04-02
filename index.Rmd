@@ -98,7 +98,6 @@ Finally, I would like to thank my family for their support, including Michelle f
 
 \bfoot
 \vspace*{\fill}
-{
 \centering
 
 ```{r abbreviations}
@@ -118,13 +117,13 @@ tribble(
 	"CFR", "Coronary Flow Reserve",
 	"MSIMI", "Mental Stress-Induced Myocardial Ischemia",
 	"PSIMI", "Physical Stress-Induced Myocardial Ischemia",
-	"ANS", "Autonomic Nervous System"
+	"ANS", "Autonomic Nervous System",
+	"CVD", "Cardiovascular Disease"
 ) %>%
 	arrange(Term) %>%
 	gt() 
 ```
 
-}
 \vspace*{\fill}
 \efoot
 \clearpage

@@ -37,7 +37,7 @@ The average rate of PTSD was `r prop.table(table(twins_clinical$ptsd))[2]*100`% 
 
 Acute mental stress was assessed primarily using the *MIMS/MIPS* cohorts. 
 The distribution of HRV metrics based on the phase of acute mental stress challenge was evaluated, as seen in Figure \@ref(FigureMimsViolin). 
-There were small differences between stress and rest HRV, as seen in Table \@ref(TableMimsPaired).
+There were only small differences between stress and rest HRV, as seen in Table \@ref(TableMimsPaired).
 The difference in distribution of HRV was compared between those that had MSIMI and those that did not, as described in \@ref(TableMimsHRV).
 There was a decrease in HRV in those with MSIMI compared to those without, except with heart rate. 
 
@@ -53,7 +53,7 @@ Every 1 SD increase in LF HRV during recovery had an OR = `r lf$scid_ptsd_bl_est
 No other HRV metrics were strongly associated.
 
 Chronic psychological stressors were analyzed using all three cohorts. 
-In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9 (Table \@ref(TableBiobankPsych).
+In the *Biobank* cohort, there were no significant differences seen in HRV by depressive symptoms as measured on the PHQ-9 (Table \@ref(TableBiobankPsych)).
 
 ```{r, include=FALSE}
 ptsd <- twins_reports$psych[["_data"]] %>%

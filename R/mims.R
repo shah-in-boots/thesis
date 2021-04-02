@@ -1,5 +1,5 @@
 # Basic tables
-make_mims_tables <- function(clinical) {
+make_mims_tables <- function(clinical, raw) {
 
 	# Making table 1
 	one <-
@@ -33,7 +33,7 @@ make_mims_tables <- function(clinical) {
 	# Distribution of HRV
 	paired <-
 		octomod() %>%
-		core(clinical) %>%
+		core(raw) %>%
 		arm(
 			title = "paired_hr",
 			plan = hr_rest ~ hr_stress + hr_recovery,
@@ -71,10 +71,10 @@ make_mims_tables <- function(clinical) {
 		separate(vars, into = c("hrv", "phase"), sep = "_") %>%
 		select(c(hrv, phase, estimate, conf.low, conf.high, statistic, p.value)) %>%
 		mutate(hrv = case_when(
-			hrv == "hr" ~ "Heart Rate",
-			hrv == "hf" ~ "High Frequency HRV",
-			hrv == "lf" ~ "Low Frequency HRV",
-			hrv == "twa" ~ "T Wave Area"
+			hrv == "hr" ~ "Heart Rate (beats/minute)",
+			hrv == "hf" ~ "High Frequency HRV (ln ms^2)",
+			hrv == "lf" ~ "Low Frequency HRV (ln ms^2)",
+			hrv == "twa" ~ "T Wave Area (µVs)"
 		)) %>%
 		mutate(phase = case_when(
 			phase == "stress" ~ "Stress",

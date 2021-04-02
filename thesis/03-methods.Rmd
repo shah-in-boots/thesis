@@ -2,12 +2,12 @@
 
 # Specific Aims {#aims}
 
-The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis. 
+The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis at different levels of cardiovascular risk. 
 
 **AIM I --- Autonomic mechanisms underlying psychological stress.**
 
 1. Examine the effect of acute mental stress on sympathovagal balance and cardiac autonomic function in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
-*We hypothesize that heart rate will increase and HRV decrease during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
+*We hypothesize that heart rate is higher and HRV is lower during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
 1. Examine the relationship of cardiac autonomic dysfunction measured in the setting of acute mental stress challenge with depression and posttrauamtic stress disorder in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
 *We hypothesize that lower short-term HRV during acute stress associate with depression and PTSD.*
 1. Examine the relationship of circadian cardiac autonomic variability over 24 hours with depression and PTSD in a cohort of male veteran twins.
@@ -16,9 +16,9 @@ The response to both physiological and psychological stress can be markers of ov
 **AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
 
 1. Examine the relationship of baseline resting cardiac autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) in a cohort of high-risk patients undergoing coronary angiography. 
-*We hypothesize that short-term autonomic metrics will be in lower in subjects with obstructive, epicardial disease compared to those without evidence of obstructive CAD.*
+*We hypothesize that short-term autonomic metrics are lower in subjects with obstructive, epicardial disease compared to those without evidence of obstructive CAD.*
 1. Examine the acute effect of revascularization of obstructive coronary artery disease on short-term cardiac autonomic function compared to changes that otherwise occur by angiography alone, without intervention. 
-*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term HRV will be lower after revascularization as compared to before revascularization and also compared to HRV during angiography.*
+*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term HRV is lower after revascularization as compared to before revascularization and also compared to HRV during angiography.*
 1. Examine the relationship of early morning and circadian autonomic variability with conventional myocardial ischemia and flow reserve in a cohort of male veteran twins. 
 *We hypothesize that lower early morning HRV and circadian HRV variability associate with greater conventional myocardial ischemia and lower myocardial flow reserve.*
 1. Examine the relationship between acute changes in cardiac autonomic function during mental stress challenge and mental stress induced myocardial ischemia in a cohort of participants with stable CAD. 
@@ -35,9 +35,9 @@ The response to both physiological and psychological stress can be markers of ov
 
 ## Population Characteristics and Study Overview
 
-### Emory Cardiovascular Biobank
+### Emory Cardiovascular Biobank (*Biobank*)
 
-The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of predicting CVD outcomes [@Ko2017].
+The *Biobank* studies major cardiovascular events, and also evaluates additional biomarkers for inflammation, cardiac injury, and genetics, with the goal of identifying novel factors associated with the pathobiological process and treatment of CVD [@Ko2017].
 All patients aged 18 years and older undergoing cardiac catherization were included. 
 During the index cardiac catheterization, additional measures including lifestyle factors, psychological status, medical comorbidities, revascularization and previous procedures were ascertained via patient interview and chart review. 
 Additionally, ambulatory ECG was collected with the VivaLNK patch, which was placed on the morning of cardiac catheterization and removed after catheterization for up to 24 hour of data recording.
@@ -45,9 +45,9 @@ Patients were excluded if they have congenital heart disease, severe valvular he
 Those that are found to have atrial fibrillation or have >20% ectopic beat burden or noise, as well as those that are pacer dependent were excluded.
 Those with known CAD were also excluded.
 
-### Emory Twins Study
+### Emory Twins Study (*Twins*)
 
-The *Twins* is a cross-sectional study was designed to evaluate the relationship of abnormal stress myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
+The *Twins* is a longitudinal cohort study designed to examine the relationship of depression and PTSD with myocardial perfusion abnormalities, with follow-up focused on CVD outcomes and changes in perfusion over time. In addition, the study design allows for studying the relationship between myocardial perfusion with autonomic function, measured hourly over the course of 24 h, in individuals without known ischemic heart disease. 
 Subjects were drawn from the Emory Twin Study, which recruited middle-aged male twin pairs from the Vietnam Era Twin Registry [@Shah2013; @Vaccarino2009a; @Goldberg2002].
 Pairs of twins were examined at the Emory University General Clinical Research Center, and all data collection occurred during a 24-hour admission under controlled conditions. 
 The twins in each pair maintained a nearly identical schedule, with all data collection beginning and ending at the same time. 
@@ -55,7 +55,7 @@ The twins arrived at 11 AM, with ECG recording started at approximately 1 PM, qu
 The twins were followed longitudinally for follow-up events, including review of national registries, which were adjudicated.
 Subjects were excluded from analysis if they were unable to complete pharmacological stress testing. 
 
-### Mental Stress Ischemia Mechanisms and Prognosis, Myocardial Infarction and Mental Stress
+### Mental Stress Ischemia Mechanisms and Prognosis, Myocardial Infarction and Mental Stress (*MIMS/MIPS*)
 
 The study design has been described prior, and is the same between the two cohorts [@Hammadah2017a].
 The *MIMS* cohort included participants with recent myocardial infarction within the 8 months prior to enrollment who were younger than 61 years of age at time of enrollment. 
@@ -70,7 +70,7 @@ Patients were excluded for having acute coronary syndrome or decompensated heart
 
 ### Electrocardiography Measures
 
-In all three cohorts, ECG data was collected and analyzed using similar techniques. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
+In all three cohorts, ECG data was collected and analyzed using different ECG acquisition strategies and signal processing methods. As described, in the *Biobank*, ECG was collected through a single, bipolar lead using the VivaLNK patch, with data being recorded for up to 24 h. In the *Twins*, ambulatory ECG was collected through Holter monitor (GE Marquette SEER digital system; GE Medical Systems, Waukesha, Wisconsin) for 24 h. Holter monitor was also used in the *MIMS/MIPS*, however the recording time was only for several hours.
 
 Variations in heart rate can be assessed by a number of mathematical measures, usually divided into the time and frequency domains [@TaskForceoftheESCandNAS1996a].
 HRV was calculated through the Physionet Cardiovascular Signal Toolbox [@Vest2018], which is an open-source MATLAB software for analyzing ECG signal.
@@ -94,12 +94,11 @@ Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* w
 
 ### Psychological Measures
 
-In all cohorts, chronic psychological variables were measured through patient interviews. 
+In all cohorts, chronic psychological variables were measured through patient interviews, using the Structured Clinical Interview for Diagnostic and Statistical Manual of Mental Disorders, 4th Edition (DSM-IV) criteria [@First2004] for the diagnosis of both depression and posttraumatic stress disorder (PTSD).
 In the *Biobank*, depressive symptoms were assessed via the 9-question Primary Care Evaluation of Mental Disorders Brief Patient Health Questionnaire (PHQ-9) [@Kroenke2001].
 Moderate-severe depression is considered when the PHQ-9 score is 10 points or higher (out of 27), with this cutpoint having a sensitivity and specificity of 88% for major depression. 
 Within the *Twins* and *MIMS/MIPS* cohorts, depressive symptomers were assessed with Beck's Depression Inventory, which includes 21 items with 4 statements scored 0-3, with higher scores indicating higher severity of depression [@Beck1988].
 A cut-off of $\geq$ 14 points was used to identify patients with moderate-to-severe depressive symptom burden.
-The diagnosis of post-traumatic stress disorder (PTSD) was defined using the Structured Clinical Interview for Diagnostic and Statistical Manual of Mental Disorders, 4th Edition (DSM-IV) [@First2004].
 
 In the *MIMS/MIPS* cohort, there was a separate protocol for acute mental stress challenge. 
 Patients were initially allowed to rest for 30 minutes in a calm, quiet, dimly lit, and temperature-regulated room.
@@ -141,6 +140,7 @@ The enrollment for *MIMS/MIPS* and *Twins* was completed prior to the initiation
 
 Statistical analysis was performed using R 4.0.0 (R Core Team 2020, Vienna, Austria). 
 The analytical approach was guided by the specific aims (Section \@ref(aims)). 
+
 ## Clinical Characteristics
 
 In the *Biobank*, HRV was summarized over the recording length and at 15-30 minute intervals at the time of coronary angiography. 

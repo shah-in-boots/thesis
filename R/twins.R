@@ -589,7 +589,7 @@ report_twins_models <- function(models, survival, circadian) {
 		circadian$equipment %>%
 		bind_rows(.id = "arm") %>%
 		filter(str_detect(arm, "single")) %>%
-		filter(level %in% c("hf", "lf", "vlf", "ac", "dyx", "bpm")) %>%
+		filter(level %in% c("hf", "lf", "vlf", "ac", "dyx", "rr")) %>%
 		select(outcomes, level, tidied) %>%
 		unnest(tidied) %>%
 		select(-c(group, effect, p.value, std.error)) %>%
@@ -602,7 +602,7 @@ report_twins_models <- function(models, survival, circadian) {
 			level == "vlf" ~ "Very Low Frequency HRV",
 			level == "dyx" ~ "Dyx",
 			level == "ac" ~ "Acceleration Capacity",
-			level == "bpm" ~ "Heart Rate"
+			level == "rr" ~ "RR Interval"
 		))
 
 	# Psych Cosinor --------------------------------------------------------
@@ -703,7 +703,7 @@ report_twins_models <- function(models, survival, circadian) {
 			level == "vlf" ~ "Very Low Frequency HRV",
 			level == "dyx" ~ "Dyx",
 			level == "ac" ~ "Acceleration Capacity",
-			level == "bpm" ~ "Heart Rate"
+			level == "rr" ~ "RR Interval"
 		)) %>%
 		gt(rowname_col = "level", groupname_col = "outcome") %>%
 		cols_merge(columns = starts_with("mesor_"), pattern = "{1} ({2}, {3})") %>%

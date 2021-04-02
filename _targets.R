@@ -46,6 +46,8 @@ targets <- list(
 	tar_target(biobank_ecg, readRDS(file_biobank_ecg)),
 
 	# MIMS
+	tar_file(file_mims_raw, "../mims/_targets/objects/proc"),
+	tar_target(mims_raw, readRDS(file_mims_raw)),
 	tar_file(file_mims_clinical, "../mims/_targets/objects/clinical"),
 	tar_target(mims_clinical, readRDS(file_mims_clinical)),
 	tar_file(file_mims_outcomes, "../mims/_targets/objects/outcomes"),
@@ -70,7 +72,7 @@ targets <- list(
 	tar_target(biobank_tables, make_biobank_tables(biobank_clinical, biobank_ecg, biobank_labels)),
 
 	# MIMS
-	tar_target(mims_tables, make_mims_tables(mims_clinical)),
+	tar_target(mims_tables, make_mims_tables(mims_clinical, mims_raw)),
 	tar_target(mims_figures, make_mims_figures(mims_clinical, mims_outcomes)),
 	tar_target(mims_models, make_mims_models(mims_clinical)),
 	tar_target(mims_survival, make_mims_survival(mims_clinical, mims_outcomes)),
@@ -95,11 +97,6 @@ targets <- list(
 	tar_file(index, "./index.Rmd"),
 	tar_target(paths, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE)),
 	tar_target(chapters, paths, format = "file", pattern = map(paths)),
-	tar_target(dissertation, write_dissertation(
-		index, chapters, diagrams,
-		biobank_tables,
-		twins_tables, twins_reports,
-		mims_tables, mims_reports, mims_figures
-	))
+	tar_target(thesis, write_dissertation(index, chapters, diagrams))
 
 )

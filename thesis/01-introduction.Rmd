@@ -1,0 +1,34 @@
+\mainmatter
+
+# (PART\*) INTRODUCTION {-}
+
+# The Problem
+
+> "Why did he die on Tuesday and not on Monday?"
+>
+> --- Douglas Zipes
+
+The underlying premise in this question posed by Dr. Zipes is that the cardiac substrate can be *triggered* into an catastrophic event [@Zipes2006]. 
+That trigger is oftentimes psychological in nature, and in the right setting, such as a scarred myocardium, can lead to electrical instability and ventricular arrhythmias [@Lown1979].
+The two critical components in understanding these critical events is thus contributions of the cardiac substrate to overall risk and the propensity for triggers to lead to events.
+Thus, understanding how cardiovascular disease and neuropsychological triggers contribute and compete in the pathogenesis of major adverse cardiovascular events (MACE) is critical. 
+
+Patients with psychiatric disease have an increased of cardiovascular disease and overall mortality [@Carney2002; @Boscarino2008].
+Depression, for example, is the leading cause of disabilty in the world [@Friedrich2017b], and coronary artery disease (CAD) is the leading cause of death [@McAloon2016b]. 
+The prevalence of depression is 20% in patients with CAD, and in those with comorbid depression and CAD, there is a 3-fold increase in cardiovascular mortality [@Jha2019; @Meijer2011].
+This demonstrates that both psychological and cardiac disorders contribute to the risk for increased mortality through additional, not yet defined, mechanisms.
+This additional risk is likely represented by both the underlying amount of cardiovascular disease and how the body reacts to psychological stress, leading to a triggering event.
+
+The purpose of this thesis is to examine the mechanism by which psychological stress interacts with ischemic heart disease (IHD), and subsequently leads to an increased risk for cardiovascular events.
+This shared pathway is likely through disturbances of the neurocardiac axis, and requires a method to measure stress and stress reactivity upon the system to help quantify the additional risk [@Davis1993].
+By leveraging different types of physiological stress along varying levels of ischemic burden, we can understand the additional risk of neurocardiac disease.
+
+# The Approach
+
+The suspected mechanism behind the pathogenesis of neurocardiac disease is through dysfunction of the autonomic nervous system (ANS), which has been shown to have an increased risk of mortality [@LaRovere1998; @Stein2000].
+Both psychological stress and myocardial ischemia are known to have a relationship with ANS dysfunction [@Carney2005], and the interaction between sympathetic and parasympathetic nervous activity likely mediates the additional cardiovascular risk.
+By using clinical cohorts with varying cardiac substrates, such as increasing burden of IHD, and varying types of triggers, from acute mental stress, chronic psychological stress, and circadian changes, we can assess the competing, additional risk of autonomic dysfunction.
+
+To measure ANS dysfunction, a common surrogate is through electrocardiographic (ECG) changes based on sympathetic and vagal effects upon the sinoatrial node, or pacemaker, of the heart. 
+The corresponding heart rate variability (HRV), and its mathematical derivatives, can thus inform us of the dynamic changes to autonomic tone [@Sassi2015].
+By measuring autonomic changes during different stressors, we can quantify stress reactivity and subsequently examine its relationship with both psychological stress and ischemic burden, and measure the additional risk for MACE.

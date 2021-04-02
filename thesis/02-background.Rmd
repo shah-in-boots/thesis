@@ -27,7 +27,7 @@ Thus, investigating the role of autonomic dysfunction in neurocardiac disorders 
 
 The heart itself harbors an intrinsic cardiac nervous system that responds to changes in autonomic tone, such as in myocardial ischemia and infarction, by changing chronotropic, inotropic, and dromotropic responses [@Armour1999; @Zipes1990].
 Autonomic dysfunction occurs at multiple levels, from central neurological processes to cardiovascular reflexes [@Abboud2011]. 
-This includes vagal withdrawal seen in depression and heigtened sympathetic tone seen in PTSD or cardiovascular disease.
+This includes vagal withdrawal seen in depression and heightened sympathetic tone seen in PTSD or cardiovascular disease.
 Depression, for example, has been linked to dysregulation of the ANS through changes in levels of catecholamines [@Veith1994b], increased cardiovascular reactivity to stress [@Hughes2008], and decreased baroreflex sensitivity [@Davydov2007].
 
 ANS-related mechanisms are important as they are related to both cardiac and neuropsychological disorders.
@@ -54,4 +54,4 @@ The response to the stress of changing from sleep to wake has been seen to assoc
 There is an increased frequency of sudden cardiac death based on time of day, usually peaking between 6 AM and 10 AM [@Muller1999; @Boudreau2011], with a secondary peak between 6 PM and 8 PM [@Mulcahy1988]. 
 There is a circadian pattern to autonomic outflow, melatonin, cortisol, and circulating catecholamines which could increase vulnerability to ischemia and cardiac death during morning hours [@Boudreau2011; Scheer2010].
 The relationship of circadian changes in HRV and myocardial perfusion has been shown to be related [@Shah2020], but how circadian changes may be important in psychological stress and overall mortality is not yet known.
-Thus, studying circadian autonomic variability may reveal insights into the diurnal pattern of clinical disease.
+Thus, studying circadian autonomic variability may reveal insights into the diurnal nature of clinical disease.
