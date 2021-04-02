@@ -2,7 +2,7 @@
 
 # Study Overview
 
-The study populations in the three cohorts are uniquely suited for these analyses. They are complementary in their description of cardiovascular disease, autonomic function, and psychological factors, and are described here.
+The study populations in the three cohorts are uniquely suited for these analyses. Although the average CVD risk varies widely by group based on inclusion criteria, they are complementary in their description of cardiovascular disease, autonomic function, and psychological factors, and are described here.
 
 The *Biobank* cohort, as described in Table \@ref(TableOneBiobank), had `r biobank_tables$one$N` participants, with a mean (95% CI) age in years of `r inline_text(biobank_tables$one, age)`. 
 `r inline_text(biobank_tables$one, gend, level = Female)` were female, and `r inline_text(biobank_tables$one, race, level = "African American Black")` were Black. 
