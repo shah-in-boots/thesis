@@ -1,0 +1,2555 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.19)  2 APR 2021 19:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/Users/asshah4/Library/TinyTeX/texmf-dist/te
+x/latex/base/book.cls
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen139
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count188
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count189
+\leftroot@=\count190
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count191
+\DOTSCASE@=\count192
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
+\dotsspace@=\muskip16
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
+\tag@help=\toks16
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
+\andhelp@=\toks17
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks18
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\MT@toks=\toks23
+\MT@count=\count266
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen148
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count267
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex
+.def
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip52
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.st
+y
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count268
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
+)) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.st
+y
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekey
+s.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.st
+y
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.st
+y
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen149
+\Hy@linkcounter=\count269
+\Hy@pagecounter=\count270
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-langpatc
+hes.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count271
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count272
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen150
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.st
+y
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count273
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count274
+\c@Item=\count275
+\c@Hfootnote=\count276
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count277
+\c@bookmark@seq@number=\count278
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilech
+eck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecoun
+ter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip53
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks24
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count282
+\LTcapwidth=\dimen161
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count283
+\LT@rows=\count284
+\c@LT@tables=\count285
+\c@LT@chunks=\count286
+\LT@p@ftn=\toks25
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count287
+\@cmidlb=\count288
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count289
+\@lastruleclass=\count290
+\@thisrulewidth=\dimen174
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count291
+\calc@Bcount=\count292
+\calc@Adimen=\dimen175
+\calc@Bdimen=\dimen176
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count293
+\calc@Cskip=\skip60
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box53
+\fn@width=\dimen177
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cf
+g
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen178
+\Gin@req@width=\dimen179
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box54
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen180
+\ttl@minus=\dimen181
+\ttl@toksa=\toks26
+\titlewidth=\dimen182
+\titlewidthlast=\dimen183
+\titlewidthfirst=\dimen184
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language5
+LaTeX Info: Redefining \_ on input line 43.
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+Excluding comment 'comment') (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/lat
+ex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count294
+\float@exts=\toks27
+\float@box=\box55
+\@float@everytoks=\toks28
+\@floatcapt=\box56
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen185
+\ar@mcellbox=\box57
+\extrarowheight=\dimen186
+\NC@list=\toks29
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box58
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count295
+\multirow@dima=\skip66
+\bigstrutjot=\dimen187
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen188
+\WF@size=\dimen189
+\c@WF@wrappedlines=\count296
+\WF@box=\box59
+\WF@everypar=\toks30
+Package: wrapfig 2003/01/31  v 3.6
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks31
+\minrowclearance=\skip67
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box60
+\sift@deathcycles=\count297
+\@vwid@loff=\dimen190
+\@vwid@roff=\dimen191
+)
+\c@taburow=\count298
+\tabu@nbcols=\count299
+\tabu@cnt=\count300
+\tabu@Xcol=\count301
+\tabu@alloc=\count302
+\tabu@nested=\count303
+\tabu@target=\dimen192
+\tabu@spreadtarget=\dimen193
+\tabu@naturalX=\dimen194
+\tabucolX=\dimen195
+\tabu@Xsum=\dimen196
+\extrarowdepth=\dimen197
+\abovetabulinesep=\dimen198
+\belowtabulinesep=\dimen199
+\tabustrutrule=\dimen256
+\tabu@thebody=\toks32
+\tabu@footnotes=\toks33
+\tabu@box=\box61
+\tabu@arstrutbox=\box62
+\tabu@hleads=\box63
+\tabu@vleads=\box64
+\tabu@cellskip=\skip68
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threepartta
+ble.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box65
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/threeparttablex/threepartt
+ablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip69
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box66
+\UL@hyphenbox=\box67
+\UL@skip=\skip70
+\UL@hook=\toks34
+\UL@height=\dimen257
+\UL@pe=\count304
+\UL@pixel=\dimen258
+\ULC@box=\box68
+Package: ulem 2019/11/18
+\ULdepth=\dimen259
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen260
+\c@nlinenum=\count305
+\TeXr@lab=\toks35
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen261
+\captionmargin@=\dimen262
+\captionwidth=\dimen263
+\caption@tempdima=\dimen264
+\caption@indent=\dimen265
+\caption@parindent=\dimen266
+\caption@hangindent=\dimen267
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\cslhangindent=\skip71
+\csllabelwidth=\skip72
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex
+.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box69
+) (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Info: Redefining \microtypecontext on input line 162.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 162.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base
+.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 162.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitles
+tring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count309
+)
+LaTeX Info: Redefining \ref on input line 162.
+LaTeX Info: Redefining \pageref on input line 162.
+LaTeX Info: Redefining \nameref on input line 162.
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write4
+\openout4 = `thesis.out'.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.485pt
+* \textheight=650.43001pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-31.8738pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+64.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+64.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+164.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+164.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 164.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 164.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 164.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 164
+.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 164
+.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
+
+
+
+{/Users/asshah4/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
+(./thesis.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 12.
+[2
+
+]
+Underfull \hbox (badness 2119) in paragraph at lines 55--55
+ [][] [][][]\T1/lmr/m/n/10.95 (+20) Relationship Be-tween Ob-struc-tive and Non
+-Obstructive 
+ []
+
+[3])
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+[4] [5
+
+]
+Underfull \vbox (badness 10000) detected at line 207
+ []
+
+[6
+
+] [1
+
+
+
+]
+Chapter 1.
+[2
+
+] [3]
+Chapter 2.
+[4
+
+] [5
+
+]
+Chapter 3.
+[6
+
+] [7]
+Chapter 4.
+[8
+
+] [9]
+Chapter 5.
+[10
+
+] [11] [12
+
+]
+Chapter 6.
+[13
+
+]
+Underfull \hbox (badness 6893) in paragraph at lines 402--402
+|[]\T1/lmr/bx/n/12 (+20) Mental Stress Is-chemia Mech-a-nisms and Prog-no-sis,
+ []
+
+[14] [15] [16] [17] [18] [19]
+Chapter 7.
+[20
+
+]
+Overfull \hbox (10.49911pt too wide) detected at line 528
+[][]
+ []
+
+[21] [22] [23] [24
+
+]
+Chapter 8.
+
+LaTeX Warning: Reference `TableOneMims' on page 25 undefined on input line 590.
+
+
+[25
+
+]
+Chapter 9.
+[26
+
+] [27]
+Chapter 10.
+[28
+
+] [29]
+Chapter 11.
+[30
+
+] [31
+
+]
+Chapter 12.
+[32
+
+] [33] [34] [35] [36] [37] [38] [39]
+Chapter 13.
+[40
+
+] [41] [42] [43
+
+] [44] [45
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
+\T1/lmr/m/n/10.95 (+20) / / www . ncbi . nlm . nih . gov / pmc / articles / PMC
+2566299 / pdf / nihms67338 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--874
+\T1/lmr/m/n/10.95 (+20) pdf % 20http : / / www . ncbi . nlm . nih . gov / pubme
+d / 18540155 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 872--875
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 872--875
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 876--879
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--879
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 880--883
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--883
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 884--887
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--887
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 888--891
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--891
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 892--895
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 892--895
+
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 898--898
+\T1/lmr/m/n/10.95 (+20) Re-view. 2019;73:1827--1845. ([][]$http : / / www . ncb
+i . nlm . nih . gov / pubmed /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 896--899
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--899
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 900--903
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 900--903
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 906--906
+\T1/lmr/m/n/10.95 (+8) pubmed / 8219819 % 20http : / / www . pubmedcentral . ni
+h . gov / articlerender . fcgi ?
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 904--907
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 904--907
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 908--911
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 908--911
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 912--915
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--915
+
+ []
+
+[46]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 916--919
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 916--919
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 920--923
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--923
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 924--927
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--927
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 928--931
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 928--931
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 932--935
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--935
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 936--939
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 936--939
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 940--943
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--943
+
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 946--946
+[]\T1/lmr/m/n/10.95 (+20) Carney RM, Freed-land KE. De-pres-sion and coro-nary 
+heart dis-ease.
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 944--947
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 944--947
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 948--951
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 948--951
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 952--955
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 956--959
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--959
+
+ []
+
+[47]
+Underfull \hbox (badness 3364) in paragraph at lines 962--962
+\T1/lmr/m/n/10.95 (+20) and 1-Year Mor-tal-ity af-ter Acute My-ocar-dial In-far
+c-tion: In-sights
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 962--962
+\T1/lmr/m/n/10.95 (+20) from the TRI-UMPH Reg-istry (Trans-la-tional Re-search 
+In-ves-ti-gat-ing
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 962--962
+\T1/lmr/m/n/10.95 (+20) Sta-tus). \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1/l
+mr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2017;135(18):1681--1689.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 962--962
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / www -[] ncbi -[] nlm -[] nih -[] gov 
+. proxy . library . emory . edu / pmc / articles /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 960--963
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 960--963
+
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 966--966
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2021;10(5):e017172. ([][]$http : / / www . 
+ncbi . nlm . nih . gov / pubmed /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 964--967
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--967
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 970--970
+[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
+ heart
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 970--970
+\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
+-ocar-dial per-fu-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
+e / pii / S0167527319355214 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 968--971
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 968--971
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 974--974
+[]\T1/lmr/m/n/10.95 (+20) Shah AS, Shah AJ, Lam-pert R, et al. Al-ter-ations in
+ heart
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 974--974
+\T1/lmr/m/n/10.95 (+20) rate vari-abil-ity are as-so-ci-ated with ab-nor-mal my
+-ocar-dial per-fu-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--974
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / linkinghub . elsevier . com / retriev
+e / pii / S0167527319355214 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 972--975
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--975
+
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 978--978
+[]\T1/lmr/m/n/10.95 (+20) Armour JA. My-ocar-dial is-chaemia and the car-diac n
+er-vous sys-tem.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 978--978
+\T1/lmr/m/it/10.95 (+20) Eu-ro-pean heart jour-nal \T1/lmr/m/n/10.95 (+20) [ele
+c-tronic ar-ti-cle]. 1999;16(12):1751--2.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 978--978
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / cardiovascres 
+/ article -[] abstract / 41 / 1 / 41 /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 976--979
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--979
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--982
+\T1/lmr/m/n/10.95 (+9) ([][]$http : / / circ . ahajournals . org / %20https : /
+ / www . ahajournals . org / doi / 10 . 1161 /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 980--983
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 980--983
+
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 986--986
+[]\T1/lmr/m/n/10.95 (+20) Abboud FM, Thames MD. In-ter-ac-tion of Car-dio-vas-c
+u-lar Re-flexes in
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 986--986
+\T1/lmr/m/n/10.95 (+20) Cir-cu-la-tory Con-trol. \T1/lmr/m/it/10.95 (+20) Com-p
+re-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle].
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 986--986
+\T1/lmr/m/n/10.95 (+20) 2011;675--753. ([][]$https : / / onlinelibrary -[] wile
+y -[] com . proxy . library . emory . edu /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--986
+\T1/lmr/m/n/10.95 (+20) doi / pdf / 10 . 1002 / cphy . cp020319 % 20http : / / 
+doi . wiley . com / 10 . 1002 / cphy .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 984--987
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 984--987
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 988--991
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 988--991
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 992--995
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 992--995
+
+ []
+
+[48pdfTeX warning (ext4): destination with the same identifier (name{ref-Shah20
+20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.995 
+      ]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 996--999
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--999
+
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 1002--1002
+[]\T1/lmr/m/n/10.95 (+20) Minisi AJ, Thames MD. Ac-ti-va-tion of car-diac sym-p
+a-thetic af-fer-ents
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/10.95 (+20) dur-ing coro-nary oc-clu-sion. Ev-i-dence for re-flex a
+c-ti-va-tion of
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 1002--1002
+\T1/lmr/m/n/10.95 (+20) sym-pa-thetic ner-vous sys-tem dur-ing trans-mu-ral my-
+ocar-dial is-chemia
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 1002--1002
+\T1/lmr/m/n/10.95 (+20) in the dog. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion \T1
+/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1991;84(1):357--367.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1002
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / circ . ahajournals . org / %20https : 
+/ / www . ahajournals . org / doi / 10 .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1000--1003
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1003
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1004--1007
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1007
+
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 1010--1010
+[]\T1/lmr/m/n/10.95 (+20) Ardell JL, Ar-mour JA. Neu-ro-car-di-ol-ogy: Structur
+e-Based func-tion.
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 1010--1010
+\T1/lmr/m/it/10.95 (+20) Com-pre-hen-sive Phys-i-ol-ogy \T1/lmr/m/n/10.95 (+20)
+ [elec-tronic ar-ti-cle]. 2016;6(4):1635--1653.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1010
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
+xy . library . emory . edu / doi / pdf / 10 . 1002 /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1008--1011
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1008--1011
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1012--1015
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1015
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1016--1019
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1019
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1020--1023
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1023
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1024--1027
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1027
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1028--1031
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1031
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1032--1035
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1035
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / ac -[] els -[] cdn -[] com . proxy . 
+library . emory . edu / S000291491500898X / 1 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1038
+\T1/lmr/m/n/10.95 (+20) s2 . 0 -[] S000291491500898X -[] main . pdf ? _tid = 6d
+cdce40 -[] a31f -[] 11e7 -[] a283 -[]
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1036--1039
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1039
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1040--1043
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1043
+
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 1046--1046
+\T1/lmr/m/n/10.95 (+20) is-chaemia. \T1/lmr/m/it/10.95 (+20) Heart \T1/lmr/m/n/
+10.95 (+20) [elec-tronic ar-ti-cle]. 2016;102(6):472--480. ([][]$http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/lmr/m/n/10.95 (+20) / / heart . bmj . com / %20http : / / link . springer .
+ com / 10 . 1007 / 978 -[] 3 -[] 319 -[] 32480 -[]
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1044--1047
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1047
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+[]\T1/lmr/m/n/10.95 (+20) Vaccarino V, Sul-li-van S, Ham-madah M, et al. Men-ta
+l
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 1050--1050
+\T1/lmr/m/n/10.95 (+20) stress-induced-myocardial is-chemia in young pa-tients 
+with re-cent
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 1050--1050
+\T1/lmr/m/n/10.95 (+20) my-ocar-dial in-farc-tion: Sex dif-fer-ences and mech-a
+-nisms. \T1/lmr/m/it/10.95 (+20) Cir-cu-la-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+\T1/lmr/m/n/10.95 (+5) nih . gov / articlerender . fcgi ? artid = PMC5822741 % 
+20https : / / www . ahajournals .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1048--1051
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1051
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1052--1055
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1055
+
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 1058--1058
+[]\T1/lmr/m/n/10.95 (+20) Muller JE. Cir-ca-dian vari-a-tion in car-dio-vas-cu-
+lar events. \T1/lmr/m/it/10.95 (+20) Amer-i-can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / academic . oup . com / ajh / article 
+-[] lookup / doi / 10 . 1016 / S0895 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\T1/lmr/m/n/10.95 (+20) 7061(98 ) 00278 -[] 7 % 20http : / / www . sciencedirec
+t . com / science / article / pii /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1056--1059
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1059
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1060--1063
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1063
+
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 1066--1066
+\T1/lmr/m/n/10.95 (+20) in 150 pa-tients. \T1/lmr/m/it/10.95 (+20) Heart \T1/lm
+r/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 1988;60(5):417--423.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1066--1066
+\T1/lmr/m/n/10.95 (+20) ([][]$/pmc / articles / PMC1216600 / ?report = abstract
+ % 20https : / / www . ncbi .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1064--1067
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1067
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1070
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
+/ 29288185 % 20http : / / www .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1068--1071
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1071
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1072--1075
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1075
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1076--1079
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1079
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1080--1083
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1086
+\T1/lmr/m/n/10.95 (+20) ([][]$http : / / www . ncbi . nlm . nih . gov / pubmed 
+/ 28002382 % 20http : / / www .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1084--1087
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1087
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1088--1091
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1091
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+\T1/lmr/m/it/10.95 (+20) Mea-sure-ment \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-
+ti-cle]. 2018;39(10):105004. ([][]$http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1092--1095
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1095
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1096--1099
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1099
+
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 1102--1102
+\T1/lmr/m/n/10.95 (+20) of low fre-quency heart rate vari-abil-ity as an in-dex
+ of sym-pa-thetic
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1102--1102
+\T1/lmr/m/n/10.95 (+20) car-diac tone: A re-view with em-pha-sis on a re-anal-y
+-sis of pre-vi-ous
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 1102--1102
+\T1/lmr/m/n/10.95 (+20) stud-ies. \T1/lmr/m/it/10.95 (+20) Psy-chophys-i-ol-ogy
+ \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle]. 2013;50(5):477--487.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1102
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / onlinelibrary -[] wiley -[] com . pro
+xy . library . emory . edu / doi / pdf / 10 . 1111 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1102
+\T1/lmr/m/n/10.95 (+20) psyp . 12027 % 20http : / / www . ncbi . nlm . nih . go
+v / pubmed / 23445494 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1100--1103
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1103
+
+ []
+
+[51]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1104--1107
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1104--1107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1110
+\T1/lmr/m/n/10.95 (+20) 26 / i = 5 / a = 002 ? key = crossref . fae68af48013829
+ef154a6b703ade0b3 % 20http :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1108--1111
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1111
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1112--1115
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1115
+
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 1118--1118
+[]\T1/lmr/m/n/10.95 (+20) Refinetti R, Cornélis-sen G, Hal-berg F. Pro-ce-dures
+ for nu-mer-i-cal
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 1118--1118
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2007;38(4):275--325. ([][]$https : / / www 
+. tandfonline . com / action /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1116--1119
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1119
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1120--1123
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1123
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1124--1127
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1127
+
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 1130--1130
+\T1/lmr/m/n/10.95 (+20) ar-ti-cle]. 2001;16(9):606--13. ([][]$http : / / www . 
+ncbi . nlm . nih . gov / pubmed /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/lmr/m/n/10.95 (+20) 11556941 % 20http : / / www . pubmedcentral . nih . gov
+ / articlerender . fcgi ? artid =
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1128--1131
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1131
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1132--1135
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1135
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1136--1139
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1139
+
+ []
+
+[52]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1140--1143
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1143
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1144--1147
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1147
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1148--1151
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1151
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1152--1155
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1155
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1156--1159
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1160--1163
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1163
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1164--1167
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1167
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1168--1171
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1168--1171
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1172--1175
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1175
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1176--1179
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1179
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1180--1183
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1183
+
+ []
+
+[53]
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1184--1187
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1187
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1188--1191
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1191
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1192--1195
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1195
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1196--1199
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1199
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1200--1203
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
+[]\T1/lmr/m/n/10.95 (+20) Dedovic K, Ngiam J. The cor-ti-sol awak-en-ing re-spo
+nse and
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 1206--1206
+\T1/lmr/m/n/10.95 (+20) ma-jor de-pres-sion: Ex-am-in-ing the ev-i-dence. 2015;
+11:1181--1189.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
+\T1/lmr/m/n/10.95 (+20) ([][]$https : / / pubmed . ncbi . nlm . nih . gov / 259
+99722 / %20https : / / pubmed . ncbi .
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1204--1207
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1207
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1208--1211
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1211
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1212--1215
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1215
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1216--1219
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1219
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1220--1223
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1223
+
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 1226--1226
+\T1/lmr/m/n/10.95 (+20) Un-der-ly-ing Sud-den Car-diac Death. \T1/lmr/m/it/10.9
+5 (+20) Cir-cu-la-tion Re-search \T1/lmr/m/n/10.95 (+20) [elec-tronic
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1224--1227
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1227
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1228--1231
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1231
+
+ []
+
+[54]
+Underfull \hbox (badness 4096) in paragraph at lines 1234--1234
+[]\T1/lmr/m/n/10.95 (+20) Lown B. Sud-den car-diac death -- 1978. \T1/lmr/m/it/
+10.95 (+20) Cir-cu-la-tion \T1/lmr/m/n/10.95 (+20) [elec-tronic
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1232--1235
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1235
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1236--1239
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1239
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1240--1243
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1240--1243
+
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 1246--1246
+[]\T1/lmr/m/n/10.95 (+20) Deyell MW, Krahn AD, Gold-berger JJ. Sud-den Car-diac
+ Death
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+\T1/lmr/m/n/10.95 (+20) Risk Strat-i-fi-ca-tion. \T1/lmr/m/it/10.95 (+20) Cir-c
+u-la-tion Re-search \T1/lmr/m/n/10.95 (+20) [elec-tronic ar-ti-cle].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+\T1/lmr/m/n/10.95 (+20) 2015;116(12):1907--1918. ([][]$https : / / www . ahajou
+rnals . org / doi / 10 . 1161 /
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1244--1247
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1247
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1248--1251
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1248--1251
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1252--1255
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1255
+
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 1258--1258
+\T1/lmr/m/n/10.95 (+20) defin-ing the value of neuroscience-based car-dio-vas-c
+u-lar ther-a-peu-tics.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1258
+\T1/lmr/m/n/10.95 (+20) / / physoc . onlinelibrary . wiley . com / doi / full /
+ 10 . 1113 / JP271870 % 20https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1258
+\T1/lmr/m/n/10.95 (+20) / / physoc . onlinelibrary . wiley . com / doi / abs / 
+10 . 1113 / JP271870 % 20https :
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1256--1259
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1256--1259
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1260--1263
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1260--1263
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1264--1267
+[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1264--1267
+
+ []
+
+[55] [56] [57
+
+]
+Appendix A.
+[58
+
+]
+<thesis_files/figure-latex/unnamed-chunk-13-1.png, id=1091, 1534.73375pt x 2059
+.695pt>
+File: thesis_files/figure-latex/unnamed-chunk-13-1.png Graphic file (type png)
+<use thesis_files/figure-latex/unnamed-chunk-13-1.png>
+Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-13-1.png  used
+ on input line 1296.
+(pdftex.def)             Requested size: 397.47577pt x 533.4338pt.
+[59 <./thesis_files/figure-latex/unnamed-chunk-13-1.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 1311.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 1311.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
+
+ []
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1390
+
+ []
+
+[61
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1436--1437
+
+ []
+
+[62
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1480
+
+ []
+
+[63
+
+
+] [64
+
+]
+<thesis_files/figure-latex/unnamed-chunk-18-1.png, id=1132, 1914.15125pt x 1310
+.8975pt>
+File: thesis_files/figure-latex/unnamed-chunk-18-1.png Graphic file (type png)
+<use thesis_files/figure-latex/unnamed-chunk-18-1.png>
+Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-18-1.png  used
+ on input line 1496.
+(pdftex.def)             Requested size: 397.48566pt x 272.21619pt.
+[65 <./thesis_files/figure-latex/unnamed-chunk-18-1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+528.
+(/Users/asshah4/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1536
+
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1584--1585
+
+ []
+
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1624
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1627
+
+ []
+
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 1661--1664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1666--1667
+
+ []
+
+[69
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1707
+
+ []
+
+[70
+
+] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 1752--1754
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1756--1757
+
+ []
+
+[72
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1796--1798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1801
+
+ []
+
+[73
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1840--1842
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1844--1845
+
+ []
+
+[74
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1892--1893
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1895--1896
+
+ []
+
+[75
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1931--1934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1937
+
+ []
+
+[76
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1977--1978
+
+ []
+
+[77
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2024--2026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2028--2029
+
+ []
+
+[78
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2057--2062
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2064--2065
+
+ []
+
+[79
+
+] [80
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2111--2116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2118--2119
+
+ []
+
+[81
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2158--2159
+
+ []
+
+[82
+
+]
+Overfull \hbox (8.95782pt too wide) in alignment at lines 2170--2196
+ [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2199--2205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2207--2208
+
+ []
+
+[83
+
+]
+Appendix B.
+[84
+
+
+]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2221.
+
+<refs/poincare.jpg, id=1259, 976.64874pt x 538.01pt>
+File: refs/poincare.jpg Graphic file (type jpg)
+<use refs/poincare.jpg>
+Package pdftex.def Info: refs/poincare.jpg  used on input line 2223.
+(pdftex.def)             Requested size: 437.23761pt x 240.86264pt.
+
+Overfull \hbox (39.75261pt too wide) in paragraph at lines 2223--2223
+ [] 
+ []
+
+[85 <./refs/poincare.jpg>]
+<thesis_files/figure-latex/unnamed-chunk-36-1.png, id=1267, 1918.16624pt x 1310
+.8975pt>
+File: thesis_files/figure-latex/unnamed-chunk-36-1.png Graphic file (type png)
+<use thesis_files/figure-latex/unnamed-chunk-36-1.png>
+Package pdftex.def Info: thesis_files/figure-latex/unnamed-chunk-36-1.png  used
+ on input line 2234.
+(pdftex.def)             Requested size: 317.97649pt x 217.30888pt.
+[86 <./thesis_files/figure-latex/unnamed-chunk-36-1.png>] (./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: CDD435D83C7E5C2E0AA0790CA05EC1AE;13077.
+ ) 
+Here is how much of TeX's memory you used:
+ 16067 strings out of 480983
+ 245175 string characters out of 5907347
+ 633758 words of memory out of 5000000
+ 32290 multiletter control sequences out of 15000+600000
+ 507602 words of font info for 223 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 71i,10n,74p,1195b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Use
+rs/asshah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/ass
+hah4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/asshah
+4/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/asshah4/L
+ibrary/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/asshah4/Library/
+TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</Users/asshah4/Library/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/asshah4/Library/TinyTe
+X/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/asshah4/Library/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/asshah4/Library/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmbxi10.pfb></Users/asshah4/Library/TinyTeX/texmf-d
+ist/fonts/type1/public/lm/lmex10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist
+/fonts/type1/public/lm/lmmi10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fo
+nts/type1/public/lm/lmmi6.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmmi8.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type
+1/public/lm/lmmi9.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/pu
+blic/lm/lmr10.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public
+/lm/lmr12.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/
+lmr17.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6
+.pfb></Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb>
+</Users/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Use
+rs/asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/
+asshah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/ass
+hah4/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb></Users/asshah4
+/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></Users/asshah4/Li
+brary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/asshah4/Libra
+ry/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+Output written on thesis.pdf (92 pages, 1455571 bytes).
+PDF statistics:
+ 1430 PDF objects out of 1440 (max. 8388607)
+ 1296 compressed objects within 13 object streams
+ 362 named destinations out of 1000 (max. 500000)
+ 55869 words of extra memory for PDF output out of 61914 (max. 10000000)
+

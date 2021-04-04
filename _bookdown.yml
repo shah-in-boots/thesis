@@ -1,6 +1,6 @@
-book_filename: "dissertation.Rmd"
+book_filename: "thesis.Rmd"
 delete_merged_file: true
-rmd_subdir: ["./dissertation"]
+rmd_subdir: ["./thesis"]
 output_dir: ["./"]
 language:
   ui:

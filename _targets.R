@@ -95,7 +95,7 @@ targets <- list(
 
 	# Dissertation
 	tar_file(index, "./index.Rmd"),
-	tar_target(paths, list.files(path = "./dissertation/", pattern = "*.Rmd", full.names = TRUE)),
+	tar_target(paths, list.files(path = "./thesis/", pattern = "*.Rmd", full.names = TRUE)),
 	tar_target(chapters, paths, format = "file", pattern = map(paths)),
 	tar_target(thesis, write_dissertation(index, chapters, diagrams))
 

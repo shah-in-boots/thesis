@@ -45,13 +45,16 @@ The global or equatorial measure of autonomic tone, described by the MESOR, and 
 *Dyx* variability had less changes in amplitude than other variables. 
 There were no changes in the acrophase, best described as the time to peak amplitude of the signal, in any of these measures.
 This suggest that the relationship between autonomic function and psychiatric disease may more strongly have circadian characteristics than previously thought [@Lam2008; @Iverson2002].
-Depressive symptom burden, for example, has a level of diurnal variation [@Wirz-Justice2008], which may be quantified by autonomic metrics.
+Depression is associated with both circadian disruption and decreased awakening cortisol [@Dedovic2015], and depressive symptom burden has a level of diurnal variation [@Wirz-Justice2008], which may both be quantified by autonomic metrics.
+PTSD is similar in that there are significant changes in sleep-wake cycles, which has not yet been explored on its relationship with autonomic dysfunction [@Walker2020]. 
 
 ## Myocardial Ischemia
 
 In **Aim II**, we studied the autonomic mechanisms underlying ischemic heart disease.
-Our two most important findings were that autonomic responses to acute stress were strongly associated with MSIMI, and that circadian autonomic variability was associated with coronary flow reserve.
-This supports that important role autonomic regulation plays in cardiovascular physiology, and provides insight into a different facet of IHD. 
+This builds off of our findings of the association of autonomic dysfunction and physical stress-induced myocardial ischemia, particularly adding depth by evaluating coronary flow reserve and expanding on the circadian patterns previously described [@Shah2020].
+Our most important findings were that autonomic responses to acute stress were strongly associated with MSIMI, and that circadian autonomic variability was associated with coronary flow reserve.
+Additionally, there was no association between epicardial disease and autonomic dysfunction.
+This supports that important role autonomic regulation plays in cardiovascular physiology, particularly that of coronary vasomotor and microvascular regulation, providing insight into different facets of IHD. 
 IHD is not fully understood, as half of sudden cardiac deaths occur in men and women without known cardiovascular disease [@Niemeijer2015; @Madsen1985; @Hayashi2015]. 
 There are important levels to the coronary artery system, including epicardial conduit vessels and the myocaridal resistance vessels. 
 The difference between the two has started to become more clinically relevant as we begin to understand that myocardial ischemia is not only a problem of epicardial atherosclerotic disease [@Gould2018a].
@@ -105,6 +108,8 @@ We found that the autonomic response to acute stress and circadian rhythms leads
 In large, population studies, LF HRV has been seen to associate with an increased risk for overall mortality [@Shah2021; @Maheshwari2016].
 Autonomic dysfunction has become an increasingly recognized additional risk factor for overall cardiovascular mortality [@Liew2015].
 Certain measures, such as *Dyx* have even shown increased mortality after myocardial infarction similar in effect to that of decreased ejection fraction [@Jørgensen2016].
+We found that for every SD decrease in certain HRV metrics, there was a 3--4 times increase in the hazard ratio for mortality.
+In comparison, hyperlipidemia with low density lipoprotein $\ge$ 200 only have a hazard ratio ranging from 1.3 -- 1.8 [@Abdullah2018].
 This suggests that autonomic testing is just at its nacency at helping to predict cardiovascular events [@Bauer2017].
 
 We examined the utility of a early morning autonomic metrics with both overall and cardiovascular mortality. 
@@ -156,6 +161,7 @@ The largest strengths of this study are the use of multiple cohorts, the rigor a
 The ability to share similar ECG metrics between cohorts also allowed for some translation of study findings between groups.
 
 This study reveals a number of important clinical questions. 
+Current clinical practice ignores autonomic function and behavioral therapies for the most part, which leads to an entire spectrum of disease without adequate research and therapies.
 Autonomic changes may not only associate with overall depression or PTSD, but may also precede or correlate with changes in symptom burden, or may an intervenable metric to help control symptoms, such as with biofeedback [@Blase2010]. 
 Autonomic dysfunction appears to have a strong association with coronary microvascular dysfunction. 
 Assessing microvascular dysfunction during coronary angiography with intracoronary acetylcholine, or through cardiac magnetic resonance imaging, may allow for more precise measurements of coronary flow reserve, and provide a higher fidelity metric for comparison. 

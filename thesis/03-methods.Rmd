@@ -1,36 +1,5 @@
 # (PART\*) METHODS {-}
 
-# Specific Aims {#aims}
-
-The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis at different levels of cardiovascular risk. 
-
-**AIM I --- Autonomic mechanisms underlying psychological stress.**
-
-1. Examine the effect of acute mental stress on sympathovagal balance and cardiac autonomic function in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
-*We hypothesize that heart rate is higher and HRV is lower during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
-1. Examine the relationship of cardiac autonomic dysfunction measured in the setting of acute mental stress challenge with depression and posttrauamtic stress disorder in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
-*We hypothesize that lower short-term HRV during acute stress associate with depression and PTSD.*
-1. Examine the relationship of circadian cardiac autonomic variability over 24 hours with depression and PTSD in a cohort of male veteran twins.
-*We hypothesize that lower circadian variation in HRV (amplitude) and 24-hour mean HRV (mesor) associate with depression and PTSD.*
-
-**AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
-
-1. Examine the relationship of baseline resting cardiac autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) in a cohort of high-risk patients undergoing coronary angiography. 
-*We hypothesize that short-term autonomic metrics are lower in subjects with obstructive, epicardial disease compared to those without evidence of obstructive CAD.*
-1. Examine the acute effect of revascularization of obstructive coronary artery disease on short-term cardiac autonomic function compared to changes that otherwise occur by angiography alone, without intervention. 
-*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term HRV is lower after revascularization as compared to before revascularization and also compared to HRV during angiography.*
-1. Examine the relationship of early morning and circadian autonomic variability with conventional myocardial ischemia and flow reserve in a cohort of male veteran twins. 
-*We hypothesize that lower early morning HRV and circadian HRV variability associate with greater conventional myocardial ischemia and lower myocardial flow reserve.*
-1. Examine the relationship between acute changes in cardiac autonomic function during mental stress challenge and mental stress induced myocardial ischemia in a cohort of participants with stable CAD. 
-*We hypothesize that mental stress-induced decreases in HRV associate with an increased odds of mental stress-induced myocardial ischemia.*  
-
-**AIM III --- Autonomic mechanisms underlying the risk of major adverse cardiovascular events.**
-
-1. Examine the relationship of early morning and circadian autonomic variability with CVD and all-cause mortality in a cohort of male veteran twins. 
-*We hypothesize that lower early morning HRV and circadian HRV variability associate with an increased hazard for overall and cardiovascular mortality.*
-1. Examine the relationship between acute changes in cardiac autonomic function during mental stress challenge and future major adverse cardiovascular events in a cohort of participants with stable CAD.
-*We hypothesize that mental stress-induced decreases in HRV associate with an increased hazard for cardiovascular mortality and recurrent cardiovascular events.*
-
 # Study Design
 
 ## Population Characteristics and Study Overview
@@ -78,7 +47,7 @@ Time domain measures we used include the RR interval duration (converted to hear
 Frequency-domain measures computed through power spectral analysis categorize variability as very low frequency (VLF, 0.0033 to <0.04 Hz), low frequency (LF, 0.04 to <0.15 Hz) or high frequency (HF, 0.15 to 0.40 Hz) [@Akselrod1981].
 These frequency categories reflect autonomically mediated heart rate responses to physiologic stimuli, including influences of the renin-angiotensin-aldosterone system, baroreceptor activity, and respiration [@Akselrod1981].
 The sympathetic and parasympathetic nervous systems influence them to different degrees. 
-HF reflects primarily parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity [@ReyesdelPaso2013].
+HF primarily reflects parasympathetic nervous system activity, while LF reflects both sympathetic and parasympathetic activity [@ReyesdelPaso2013].
 Total power HRV is a nonspecific global measure. 
 RMSSD is an approximate correlate of HF, and SDNN is an approximate correlate of TP, supporting the physiological basis of these markers.[Electrophysiology1996b]
 Acceleration capacity and deceleration capacity were also included where available, based on signal quality and recording length, as they also reflect clinically relevant sympathetic and vagal activity [@Bauer2006c].
@@ -88,8 +57,9 @@ HRV was also analyzed hourly through the commercial HeartTrends algorithm (Lev-E
 *Dyx* is generated through the multipole method analysis of Poincaré plot, in which beat-to-beat (RR) interval lengths are plotted as a function of prior RR intervals to form an ellipse, as seen in Figure \@ref(FigurePoincare).
 *Dyx* is calculated as the ratio of the kurtosis along the y-axis (long-term variability) and the x-axis (beat-to-beat random variation) of the ellipse, and higher values indicate more beat-to-beat randomness and/or decreased variability [@Olesen2005; @Lewkowicz2002].
 
-In addition to summary and hourly assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins*, as seen in Figure \@ref(FigureCosinor) [@Refinetti2007]. 
-Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area. The frequency domain HRV metrics were log-transformed, and then all metrics were normalized to allow for comparison.
+In addition to hourly and summary assessments of HRV, diurnal rhythms were examined using cosinor metrics within the *Twins*, as seen in Figure \@ref(FigureCosinor) [@Refinetti2007]. 
+Morphological assessment of ECG changes were also performed in the *MIMS/MIPS* with T-wave area, as an additional metric as it is has a independent association with sudden cardiac death [@Kentta2018]. 
+The frequency domain HRV metrics were log-transformed, and then all metrics were normalized to allow for comparison.
 
 
 ### Psychological Measures

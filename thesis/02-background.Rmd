@@ -55,3 +55,35 @@ There is an increased frequency of sudden cardiac death based on time of day, us
 There is a circadian pattern to autonomic outflow, melatonin, cortisol, and circulating catecholamines which could increase vulnerability to ischemia and cardiac death during morning hours [@Boudreau2011; Scheer2010].
 The relationship of circadian changes in HRV and myocardial perfusion has been shown to be related [@Shah2020], but how circadian changes may be important in psychological stress and overall mortality is not yet known.
 Thus, studying circadian autonomic variability may reveal insights into the diurnal nature of clinical disease.
+
+# Specific Aims {#aims}
+
+The response to both physiological and psychological stress can be markers of overall cardiovascular adaptability. The following aims help to assess the clinical importance of stress reactivity as measured by disturbances to the neurocardiac axis at different levels of cardiovascular risk. 
+
+**AIM I --- Autonomic mechanisms underlying psychological stress.**
+
+1. Examine the effect of acute mental stress on sympathovagal balance and cardiac autonomic function in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
+*We hypothesize that heart rate is higher and HRV is lower during both stress and recovery phases of acute mental stress challenge as compared to the rest phase.*
+1. Examine the relationship of cardiac autonomic dysfunction measured in the setting of acute mental stress challenge with depression and posttrauamtic stress disorder in a cohort of participants with CAD undergoing a laboratory based mental stress challenge. 
+*We hypothesize that lower short-term HRV during acute stress associate with depression and PTSD.*
+1. Examine the relationship of circadian cardiac autonomic variability over 24 hours with depression and PTSD in a cohort of male veteran twins.
+*We hypothesize that lower circadian variation in HRV (amplitude) and 24-hour mean HRV (mesor) associate with depression and PTSD.*
+
+**AIM II --- Autonomic mechanisms underlying ischemic heart disease.** 
+
+1. Examine the relationship of baseline resting cardiac autonomic dysfunction with obstructive coronary artery disease (>70% stenosis) in a cohort of high-risk patients undergoing coronary angiography. 
+*We hypothesize that short-term autonomic metrics are lower in subjects with obstructive, epicardial disease compared to those without evidence of obstructive CAD.*
+1. Examine the acute effect of revascularization of obstructive coronary artery disease on short-term cardiac autonomic function compared to changes that otherwise occur by angiography alone, without intervention. 
+*We hypothesize that in subjects undergoing revascularization of the coronary arteries, short-term HRV is lower after revascularization as compared to before revascularization and also compared to HRV during angiography.*
+1. Examine the relationship of early morning and circadian autonomic variability with conventional myocardial ischemia and flow reserve in a cohort of male veteran twins. 
+*We hypothesize that lower early morning HRV and circadian HRV variability associate with greater conventional myocardial ischemia and lower myocardial flow reserve.*
+1. Examine the relationship between acute changes in cardiac autonomic function during mental stress challenge and mental stress induced myocardial ischemia in a cohort of participants with stable CAD. 
+*We hypothesize that mental stress-induced decreases in HRV associate with an increased odds of mental stress-induced myocardial ischemia.*  
+
+**AIM III --- Autonomic mechanisms underlying the risk of major adverse cardiovascular events.**
+
+1. Examine the relationship of early morning and circadian autonomic variability with CVD and all-cause mortality in a cohort of male veteran twins. 
+*We hypothesize that lower early morning HRV and circadian HRV variability associate with an increased hazard for overall and cardiovascular mortality.*
+1. Examine the relationship between acute changes in cardiac autonomic function during mental stress challenge and future major adverse cardiovascular events in a cohort of participants with stable CAD.
+*We hypothesize that mental stress-induced decreases in HRV associate with an increased hazard for cardiovascular mortality and recurrent cardiovascular events.*
+
